@@ -1,10 +1,8 @@
 # Senhor Bolo - Programa Desktop
 
-<!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
-
 <img src="https://i.imgur.com/gXqEnXF.png" alt="Imagem do projeto">
 
-> O programa permite o gerenciamento de estoque, usuários, produtos, e o acompanhamento do rendimento da Loja pelo usuário. Desenvolvido em C#
+> O programa permite o gerenciamento de estoque, usuários, produtos, e o acompanhamento do rendimento da loja pelo usuário. Desenvolvido em C#
 
 ### Etapas do desenvolvimento
 
