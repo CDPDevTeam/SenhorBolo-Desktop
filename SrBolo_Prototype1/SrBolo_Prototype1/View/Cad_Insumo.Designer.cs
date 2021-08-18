@@ -405,9 +405,9 @@
             this.lblEmailFunc.ForeColor = System.Drawing.Color.Black;
             this.lblEmailFunc.Location = new System.Drawing.Point(255, 43);
             this.lblEmailFunc.Name = "lblEmailFunc";
-            this.lblEmailFunc.Size = new System.Drawing.Size(163, 21);
+            this.lblEmailFunc.Size = new System.Drawing.Size(173, 21);
             this.lblEmailFunc.TabIndex = 15;
-            this.lblEmailFunc.Text = "RolaDura@yahoo.com";
+            this.lblEmailFunc.Text = "EdsonKoiti@yahoo.com";
             // 
             // lblNomeFunc
             // 
