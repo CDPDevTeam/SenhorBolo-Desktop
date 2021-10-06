@@ -16,5 +16,10 @@ namespace SrBolo_Prototype1
         {
             InitializeComponent();
         }
+
+        private void AdmHome_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

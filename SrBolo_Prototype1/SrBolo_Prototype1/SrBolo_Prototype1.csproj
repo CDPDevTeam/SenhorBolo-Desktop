@@ -84,6 +84,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Confeiteiro.cs" />
+    <Compile Include="Model\Funcionario.cs" />
     <Compile Include="View\admHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -315,7 +317,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Control\" />
-    <Folder Include="Model\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ec5fe50c-3821-4ba4-a71b-5c0160ebbf42.jpg" />
