@@ -33,7 +33,7 @@ namespace SrBolo_Prototype1
             if (guna2ProgressBar1.Value == 100)
             {
                 timer1.Enabled = false;
-                admHome login = new admHome();
+                Login login = new Login();
                 login.ShowDialog();
                 this.Close();
             }

@@ -31,11 +31,9 @@ namespace SrBolo_Prototype1
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(admFinancas));
-            this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblHora = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblEmailPerfil = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNomePerfil = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -47,7 +45,6 @@ namespace SrBolo_Prototype1
             this.label22 = new System.Windows.Forms.Label();
             this.guna2GradientPanel11 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.guna2GradientPanel12 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,19 +77,19 @@ namespace SrBolo_Prototype1
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2GradientPanel6 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblPrctVendasMes = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblVendasMes = new System.Windows.Forms.Label();
             this.lblDespesasMes = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PanelMenu.SuspendLayout();
             this.guna2GradientPanel3.SuspendLayout();
             this.guna2GradientPanel13.SuspendLayout();
@@ -109,84 +106,58 @@ namespace SrBolo_Prototype1
             this.guna2GradientPanel14.SuspendLayout();
             this.PanelRendimentoMensal.SuspendLayout();
             this.guna2GradientPanel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.guna2GradientPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2GradientPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).BeginInit();
             this.SuspendLayout();
-            // 
-            // LogoMrCake
-            // 
-            this.LogoMrCake.BackColor = System.Drawing.Color.Transparent;
-            this.LogoMrCake.FillColor = System.Drawing.Color.Transparent;
-            this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
-            this.LogoMrCake.ImageRotate = 0F;
-            this.LogoMrCake.Location = new System.Drawing.Point(6, 7);
-            this.LogoMrCake.Name = "LogoMrCake";
-            this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
-            this.LogoMrCake.Size = new System.Drawing.Size(115, 107);
-            this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoMrCake.TabIndex = 0;
-            this.LogoMrCake.TabStop = false;
             // 
             // lblHora
             // 
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
-            this.lblHora.Font = new System.Drawing.Font("Raleway SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.Location = new System.Drawing.Point(1287, 32);
             this.lblHora.Margin = new System.Windows.Forms.Padding(2);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(52, 17);
+            this.lblHora.Size = new System.Drawing.Size(72, 22);
             this.lblHora.TabIndex = 16;
             this.lblHora.Text = "2:00 AM";
             // 
             // lblEmailPerfil
             // 
             this.lblEmailPerfil.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmailPerfil.Font = new System.Drawing.Font("Raleway Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailPerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailPerfil.ForeColor = System.Drawing.Color.Black;
             this.lblEmailPerfil.Location = new System.Drawing.Point(229, 37);
             this.lblEmailPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.lblEmailPerfil.Name = "lblEmailPerfil";
-            this.lblEmailPerfil.Size = new System.Drawing.Size(123, 16);
+            this.lblEmailPerfil.Size = new System.Drawing.Size(156, 20);
             this.lblEmailPerfil.TabIndex = 15;
             this.lblEmailPerfil.Text = "RolaDura@yahoo.com";
             // 
             // lblNomePerfil
             // 
             this.lblNomePerfil.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomePerfil.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomePerfil.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomePerfil.ForeColor = System.Drawing.Color.Black;
             this.lblNomePerfil.Location = new System.Drawing.Point(230, 18);
             this.lblNomePerfil.Margin = new System.Windows.Forms.Padding(2);
             this.lblNomePerfil.Name = "lblNomePerfil";
-            this.lblNomePerfil.Size = new System.Drawing.Size(90, 21);
+            this.lblNomePerfil.Size = new System.Drawing.Size(113, 27);
             this.lblNomePerfil.TabIndex = 14;
             this.lblNomePerfil.Text = "Edson Koiti";
-            // 
-            // PictureBoxPerfil
-            // 
-            this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
-            this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(168, 9);
-            this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(2);
-            this.PictureBoxPerfil.Name = "PictureBoxPerfil";
-            this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(57, 56);
-            this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxPerfil.TabIndex = 12;
-            this.PictureBoxPerfil.TabStop = false;
             // 
             // lblData
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
-            this.lblData.Font = new System.Drawing.Font("Raleway SemiBold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.Location = new System.Drawing.Point(1166, 14);
             this.lblData.Margin = new System.Windows.Forms.Padding(2);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(175, 17);
+            this.lblData.Size = new System.Drawing.Size(247, 22);
             this.lblData.TabIndex = 13;
             this.lblData.Text = "Quarta, 2 de Janeiro de 2021";
             // 
@@ -285,11 +256,11 @@ namespace SrBolo_Prototype1
             // 
             this.label22.AutoSize = true;
             this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Raleway ExtraBold", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.Location = new System.Drawing.Point(26, 18);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(245, 39);
+            this.label22.Size = new System.Drawing.Size(307, 48);
             this.label22.TabIndex = 20;
             this.label22.Text = "Mais Vendidos";
             // 
@@ -297,7 +268,6 @@ namespace SrBolo_Prototype1
             // 
             this.guna2GradientPanel11.BorderRadius = 15;
             this.guna2GradientPanel11.Controls.Add(this.label21);
-            this.guna2GradientPanel11.Controls.Add(this.label20);
             this.guna2GradientPanel11.Controls.Add(this.guna2GradientPanel12);
             this.guna2GradientPanel11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel11.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
@@ -311,25 +281,13 @@ namespace SrBolo_Prototype1
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Raleway ExtraBold", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.White;
             this.label21.Location = new System.Drawing.Point(18, 0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(347, 39);
+            this.label21.Size = new System.Drawing.Size(424, 48);
             this.label21.TabIndex = 19;
             this.label21.Text = "Folha de Pagamento";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Raleway ExtraBold", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.White;
-            this.label20.Location = new System.Drawing.Point(101, 159);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(395, 39);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "Gastos em Ingredientes";
             // 
             // guna2GradientPanel12
             // 
@@ -418,11 +376,11 @@ namespace SrBolo_Prototype1
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Raleway ExtraBold", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.White;
             this.label19.Location = new System.Drawing.Point(18, 0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(395, 39);
+            this.label19.Size = new System.Drawing.Size(485, 48);
             this.label19.TabIndex = 18;
             this.label19.Text = "Gastos em Ingredientes";
             // 
@@ -515,11 +473,11 @@ namespace SrBolo_Prototype1
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Raleway", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.label17.Location = new System.Drawing.Point(73, 162);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(141, 22);
+            this.label17.Size = new System.Drawing.Size(178, 29);
             this.label17.TabIndex = 17;
             this.label17.Text = "foi da loja física";
             // 
@@ -542,11 +500,11 @@ namespace SrBolo_Prototype1
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Raleway", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.label18.Location = new System.Drawing.Point(48, 37);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(150, 22);
+            this.label18.Size = new System.Drawing.Size(186, 29);
             this.label18.TabIndex = 18;
             this.label18.Text = "foi da loja virtual";
             // 
@@ -554,11 +512,11 @@ namespace SrBolo_Prototype1
             // 
             this.lblPrctLojaVirtual.AutoSize = true;
             this.lblPrctLojaVirtual.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrctLojaVirtual.Font = new System.Drawing.Font("Raleway ExtraBold", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrctLojaVirtual.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrctLojaVirtual.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.lblPrctLojaVirtual.Location = new System.Drawing.Point(74, 4);
             this.lblPrctLojaVirtual.Name = "lblPrctLojaVirtual";
-            this.lblPrctLojaVirtual.Size = new System.Drawing.Size(84, 39);
+            this.lblPrctLojaVirtual.Size = new System.Drawing.Size(106, 48);
             this.lblPrctLojaVirtual.TabIndex = 3;
             this.lblPrctLojaVirtual.Text = "00%";
             // 
@@ -566,11 +524,11 @@ namespace SrBolo_Prototype1
             // 
             this.lblPrctLojaFisica.AutoSize = true;
             this.lblPrctLojaFisica.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrctLojaFisica.Font = new System.Drawing.Font("Raleway ExtraBold", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrctLojaFisica.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrctLojaFisica.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.lblPrctLojaFisica.Location = new System.Drawing.Point(99, 131);
             this.lblPrctLojaFisica.Name = "lblPrctLojaFisica";
-            this.lblPrctLojaFisica.Size = new System.Drawing.Size(84, 39);
+            this.lblPrctLojaFisica.Size = new System.Drawing.Size(106, 48);
             this.lblPrctLojaFisica.TabIndex = 2;
             this.lblPrctLojaFisica.Text = "00%";
             // 
@@ -578,11 +536,11 @@ namespace SrBolo_Prototype1
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Raleway ExtraBold", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 24.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
             this.label14.Location = new System.Drawing.Point(43, 17);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(197, 39);
+            this.label14.Size = new System.Drawing.Size(240, 48);
             this.label14.TabIndex = 1;
             this.label14.Text = "Desse total";
             // 
@@ -617,11 +575,11 @@ namespace SrBolo_Prototype1
             // 
             this.lblPrctLucrosMes.AutoSize = true;
             this.lblPrctLucrosMes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(245)))), ((int)(((byte)(114)))));
-            this.lblPrctLucrosMes.Font = new System.Drawing.Font("Raleway Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrctLucrosMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrctLucrosMes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(161)))), ((int)(((byte)(70)))));
             this.lblPrctLucrosMes.Location = new System.Drawing.Point(1055, 88);
             this.lblPrctLucrosMes.Name = "lblPrctLucrosMes";
-            this.lblPrctLucrosMes.Size = new System.Drawing.Size(60, 22);
+            this.lblPrctLucrosMes.Size = new System.Drawing.Size(81, 29);
             this.lblPrctLucrosMes.TabIndex = 14;
             this.lblPrctLucrosMes.Text = "+0,0%";
             // 
@@ -629,10 +587,10 @@ namespace SrBolo_Prototype1
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Raleway Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(924, 88);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(125, 22);
+            this.label12.Size = new System.Drawing.Size(157, 29);
             this.label12.TabIndex = 13;
             this.label12.Text = "Mês passado";
             // 
@@ -640,10 +598,10 @@ namespace SrBolo_Prototype1
             // 
             this.lblLucrosMes.AutoSize = true;
             this.lblLucrosMes.BackColor = System.Drawing.Color.Transparent;
-            this.lblLucrosMes.Font = new System.Drawing.Font("Montserrat SemiBold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLucrosMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLucrosMes.Location = new System.Drawing.Point(920, 47);
             this.lblLucrosMes.Name = "lblLucrosMes";
-            this.lblLucrosMes.Size = new System.Drawing.Size(166, 47);
+            this.lblLucrosMes.Size = new System.Drawing.Size(184, 48);
             this.lblLucrosMes.TabIndex = 12;
             this.lblLucrosMes.Text = "R$00,00";
             // 
@@ -651,11 +609,11 @@ namespace SrBolo_Prototype1
             // 
             this.lblPrctDespesasMes.AutoSize = true;
             this.lblPrctDespesasMes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(245)))), ((int)(((byte)(114)))));
-            this.lblPrctDespesasMes.Font = new System.Drawing.Font("Raleway Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrctDespesasMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrctDespesasMes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(161)))), ((int)(((byte)(70)))));
             this.lblPrctDespesasMes.Location = new System.Drawing.Point(763, 88);
             this.lblPrctDespesasMes.Name = "lblPrctDespesasMes";
-            this.lblPrctDespesasMes.Size = new System.Drawing.Size(60, 22);
+            this.lblPrctDespesasMes.Size = new System.Drawing.Size(81, 29);
             this.lblPrctDespesasMes.TabIndex = 11;
             this.lblPrctDespesasMes.Text = "+0,0%";
             // 
@@ -663,10 +621,10 @@ namespace SrBolo_Prototype1
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Raleway Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(632, 88);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(125, 22);
+            this.label11.Size = new System.Drawing.Size(157, 29);
             this.label11.TabIndex = 10;
             this.label11.Text = "Mês passado";
             // 
@@ -674,10 +632,10 @@ namespace SrBolo_Prototype1
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Raleway Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(632, 25);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(165, 22);
+            this.label7.Size = new System.Drawing.Size(207, 29);
             this.label7.TabIndex = 7;
             this.label7.Text = "Despesas do Mês";
             // 
@@ -685,10 +643,10 @@ namespace SrBolo_Prototype1
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Raleway Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(924, 25);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(127, 22);
+            this.label9.Size = new System.Drawing.Size(157, 29);
             this.label9.TabIndex = 9;
             this.label9.Text = "Lucro Mensal";
             // 
@@ -704,20 +662,6 @@ namespace SrBolo_Prototype1
             this.guna2GradientPanel7.Size = new System.Drawing.Size(69, 67);
             this.guna2GradientPanel7.TabIndex = 3;
             // 
-            // guna2PictureBox3
-            // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(15, 14);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(42, 40);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 0;
-            this.guna2PictureBox3.TabStop = false;
-            // 
             // guna2GradientPanel6
             // 
             this.guna2GradientPanel6.BorderRadius = 15;
@@ -730,29 +674,15 @@ namespace SrBolo_Prototype1
             this.guna2GradientPanel6.Size = new System.Drawing.Size(69, 67);
             this.guna2GradientPanel6.TabIndex = 2;
             // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(15, 15);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(42, 40);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 0;
-            this.guna2PictureBox2.TabStop = false;
-            // 
             // lblPrctVendasMes
             // 
             this.lblPrctVendasMes.AutoSize = true;
             this.lblPrctVendasMes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(245)))), ((int)(((byte)(114)))));
-            this.lblPrctVendasMes.Font = new System.Drawing.Font("Raleway Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrctVendasMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrctVendasMes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(161)))), ((int)(((byte)(70)))));
             this.lblPrctVendasMes.Location = new System.Drawing.Point(476, 88);
             this.lblPrctVendasMes.Name = "lblPrctVendasMes";
-            this.lblPrctVendasMes.Size = new System.Drawing.Size(60, 22);
+            this.lblPrctVendasMes.Size = new System.Drawing.Size(81, 29);
             this.lblPrctVendasMes.TabIndex = 5;
             this.lblPrctVendasMes.Text = "+0,0%";
             // 
@@ -760,10 +690,10 @@ namespace SrBolo_Prototype1
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Raleway Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(345, 88);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(125, 22);
+            this.label4.Size = new System.Drawing.Size(157, 29);
             this.label4.TabIndex = 4;
             this.label4.Text = "Mês passado";
             // 
@@ -771,10 +701,10 @@ namespace SrBolo_Prototype1
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Raleway Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(346, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 22);
+            this.label2.Size = new System.Drawing.Size(180, 29);
             this.label2.TabIndex = 2;
             this.label2.Text = "Vendas do mês";
             // 
@@ -790,6 +720,67 @@ namespace SrBolo_Prototype1
             this.guna2GradientPanel5.Size = new System.Drawing.Size(69, 67);
             this.guna2GradientPanel5.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(255, 96);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Rendimento\r\nMensal";
+            // 
+            // lblVendasMes
+            // 
+            this.lblVendasMes.AutoSize = true;
+            this.lblVendasMes.BackColor = System.Drawing.Color.Transparent;
+            this.lblVendasMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVendasMes.Location = new System.Drawing.Point(339, 42);
+            this.lblVendasMes.Name = "lblVendasMes";
+            this.lblVendasMes.Size = new System.Drawing.Size(184, 48);
+            this.lblVendasMes.TabIndex = 3;
+            this.lblVendasMes.Text = "R$00,00";
+            // 
+            // lblDespesasMes
+            // 
+            this.lblDespesasMes.AutoSize = true;
+            this.lblDespesasMes.BackColor = System.Drawing.Color.Transparent;
+            this.lblDespesasMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDespesasMes.Location = new System.Drawing.Point(628, 42);
+            this.lblDespesasMes.Name = "lblDespesasMes";
+            this.lblDespesasMes.Size = new System.Drawing.Size(184, 48);
+            this.lblDespesasMes.TabIndex = 6;
+            this.lblDespesasMes.Text = "R$00,00";
+            // 
+            // guna2PictureBox3
+            // 
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(15, 14);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
+            this.guna2PictureBox3.Size = new System.Drawing.Size(42, 40);
+            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox3.TabIndex = 0;
+            this.guna2PictureBox3.TabStop = false;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(15, 15);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(42, 40);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 0;
+            this.guna2PictureBox2.TabStop = false;
+            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -804,43 +795,38 @@ namespace SrBolo_Prototype1
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // label1
+            // PictureBoxPerfil
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Raleway", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(28, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 80);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Rendimento\r\nMensal";
+            this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
+            this.PictureBoxPerfil.ImageRotate = 0F;
+            this.PictureBoxPerfil.Location = new System.Drawing.Point(168, 9);
+            this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(2);
+            this.PictureBoxPerfil.Name = "PictureBoxPerfil";
+            this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
+            this.PictureBoxPerfil.Size = new System.Drawing.Size(57, 56);
+            this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBoxPerfil.TabIndex = 12;
+            this.PictureBoxPerfil.TabStop = false;
             // 
-            // lblVendasMes
+            // LogoMrCake
             // 
-            this.lblVendasMes.AutoSize = true;
-            this.lblVendasMes.BackColor = System.Drawing.Color.Transparent;
-            this.lblVendasMes.Font = new System.Drawing.Font("Montserrat SemiBold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVendasMes.Location = new System.Drawing.Point(339, 42);
-            this.lblVendasMes.Name = "lblVendasMes";
-            this.lblVendasMes.Size = new System.Drawing.Size(166, 47);
-            this.lblVendasMes.TabIndex = 3;
-            this.lblVendasMes.Text = "R$00,00";
-            // 
-            // lblDespesasMes
-            // 
-            this.lblDespesasMes.AutoSize = true;
-            this.lblDespesasMes.BackColor = System.Drawing.Color.Transparent;
-            this.lblDespesasMes.Font = new System.Drawing.Font("Montserrat SemiBold", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDespesasMes.Location = new System.Drawing.Point(628, 42);
-            this.lblDespesasMes.Name = "lblDespesasMes";
-            this.lblDespesasMes.Size = new System.Drawing.Size(166, 47);
-            this.lblDespesasMes.TabIndex = 6;
-            this.lblDespesasMes.Text = "R$00,00";
+            this.LogoMrCake.BackColor = System.Drawing.Color.Transparent;
+            this.LogoMrCake.FillColor = System.Drawing.Color.Transparent;
+            this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
+            this.LogoMrCake.ImageRotate = 0F;
+            this.LogoMrCake.Location = new System.Drawing.Point(6, 7);
+            this.LogoMrCake.Name = "LogoMrCake";
+            this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
+            this.LogoMrCake.Size = new System.Drawing.Size(115, 107);
+            this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoMrCake.TabIndex = 0;
+            this.LogoMrCake.TabStop = false;
             // 
             // admFinancas
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.ClientSize = new System.Drawing.Size(1366, 964);
             this.Controls.Add(this.guna2GradientPanel3);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblEmailPerfil);
@@ -852,8 +838,6 @@ namespace SrBolo_Prototype1
             this.Name = "admFinancas";
             this.Text = "admFinancas";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
             this.PanelMenu.ResumeLayout(false);
             this.guna2GradientPanel3.ResumeLayout(false);
             this.guna2GradientPanel13.ResumeLayout(false);
@@ -876,11 +860,13 @@ namespace SrBolo_Prototype1
             this.PanelRendimentoMensal.ResumeLayout(false);
             this.PanelRendimentoMensal.PerformLayout();
             this.guna2GradientPanel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.guna2GradientPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.guna2GradientPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -931,7 +917,6 @@ namespace SrBolo_Prototype1
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
