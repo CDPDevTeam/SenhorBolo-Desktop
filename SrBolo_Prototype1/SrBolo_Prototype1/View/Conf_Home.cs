@@ -16,5 +16,15 @@ namespace SrBolo_Prototype1
         {
             InitializeComponent();
         }
+
+        private void Conf_home_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

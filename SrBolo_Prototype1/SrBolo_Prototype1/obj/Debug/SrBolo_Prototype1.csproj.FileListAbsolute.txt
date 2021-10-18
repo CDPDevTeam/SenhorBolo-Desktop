@@ -124,7 +124,6 @@ C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Proto
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.exe
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.pdb
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.csproj.AssemblyReference.cache
-C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.AdmHome.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cancelar_Compra.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Conf_home.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Login.resources
@@ -177,3 +176,4 @@ C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Pr
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\bin\Debug\System.ValueTuple.xml
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.csproj.CopyComplete
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Adm_Home.resources
+C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.teste.resources

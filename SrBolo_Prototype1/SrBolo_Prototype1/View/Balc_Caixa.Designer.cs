@@ -98,6 +98,7 @@ namespace SrBolo_Prototype1
             // 
             // lblHora
             // 
+            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.White;
@@ -110,6 +111,7 @@ namespace SrBolo_Prototype1
             // 
             // lblData
             // 
+            this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.ForeColor = System.Drawing.Color.Transparent;
@@ -122,6 +124,9 @@ namespace SrBolo_Prototype1
             // 
             // GridViewCaixa
             // 
+            this.GridViewCaixa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -148,7 +153,7 @@ namespace SrBolo_Prototype1
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GridViewCaixa.DefaultCellStyle = dataGridViewCellStyle2;
             this.GridViewCaixa.Location = new System.Drawing.Point(33, 110);
-            this.GridViewCaixa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GridViewCaixa.Margin = new System.Windows.Forms.Padding(4);
             this.GridViewCaixa.Name = "GridViewCaixa";
             this.GridViewCaixa.RowHeadersVisible = false;
             this.GridViewCaixa.RowHeadersWidth = 62;
@@ -197,6 +202,7 @@ namespace SrBolo_Prototype1
             // 
             // guna2Panel4
             // 
+            this.guna2Panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(225)))), ((int)(((byte)(216)))));
             this.guna2Panel4.Controls.Add(this.label13);
             this.guna2Panel4.Controls.Add(this.label12);
@@ -204,7 +210,7 @@ namespace SrBolo_Prototype1
             this.guna2Panel4.Controls.Add(this.label10);
             this.guna2Panel4.Controls.Add(this.label2);
             this.guna2Panel4.Location = new System.Drawing.Point(33, 725);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(513, 80);
@@ -267,6 +273,7 @@ namespace SrBolo_Prototype1
             // 
             // txtCodigoBarras
             // 
+            this.txtCodigoBarras.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtCodigoBarras.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCodigoBarras.DefaultText = "";
             this.txtCodigoBarras.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -280,7 +287,7 @@ namespace SrBolo_Prototype1
             this.txtCodigoBarras.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCodigoBarras.HoverState.Parent = this.txtCodigoBarras;
             this.txtCodigoBarras.Location = new System.Drawing.Point(33, 644);
-            this.txtCodigoBarras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigoBarras.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoBarras.Name = "txtCodigoBarras";
             this.txtCodigoBarras.PasswordChar = '\0';
             this.txtCodigoBarras.PlaceholderText = "";
@@ -291,6 +298,7 @@ namespace SrBolo_Prototype1
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -304,6 +312,7 @@ namespace SrBolo_Prototype1
             // 
             // txtCaixaQtd
             // 
+            this.txtCaixaQtd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtCaixaQtd.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCaixaQtd.DefaultText = "";
             this.txtCaixaQtd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -316,8 +325,8 @@ namespace SrBolo_Prototype1
             this.txtCaixaQtd.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCaixaQtd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCaixaQtd.HoverState.Parent = this.txtCaixaQtd;
-            this.txtCaixaQtd.Location = new System.Drawing.Point(655, 644);
-            this.txtCaixaQtd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaixaQtd.Location = new System.Drawing.Point(654, 644);
+            this.txtCaixaQtd.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaixaQtd.Name = "txtCaixaQtd";
             this.txtCaixaQtd.PasswordChar = '\0';
             this.txtCaixaQtd.PlaceholderText = "";
@@ -328,6 +337,7 @@ namespace SrBolo_Prototype1
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -341,6 +351,7 @@ namespace SrBolo_Prototype1
             // 
             // txtCaixaVlrUnit
             // 
+            this.txtCaixaVlrUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.txtCaixaVlrUnit.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCaixaVlrUnit.DefaultText = "";
             this.txtCaixaVlrUnit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -354,7 +365,7 @@ namespace SrBolo_Prototype1
             this.txtCaixaVlrUnit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCaixaVlrUnit.HoverState.Parent = this.txtCaixaVlrUnit;
             this.txtCaixaVlrUnit.Location = new System.Drawing.Point(904, 644);
-            this.txtCaixaVlrUnit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaixaVlrUnit.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaixaVlrUnit.Name = "txtCaixaVlrUnit";
             this.txtCaixaVlrUnit.PasswordChar = '\0';
             this.txtCaixaVlrUnit.PlaceholderText = "";
@@ -365,6 +376,7 @@ namespace SrBolo_Prototype1
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -378,6 +390,7 @@ namespace SrBolo_Prototype1
             // 
             // guna2TextBox4
             // 
+            this.guna2TextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox4.DefaultText = "";
             this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -391,7 +404,7 @@ namespace SrBolo_Prototype1
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
             this.guna2TextBox4.Location = new System.Drawing.Point(612, 761);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "";
@@ -402,6 +415,7 @@ namespace SrBolo_Prototype1
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -415,6 +429,7 @@ namespace SrBolo_Prototype1
             // 
             // label7
             // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -428,6 +443,7 @@ namespace SrBolo_Prototype1
             // 
             // txtCaixaSubtotal
             // 
+            this.txtCaixaSubtotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCaixaSubtotal.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCaixaSubtotal.DefaultText = "";
             this.txtCaixaSubtotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -441,7 +457,7 @@ namespace SrBolo_Prototype1
             this.txtCaixaSubtotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCaixaSubtotal.HoverState.Parent = this.txtCaixaSubtotal;
             this.txtCaixaSubtotal.Location = new System.Drawing.Point(1263, 535);
-            this.txtCaixaSubtotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaixaSubtotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaixaSubtotal.Name = "txtCaixaSubtotal";
             this.txtCaixaSubtotal.PasswordChar = '\0';
             this.txtCaixaSubtotal.PlaceholderText = "";
@@ -452,6 +468,7 @@ namespace SrBolo_Prototype1
             // 
             // label8
             // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -465,6 +482,7 @@ namespace SrBolo_Prototype1
             // 
             // txtCaixaTotal
             // 
+            this.txtCaixaTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtCaixaTotal.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCaixaTotal.DefaultText = "";
             this.txtCaixaTotal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -478,7 +496,7 @@ namespace SrBolo_Prototype1
             this.txtCaixaTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCaixaTotal.HoverState.Parent = this.txtCaixaTotal;
             this.txtCaixaTotal.Location = new System.Drawing.Point(1263, 644);
-            this.txtCaixaTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaixaTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaixaTotal.Name = "txtCaixaTotal";
             this.txtCaixaTotal.PasswordChar = '\0';
             this.txtCaixaTotal.PlaceholderText = "";
@@ -489,6 +507,7 @@ namespace SrBolo_Prototype1
             // 
             // label9
             // 
+            this.label9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -502,6 +521,7 @@ namespace SrBolo_Prototype1
             // 
             // guna2TextBox7
             // 
+            this.guna2TextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox7.DefaultText = "";
             this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -515,7 +535,7 @@ namespace SrBolo_Prototype1
             this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
             this.guna2TextBox7.Location = new System.Drawing.Point(1263, 761);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2TextBox7.Name = "guna2TextBox7";
             this.guna2TextBox7.PasswordChar = '\0';
             this.guna2TextBox7.PlaceholderText = "";
@@ -526,6 +546,7 @@ namespace SrBolo_Prototype1
             // 
             // PictureBoxCaixaProd
             // 
+            this.PictureBoxCaixaProd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PictureBoxCaixaProd.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxCaixaProd.Image")));
             this.PictureBoxCaixaProd.Location = new System.Drawing.Point(1263, 110);
             this.PictureBoxCaixaProd.Margin = new System.Windows.Forms.Padding(4);
@@ -574,7 +595,7 @@ namespace SrBolo_Prototype1
             this.Controls.Add(this.lblCaixaNomeFunc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PictureBoxLogoCaixa);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Balc_Caixa";
             this.Text = "Balc_Caixa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

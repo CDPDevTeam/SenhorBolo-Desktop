@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SrBolo_Prototype1
+namespace SrBolo_Prototype1.View
 {
-    public partial class AdmHome : Form
+    public partial class teste : Form
     {
-        public AdmHome()
+        public teste()
         {
             InitializeComponent();
         }
 
-        private void AdmHome_Load(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

@@ -86,12 +86,6 @@
   <ItemGroup>
     <Compile Include="Model\Confeiteiro.cs" />
     <Compile Include="Model\Funcionario.cs" />
-    <Compile Include="View\admHome.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\admHome.Designer.cs">
-      <DependentUpon>admHome.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Adm_Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -215,9 +209,12 @@
     <Compile Include="View\Tela_Confirmacao.Designer.cs">
       <DependentUpon>Tela_Confirmacao.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="View\admHome.resx">
-      <DependentUpon>admHome.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="View\teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\teste.Designer.cs">
+      <DependentUpon>teste.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="View\Adm_Home.resx">
       <DependentUpon>Adm_Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -287,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Tela_Confirmacao.resx">
       <DependentUpon>Tela_Confirmacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\teste.resx">
+      <DependentUpon>teste.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="View\packages.config" />
