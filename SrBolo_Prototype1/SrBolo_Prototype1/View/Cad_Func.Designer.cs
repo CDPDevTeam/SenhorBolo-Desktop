@@ -29,8 +29,25 @@
         private void InitializeComponent()
         {
             this.PanelMenu = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.PanelReceita = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnReceita = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.PanelInsumo = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnInsumo = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.PanelProduto = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnProduto = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.PanelFuncionario = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
             this.PictureBoxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PanelCadFunc = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.ComboBoxCadFuncCargo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ComboBoxCadFuncSexo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ButtonCad = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -57,9 +74,12 @@
             this.lblNomeFunc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblEmailFunc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.ComboBoxCadFuncSexo = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.ComboBoxCadFuncCargo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.PanelMenu.SuspendLayout();
+            this.PanelReceita.SuspendLayout();
+            this.PanelInsumo.SuspendLayout();
+            this.PanelProduto.SuspendLayout();
+            this.PanelFuncionario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogo)).BeginInit();
             this.PanelCadFunc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
@@ -67,6 +87,15 @@
             // 
             // PanelMenu
             // 
+            this.PanelMenu.AutoScroll = true;
+            this.PanelMenu.Controls.Add(this.PanelReceita);
+            this.PanelMenu.Controls.Add(this.BtnReceita);
+            this.PanelMenu.Controls.Add(this.PanelInsumo);
+            this.PanelMenu.Controls.Add(this.BtnInsumo);
+            this.PanelMenu.Controls.Add(this.PanelProduto);
+            this.PanelMenu.Controls.Add(this.BtnProduto);
+            this.PanelMenu.Controls.Add(this.PanelFuncionario);
+            this.PanelMenu.Controls.Add(this.BtnFuncionario);
             this.PanelMenu.Controls.Add(this.PictureBoxLogo);
             this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
@@ -78,15 +107,289 @@
             this.PanelMenu.Size = new System.Drawing.Size(143, 720);
             this.PanelMenu.TabIndex = 0;
             // 
+            // PanelReceita
+            // 
+            this.PanelReceita.Controls.Add(this.guna2Button8);
+            this.PanelReceita.Controls.Add(this.guna2Button4);
+            this.PanelReceita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelReceita.Location = new System.Drawing.Point(0, 797);
+            this.PanelReceita.Name = "PanelReceita";
+            this.PanelReceita.ShadowDecoration.Parent = this.PanelReceita;
+            this.PanelReceita.Size = new System.Drawing.Size(117, 110);
+            this.PanelReceita.TabIndex = 17;
+            // 
+            // guna2Button8
+            // 
+            this.guna2Button8.CheckedState.Parent = this.guna2Button8;
+            this.guna2Button8.CustomImages.Parent = this.guna2Button8;
+            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button8.DisabledState.Parent = this.guna2Button8;
+            this.guna2Button8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button8.ForeColor = System.Drawing.Color.White;
+            this.guna2Button8.HoverState.Parent = this.guna2Button8;
+            this.guna2Button8.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button8.Name = "guna2Button8";
+            this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
+            this.guna2Button8.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button8.TabIndex = 3;
+            this.guna2Button8.Text = "Gerenciar Receita";
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.DisabledState.Parent = this.guna2Button4;
+            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button4.TabIndex = 1;
+            this.guna2Button4.Text = "Cadastrar Receita";
+            // 
+            // BtnReceita
+            // 
+            this.BtnReceita.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnReceita.CheckedState.Parent = this.BtnReceita;
+            this.BtnReceita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnReceita.HoverState.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnReceita.HoverState.Parent = this.BtnReceita;
+            this.BtnReceita.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnReceita;
+            this.BtnReceita.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BtnReceita.ImageRotate = 0F;
+            this.BtnReceita.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnReceita.Location = new System.Drawing.Point(0, 707);
+            this.BtnReceita.Name = "BtnReceita";
+            this.BtnReceita.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnReceita.PressedState.Parent = this.BtnReceita;
+            this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
+            this.BtnReceita.Size = new System.Drawing.Size(117, 90);
+            this.BtnReceita.TabIndex = 16;
+            this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
+            // 
+            // PanelInsumo
+            // 
+            this.PanelInsumo.Controls.Add(this.guna2Button7);
+            this.PanelInsumo.Controls.Add(this.guna2Button2);
+            this.PanelInsumo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelInsumo.Location = new System.Drawing.Point(0, 597);
+            this.PanelInsumo.Name = "PanelInsumo";
+            this.PanelInsumo.ShadowDecoration.Parent = this.PanelInsumo;
+            this.PanelInsumo.Size = new System.Drawing.Size(117, 110);
+            this.PanelInsumo.TabIndex = 15;
+            // 
+            // guna2Button7
+            // 
+            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
+            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
+            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button7.DisabledState.Parent = this.guna2Button7;
+            this.guna2Button7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button7.ForeColor = System.Drawing.Color.White;
+            this.guna2Button7.HoverState.Parent = this.guna2Button7;
+            this.guna2Button7.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button7.Name = "guna2Button7";
+            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
+            this.guna2Button7.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button7.TabIndex = 3;
+            this.guna2Button7.Text = "Gerenciar Insumo";
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.DisabledState.Parent = this.guna2Button2;
+            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button2.TabIndex = 1;
+            this.guna2Button2.Text = "Cadastrar Insumo";
+            // 
+            // BtnInsumo
+            // 
+            this.BtnInsumo.CheckedState.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnInsumo.CheckedState.Parent = this.BtnInsumo;
+            this.BtnInsumo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnInsumo.HoverState.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnInsumo.HoverState.Parent = this.BtnInsumo;
+            this.BtnInsumo.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnInsumo;
+            this.BtnInsumo.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BtnInsumo.ImageRotate = 0F;
+            this.BtnInsumo.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnInsumo.Location = new System.Drawing.Point(0, 507);
+            this.BtnInsumo.Name = "BtnInsumo";
+            this.BtnInsumo.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnInsumo.PressedState.Parent = this.BtnInsumo;
+            this.BtnInsumo.ShadowDecoration.Parent = this.BtnInsumo;
+            this.BtnInsumo.Size = new System.Drawing.Size(117, 90);
+            this.BtnInsumo.TabIndex = 14;
+            this.BtnInsumo.Click += new System.EventHandler(this.BtnInsumo_Click);
+            // 
+            // PanelProduto
+            // 
+            this.PanelProduto.Controls.Add(this.guna2Button6);
+            this.PanelProduto.Controls.Add(this.guna2Button3);
+            this.PanelProduto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelProduto.Location = new System.Drawing.Point(0, 397);
+            this.PanelProduto.Name = "PanelProduto";
+            this.PanelProduto.ShadowDecoration.Parent = this.PanelProduto;
+            this.PanelProduto.Size = new System.Drawing.Size(117, 110);
+            this.PanelProduto.TabIndex = 13;
+            // 
+            // guna2Button6
+            // 
+            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
+            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
+            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button6.DisabledState.Parent = this.guna2Button6;
+            this.guna2Button6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button6.ForeColor = System.Drawing.Color.White;
+            this.guna2Button6.HoverState.Parent = this.guna2Button6;
+            this.guna2Button6.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button6.Name = "guna2Button6";
+            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
+            this.guna2Button6.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button6.TabIndex = 2;
+            this.guna2Button6.Text = "Gerenciar Produto";
+            // 
+            // guna2Button3
+            // 
+            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
+            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.DisabledState.Parent = this.guna2Button3;
+            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button3.ForeColor = System.Drawing.Color.White;
+            this.guna2Button3.HoverState.Parent = this.guna2Button3;
+            this.guna2Button3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
+            this.guna2Button3.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button3.TabIndex = 0;
+            this.guna2Button3.Text = "Cadastrar Produto";
+            // 
+            // BtnProduto
+            // 
+            this.BtnProduto.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnProduto.CheckedState.Parent = this.BtnProduto;
+            this.BtnProduto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnProduto.HoverState.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnProduto.HoverState.Parent = this.BtnProduto;
+            this.BtnProduto.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnProd;
+            this.BtnProduto.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BtnProduto.ImageRotate = 0F;
+            this.BtnProduto.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnProduto.Location = new System.Drawing.Point(0, 307);
+            this.BtnProduto.Name = "BtnProduto";
+            this.BtnProduto.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnProduto.PressedState.Parent = this.BtnProduto;
+            this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
+            this.BtnProduto.Size = new System.Drawing.Size(117, 90);
+            this.BtnProduto.TabIndex = 12;
+            this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
+            // 
+            // PanelFuncionario
+            // 
+            this.PanelFuncionario.Controls.Add(this.guna2Button5);
+            this.PanelFuncionario.Controls.Add(this.guna2Button1);
+            this.PanelFuncionario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelFuncionario.Location = new System.Drawing.Point(0, 197);
+            this.PanelFuncionario.Name = "PanelFuncionario";
+            this.PanelFuncionario.ShadowDecoration.Parent = this.PanelFuncionario;
+            this.PanelFuncionario.Size = new System.Drawing.Size(117, 110);
+            this.PanelFuncionario.TabIndex = 11;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(117, 55);
+            this.guna2Button1.TabIndex = 0;
+            this.guna2Button1.Text = "Cadastrar Funcionário";
+            // 
+            // BtnFuncionario
+            // 
+            this.BtnFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnFuncionario.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnFuncionario.CheckedState.Parent = this.BtnFuncionario;
+            this.BtnFuncionario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnFuncionario.HoverState.ImageSize = new System.Drawing.Size(117, 90);
+            this.BtnFuncionario.HoverState.Parent = this.BtnFuncionario;
+            this.BtnFuncionario.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
+            this.BtnFuncionario.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BtnFuncionario.ImageRotate = 0F;
+            this.BtnFuncionario.ImageSize = new System.Drawing.Size(117, 90);
+            this.BtnFuncionario.Location = new System.Drawing.Point(0, 107);
+            this.BtnFuncionario.Name = "BtnFuncionario";
+            this.BtnFuncionario.PressedState.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
+            this.BtnFuncionario.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnFuncionario.PressedState.Parent = this.BtnFuncionario;
+            this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
+            this.BtnFuncionario.Size = new System.Drawing.Size(117, 90);
+            this.BtnFuncionario.TabIndex = 10;
+            this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
+            // 
             // PictureBoxLogo
             // 
             this.PictureBoxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.PictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.PictureBoxLogo.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
             this.PictureBoxLogo.ImageRotate = 0F;
-            this.PictureBoxLogo.Location = new System.Drawing.Point(13, 23);
+            this.PictureBoxLogo.Location = new System.Drawing.Point(0, 0);
             this.PictureBoxLogo.Name = "PictureBoxLogo";
             this.PictureBoxLogo.ShadowDecoration.Parent = this.PictureBoxLogo;
-            this.PictureBoxLogo.Size = new System.Drawing.Size(115, 107);
+            this.PictureBoxLogo.Size = new System.Drawing.Size(117, 107);
             this.PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxLogo.TabIndex = 0;
             this.PictureBoxLogo.TabStop = false;
@@ -122,7 +425,44 @@
             this.PanelCadFunc.ShadowDecoration.Parent = this.PanelCadFunc;
             this.PanelCadFunc.Size = new System.Drawing.Size(1202, 651);
             this.PanelCadFunc.TabIndex = 1;
-            this.PanelCadFunc.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2CustomGradientPanel2_Paint);
+            // 
+            // ComboBoxCadFuncCargo
+            // 
+            this.ComboBoxCadFuncCargo.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxCadFuncCargo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxCadFuncCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCadFuncCargo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadFuncCargo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadFuncCargo.FocusedState.Parent = this.ComboBoxCadFuncCargo;
+            this.ComboBoxCadFuncCargo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComboBoxCadFuncCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBoxCadFuncCargo.HoverState.Parent = this.ComboBoxCadFuncCargo;
+            this.ComboBoxCadFuncCargo.ItemHeight = 30;
+            this.ComboBoxCadFuncCargo.ItemsAppearance.Parent = this.ComboBoxCadFuncCargo;
+            this.ComboBoxCadFuncCargo.Location = new System.Drawing.Point(163, 452);
+            this.ComboBoxCadFuncCargo.Name = "ComboBoxCadFuncCargo";
+            this.ComboBoxCadFuncCargo.ShadowDecoration.Parent = this.ComboBoxCadFuncCargo;
+            this.ComboBoxCadFuncCargo.Size = new System.Drawing.Size(404, 36);
+            this.ComboBoxCadFuncCargo.TabIndex = 24;
+            // 
+            // ComboBoxCadFuncSexo
+            // 
+            this.ComboBoxCadFuncSexo.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxCadFuncSexo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxCadFuncSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCadFuncSexo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadFuncSexo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadFuncSexo.FocusedState.Parent = this.ComboBoxCadFuncSexo;
+            this.ComboBoxCadFuncSexo.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComboBoxCadFuncSexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBoxCadFuncSexo.HoverState.Parent = this.ComboBoxCadFuncSexo;
+            this.ComboBoxCadFuncSexo.ItemHeight = 30;
+            this.ComboBoxCadFuncSexo.ItemsAppearance.Parent = this.ComboBoxCadFuncSexo;
+            this.ComboBoxCadFuncSexo.Location = new System.Drawing.Point(163, 370);
+            this.ComboBoxCadFuncSexo.Name = "ComboBoxCadFuncSexo";
+            this.ComboBoxCadFuncSexo.ShadowDecoration.Parent = this.ComboBoxCadFuncSexo;
+            this.ComboBoxCadFuncSexo.Size = new System.Drawing.Size(404, 36);
+            this.ComboBoxCadFuncSexo.TabIndex = 23;
             // 
             // ButtonCad
             // 
@@ -135,7 +475,7 @@
             this.ButtonCad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ButtonCad.DisabledState.Parent = this.ButtonCad;
             this.ButtonCad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.ButtonCad.Font = new System.Drawing.Font("Raleway SemiBold", 10F, System.Drawing.FontStyle.Bold);
+            this.ButtonCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.ButtonCad.ForeColor = System.Drawing.Color.White;
             this.ButtonCad.HoverState.Parent = this.ButtonCad;
             this.ButtonCad.Location = new System.Drawing.Point(651, 536);
@@ -156,7 +496,7 @@
             this.ButtonLimpar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.ButtonLimpar.DisabledState.Parent = this.ButtonLimpar;
             this.ButtonLimpar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonLimpar.Font = new System.Drawing.Font("Raleway", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLimpar.ForeColor = System.Drawing.Color.White;
             this.ButtonLimpar.HoverState.Parent = this.ButtonLimpar;
             this.ButtonLimpar.Location = new System.Drawing.Point(446, 536);
@@ -192,11 +532,11 @@
             // lblCadFuncSal
             // 
             this.lblCadFuncSal.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncSal.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncSal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncSal.ForeColor = System.Drawing.Color.Black;
             this.lblCadFuncSal.Location = new System.Drawing.Point(685, 425);
             this.lblCadFuncSal.Name = "lblCadFuncSal";
-            this.lblCadFuncSal.Size = new System.Drawing.Size(60, 23);
+            this.lblCadFuncSal.Size = new System.Drawing.Size(59, 24);
             this.lblCadFuncSal.TabIndex = 19;
             this.lblCadFuncSal.Text = "Salário";
             // 
@@ -226,11 +566,11 @@
             // lblCadFuncSenha
             // 
             this.lblCadFuncSenha.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncSenha.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncSenha.ForeColor = System.Drawing.Color.Black;
             this.lblCadFuncSenha.Location = new System.Drawing.Point(685, 343);
             this.lblCadFuncSenha.Name = "lblCadFuncSenha";
-            this.lblCadFuncSenha.Size = new System.Drawing.Size(57, 23);
+            this.lblCadFuncSenha.Size = new System.Drawing.Size(55, 24);
             this.lblCadFuncSenha.TabIndex = 17;
             this.lblCadFuncSenha.Text = "Senha";
             // 
@@ -260,11 +600,11 @@
             // lblCadFuncCPF
             // 
             this.lblCadFuncCPF.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncCPF.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncCPF.ForeColor = System.Drawing.Color.Black;
             this.lblCadFuncCPF.Location = new System.Drawing.Point(685, 262);
             this.lblCadFuncCPF.Name = "lblCadFuncCPF";
-            this.lblCadFuncCPF.Size = new System.Drawing.Size(37, 23);
+            this.lblCadFuncCPF.Size = new System.Drawing.Size(39, 24);
             this.lblCadFuncCPF.TabIndex = 15;
             this.lblCadFuncCPF.Text = "CPF";
             // 
@@ -294,11 +634,11 @@
             // lblCadFuncRG
             // 
             this.lblCadFuncRG.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncRG.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncRG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncRG.ForeColor = System.Drawing.Color.Black;
             this.lblCadFuncRG.Location = new System.Drawing.Point(685, 182);
             this.lblCadFuncRG.Name = "lblCadFuncRG";
-            this.lblCadFuncRG.Size = new System.Drawing.Size(28, 23);
+            this.lblCadFuncRG.Size = new System.Drawing.Size(30, 24);
             this.lblCadFuncRG.TabIndex = 13;
             this.lblCadFuncRG.Text = "RG";
             // 
@@ -328,33 +668,33 @@
             // lblCadFuncID
             // 
             this.lblCadFuncID.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncID.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncID.ForeColor = System.Drawing.Color.Black;
             this.lblCadFuncID.Location = new System.Drawing.Point(685, 106);
             this.lblCadFuncID.Name = "lblCadFuncID";
-            this.lblCadFuncID.Size = new System.Drawing.Size(20, 23);
+            this.lblCadFuncID.Size = new System.Drawing.Size(20, 24);
             this.lblCadFuncID.TabIndex = 11;
             this.lblCadFuncID.Text = "ID";
             // 
             // lblCadFuncCargo
             // 
             this.lblCadFuncCargo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncCargo.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncCargo.ForeColor = System.Drawing.Color.Black;
             this.lblCadFuncCargo.Location = new System.Drawing.Point(163, 425);
             this.lblCadFuncCargo.Name = "lblCadFuncCargo";
-            this.lblCadFuncCargo.Size = new System.Drawing.Size(53, 23);
+            this.lblCadFuncCargo.Size = new System.Drawing.Size(52, 24);
             this.lblCadFuncCargo.TabIndex = 9;
             this.lblCadFuncCargo.Text = "Cargo";
             // 
             // lblCadFuncSexo
             // 
             this.lblCadFuncSexo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncSexo.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncSexo.ForeColor = System.Drawing.Color.Black;
             this.lblCadFuncSexo.Location = new System.Drawing.Point(163, 343);
             this.lblCadFuncSexo.Name = "lblCadFuncSexo";
-            this.lblCadFuncSexo.Size = new System.Drawing.Size(45, 23);
+            this.lblCadFuncSexo.Size = new System.Drawing.Size(44, 24);
             this.lblCadFuncSexo.TabIndex = 7;
             this.lblCadFuncSexo.Text = "Sexo";
             // 
@@ -384,11 +724,11 @@
             // lblCadFuncEmail
             // 
             this.lblCadFuncEmail.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncEmail.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncEmail.ForeColor = System.Drawing.Color.Black;
             this.lblCadFuncEmail.Location = new System.Drawing.Point(163, 262);
             this.lblCadFuncEmail.Name = "lblCadFuncEmail";
-            this.lblCadFuncEmail.Size = new System.Drawing.Size(50, 23);
+            this.lblCadFuncEmail.Size = new System.Drawing.Size(47, 24);
             this.lblCadFuncEmail.TabIndex = 5;
             this.lblCadFuncEmail.Text = "Email";
             // 
@@ -418,11 +758,11 @@
             // lblCadFuncTel
             // 
             this.lblCadFuncTel.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncTel.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncTel.ForeColor = System.Drawing.Color.Black;
             this.lblCadFuncTel.Location = new System.Drawing.Point(163, 182);
             this.lblCadFuncTel.Name = "lblCadFuncTel";
-            this.lblCadFuncTel.Size = new System.Drawing.Size(80, 23);
+            this.lblCadFuncTel.Size = new System.Drawing.Size(74, 24);
             this.lblCadFuncTel.TabIndex = 3;
             this.lblCadFuncTel.Text = "Telefone";
             // 
@@ -452,64 +792,64 @@
             // lblCadFuncNome
             // 
             this.lblCadFuncNome.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncNome.Font = new System.Drawing.Font("Raleway", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncNome.ForeColor = System.Drawing.Color.Black;
             this.lblCadFuncNome.Location = new System.Drawing.Point(163, 106);
             this.lblCadFuncNome.Name = "lblCadFuncNome";
-            this.lblCadFuncNome.Size = new System.Drawing.Size(56, 23);
+            this.lblCadFuncNome.Size = new System.Drawing.Size(50, 24);
             this.lblCadFuncNome.TabIndex = 1;
             this.lblCadFuncNome.Text = "Nome";
             // 
             // lblTitle
             // 
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Raleway", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
             this.lblTitle.Location = new System.Drawing.Point(54, 27);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(332, 39);
+            this.lblTitle.Size = new System.Drawing.Size(333, 39);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Cadastrar funcionário";
             // 
             // lblData
             // 
             this.lblData.BackColor = System.Drawing.Color.Transparent;
-            this.lblData.Font = new System.Drawing.Font("Raleway SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.Location = new System.Drawing.Point(1087, 15);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(242, 23);
+            this.lblData.Size = new System.Drawing.Size(265, 24);
             this.lblData.TabIndex = 2;
             this.lblData.Text = "Quarta, 2 de Janeiro de 2021";
             // 
             // lblHora
             // 
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
-            this.lblHora.Font = new System.Drawing.Font("Raleway SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.Location = new System.Drawing.Point(1256, 43);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(71, 23);
+            this.lblHora.Size = new System.Drawing.Size(76, 24);
             this.lblHora.TabIndex = 3;
             this.lblHora.Text = "2:00 AM";
             // 
             // lblNomeFunc
             // 
             this.lblNomeFunc.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomeFunc.Font = new System.Drawing.Font("Raleway", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeFunc.ForeColor = System.Drawing.Color.Black;
             this.lblNomeFunc.Location = new System.Drawing.Point(256, 14);
             this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(110, 26);
+            this.lblNomeFunc.Size = new System.Drawing.Size(113, 27);
             this.lblNomeFunc.TabIndex = 4;
             this.lblNomeFunc.Text = "Edson Koiti";
             // 
             // lblEmailFunc
             // 
             this.lblEmailFunc.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmailFunc.Font = new System.Drawing.Font("Raleway Light", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmailFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailFunc.ForeColor = System.Drawing.Color.Black;
             this.lblEmailFunc.Location = new System.Drawing.Point(255, 43);
             this.lblEmailFunc.Name = "lblEmailFunc";
-            this.lblEmailFunc.Size = new System.Drawing.Size(163, 21);
+            this.lblEmailFunc.Size = new System.Drawing.Size(164, 22);
             this.lblEmailFunc.TabIndex = 5;
             this.lblEmailFunc.Text = "RolaDura@yahoo.com";
             // 
@@ -526,43 +866,26 @@
             this.PictureBoxPerfil.TabIndex = 0;
             this.PictureBoxPerfil.TabStop = false;
             // 
-            // ComboBoxCadFuncSexo
+            // guna2Button5
             // 
-            this.ComboBoxCadFuncSexo.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxCadFuncSexo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxCadFuncSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCadFuncSexo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadFuncSexo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadFuncSexo.FocusedState.Parent = this.ComboBoxCadFuncSexo;
-            this.ComboBoxCadFuncSexo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxCadFuncSexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboBoxCadFuncSexo.HoverState.Parent = this.ComboBoxCadFuncSexo;
-            this.ComboBoxCadFuncSexo.ItemHeight = 30;
-            this.ComboBoxCadFuncSexo.ItemsAppearance.Parent = this.ComboBoxCadFuncSexo;
-            this.ComboBoxCadFuncSexo.Location = new System.Drawing.Point(163, 370);
-            this.ComboBoxCadFuncSexo.Name = "ComboBoxCadFuncSexo";
-            this.ComboBoxCadFuncSexo.ShadowDecoration.Parent = this.ComboBoxCadFuncSexo;
-            this.ComboBoxCadFuncSexo.Size = new System.Drawing.Size(404, 36);
-            this.ComboBoxCadFuncSexo.TabIndex = 23;
-            // 
-            // ComboBoxCadFuncCargo
-            // 
-            this.ComboBoxCadFuncCargo.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxCadFuncCargo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxCadFuncCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCadFuncCargo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadFuncCargo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadFuncCargo.FocusedState.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxCadFuncCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboBoxCadFuncCargo.HoverState.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.ItemHeight = 30;
-            this.ComboBoxCadFuncCargo.ItemsAppearance.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.Location = new System.Drawing.Point(163, 452);
-            this.ComboBoxCadFuncCargo.Name = "ComboBoxCadFuncCargo";
-            this.ComboBoxCadFuncCargo.ShadowDecoration.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.Size = new System.Drawing.Size(404, 36);
-            this.ComboBoxCadFuncCargo.TabIndex = 24;
+            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
+            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
+            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button5.DisabledState.Parent = this.guna2Button5;
+            this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button5.ForeColor = System.Drawing.Color.White;
+            this.guna2Button5.HoverState.Parent = this.guna2Button5;
+            this.guna2Button5.Location = new System.Drawing.Point(0, 55);
+            this.guna2Button5.Name = "guna2Button5";
+            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
+            this.guna2Button5.Size = new System.Drawing.Size(117, 55);
+            this.guna2Button5.TabIndex = 3;
+            this.guna2Button5.Text = "Gerenciar Funcionário";
             // 
             // Cad_Func
             // 
@@ -581,6 +904,10 @@
             this.Name = "Cad_Func";
             this.Text = "Cad_Func";
             this.PanelMenu.ResumeLayout(false);
+            this.PanelReceita.ResumeLayout(false);
+            this.PanelInsumo.ResumeLayout(false);
+            this.PanelProduto.ResumeLayout(false);
+            this.PanelFuncionario.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogo)).EndInit();
             this.PanelCadFunc.ResumeLayout(false);
             this.PanelCadFunc.PerformLayout();
@@ -623,5 +950,21 @@
         private Guna.UI2.WinForms.Guna2Button ButtonCad;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadFuncCargo;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadFuncSexo;
+        private Guna.UI2.WinForms.Guna2Panel PanelReceita;
+        private Guna.UI2.WinForms.Guna2Button guna2Button8;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2ImageButton BtnReceita;
+        private Guna.UI2.WinForms.Guna2Panel PanelInsumo;
+        private Guna.UI2.WinForms.Guna2Button guna2Button7;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2ImageButton BtnInsumo;
+        private Guna.UI2.WinForms.Guna2Panel PanelProduto;
+        private Guna.UI2.WinForms.Guna2Button guna2Button6;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2ImageButton BtnProduto;
+        private Guna.UI2.WinForms.Guna2Panel PanelFuncionario;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2ImageButton BtnFuncionario;
+        private Guna.UI2.WinForms.Guna2Button guna2Button5;
     }
 }

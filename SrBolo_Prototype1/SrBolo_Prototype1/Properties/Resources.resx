@@ -124,17 +124,29 @@
   <data name="ribas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ribas.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="IMGBtnInsumo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMGBtnInsumo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SenhorBolo - Branco1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SenhorBolo - Branco1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="4203150" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4203150.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fffff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fffff.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SenhorBolo - Branco1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SenhorBolo - Branco1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMGBtnProd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMGBtnProd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="zap zap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\zap zap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ec5fe50c-3821-4ba4-a71b-5c0160ebbf42" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ec5fe50c-3821-4ba4-a71b-5c0160ebbf42.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMGBtnFunc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMGBtnFunc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Senhor Bolo - Marrom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Senhor Bolo - Marrom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,7 +154,7 @@
   <data name="SenhorBolo - Branco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SenhorBolo - Branco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zap zap" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\zap zap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="IMGBtnReceita" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\IMGBtnReceita.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

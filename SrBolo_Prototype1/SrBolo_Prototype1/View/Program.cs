@@ -16,7 +16,7 @@ namespace SrBolo_Prototype1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Conf_home());
+            Application.Run(new Cad_Insumo());
         }
     }
 }

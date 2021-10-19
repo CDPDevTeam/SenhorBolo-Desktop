@@ -333,5 +333,17 @@
   <ItemGroup>
     <None Include="Resources\zap zap.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMGBtnFunc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMGBtnProd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMGBtnInsumo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMGBtnReceita.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
