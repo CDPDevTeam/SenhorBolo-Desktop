@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PanelMenu = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.PictureBoxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelCadInsumo = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -53,6 +51,7 @@
             this.lblHora = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.PanelReceita = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -69,65 +68,35 @@
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.PanelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogo)).BeginInit();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PanelCadInsumo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
+            this.PanelMenu.SuspendLayout();
             this.PanelReceita.SuspendLayout();
             this.PanelInsumo.SuspendLayout();
             this.PanelProduto.SuspendLayout();
             this.PanelFuncionario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PanelMenu
-            // 
-            this.PanelMenu.AutoScroll = true;
-            this.PanelMenu.Controls.Add(this.PanelReceita);
-            this.PanelMenu.Controls.Add(this.BtnReceita);
-            this.PanelMenu.Controls.Add(this.PanelInsumo);
-            this.PanelMenu.Controls.Add(this.BtnInsumo);
-            this.PanelMenu.Controls.Add(this.PanelProduto);
-            this.PanelMenu.Controls.Add(this.BtnProduto);
-            this.PanelMenu.Controls.Add(this.PanelFuncionario);
-            this.PanelMenu.Controls.Add(this.BtnFuncionario);
-            this.PanelMenu.Controls.Add(this.PictureBoxLogo);
-            this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.PanelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.PanelMenu.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.PanelMenu.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.PanelMenu.Location = new System.Drawing.Point(2, -1);
-            this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
-            this.PanelMenu.Size = new System.Drawing.Size(143, 720);
-            this.PanelMenu.TabIndex = 2;
-            // 
-            // PictureBoxLogo
-            // 
-            this.PictureBoxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.PictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PictureBoxLogo.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
-            this.PictureBoxLogo.ImageRotate = 0F;
-            this.PictureBoxLogo.Location = new System.Drawing.Point(0, 0);
-            this.PictureBoxLogo.Name = "PictureBoxLogo";
-            this.PictureBoxLogo.ShadowDecoration.Parent = this.PictureBoxLogo;
-            this.PictureBoxLogo.Size = new System.Drawing.Size(117, 107);
-            this.PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxLogo.TabIndex = 0;
-            this.PictureBoxLogo.TabStop = false;
             // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black;
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(54, 27);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(48, 22);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(275, 39);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(235, 33);
             this.guna2HtmlLabel5.TabIndex = 0;
             this.guna2HtmlLabel5.Text = "Cadastrar Insumo";
             // 
             // PanelCadInsumo
             // 
+            this.PanelCadInsumo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelCadInsumo.BorderRadius = 40;
             this.PanelCadInsumo.Controls.Add(this.guna2ComboBox1);
             this.PanelCadInsumo.Controls.Add(this.ButtonCad);
@@ -146,10 +115,11 @@
             this.PanelCadInsumo.Controls.Add(this.txtCadInsumoCat);
             this.PanelCadInsumo.Controls.Add(this.lblCadInsumoCat);
             this.PanelCadInsumo.Controls.Add(this.guna2HtmlLabel5);
-            this.PanelCadInsumo.Location = new System.Drawing.Point(145, 83);
+            this.PanelCadInsumo.Location = new System.Drawing.Point(129, 66);
+            this.PanelCadInsumo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelCadInsumo.Name = "PanelCadInsumo";
             this.PanelCadInsumo.ShadowDecoration.Parent = this.PanelCadInsumo;
-            this.PanelCadInsumo.Size = new System.Drawing.Size(1202, 651);
+            this.PanelCadInsumo.Size = new System.Drawing.Size(1219, 700);
             this.PanelCadInsumo.TabIndex = 3;
             // 
             // guna2ComboBox1
@@ -165,10 +135,11 @@
             this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.ItemHeight = 30;
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(685, 132);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(609, 106);
+            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(404, 36);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(360, 36);
             this.guna2ComboBox1.TabIndex = 23;
             // 
             // ButtonCad
@@ -185,10 +156,11 @@
             this.ButtonCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.ButtonCad.ForeColor = System.Drawing.Color.White;
             this.ButtonCad.HoverState.Parent = this.ButtonCad;
-            this.ButtonCad.Location = new System.Drawing.Point(651, 536);
+            this.ButtonCad.Location = new System.Drawing.Point(579, 429);
+            this.ButtonCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonCad.Name = "ButtonCad";
             this.ButtonCad.ShadowDecoration.Parent = this.ButtonCad;
-            this.ButtonCad.Size = new System.Drawing.Size(180, 51);
+            this.ButtonCad.Size = new System.Drawing.Size(160, 41);
             this.ButtonCad.TabIndex = 22;
             this.ButtonCad.Text = "Cadastrar";
             // 
@@ -206,10 +178,11 @@
             this.ButtonLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLimpar.ForeColor = System.Drawing.Color.White;
             this.ButtonLimpar.HoverState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Location = new System.Drawing.Point(446, 536);
+            this.ButtonLimpar.Location = new System.Drawing.Point(396, 429);
+            this.ButtonLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonLimpar.Name = "ButtonLimpar";
             this.ButtonLimpar.ShadowDecoration.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Size = new System.Drawing.Size(180, 51);
+            this.ButtonLimpar.Size = new System.Drawing.Size(160, 41);
             this.ButtonLimpar.TabIndex = 21;
             this.ButtonLimpar.Text = "Limpar";
             // 
@@ -227,13 +200,14 @@
             this.txtCadInsumoMedUnit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadInsumoMedUnit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadInsumoMedUnit.HoverState.Parent = this.txtCadInsumoMedUnit;
-            this.txtCadInsumoMedUnit.Location = new System.Drawing.Point(685, 302);
+            this.txtCadInsumoMedUnit.Location = new System.Drawing.Point(609, 242);
+            this.txtCadInsumoMedUnit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadInsumoMedUnit.Name = "txtCadInsumoMedUnit";
             this.txtCadInsumoMedUnit.PasswordChar = '\0';
             this.txtCadInsumoMedUnit.PlaceholderText = "";
             this.txtCadInsumoMedUnit.SelectedText = "";
             this.txtCadInsumoMedUnit.ShadowDecoration.Parent = this.txtCadInsumoMedUnit;
-            this.txtCadInsumoMedUnit.Size = new System.Drawing.Size(404, 36);
+            this.txtCadInsumoMedUnit.Size = new System.Drawing.Size(359, 29);
             this.txtCadInsumoMedUnit.TabIndex = 16;
             // 
             // lblCadInsumoMedUnit
@@ -241,9 +215,10 @@
             this.lblCadInsumoMedUnit.BackColor = System.Drawing.Color.Transparent;
             this.lblCadInsumoMedUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadInsumoMedUnit.ForeColor = System.Drawing.Color.Black;
-            this.lblCadInsumoMedUnit.Location = new System.Drawing.Point(685, 274);
+            this.lblCadInsumoMedUnit.Location = new System.Drawing.Point(609, 219);
+            this.lblCadInsumoMedUnit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadInsumoMedUnit.Name = "lblCadInsumoMedUnit";
-            this.lblCadInsumoMedUnit.Size = new System.Drawing.Size(128, 24);
+            this.lblCadInsumoMedUnit.Size = new System.Drawing.Size(105, 20);
             this.lblCadInsumoMedUnit.TabIndex = 15;
             this.lblCadInsumoMedUnit.Text = "Medida Unitária";
             // 
@@ -261,13 +236,14 @@
             this.txtCadInsumoVlrUnit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadInsumoVlrUnit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadInsumoVlrUnit.HoverState.Parent = this.txtCadInsumoVlrUnit;
-            this.txtCadInsumoVlrUnit.Location = new System.Drawing.Point(685, 216);
+            this.txtCadInsumoVlrUnit.Location = new System.Drawing.Point(609, 173);
+            this.txtCadInsumoVlrUnit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadInsumoVlrUnit.Name = "txtCadInsumoVlrUnit";
             this.txtCadInsumoVlrUnit.PasswordChar = '\0';
             this.txtCadInsumoVlrUnit.PlaceholderText = "";
             this.txtCadInsumoVlrUnit.SelectedText = "";
             this.txtCadInsumoVlrUnit.ShadowDecoration.Parent = this.txtCadInsumoVlrUnit;
-            this.txtCadInsumoVlrUnit.Size = new System.Drawing.Size(404, 36);
+            this.txtCadInsumoVlrUnit.Size = new System.Drawing.Size(359, 29);
             this.txtCadInsumoVlrUnit.TabIndex = 14;
             // 
             // lblCadInsumoVlrUnit
@@ -275,9 +251,10 @@
             this.lblCadInsumoVlrUnit.BackColor = System.Drawing.Color.Transparent;
             this.lblCadInsumoVlrUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadInsumoVlrUnit.ForeColor = System.Drawing.Color.Black;
-            this.lblCadInsumoVlrUnit.Location = new System.Drawing.Point(685, 188);
+            this.lblCadInsumoVlrUnit.Location = new System.Drawing.Point(609, 150);
+            this.lblCadInsumoVlrUnit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadInsumoVlrUnit.Name = "lblCadInsumoVlrUnit";
-            this.lblCadInsumoVlrUnit.Size = new System.Drawing.Size(112, 24);
+            this.lblCadInsumoVlrUnit.Size = new System.Drawing.Size(92, 20);
             this.lblCadInsumoVlrUnit.TabIndex = 13;
             this.lblCadInsumoVlrUnit.Text = "Valor Unitário";
             // 
@@ -286,9 +263,10 @@
             this.lblCadInsumoFornecedor.BackColor = System.Drawing.Color.Transparent;
             this.lblCadInsumoFornecedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadInsumoFornecedor.ForeColor = System.Drawing.Color.Black;
-            this.lblCadInsumoFornecedor.Location = new System.Drawing.Point(685, 106);
+            this.lblCadInsumoFornecedor.Location = new System.Drawing.Point(609, 85);
+            this.lblCadInsumoFornecedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadInsumoFornecedor.Name = "lblCadInsumoFornecedor";
-            this.lblCadInsumoFornecedor.Size = new System.Drawing.Size(95, 24);
+            this.lblCadInsumoFornecedor.Size = new System.Drawing.Size(80, 20);
             this.lblCadInsumoFornecedor.TabIndex = 11;
             this.lblCadInsumoFornecedor.Text = "Fornecedor";
             // 
@@ -306,13 +284,14 @@
             this.txtCadInsumoQtdMinima.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadInsumoQtdMinima.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadInsumoQtdMinima.HoverState.Parent = this.txtCadInsumoQtdMinima;
-            this.txtCadInsumoQtdMinima.Location = new System.Drawing.Point(163, 388);
+            this.txtCadInsumoQtdMinima.Location = new System.Drawing.Point(145, 310);
+            this.txtCadInsumoQtdMinima.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadInsumoQtdMinima.Name = "txtCadInsumoQtdMinima";
             this.txtCadInsumoQtdMinima.PasswordChar = '\0';
             this.txtCadInsumoQtdMinima.PlaceholderText = "";
             this.txtCadInsumoQtdMinima.SelectedText = "";
             this.txtCadInsumoQtdMinima.ShadowDecoration.Parent = this.txtCadInsumoQtdMinima;
-            this.txtCadInsumoQtdMinima.Size = new System.Drawing.Size(404, 36);
+            this.txtCadInsumoQtdMinima.Size = new System.Drawing.Size(359, 29);
             this.txtCadInsumoQtdMinima.TabIndex = 8;
             // 
             // lblCadInsumoQtdMinima
@@ -320,9 +299,10 @@
             this.lblCadInsumoQtdMinima.BackColor = System.Drawing.Color.Transparent;
             this.lblCadInsumoQtdMinima.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadInsumoQtdMinima.ForeColor = System.Drawing.Color.Black;
-            this.lblCadInsumoQtdMinima.Location = new System.Drawing.Point(163, 361);
+            this.lblCadInsumoQtdMinima.Location = new System.Drawing.Point(145, 289);
+            this.lblCadInsumoQtdMinima.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadInsumoQtdMinima.Name = "lblCadInsumoQtdMinima";
-            this.lblCadInsumoQtdMinima.Size = new System.Drawing.Size(157, 24);
+            this.lblCadInsumoQtdMinima.Size = new System.Drawing.Size(130, 20);
             this.lblCadInsumoQtdMinima.TabIndex = 7;
             this.lblCadInsumoQtdMinima.Text = "Quantidade Mínima";
             // 
@@ -340,13 +320,14 @@
             this.txtCadInsumoQtdInicial.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadInsumoQtdInicial.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadInsumoQtdInicial.HoverState.Parent = this.txtCadInsumoQtdInicial;
-            this.txtCadInsumoQtdInicial.Location = new System.Drawing.Point(163, 302);
+            this.txtCadInsumoQtdInicial.Location = new System.Drawing.Point(145, 242);
+            this.txtCadInsumoQtdInicial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadInsumoQtdInicial.Name = "txtCadInsumoQtdInicial";
             this.txtCadInsumoQtdInicial.PasswordChar = '\0';
             this.txtCadInsumoQtdInicial.PlaceholderText = "";
             this.txtCadInsumoQtdInicial.SelectedText = "";
             this.txtCadInsumoQtdInicial.ShadowDecoration.Parent = this.txtCadInsumoQtdInicial;
-            this.txtCadInsumoQtdInicial.Size = new System.Drawing.Size(404, 36);
+            this.txtCadInsumoQtdInicial.Size = new System.Drawing.Size(359, 29);
             this.txtCadInsumoQtdInicial.TabIndex = 6;
             // 
             // lblCadInsumoQtdIncial
@@ -354,9 +335,10 @@
             this.lblCadInsumoQtdIncial.BackColor = System.Drawing.Color.Transparent;
             this.lblCadInsumoQtdIncial.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadInsumoQtdIncial.ForeColor = System.Drawing.Color.Black;
-            this.lblCadInsumoQtdIncial.Location = new System.Drawing.Point(163, 274);
+            this.lblCadInsumoQtdIncial.Location = new System.Drawing.Point(145, 219);
+            this.lblCadInsumoQtdIncial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadInsumoQtdIncial.Name = "lblCadInsumoQtdIncial";
-            this.lblCadInsumoQtdIncial.Size = new System.Drawing.Size(146, 24);
+            this.lblCadInsumoQtdIncial.Size = new System.Drawing.Size(118, 20);
             this.lblCadInsumoQtdIncial.TabIndex = 5;
             this.lblCadInsumoQtdIncial.Text = "Quantidade Inicial";
             // 
@@ -374,13 +356,14 @@
             this.txtCadInsumoNome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadInsumoNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadInsumoNome.HoverState.Parent = this.txtCadInsumoNome;
-            this.txtCadInsumoNome.Location = new System.Drawing.Point(163, 216);
+            this.txtCadInsumoNome.Location = new System.Drawing.Point(145, 173);
+            this.txtCadInsumoNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadInsumoNome.Name = "txtCadInsumoNome";
             this.txtCadInsumoNome.PasswordChar = '\0';
             this.txtCadInsumoNome.PlaceholderText = "";
             this.txtCadInsumoNome.SelectedText = "";
             this.txtCadInsumoNome.ShadowDecoration.Parent = this.txtCadInsumoNome;
-            this.txtCadInsumoNome.Size = new System.Drawing.Size(404, 36);
+            this.txtCadInsumoNome.Size = new System.Drawing.Size(359, 29);
             this.txtCadInsumoNome.TabIndex = 4;
             // 
             // lblCadInsumoNome
@@ -388,9 +371,10 @@
             this.lblCadInsumoNome.BackColor = System.Drawing.Color.Transparent;
             this.lblCadInsumoNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadInsumoNome.ForeColor = System.Drawing.Color.Black;
-            this.lblCadInsumoNome.Location = new System.Drawing.Point(163, 188);
+            this.lblCadInsumoNome.Location = new System.Drawing.Point(145, 150);
+            this.lblCadInsumoNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadInsumoNome.Name = "lblCadInsumoNome";
-            this.lblCadInsumoNome.Size = new System.Drawing.Size(50, 24);
+            this.lblCadInsumoNome.Size = new System.Drawing.Size(44, 20);
             this.lblCadInsumoNome.TabIndex = 3;
             this.lblCadInsumoNome.Text = "Nome";
             // 
@@ -408,13 +392,14 @@
             this.txtCadInsumoCat.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadInsumoCat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadInsumoCat.HoverState.Parent = this.txtCadInsumoCat;
-            this.txtCadInsumoCat.Location = new System.Drawing.Point(163, 132);
+            this.txtCadInsumoCat.Location = new System.Drawing.Point(145, 106);
+            this.txtCadInsumoCat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadInsumoCat.Name = "txtCadInsumoCat";
             this.txtCadInsumoCat.PasswordChar = '\0';
             this.txtCadInsumoCat.PlaceholderText = "";
             this.txtCadInsumoCat.SelectedText = "";
             this.txtCadInsumoCat.ShadowDecoration.Parent = this.txtCadInsumoCat;
-            this.txtCadInsumoCat.Size = new System.Drawing.Size(404, 36);
+            this.txtCadInsumoCat.Size = new System.Drawing.Size(359, 29);
             this.txtCadInsumoCat.TabIndex = 2;
             // 
             // lblCadInsumoCat
@@ -422,9 +407,10 @@
             this.lblCadInsumoCat.BackColor = System.Drawing.Color.Transparent;
             this.lblCadInsumoCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadInsumoCat.ForeColor = System.Drawing.Color.Black;
-            this.lblCadInsumoCat.Location = new System.Drawing.Point(163, 106);
+            this.lblCadInsumoCat.Location = new System.Drawing.Point(145, 85);
+            this.lblCadInsumoCat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadInsumoCat.Name = "lblCadInsumoCat";
-            this.lblCadInsumoCat.Size = new System.Drawing.Size(81, 24);
+            this.lblCadInsumoCat.Size = new System.Drawing.Size(67, 20);
             this.lblCadInsumoCat.TabIndex = 1;
             this.lblCadInsumoCat.Text = "Categoria";
             // 
@@ -433,9 +419,10 @@
             this.lblEmailFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblEmailFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblEmailFunc.Location = new System.Drawing.Point(255, 43);
+            this.lblEmailFunc.Location = new System.Drawing.Point(227, 34);
+            this.lblEmailFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblEmailFunc.Name = "lblEmailFunc";
-            this.lblEmailFunc.Size = new System.Drawing.Size(172, 22);
+            this.lblEmailFunc.Size = new System.Drawing.Size(148, 18);
             this.lblEmailFunc.TabIndex = 15;
             this.lblEmailFunc.Text = "EdsonKoiti@yahoo.com";
             // 
@@ -444,29 +431,34 @@
             this.lblNomeFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblNomeFunc.Location = new System.Drawing.Point(256, 14);
+            this.lblNomeFunc.Location = new System.Drawing.Point(228, 11);
+            this.lblNomeFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(113, 27);
+            this.lblNomeFunc.Size = new System.Drawing.Size(99, 22);
             this.lblNomeFunc.TabIndex = 14;
             this.lblNomeFunc.Text = "Edson Koiti";
             // 
             // lblHora
             // 
+            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(1256, 43);
+            this.lblHora.Location = new System.Drawing.Point(1256, 34);
+            this.lblHora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(76, 24);
+            this.lblHora.Size = new System.Drawing.Size(64, 20);
             this.lblHora.TabIndex = 13;
             this.lblHora.Text = "2:00 AM";
             // 
             // lblData
             // 
+            this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(1087, 15);
+            this.lblData.Location = new System.Drawing.Point(1106, 12);
+            this.lblData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(265, 24);
+            this.lblData.Size = new System.Drawing.Size(221, 20);
             this.lblData.TabIndex = 12;
             this.lblData.Text = "Quarta, 2 de Janeiro de 2021";
             // 
@@ -474,14 +466,36 @@
             // 
             this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
             this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(179, 10);
+            this.PictureBoxPerfil.Location = new System.Drawing.Point(159, 8);
+            this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PictureBoxPerfil.Name = "PictureBoxPerfil";
             this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(65, 65);
+            this.PictureBoxPerfil.Size = new System.Drawing.Size(58, 52);
             this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxPerfil.TabIndex = 11;
             this.PictureBoxPerfil.TabStop = false;
+            // 
+            // PanelMenu
+            // 
+            this.PanelMenu.Controls.Add(this.PanelReceita);
+            this.PanelMenu.Controls.Add(this.BtnReceita);
+            this.PanelMenu.Controls.Add(this.PanelInsumo);
+            this.PanelMenu.Controls.Add(this.BtnInsumo);
+            this.PanelMenu.Controls.Add(this.PanelProduto);
+            this.PanelMenu.Controls.Add(this.BtnProduto);
+            this.PanelMenu.Controls.Add(this.PanelFuncionario);
+            this.PanelMenu.Controls.Add(this.BtnFuncionario);
+            this.PanelMenu.Controls.Add(this.guna2GradientPanel2);
+            this.PanelMenu.Controls.Add(this.LogoMrCake);
+            this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.PanelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.PanelMenu.Location = new System.Drawing.Point(0, 0);
+            this.PanelMenu.Name = "PanelMenu";
+            this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
+            this.PanelMenu.Size = new System.Drawing.Size(128, 721);
+            this.PanelMenu.TabIndex = 16;
             // 
             // PanelReceita
             // 
@@ -491,8 +505,8 @@
             this.PanelReceita.Location = new System.Drawing.Point(0, 797);
             this.PanelReceita.Name = "PanelReceita";
             this.PanelReceita.ShadowDecoration.Parent = this.PanelReceita;
-            this.PanelReceita.Size = new System.Drawing.Size(117, 110);
-            this.PanelReceita.TabIndex = 17;
+            this.PanelReceita.Size = new System.Drawing.Size(128, 110);
+            this.PanelReceita.TabIndex = 9;
             // 
             // guna2Button8
             // 
@@ -511,7 +525,7 @@
             this.guna2Button8.Location = new System.Drawing.Point(0, 56);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button8.Size = new System.Drawing.Size(128, 56);
             this.guna2Button8.TabIndex = 3;
             this.guna2Button8.Text = "Gerenciar Receita";
             // 
@@ -532,7 +546,7 @@
             this.guna2Button4.Location = new System.Drawing.Point(0, 0);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button4.Size = new System.Drawing.Size(128, 56);
             this.guna2Button4.TabIndex = 1;
             this.guna2Button4.Text = "Cadastrar Receita";
             // 
@@ -552,8 +566,8 @@
             this.BtnReceita.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnReceita.PressedState.Parent = this.BtnReceita;
             this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
-            this.BtnReceita.Size = new System.Drawing.Size(117, 90);
-            this.BtnReceita.TabIndex = 16;
+            this.BtnReceita.Size = new System.Drawing.Size(128, 90);
+            this.BtnReceita.TabIndex = 8;
             this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
             // 
             // PanelInsumo
@@ -564,8 +578,8 @@
             this.PanelInsumo.Location = new System.Drawing.Point(0, 597);
             this.PanelInsumo.Name = "PanelInsumo";
             this.PanelInsumo.ShadowDecoration.Parent = this.PanelInsumo;
-            this.PanelInsumo.Size = new System.Drawing.Size(117, 110);
-            this.PanelInsumo.TabIndex = 15;
+            this.PanelInsumo.Size = new System.Drawing.Size(128, 110);
+            this.PanelInsumo.TabIndex = 7;
             // 
             // guna2Button7
             // 
@@ -584,7 +598,7 @@
             this.guna2Button7.Location = new System.Drawing.Point(0, 56);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button7.Size = new System.Drawing.Size(128, 56);
             this.guna2Button7.TabIndex = 3;
             this.guna2Button7.Text = "Gerenciar Insumo";
             // 
@@ -605,7 +619,7 @@
             this.guna2Button2.Location = new System.Drawing.Point(0, 0);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button2.Size = new System.Drawing.Size(128, 56);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Cadastrar Insumo";
             // 
@@ -625,8 +639,8 @@
             this.BtnInsumo.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnInsumo.PressedState.Parent = this.BtnInsumo;
             this.BtnInsumo.ShadowDecoration.Parent = this.BtnInsumo;
-            this.BtnInsumo.Size = new System.Drawing.Size(117, 90);
-            this.BtnInsumo.TabIndex = 14;
+            this.BtnInsumo.Size = new System.Drawing.Size(128, 90);
+            this.BtnInsumo.TabIndex = 6;
             this.BtnInsumo.Click += new System.EventHandler(this.BtnInsumo_Click);
             // 
             // PanelProduto
@@ -637,8 +651,8 @@
             this.PanelProduto.Location = new System.Drawing.Point(0, 397);
             this.PanelProduto.Name = "PanelProduto";
             this.PanelProduto.ShadowDecoration.Parent = this.PanelProduto;
-            this.PanelProduto.Size = new System.Drawing.Size(117, 110);
-            this.PanelProduto.TabIndex = 13;
+            this.PanelProduto.Size = new System.Drawing.Size(128, 110);
+            this.PanelProduto.TabIndex = 5;
             // 
             // guna2Button6
             // 
@@ -657,7 +671,7 @@
             this.guna2Button6.Location = new System.Drawing.Point(0, 56);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button6.Size = new System.Drawing.Size(128, 56);
             this.guna2Button6.TabIndex = 2;
             this.guna2Button6.Text = "Gerenciar Produto";
             // 
@@ -678,7 +692,7 @@
             this.guna2Button3.Location = new System.Drawing.Point(0, 0);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button3.Size = new System.Drawing.Size(128, 56);
             this.guna2Button3.TabIndex = 0;
             this.guna2Button3.Text = "Cadastrar Produto";
             // 
@@ -698,8 +712,8 @@
             this.BtnProduto.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnProduto.PressedState.Parent = this.BtnProduto;
             this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
-            this.BtnProduto.Size = new System.Drawing.Size(117, 90);
-            this.BtnProduto.TabIndex = 12;
+            this.BtnProduto.Size = new System.Drawing.Size(128, 90);
+            this.BtnProduto.TabIndex = 4;
             this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
             // 
             // PanelFuncionario
@@ -710,8 +724,8 @@
             this.PanelFuncionario.Location = new System.Drawing.Point(0, 197);
             this.PanelFuncionario.Name = "PanelFuncionario";
             this.PanelFuncionario.ShadowDecoration.Parent = this.PanelFuncionario;
-            this.PanelFuncionario.Size = new System.Drawing.Size(117, 110);
-            this.PanelFuncionario.TabIndex = 11;
+            this.PanelFuncionario.Size = new System.Drawing.Size(128, 110);
+            this.PanelFuncionario.TabIndex = 3;
             // 
             // guna2Button5
             // 
@@ -730,7 +744,7 @@
             this.guna2Button5.Location = new System.Drawing.Point(0, 55);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(117, 55);
+            this.guna2Button5.Size = new System.Drawing.Size(128, 55);
             this.guna2Button5.TabIndex = 3;
             this.guna2Button5.Text = "Gerenciar Funcionário";
             // 
@@ -751,7 +765,7 @@
             this.guna2Button1.Location = new System.Drawing.Point(0, 0);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(117, 55);
+            this.guna2Button1.Size = new System.Drawing.Size(128, 55);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Cadastrar Funcionário";
             // 
@@ -773,42 +787,65 @@
             this.BtnFuncionario.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnFuncionario.PressedState.Parent = this.BtnFuncionario;
             this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.Size = new System.Drawing.Size(117, 90);
-            this.BtnFuncionario.TabIndex = 10;
+            this.BtnFuncionario.Size = new System.Drawing.Size(128, 90);
+            this.BtnFuncionario.TabIndex = 2;
             this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(148, 129);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(208, 100);
+            this.guna2GradientPanel2.TabIndex = 1;
+            // 
+            // LogoMrCake
+            // 
+            this.LogoMrCake.BackColor = System.Drawing.Color.Transparent;
+            this.LogoMrCake.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogoMrCake.FillColor = System.Drawing.Color.Transparent;
+            this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
+            this.LogoMrCake.ImageRotate = 0F;
+            this.LogoMrCake.Location = new System.Drawing.Point(0, 0);
+            this.LogoMrCake.Name = "LogoMrCake";
+            this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
+            this.LogoMrCake.Size = new System.Drawing.Size(128, 107);
+            this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoMrCake.TabIndex = 0;
+            this.LogoMrCake.TabStop = false;
             // 
             // Cad_Insumo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1344, 712);
+            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.lblEmailFunc);
             this.Controls.Add(this.lblNomeFunc);
             this.Controls.Add(this.PictureBoxPerfil);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.PanelCadInsumo);
-            this.Controls.Add(this.PanelMenu);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Cad_Insumo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cad_Insumo";
-            this.PanelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogo)).EndInit();
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PanelCadInsumo.ResumeLayout(false);
             this.PanelCadInsumo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
+            this.PanelMenu.ResumeLayout(false);
             this.PanelReceita.ResumeLayout(false);
             this.PanelInsumo.ResumeLayout(false);
             this.PanelProduto.ResumeLayout(false);
             this.PanelFuncionario.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelMenu;
-        private Guna.UI2.WinForms.Guna2PictureBox PictureBoxLogo;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelCadInsumo;
         private Guna.UI2.WinForms.Guna2Button ButtonCad;
@@ -832,6 +869,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblHora;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblData;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2Panel PanelReceita;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
@@ -848,5 +886,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2ImageButton BtnFuncionario;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private Guna.UI2.WinForms.Guna2PictureBox LogoMrCake;
     }
 }

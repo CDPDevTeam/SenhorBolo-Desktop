@@ -16,7 +16,9 @@ namespace SrBolo_Prototype1
         {
             InitializeComponent();
             CustumizeDesing();
+            
         }
+        
         private void CustumizeDesing() {
             PanelInsumo.Visible = false;
             PanelProduto.Visible = false;

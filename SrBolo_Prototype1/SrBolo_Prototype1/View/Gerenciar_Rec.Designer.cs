@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PanelMenu = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.PictureBoxLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblEmailFunc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNomeFunc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblHora = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -43,6 +41,7 @@
             this.ButtonExc = new Guna.UI2.WinForms.Guna2Button();
             this.lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.PanelReceita = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
@@ -59,61 +58,28 @@
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.PanelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogo)).BeginInit();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
             this.PanelGerRec.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewRec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
+            this.PanelMenu.SuspendLayout();
             this.PanelReceita.SuspendLayout();
             this.PanelInsumo.SuspendLayout();
             this.PanelProduto.SuspendLayout();
             this.PanelFuncionario.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).BeginInit();
             this.SuspendLayout();
-            // 
-            // PanelMenu
-            // 
-            this.PanelMenu.AutoScroll = true;
-            this.PanelMenu.Controls.Add(this.PanelReceita);
-            this.PanelMenu.Controls.Add(this.BtnReceita);
-            this.PanelMenu.Controls.Add(this.PanelInsumo);
-            this.PanelMenu.Controls.Add(this.BtnInsumo);
-            this.PanelMenu.Controls.Add(this.PanelProduto);
-            this.PanelMenu.Controls.Add(this.BtnProduto);
-            this.PanelMenu.Controls.Add(this.PanelFuncionario);
-            this.PanelMenu.Controls.Add(this.BtnFuncionario);
-            this.PanelMenu.Controls.Add(this.PictureBoxLogo);
-            this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.PanelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.PanelMenu.FillColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.PanelMenu.FillColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.PanelMenu.Location = new System.Drawing.Point(2, -1);
-            this.PanelMenu.Name = "PanelMenu";
-            this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
-            this.PanelMenu.Size = new System.Drawing.Size(143, 720);
-            this.PanelMenu.TabIndex = 4;
-            // 
-            // PictureBoxLogo
-            // 
-            this.PictureBoxLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.PictureBoxLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PictureBoxLogo.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
-            this.PictureBoxLogo.ImageRotate = 0F;
-            this.PictureBoxLogo.Location = new System.Drawing.Point(0, 0);
-            this.PictureBoxLogo.Name = "PictureBoxLogo";
-            this.PictureBoxLogo.ShadowDecoration.Parent = this.PictureBoxLogo;
-            this.PictureBoxLogo.Size = new System.Drawing.Size(117, 107);
-            this.PictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxLogo.TabIndex = 0;
-            this.PictureBoxLogo.TabStop = false;
             // 
             // lblEmailFunc
             // 
             this.lblEmailFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblEmailFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblEmailFunc.Location = new System.Drawing.Point(255, 43);
+            this.lblEmailFunc.Location = new System.Drawing.Point(227, 34);
+            this.lblEmailFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblEmailFunc.Name = "lblEmailFunc";
-            this.lblEmailFunc.Size = new System.Drawing.Size(164, 22);
+            this.lblEmailFunc.Size = new System.Drawing.Size(142, 18);
             this.lblEmailFunc.TabIndex = 20;
             this.lblEmailFunc.Text = "RolaDura@yahoo.com";
             // 
@@ -122,34 +88,42 @@
             this.lblNomeFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblNomeFunc.Location = new System.Drawing.Point(256, 14);
+            this.lblNomeFunc.Location = new System.Drawing.Point(228, 11);
+            this.lblNomeFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(113, 27);
+            this.lblNomeFunc.Size = new System.Drawing.Size(99, 22);
             this.lblNomeFunc.TabIndex = 19;
             this.lblNomeFunc.Text = "Edson Koiti";
             // 
             // lblHora
             // 
+            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(1256, 43);
+            this.lblHora.Location = new System.Drawing.Point(1272, 32);
+            this.lblHora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(76, 24);
+            this.lblHora.Size = new System.Drawing.Size(64, 20);
             this.lblHora.TabIndex = 18;
             this.lblHora.Text = "2:00 AM";
             // 
             // lblData
             // 
+            this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(1087, 15);
+            this.lblData.Location = new System.Drawing.Point(1122, 10);
+            this.lblData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(265, 24);
+            this.lblData.Size = new System.Drawing.Size(221, 20);
             this.lblData.TabIndex = 17;
             this.lblData.Text = "Quarta, 2 de Janeiro de 2021";
             // 
             // PanelGerRec
             // 
+            this.PanelGerRec.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelGerRec.BorderRadius = 40;
             this.PanelGerRec.Controls.Add(this.guna2HtmlLabel6);
             this.PanelGerRec.Controls.Add(this.txtGerRecSearch);
@@ -158,23 +132,27 @@
             this.PanelGerRec.Controls.Add(this.ButtonAdc);
             this.PanelGerRec.Controls.Add(this.ButtonExc);
             this.PanelGerRec.Controls.Add(this.lblTitle);
-            this.PanelGerRec.Location = new System.Drawing.Point(145, 83);
+            this.PanelGerRec.Location = new System.Drawing.Point(129, 66);
+            this.PanelGerRec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelGerRec.Name = "PanelGerRec";
             this.PanelGerRec.ShadowDecoration.Parent = this.PanelGerRec;
-            this.PanelGerRec.Size = new System.Drawing.Size(1202, 651);
+            this.PanelGerRec.Size = new System.Drawing.Size(1219, 700);
             this.PanelGerRec.TabIndex = 21;
             // 
             // guna2HtmlLabel6
             // 
+            this.guna2HtmlLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(25, 565);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(19, 623);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(395, 22);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(341, 18);
             this.guna2HtmlLabel6.TabIndex = 26;
             this.guna2HtmlLabel6.Text = "*Para realizar uma operação, clique no campo desejado";
             // 
             // txtGerRecSearch
             // 
+            this.txtGerRecSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtGerRecSearch.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtGerRecSearch.BorderRadius = 20;
             this.txtGerRecSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -190,7 +168,7 @@
             this.txtGerRecSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGerRecSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGerRecSearch.HoverState.Parent = this.txtGerRecSearch;
-            this.txtGerRecSearch.Location = new System.Drawing.Point(728, 17);
+            this.txtGerRecSearch.Location = new System.Drawing.Point(796, 14);
             this.txtGerRecSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGerRecSearch.Name = "txtGerRecSearch";
             this.txtGerRecSearch.PasswordChar = '\0';
@@ -198,11 +176,12 @@
             this.txtGerRecSearch.PlaceholderText = "Digite ID, Categoria ou Nome";
             this.txtGerRecSearch.SelectedText = "";
             this.txtGerRecSearch.ShadowDecoration.Parent = this.txtGerRecSearch;
-            this.txtGerRecSearch.Size = new System.Drawing.Size(454, 46);
+            this.txtGerRecSearch.Size = new System.Drawing.Size(404, 37);
             this.txtGerRecSearch.TabIndex = 25;
             // 
             // ButtonEdit
             // 
+            this.ButtonEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
             this.ButtonEdit.CheckedState.Parent = this.ButtonEdit;
             this.ButtonEdit.CustomImages.Parent = this.ButtonEdit;
@@ -215,25 +194,31 @@
             this.ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonEdit.ForeColor = System.Drawing.Color.White;
             this.ButtonEdit.HoverState.Parent = this.ButtonEdit;
-            this.ButtonEdit.Location = new System.Drawing.Point(788, 551);
+            this.ButtonEdit.Location = new System.Drawing.Point(849, 603);
+            this.ButtonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonEdit.Name = "ButtonEdit";
             this.ButtonEdit.ShadowDecoration.Parent = this.ButtonEdit;
-            this.ButtonEdit.Size = new System.Drawing.Size(180, 51);
+            this.ButtonEdit.Size = new System.Drawing.Size(160, 41);
             this.ButtonEdit.TabIndex = 24;
             this.ButtonEdit.Text = "Editar";
             // 
             // GridViewRec
             // 
+            this.GridViewRec.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.GridViewRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridViewRec.Location = new System.Drawing.Point(25, 69);
+            this.GridViewRec.Location = new System.Drawing.Point(22, 55);
+            this.GridViewRec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GridViewRec.Name = "GridViewRec";
             this.GridViewRec.RowHeadersWidth = 62;
             this.GridViewRec.RowTemplate.Height = 28;
-            this.GridViewRec.Size = new System.Drawing.Size(1157, 455);
+            this.GridViewRec.Size = new System.Drawing.Size(1178, 532);
             this.GridViewRec.TabIndex = 23;
             // 
             // ButtonAdc
             // 
+            this.ButtonAdc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonAdc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
             this.ButtonAdc.CheckedState.Parent = this.ButtonAdc;
             this.ButtonAdc.CustomImages.Parent = this.ButtonAdc;
@@ -246,15 +231,17 @@
             this.ButtonAdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.ButtonAdc.ForeColor = System.Drawing.Color.White;
             this.ButtonAdc.HoverState.Parent = this.ButtonAdc;
-            this.ButtonAdc.Location = new System.Drawing.Point(1002, 551);
+            this.ButtonAdc.Location = new System.Drawing.Point(1040, 603);
+            this.ButtonAdc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonAdc.Name = "ButtonAdc";
             this.ButtonAdc.ShadowDecoration.Parent = this.ButtonAdc;
-            this.ButtonAdc.Size = new System.Drawing.Size(180, 51);
+            this.ButtonAdc.Size = new System.Drawing.Size(160, 41);
             this.ButtonAdc.TabIndex = 22;
             this.ButtonAdc.Text = "Adicionar";
             // 
             // ButtonExc
             // 
+            this.ButtonExc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonExc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
             this.ButtonExc.CheckedState.Parent = this.ButtonExc;
             this.ButtonExc.CustomImages.Parent = this.ButtonExc;
@@ -267,10 +254,11 @@
             this.ButtonExc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonExc.ForeColor = System.Drawing.Color.White;
             this.ButtonExc.HoverState.Parent = this.ButtonExc;
-            this.ButtonExc.Location = new System.Drawing.Point(569, 551);
+            this.ButtonExc.Location = new System.Drawing.Point(655, 603);
+            this.ButtonExc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonExc.Name = "ButtonExc";
             this.ButtonExc.ShadowDecoration.Parent = this.ButtonExc;
-            this.ButtonExc.Size = new System.Drawing.Size(180, 51);
+            this.ButtonExc.Size = new System.Drawing.Size(160, 41);
             this.ButtonExc.TabIndex = 21;
             this.ButtonExc.Text = "Excluir";
             // 
@@ -279,9 +267,10 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(34, 17);
+            this.lblTitle.Location = new System.Drawing.Point(30, 14);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(133, 39);
+            this.lblTitle.Size = new System.Drawing.Size(118, 33);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Receitas";
             // 
@@ -289,14 +278,36 @@
             // 
             this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
             this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(179, 10);
+            this.PictureBoxPerfil.Location = new System.Drawing.Point(159, 8);
+            this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PictureBoxPerfil.Name = "PictureBoxPerfil";
             this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(65, 65);
+            this.PictureBoxPerfil.Size = new System.Drawing.Size(58, 52);
             this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxPerfil.TabIndex = 16;
             this.PictureBoxPerfil.TabStop = false;
+            // 
+            // PanelMenu
+            // 
+            this.PanelMenu.Controls.Add(this.PanelReceita);
+            this.PanelMenu.Controls.Add(this.BtnReceita);
+            this.PanelMenu.Controls.Add(this.PanelInsumo);
+            this.PanelMenu.Controls.Add(this.BtnInsumo);
+            this.PanelMenu.Controls.Add(this.PanelProduto);
+            this.PanelMenu.Controls.Add(this.BtnProduto);
+            this.PanelMenu.Controls.Add(this.PanelFuncionario);
+            this.PanelMenu.Controls.Add(this.BtnFuncionario);
+            this.PanelMenu.Controls.Add(this.guna2GradientPanel2);
+            this.PanelMenu.Controls.Add(this.LogoMrCake);
+            this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.PanelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.PanelMenu.Location = new System.Drawing.Point(0, 0);
+            this.PanelMenu.Name = "PanelMenu";
+            this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
+            this.PanelMenu.Size = new System.Drawing.Size(128, 721);
+            this.PanelMenu.TabIndex = 22;
             // 
             // PanelReceita
             // 
@@ -306,8 +317,8 @@
             this.PanelReceita.Location = new System.Drawing.Point(0, 797);
             this.PanelReceita.Name = "PanelReceita";
             this.PanelReceita.ShadowDecoration.Parent = this.PanelReceita;
-            this.PanelReceita.Size = new System.Drawing.Size(117, 110);
-            this.PanelReceita.TabIndex = 18;
+            this.PanelReceita.Size = new System.Drawing.Size(128, 110);
+            this.PanelReceita.TabIndex = 9;
             // 
             // guna2Button8
             // 
@@ -326,7 +337,7 @@
             this.guna2Button8.Location = new System.Drawing.Point(0, 56);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button8.Size = new System.Drawing.Size(128, 56);
             this.guna2Button8.TabIndex = 3;
             this.guna2Button8.Text = "Gerenciar Receita";
             // 
@@ -347,7 +358,7 @@
             this.guna2Button4.Location = new System.Drawing.Point(0, 0);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button4.Size = new System.Drawing.Size(128, 56);
             this.guna2Button4.TabIndex = 1;
             this.guna2Button4.Text = "Cadastrar Receita";
             // 
@@ -367,8 +378,8 @@
             this.BtnReceita.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnReceita.PressedState.Parent = this.BtnReceita;
             this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
-            this.BtnReceita.Size = new System.Drawing.Size(117, 90);
-            this.BtnReceita.TabIndex = 17;
+            this.BtnReceita.Size = new System.Drawing.Size(128, 90);
+            this.BtnReceita.TabIndex = 8;
             this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
             // 
             // PanelInsumo
@@ -379,8 +390,8 @@
             this.PanelInsumo.Location = new System.Drawing.Point(0, 597);
             this.PanelInsumo.Name = "PanelInsumo";
             this.PanelInsumo.ShadowDecoration.Parent = this.PanelInsumo;
-            this.PanelInsumo.Size = new System.Drawing.Size(117, 110);
-            this.PanelInsumo.TabIndex = 16;
+            this.PanelInsumo.Size = new System.Drawing.Size(128, 110);
+            this.PanelInsumo.TabIndex = 7;
             // 
             // guna2Button7
             // 
@@ -399,7 +410,7 @@
             this.guna2Button7.Location = new System.Drawing.Point(0, 56);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button7.Size = new System.Drawing.Size(128, 56);
             this.guna2Button7.TabIndex = 3;
             this.guna2Button7.Text = "Gerenciar Insumo";
             // 
@@ -420,7 +431,7 @@
             this.guna2Button2.Location = new System.Drawing.Point(0, 0);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button2.Size = new System.Drawing.Size(128, 56);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Cadastrar Insumo";
             // 
@@ -440,8 +451,8 @@
             this.BtnInsumo.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnInsumo.PressedState.Parent = this.BtnInsumo;
             this.BtnInsumo.ShadowDecoration.Parent = this.BtnInsumo;
-            this.BtnInsumo.Size = new System.Drawing.Size(117, 90);
-            this.BtnInsumo.TabIndex = 15;
+            this.BtnInsumo.Size = new System.Drawing.Size(128, 90);
+            this.BtnInsumo.TabIndex = 6;
             this.BtnInsumo.Click += new System.EventHandler(this.BtnInsumo_Click);
             // 
             // PanelProduto
@@ -452,8 +463,8 @@
             this.PanelProduto.Location = new System.Drawing.Point(0, 397);
             this.PanelProduto.Name = "PanelProduto";
             this.PanelProduto.ShadowDecoration.Parent = this.PanelProduto;
-            this.PanelProduto.Size = new System.Drawing.Size(117, 110);
-            this.PanelProduto.TabIndex = 14;
+            this.PanelProduto.Size = new System.Drawing.Size(128, 110);
+            this.PanelProduto.TabIndex = 5;
             // 
             // guna2Button6
             // 
@@ -472,7 +483,7 @@
             this.guna2Button6.Location = new System.Drawing.Point(0, 56);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button6.Size = new System.Drawing.Size(128, 56);
             this.guna2Button6.TabIndex = 2;
             this.guna2Button6.Text = "Gerenciar Produto";
             // 
@@ -493,7 +504,7 @@
             this.guna2Button3.Location = new System.Drawing.Point(0, 0);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(117, 56);
+            this.guna2Button3.Size = new System.Drawing.Size(128, 56);
             this.guna2Button3.TabIndex = 0;
             this.guna2Button3.Text = "Cadastrar Produto";
             // 
@@ -513,8 +524,8 @@
             this.BtnProduto.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnProduto.PressedState.Parent = this.BtnProduto;
             this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
-            this.BtnProduto.Size = new System.Drawing.Size(117, 90);
-            this.BtnProduto.TabIndex = 13;
+            this.BtnProduto.Size = new System.Drawing.Size(128, 90);
+            this.BtnProduto.TabIndex = 4;
             this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
             // 
             // PanelFuncionario
@@ -525,8 +536,8 @@
             this.PanelFuncionario.Location = new System.Drawing.Point(0, 197);
             this.PanelFuncionario.Name = "PanelFuncionario";
             this.PanelFuncionario.ShadowDecoration.Parent = this.PanelFuncionario;
-            this.PanelFuncionario.Size = new System.Drawing.Size(117, 110);
-            this.PanelFuncionario.TabIndex = 12;
+            this.PanelFuncionario.Size = new System.Drawing.Size(128, 110);
+            this.PanelFuncionario.TabIndex = 3;
             // 
             // guna2Button5
             // 
@@ -545,7 +556,7 @@
             this.guna2Button5.Location = new System.Drawing.Point(0, 55);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(117, 55);
+            this.guna2Button5.Size = new System.Drawing.Size(128, 55);
             this.guna2Button5.TabIndex = 3;
             this.guna2Button5.Text = "Gerenciar Funcionário";
             // 
@@ -566,7 +577,7 @@
             this.guna2Button1.Location = new System.Drawing.Point(0, 0);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(117, 55);
+            this.guna2Button1.Size = new System.Drawing.Size(128, 55);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Cadastrar Funcionário";
             // 
@@ -588,43 +599,64 @@
             this.BtnFuncionario.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnFuncionario.PressedState.Parent = this.BtnFuncionario;
             this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.Size = new System.Drawing.Size(117, 90);
-            this.BtnFuncionario.TabIndex = 11;
+            this.BtnFuncionario.Size = new System.Drawing.Size(128, 90);
+            this.BtnFuncionario.TabIndex = 2;
             this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(148, 129);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(208, 100);
+            this.guna2GradientPanel2.TabIndex = 1;
+            // 
+            // LogoMrCake
+            // 
+            this.LogoMrCake.BackColor = System.Drawing.Color.Transparent;
+            this.LogoMrCake.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogoMrCake.FillColor = System.Drawing.Color.Transparent;
+            this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
+            this.LogoMrCake.ImageRotate = 0F;
+            this.LogoMrCake.Location = new System.Drawing.Point(0, 0);
+            this.LogoMrCake.Name = "LogoMrCake";
+            this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
+            this.LogoMrCake.Size = new System.Drawing.Size(128, 107);
+            this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoMrCake.TabIndex = 0;
+            this.LogoMrCake.TabStop = false;
             // 
             // Gerenciar_Rec
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1344, 712);
+            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.PanelGerRec);
             this.Controls.Add(this.lblEmailFunc);
             this.Controls.Add(this.lblNomeFunc);
             this.Controls.Add(this.PictureBoxPerfil);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblData);
-            this.Controls.Add(this.PanelMenu);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Gerenciar_Rec";
             this.Text = "Editar_Rec";
-            this.PanelMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxLogo)).EndInit();
             this.PanelGerRec.ResumeLayout(false);
             this.PanelGerRec.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewRec)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
+            this.PanelMenu.ResumeLayout(false);
             this.PanelReceita.ResumeLayout(false);
             this.PanelInsumo.ResumeLayout(false);
             this.PanelProduto.ResumeLayout(false);
             this.PanelFuncionario.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2PictureBox PictureBoxLogo;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblEmailFunc;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblNomeFunc;
         private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxPerfil;
@@ -638,6 +670,7 @@
         private Guna.UI2.WinForms.Guna2Button ButtonAdc;
         private Guna.UI2.WinForms.Guna2Button ButtonExc;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitle;
+        private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2Panel PanelReceita;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
@@ -654,5 +687,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button5;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2ImageButton BtnFuncionario;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private Guna.UI2.WinForms.Guna2PictureBox LogoMrCake;
     }
 }
