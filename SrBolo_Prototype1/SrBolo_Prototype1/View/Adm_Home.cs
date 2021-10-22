@@ -82,7 +82,5 @@ namespace SrBolo_Prototype1.View
         {
 
         }
-
-        
     }
 }

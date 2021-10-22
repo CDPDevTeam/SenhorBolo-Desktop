@@ -34,15 +34,11 @@ namespace SrBolo_Prototype1
             this.lblHora = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.ComboBoxEditFuncSexo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBoxEditFuncCargo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ButtonEdit = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
-            this.txtEditFuncSal = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditFuncSenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditFuncCPF = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEditFuncRG = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEditFuncID = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditFuncEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditFuncTel = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditFuncNome = new Guna.UI2.WinForms.Guna2TextBox();
@@ -82,10 +78,10 @@ namespace SrBolo_Prototype1
             this.lblEmailFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblEmailFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblEmailFunc.Location = new System.Drawing.Point(227, 34);
+            this.lblEmailFunc.Location = new System.Drawing.Point(255, 42);
             this.lblEmailFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblEmailFunc.Name = "lblEmailFunc";
-            this.lblEmailFunc.Size = new System.Drawing.Size(142, 18);
+            this.lblEmailFunc.Size = new System.Drawing.Size(164, 22);
             this.lblEmailFunc.TabIndex = 10;
             this.lblEmailFunc.Text = "RolaDura@yahoo.com";
             // 
@@ -94,10 +90,10 @@ namespace SrBolo_Prototype1
             this.lblNomeFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblNomeFunc.Location = new System.Drawing.Point(228, 11);
+            this.lblNomeFunc.Location = new System.Drawing.Point(256, 14);
             this.lblNomeFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(99, 22);
+            this.lblNomeFunc.Size = new System.Drawing.Size(113, 27);
             this.lblNomeFunc.TabIndex = 9;
             this.lblNomeFunc.Text = "Edson Koiti";
             // 
@@ -106,10 +102,10 @@ namespace SrBolo_Prototype1
             this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(1264, 34);
+            this.lblHora.Location = new System.Drawing.Point(1422, 42);
             this.lblHora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(64, 20);
+            this.lblHora.Size = new System.Drawing.Size(76, 24);
             this.lblHora.TabIndex = 8;
             this.lblHora.Text = "2:00 AM";
             // 
@@ -118,10 +114,10 @@ namespace SrBolo_Prototype1
             this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(1114, 12);
+            this.lblData.Location = new System.Drawing.Point(1253, 15);
             this.lblData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(221, 20);
+            this.lblData.Size = new System.Drawing.Size(265, 24);
             this.lblData.TabIndex = 7;
             this.lblData.Text = "Quarta, 2 de Janeiro de 2021";
             // 
@@ -131,45 +127,21 @@ namespace SrBolo_Prototype1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel2.BorderRadius = 40;
-            this.guna2CustomGradientPanel2.Controls.Add(this.ComboBoxEditFuncSexo);
             this.guna2CustomGradientPanel2.Controls.Add(this.ComboBoxEditFuncCargo);
             this.guna2CustomGradientPanel2.Controls.Add(this.ButtonEdit);
             this.guna2CustomGradientPanel2.Controls.Add(this.ButtonLimpar);
-            this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncSal);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncSenha);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncCPF);
-            this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncRG);
-            this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncID);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncEmail);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncTel);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncNome);
             this.guna2CustomGradientPanel2.Controls.Add(this.PanelEditFunc);
-            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(129, 66);
+            this.guna2CustomGradientPanel2.Location = new System.Drawing.Point(145, 82);
             this.guna2CustomGradientPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CustomGradientPanel2.Name = "guna2CustomGradientPanel2";
             this.guna2CustomGradientPanel2.ShadowDecoration.Parent = this.guna2CustomGradientPanel2;
-            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1219, 700);
+            this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1371, 875);
             this.guna2CustomGradientPanel2.TabIndex = 11;
-            // 
-            // ComboBoxEditFuncSexo
-            // 
-            this.ComboBoxEditFuncSexo.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxEditFuncSexo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxEditFuncSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxEditFuncSexo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEditFuncSexo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEditFuncSexo.FocusedState.Parent = this.ComboBoxEditFuncSexo;
-            this.ComboBoxEditFuncSexo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxEditFuncSexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboBoxEditFuncSexo.HoverState.Parent = this.ComboBoxEditFuncSexo;
-            this.ComboBoxEditFuncSexo.ItemHeight = 30;
-            this.ComboBoxEditFuncSexo.ItemsAppearance.Parent = this.ComboBoxEditFuncSexo;
-            this.ComboBoxEditFuncSexo.Location = new System.Drawing.Point(145, 296);
-            this.ComboBoxEditFuncSexo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxEditFuncSexo.Name = "ComboBoxEditFuncSexo";
-            this.ComboBoxEditFuncSexo.ShadowDecoration.Parent = this.ComboBoxEditFuncSexo;
-            this.ComboBoxEditFuncSexo.Size = new System.Drawing.Size(360, 36);
-            this.ComboBoxEditFuncSexo.TabIndex = 24;
             // 
             // ComboBoxEditFuncCargo
             // 
@@ -184,11 +156,11 @@ namespace SrBolo_Prototype1
             this.ComboBoxEditFuncCargo.HoverState.Parent = this.ComboBoxEditFuncCargo;
             this.ComboBoxEditFuncCargo.ItemHeight = 30;
             this.ComboBoxEditFuncCargo.ItemsAppearance.Parent = this.ComboBoxEditFuncCargo;
-            this.ComboBoxEditFuncCargo.Location = new System.Drawing.Point(145, 362);
+            this.ComboBoxEditFuncCargo.Location = new System.Drawing.Point(674, 405);
             this.ComboBoxEditFuncCargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxEditFuncCargo.Name = "ComboBoxEditFuncCargo";
             this.ComboBoxEditFuncCargo.ShadowDecoration.Parent = this.ComboBoxEditFuncCargo;
-            this.ComboBoxEditFuncCargo.Size = new System.Drawing.Size(360, 36);
+            this.ComboBoxEditFuncCargo.Size = new System.Drawing.Size(404, 36);
             this.ComboBoxEditFuncCargo.TabIndex = 23;
             // 
             // ButtonEdit
@@ -205,11 +177,11 @@ namespace SrBolo_Prototype1
             this.ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.ButtonEdit.ForeColor = System.Drawing.Color.White;
             this.ButtonEdit.HoverState.Parent = this.ButtonEdit;
-            this.ButtonEdit.Location = new System.Drawing.Point(579, 429);
+            this.ButtonEdit.Location = new System.Drawing.Point(651, 536);
             this.ButtonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonEdit.Name = "ButtonEdit";
             this.ButtonEdit.ShadowDecoration.Parent = this.ButtonEdit;
-            this.ButtonEdit.Size = new System.Drawing.Size(160, 41);
+            this.ButtonEdit.Size = new System.Drawing.Size(180, 51);
             this.ButtonEdit.TabIndex = 22;
             this.ButtonEdit.Text = "Editar";
             // 
@@ -227,37 +199,13 @@ namespace SrBolo_Prototype1
             this.ButtonLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLimpar.ForeColor = System.Drawing.Color.White;
             this.ButtonLimpar.HoverState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Location = new System.Drawing.Point(396, 429);
+            this.ButtonLimpar.Location = new System.Drawing.Point(446, 536);
             this.ButtonLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonLimpar.Name = "ButtonLimpar";
             this.ButtonLimpar.ShadowDecoration.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Size = new System.Drawing.Size(160, 41);
+            this.ButtonLimpar.Size = new System.Drawing.Size(180, 51);
             this.ButtonLimpar.TabIndex = 21;
             this.ButtonLimpar.Text = "Limpar";
-            // 
-            // txtEditFuncSal
-            // 
-            this.txtEditFuncSal.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEditFuncSal.DefaultText = "";
-            this.txtEditFuncSal.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEditFuncSal.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEditFuncSal.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditFuncSal.DisabledState.Parent = this.txtEditFuncSal;
-            this.txtEditFuncSal.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditFuncSal.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditFuncSal.FocusedState.Parent = this.txtEditFuncSal;
-            this.txtEditFuncSal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditFuncSal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditFuncSal.HoverState.Parent = this.txtEditFuncSal;
-            this.txtEditFuncSal.Location = new System.Drawing.Point(609, 362);
-            this.txtEditFuncSal.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.txtEditFuncSal.Name = "txtEditFuncSal";
-            this.txtEditFuncSal.PasswordChar = '\0';
-            this.txtEditFuncSal.PlaceholderText = "Salario";
-            this.txtEditFuncSal.SelectedText = "";
-            this.txtEditFuncSal.ShadowDecoration.Parent = this.txtEditFuncSal;
-            this.txtEditFuncSal.Size = new System.Drawing.Size(359, 29);
-            this.txtEditFuncSal.TabIndex = 20;
             // 
             // txtEditFuncSenha
             // 
@@ -273,14 +221,14 @@ namespace SrBolo_Prototype1
             this.txtEditFuncSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditFuncSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncSenha.HoverState.Parent = this.txtEditFuncSenha;
-            this.txtEditFuncSenha.Location = new System.Drawing.Point(609, 296);
+            this.txtEditFuncSenha.Location = new System.Drawing.Point(674, 266);
             this.txtEditFuncSenha.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtEditFuncSenha.Name = "txtEditFuncSenha";
             this.txtEditFuncSenha.PasswordChar = '\0';
             this.txtEditFuncSenha.PlaceholderText = "Senha";
             this.txtEditFuncSenha.SelectedText = "";
             this.txtEditFuncSenha.ShadowDecoration.Parent = this.txtEditFuncSenha;
-            this.txtEditFuncSenha.Size = new System.Drawing.Size(359, 29);
+            this.txtEditFuncSenha.Size = new System.Drawing.Size(404, 36);
             this.txtEditFuncSenha.TabIndex = 18;
             // 
             // txtEditFuncCPF
@@ -297,63 +245,15 @@ namespace SrBolo_Prototype1
             this.txtEditFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditFuncCPF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncCPF.HoverState.Parent = this.txtEditFuncCPF;
-            this.txtEditFuncCPF.Location = new System.Drawing.Point(609, 232);
+            this.txtEditFuncCPF.Location = new System.Drawing.Point(674, 130);
             this.txtEditFuncCPF.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtEditFuncCPF.Name = "txtEditFuncCPF";
             this.txtEditFuncCPF.PasswordChar = '\0';
             this.txtEditFuncCPF.PlaceholderText = "CPF";
             this.txtEditFuncCPF.SelectedText = "";
             this.txtEditFuncCPF.ShadowDecoration.Parent = this.txtEditFuncCPF;
-            this.txtEditFuncCPF.Size = new System.Drawing.Size(359, 29);
+            this.txtEditFuncCPF.Size = new System.Drawing.Size(404, 36);
             this.txtEditFuncCPF.TabIndex = 16;
-            // 
-            // txtEditFuncRG
-            // 
-            this.txtEditFuncRG.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEditFuncRG.DefaultText = "";
-            this.txtEditFuncRG.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEditFuncRG.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEditFuncRG.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditFuncRG.DisabledState.Parent = this.txtEditFuncRG;
-            this.txtEditFuncRG.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditFuncRG.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditFuncRG.FocusedState.Parent = this.txtEditFuncRG;
-            this.txtEditFuncRG.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditFuncRG.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditFuncRG.HoverState.Parent = this.txtEditFuncRG;
-            this.txtEditFuncRG.Location = new System.Drawing.Point(609, 168);
-            this.txtEditFuncRG.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.txtEditFuncRG.Name = "txtEditFuncRG";
-            this.txtEditFuncRG.PasswordChar = '\0';
-            this.txtEditFuncRG.PlaceholderText = "RG";
-            this.txtEditFuncRG.SelectedText = "";
-            this.txtEditFuncRG.ShadowDecoration.Parent = this.txtEditFuncRG;
-            this.txtEditFuncRG.Size = new System.Drawing.Size(359, 29);
-            this.txtEditFuncRG.TabIndex = 14;
-            // 
-            // txtEditFuncID
-            // 
-            this.txtEditFuncID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEditFuncID.DefaultText = "";
-            this.txtEditFuncID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEditFuncID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEditFuncID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditFuncID.DisabledState.Parent = this.txtEditFuncID;
-            this.txtEditFuncID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditFuncID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditFuncID.FocusedState.Parent = this.txtEditFuncID;
-            this.txtEditFuncID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditFuncID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditFuncID.HoverState.Parent = this.txtEditFuncID;
-            this.txtEditFuncID.Location = new System.Drawing.Point(609, 106);
-            this.txtEditFuncID.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.txtEditFuncID.Name = "txtEditFuncID";
-            this.txtEditFuncID.PasswordChar = '\0';
-            this.txtEditFuncID.PlaceholderText = "ID";
-            this.txtEditFuncID.SelectedText = "";
-            this.txtEditFuncID.ShadowDecoration.Parent = this.txtEditFuncID;
-            this.txtEditFuncID.Size = new System.Drawing.Size(359, 29);
-            this.txtEditFuncID.TabIndex = 12;
             // 
             // txtEditFuncEmail
             // 
@@ -369,14 +269,14 @@ namespace SrBolo_Prototype1
             this.txtEditFuncEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditFuncEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncEmail.HoverState.Parent = this.txtEditFuncEmail;
-            this.txtEditFuncEmail.Location = new System.Drawing.Point(145, 232);
+            this.txtEditFuncEmail.Location = new System.Drawing.Point(163, 405);
             this.txtEditFuncEmail.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtEditFuncEmail.Name = "txtEditFuncEmail";
             this.txtEditFuncEmail.PasswordChar = '\0';
             this.txtEditFuncEmail.PlaceholderText = "Email";
             this.txtEditFuncEmail.SelectedText = "";
             this.txtEditFuncEmail.ShadowDecoration.Parent = this.txtEditFuncEmail;
-            this.txtEditFuncEmail.Size = new System.Drawing.Size(359, 29);
+            this.txtEditFuncEmail.Size = new System.Drawing.Size(404, 36);
             this.txtEditFuncEmail.TabIndex = 6;
             // 
             // txtEditFuncTel
@@ -393,14 +293,14 @@ namespace SrBolo_Prototype1
             this.txtEditFuncTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditFuncTel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncTel.HoverState.Parent = this.txtEditFuncTel;
-            this.txtEditFuncTel.Location = new System.Drawing.Point(145, 168);
+            this.txtEditFuncTel.Location = new System.Drawing.Point(163, 266);
             this.txtEditFuncTel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtEditFuncTel.Name = "txtEditFuncTel";
             this.txtEditFuncTel.PasswordChar = '\0';
             this.txtEditFuncTel.PlaceholderText = "Telefone";
             this.txtEditFuncTel.SelectedText = "";
             this.txtEditFuncTel.ShadowDecoration.Parent = this.txtEditFuncTel;
-            this.txtEditFuncTel.Size = new System.Drawing.Size(359, 29);
+            this.txtEditFuncTel.Size = new System.Drawing.Size(404, 36);
             this.txtEditFuncTel.TabIndex = 4;
             // 
             // txtEditFuncNome
@@ -417,14 +317,14 @@ namespace SrBolo_Prototype1
             this.txtEditFuncNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEditFuncNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncNome.HoverState.Parent = this.txtEditFuncNome;
-            this.txtEditFuncNome.Location = new System.Drawing.Point(145, 106);
+            this.txtEditFuncNome.Location = new System.Drawing.Point(163, 132);
             this.txtEditFuncNome.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.txtEditFuncNome.Name = "txtEditFuncNome";
             this.txtEditFuncNome.PasswordChar = '\0';
             this.txtEditFuncNome.PlaceholderText = "Nome";
             this.txtEditFuncNome.SelectedText = "";
             this.txtEditFuncNome.ShadowDecoration.Parent = this.txtEditFuncNome;
-            this.txtEditFuncNome.Size = new System.Drawing.Size(359, 29);
+            this.txtEditFuncNome.Size = new System.Drawing.Size(404, 36);
             this.txtEditFuncNome.TabIndex = 2;
             // 
             // PanelEditFunc
@@ -432,10 +332,10 @@ namespace SrBolo_Prototype1
             this.PanelEditFunc.BackColor = System.Drawing.Color.Transparent;
             this.PanelEditFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PanelEditFunc.ForeColor = System.Drawing.Color.Black;
-            this.PanelEditFunc.Location = new System.Drawing.Point(48, 22);
+            this.PanelEditFunc.Location = new System.Drawing.Point(54, 28);
             this.PanelEditFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelEditFunc.Name = "PanelEditFunc";
-            this.PanelEditFunc.Size = new System.Drawing.Size(232, 33);
+            this.PanelEditFunc.Size = new System.Drawing.Size(272, 39);
             this.PanelEditFunc.TabIndex = 0;
             this.PanelEditFunc.Text = "Editar funcionário";
             // 
@@ -443,12 +343,12 @@ namespace SrBolo_Prototype1
             // 
             this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
             this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(159, 8);
+            this.PictureBoxPerfil.Location = new System.Drawing.Point(179, 10);
             this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PictureBoxPerfil.Name = "PictureBoxPerfil";
             this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(58, 52);
+            this.PictureBoxPerfil.Size = new System.Drawing.Size(65, 65);
             this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxPerfil.TabIndex = 6;
             this.PictureBoxPerfil.TabStop = false;
@@ -469,9 +369,10 @@ namespace SrBolo_Prototype1
             this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
+            this.PanelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
-            this.PanelMenu.Size = new System.Drawing.Size(128, 721);
+            this.PanelMenu.Size = new System.Drawing.Size(144, 901);
             this.PanelMenu.TabIndex = 12;
             // 
             // PanelReceita
@@ -479,10 +380,11 @@ namespace SrBolo_Prototype1
             this.PanelReceita.Controls.Add(this.guna2Button8);
             this.PanelReceita.Controls.Add(this.guna2Button4);
             this.PanelReceita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelReceita.Location = new System.Drawing.Point(0, 797);
+            this.PanelReceita.Location = new System.Drawing.Point(0, 996);
+            this.PanelReceita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelReceita.Name = "PanelReceita";
             this.PanelReceita.ShadowDecoration.Parent = this.PanelReceita;
-            this.PanelReceita.Size = new System.Drawing.Size(128, 110);
+            this.PanelReceita.Size = new System.Drawing.Size(144, 138);
             this.PanelReceita.TabIndex = 9;
             // 
             // guna2Button8
@@ -499,10 +401,11 @@ namespace SrBolo_Prototype1
             this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
             this.guna2Button8.HoverState.Parent = this.guna2Button8;
-            this.guna2Button8.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button8.Location = new System.Drawing.Point(0, 70);
+            this.guna2Button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button8.Size = new System.Drawing.Size(144, 70);
             this.guna2Button8.TabIndex = 3;
             this.guna2Button8.Text = "Gerenciar Receita";
             // 
@@ -521,9 +424,10 @@ namespace SrBolo_Prototype1
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
             this.guna2Button4.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button4.Size = new System.Drawing.Size(144, 70);
             this.guna2Button4.TabIndex = 1;
             this.guna2Button4.Text = "Cadastrar Receita";
             // 
@@ -538,12 +442,13 @@ namespace SrBolo_Prototype1
             this.BtnReceita.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnReceita.ImageRotate = 0F;
             this.BtnReceita.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnReceita.Location = new System.Drawing.Point(0, 707);
+            this.BtnReceita.Location = new System.Drawing.Point(0, 884);
+            this.BtnReceita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnReceita.Name = "BtnReceita";
             this.BtnReceita.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnReceita.PressedState.Parent = this.BtnReceita;
             this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
-            this.BtnReceita.Size = new System.Drawing.Size(128, 90);
+            this.BtnReceita.Size = new System.Drawing.Size(144, 112);
             this.BtnReceita.TabIndex = 8;
             this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
             // 
@@ -552,10 +457,11 @@ namespace SrBolo_Prototype1
             this.PanelInsumo.Controls.Add(this.guna2Button7);
             this.PanelInsumo.Controls.Add(this.guna2Button2);
             this.PanelInsumo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelInsumo.Location = new System.Drawing.Point(0, 597);
+            this.PanelInsumo.Location = new System.Drawing.Point(0, 746);
+            this.PanelInsumo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelInsumo.Name = "PanelInsumo";
             this.PanelInsumo.ShadowDecoration.Parent = this.PanelInsumo;
-            this.PanelInsumo.Size = new System.Drawing.Size(128, 110);
+            this.PanelInsumo.Size = new System.Drawing.Size(144, 138);
             this.PanelInsumo.TabIndex = 7;
             // 
             // guna2Button7
@@ -572,10 +478,11 @@ namespace SrBolo_Prototype1
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button7.Location = new System.Drawing.Point(0, 70);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button7.Size = new System.Drawing.Size(144, 70);
             this.guna2Button7.TabIndex = 3;
             this.guna2Button7.Text = "Gerenciar Insumo";
             // 
@@ -594,9 +501,10 @@ namespace SrBolo_Prototype1
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button2.Size = new System.Drawing.Size(144, 70);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Cadastrar Insumo";
             // 
@@ -611,12 +519,13 @@ namespace SrBolo_Prototype1
             this.BtnInsumo.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnInsumo.ImageRotate = 0F;
             this.BtnInsumo.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnInsumo.Location = new System.Drawing.Point(0, 507);
+            this.BtnInsumo.Location = new System.Drawing.Point(0, 634);
+            this.BtnInsumo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnInsumo.Name = "BtnInsumo";
             this.BtnInsumo.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnInsumo.PressedState.Parent = this.BtnInsumo;
             this.BtnInsumo.ShadowDecoration.Parent = this.BtnInsumo;
-            this.BtnInsumo.Size = new System.Drawing.Size(128, 90);
+            this.BtnInsumo.Size = new System.Drawing.Size(144, 112);
             this.BtnInsumo.TabIndex = 6;
             this.BtnInsumo.Click += new System.EventHandler(this.BtnInsumo_Click);
             // 
@@ -625,10 +534,11 @@ namespace SrBolo_Prototype1
             this.PanelProduto.Controls.Add(this.guna2Button6);
             this.PanelProduto.Controls.Add(this.guna2Button3);
             this.PanelProduto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelProduto.Location = new System.Drawing.Point(0, 397);
+            this.PanelProduto.Location = new System.Drawing.Point(0, 496);
+            this.PanelProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelProduto.Name = "PanelProduto";
             this.PanelProduto.ShadowDecoration.Parent = this.PanelProduto;
-            this.PanelProduto.Size = new System.Drawing.Size(128, 110);
+            this.PanelProduto.Size = new System.Drawing.Size(144, 138);
             this.PanelProduto.TabIndex = 5;
             // 
             // guna2Button6
@@ -645,10 +555,11 @@ namespace SrBolo_Prototype1
             this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button6.Location = new System.Drawing.Point(0, 70);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button6.Size = new System.Drawing.Size(144, 70);
             this.guna2Button6.TabIndex = 2;
             this.guna2Button6.Text = "Gerenciar Produto";
             // 
@@ -667,9 +578,10 @@ namespace SrBolo_Prototype1
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button3.Size = new System.Drawing.Size(144, 70);
             this.guna2Button3.TabIndex = 0;
             this.guna2Button3.Text = "Cadastrar Produto";
             // 
@@ -684,12 +596,13 @@ namespace SrBolo_Prototype1
             this.BtnProduto.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnProduto.ImageRotate = 0F;
             this.BtnProduto.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnProduto.Location = new System.Drawing.Point(0, 307);
+            this.BtnProduto.Location = new System.Drawing.Point(0, 384);
+            this.BtnProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnProduto.Name = "BtnProduto";
             this.BtnProduto.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnProduto.PressedState.Parent = this.BtnProduto;
             this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
-            this.BtnProduto.Size = new System.Drawing.Size(128, 90);
+            this.BtnProduto.Size = new System.Drawing.Size(144, 112);
             this.BtnProduto.TabIndex = 4;
             this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
             // 
@@ -698,10 +611,11 @@ namespace SrBolo_Prototype1
             this.PanelFuncionario.Controls.Add(this.guna2Button5);
             this.PanelFuncionario.Controls.Add(this.guna2Button1);
             this.PanelFuncionario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelFuncionario.Location = new System.Drawing.Point(0, 197);
+            this.PanelFuncionario.Location = new System.Drawing.Point(0, 246);
+            this.PanelFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelFuncionario.Name = "PanelFuncionario";
             this.PanelFuncionario.ShadowDecoration.Parent = this.PanelFuncionario;
-            this.PanelFuncionario.Size = new System.Drawing.Size(128, 110);
+            this.PanelFuncionario.Size = new System.Drawing.Size(144, 138);
             this.PanelFuncionario.TabIndex = 3;
             // 
             // guna2Button5
@@ -718,10 +632,11 @@ namespace SrBolo_Prototype1
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 55);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 69);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(128, 55);
+            this.guna2Button5.Size = new System.Drawing.Size(144, 69);
             this.guna2Button5.TabIndex = 3;
             this.guna2Button5.Text = "Gerenciar Funcionário";
             // 
@@ -740,9 +655,10 @@ namespace SrBolo_Prototype1
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(128, 55);
+            this.guna2Button1.Size = new System.Drawing.Size(144, 69);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Cadastrar Funcionário";
             // 
@@ -758,22 +674,24 @@ namespace SrBolo_Prototype1
             this.BtnFuncionario.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnFuncionario.ImageRotate = 0F;
             this.BtnFuncionario.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnFuncionario.Location = new System.Drawing.Point(0, 107);
+            this.BtnFuncionario.Location = new System.Drawing.Point(0, 134);
+            this.BtnFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnFuncionario.Name = "BtnFuncionario";
             this.BtnFuncionario.PressedState.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
             this.BtnFuncionario.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnFuncionario.PressedState.Parent = this.BtnFuncionario;
             this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.Size = new System.Drawing.Size(128, 90);
+            this.BtnFuncionario.Size = new System.Drawing.Size(144, 112);
             this.BtnFuncionario.TabIndex = 2;
             this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
             // 
             // guna2GradientPanel2
             // 
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(148, 129);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(166, 161);
+            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(208, 100);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(234, 125);
             this.guna2GradientPanel2.TabIndex = 1;
             // 
             // LogoMrCake
@@ -784,18 +702,19 @@ namespace SrBolo_Prototype1
             this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
             this.LogoMrCake.ImageRotate = 0F;
             this.LogoMrCake.Location = new System.Drawing.Point(0, 0);
+            this.LogoMrCake.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LogoMrCake.Name = "LogoMrCake";
             this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
-            this.LogoMrCake.Size = new System.Drawing.Size(128, 107);
+            this.LogoMrCake.Size = new System.Drawing.Size(144, 134);
             this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoMrCake.TabIndex = 0;
             this.LogoMrCake.TabStop = false;
             // 
             // Editar_Func
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.lblEmailFunc);
@@ -829,16 +748,12 @@ namespace SrBolo_Prototype1
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2Button ButtonEdit;
         private Guna.UI2.WinForms.Guna2Button ButtonLimpar;
-        private Guna.UI2.WinForms.Guna2TextBox txtEditFuncSal;
         private Guna.UI2.WinForms.Guna2TextBox txtEditFuncSenha;
         private Guna.UI2.WinForms.Guna2TextBox txtEditFuncCPF;
-        private Guna.UI2.WinForms.Guna2TextBox txtEditFuncRG;
-        private Guna.UI2.WinForms.Guna2TextBox txtEditFuncID;
         private Guna.UI2.WinForms.Guna2TextBox txtEditFuncEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtEditFuncTel;
         private Guna.UI2.WinForms.Guna2TextBox txtEditFuncNome;
         private Guna.UI2.WinForms.Guna2HtmlLabel PanelEditFunc;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxEditFuncSexo;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxEditFuncCargo;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2Panel PanelReceita;

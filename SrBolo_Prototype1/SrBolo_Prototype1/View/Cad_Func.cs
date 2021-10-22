@@ -77,5 +77,16 @@ namespace SrBolo_Prototype1
         {
             ShowSubmenu(PanelReceita);
         }
+
+        private void BtnCadFunc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnGerFunc_Click(object sender, EventArgs e)
+        {
+            Gerenciar_Func gerenciar_Func = new Gerenciar_Func();
+            gerenciar_Func.ShowDialog();
+        }
     }
 }

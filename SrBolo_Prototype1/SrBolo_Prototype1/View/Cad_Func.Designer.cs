@@ -30,21 +30,13 @@
         {
             this.PanelCadFunc = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.ComboBoxCadFuncCargo = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.ComboBoxCadFuncSexo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ButtonCad = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblCadFuncSal = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCadFuncSenha = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCadFuncSenha = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCadFuncCPF = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCadFuncCPF = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtCadFuncRG = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblCadFuncRG = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtCadFuncID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblCadFuncID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblCadFuncCargo = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblCadFuncSexo = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCadFuncEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCadFuncEmail = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCadFuncTel = new Guna.UI2.WinForms.Guna2TextBox();
@@ -67,12 +59,12 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.BtnInsumo = new Guna.UI2.WinForms.Guna2ImageButton();
             this.PanelProduto = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnGerProd = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnCadProd = new Guna.UI2.WinForms.Guna2Button();
             this.BtnProduto = new Guna.UI2.WinForms.Guna2ImageButton();
             this.PanelFuncionario = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnGerFunc = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnCadFunc = new Guna.UI2.WinForms.Guna2Button();
             this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -93,21 +85,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelCadFunc.BorderRadius = 40;
             this.PanelCadFunc.Controls.Add(this.ComboBoxCadFuncCargo);
-            this.PanelCadFunc.Controls.Add(this.ComboBoxCadFuncSexo);
             this.PanelCadFunc.Controls.Add(this.ButtonCad);
             this.PanelCadFunc.Controls.Add(this.ButtonLimpar);
-            this.PanelCadFunc.Controls.Add(this.guna2TextBox6);
-            this.PanelCadFunc.Controls.Add(this.lblCadFuncSal);
             this.PanelCadFunc.Controls.Add(this.txtCadFuncSenha);
             this.PanelCadFunc.Controls.Add(this.lblCadFuncSenha);
             this.PanelCadFunc.Controls.Add(this.txtCadFuncCPF);
             this.PanelCadFunc.Controls.Add(this.lblCadFuncCPF);
-            this.PanelCadFunc.Controls.Add(this.txtCadFuncRG);
-            this.PanelCadFunc.Controls.Add(this.lblCadFuncRG);
-            this.PanelCadFunc.Controls.Add(this.txtCadFuncID);
-            this.PanelCadFunc.Controls.Add(this.lblCadFuncID);
             this.PanelCadFunc.Controls.Add(this.lblCadFuncCargo);
-            this.PanelCadFunc.Controls.Add(this.lblCadFuncSexo);
             this.PanelCadFunc.Controls.Add(this.txtCadFuncEmail);
             this.PanelCadFunc.Controls.Add(this.lblCadFuncEmail);
             this.PanelCadFunc.Controls.Add(this.txtCadFuncTel);
@@ -115,11 +99,11 @@
             this.PanelCadFunc.Controls.Add(this.txtCadFuncNome);
             this.PanelCadFunc.Controls.Add(this.lblCadFuncNome);
             this.PanelCadFunc.Controls.Add(this.lblTitle);
-            this.PanelCadFunc.Location = new System.Drawing.Point(129, 66);
+            this.PanelCadFunc.Location = new System.Drawing.Point(145, 82);
             this.PanelCadFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelCadFunc.Name = "PanelCadFunc";
             this.PanelCadFunc.ShadowDecoration.Parent = this.PanelCadFunc;
-            this.PanelCadFunc.Size = new System.Drawing.Size(1219, 700);
+            this.PanelCadFunc.Size = new System.Drawing.Size(1371, 875);
             this.PanelCadFunc.TabIndex = 1;
             // 
             // ComboBoxCadFuncCargo
@@ -135,32 +119,12 @@
             this.ComboBoxCadFuncCargo.HoverState.Parent = this.ComboBoxCadFuncCargo;
             this.ComboBoxCadFuncCargo.ItemHeight = 30;
             this.ComboBoxCadFuncCargo.ItemsAppearance.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.Location = new System.Drawing.Point(207, 414);
+            this.ComboBoxCadFuncCargo.Location = new System.Drawing.Point(765, 484);
             this.ComboBoxCadFuncCargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxCadFuncCargo.Name = "ComboBoxCadFuncCargo";
             this.ComboBoxCadFuncCargo.ShadowDecoration.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.Size = new System.Drawing.Size(360, 36);
+            this.ComboBoxCadFuncCargo.Size = new System.Drawing.Size(404, 36);
             this.ComboBoxCadFuncCargo.TabIndex = 24;
-            // 
-            // ComboBoxCadFuncSexo
-            // 
-            this.ComboBoxCadFuncSexo.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxCadFuncSexo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxCadFuncSexo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCadFuncSexo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadFuncSexo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadFuncSexo.FocusedState.Parent = this.ComboBoxCadFuncSexo;
-            this.ComboBoxCadFuncSexo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxCadFuncSexo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboBoxCadFuncSexo.HoverState.Parent = this.ComboBoxCadFuncSexo;
-            this.ComboBoxCadFuncSexo.ItemHeight = 30;
-            this.ComboBoxCadFuncSexo.ItemsAppearance.Parent = this.ComboBoxCadFuncSexo;
-            this.ComboBoxCadFuncSexo.Location = new System.Drawing.Point(207, 348);
-            this.ComboBoxCadFuncSexo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxCadFuncSexo.Name = "ComboBoxCadFuncSexo";
-            this.ComboBoxCadFuncSexo.ShadowDecoration.Parent = this.ComboBoxCadFuncSexo;
-            this.ComboBoxCadFuncSexo.Size = new System.Drawing.Size(360, 36);
-            this.ComboBoxCadFuncSexo.TabIndex = 23;
             // 
             // ButtonCad
             // 
@@ -176,11 +140,11 @@
             this.ButtonCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.ButtonCad.ForeColor = System.Drawing.Color.White;
             this.ButtonCad.HoverState.Parent = this.ButtonCad;
-            this.ButtonCad.Location = new System.Drawing.Point(641, 481);
+            this.ButtonCad.Location = new System.Drawing.Point(721, 601);
             this.ButtonCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonCad.Name = "ButtonCad";
             this.ButtonCad.ShadowDecoration.Parent = this.ButtonCad;
-            this.ButtonCad.Size = new System.Drawing.Size(160, 41);
+            this.ButtonCad.Size = new System.Drawing.Size(180, 51);
             this.ButtonCad.TabIndex = 22;
             this.ButtonCad.Text = "Cadastrar";
             // 
@@ -198,49 +162,13 @@
             this.ButtonLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLimpar.ForeColor = System.Drawing.Color.White;
             this.ButtonLimpar.HoverState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Location = new System.Drawing.Point(458, 481);
+            this.ButtonLimpar.Location = new System.Drawing.Point(515, 601);
             this.ButtonLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonLimpar.Name = "ButtonLimpar";
             this.ButtonLimpar.ShadowDecoration.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Size = new System.Drawing.Size(160, 41);
+            this.ButtonLimpar.Size = new System.Drawing.Size(180, 51);
             this.ButtonLimpar.TabIndex = 21;
             this.ButtonLimpar.Text = "Limpar";
-            // 
-            // guna2TextBox6
-            // 
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.FocusedState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Location = new System.Drawing.Point(671, 414);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Size = new System.Drawing.Size(359, 29);
-            this.guna2TextBox6.TabIndex = 20;
-            // 
-            // lblCadFuncSal
-            // 
-            this.lblCadFuncSal.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncSal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadFuncSal.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncSal.Location = new System.Drawing.Point(671, 392);
-            this.lblCadFuncSal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblCadFuncSal.Name = "lblCadFuncSal";
-            this.lblCadFuncSal.Size = new System.Drawing.Size(49, 20);
-            this.lblCadFuncSal.TabIndex = 19;
-            this.lblCadFuncSal.Text = "Salário";
             // 
             // txtCadFuncSenha
             // 
@@ -256,14 +184,14 @@
             this.txtCadFuncSenha.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadFuncSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncSenha.HoverState.Parent = this.txtCadFuncSenha;
-            this.txtCadFuncSenha.Location = new System.Drawing.Point(671, 348);
+            this.txtCadFuncSenha.Location = new System.Drawing.Point(765, 337);
             this.txtCadFuncSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadFuncSenha.Name = "txtCadFuncSenha";
             this.txtCadFuncSenha.PasswordChar = '\0';
             this.txtCadFuncSenha.PlaceholderText = "";
             this.txtCadFuncSenha.SelectedText = "";
             this.txtCadFuncSenha.ShadowDecoration.Parent = this.txtCadFuncSenha;
-            this.txtCadFuncSenha.Size = new System.Drawing.Size(359, 29);
+            this.txtCadFuncSenha.Size = new System.Drawing.Size(404, 36);
             this.txtCadFuncSenha.TabIndex = 18;
             // 
             // lblCadFuncSenha
@@ -271,10 +199,10 @@
             this.lblCadFuncSenha.BackColor = System.Drawing.Color.Transparent;
             this.lblCadFuncSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncSenha.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncSenha.Location = new System.Drawing.Point(671, 326);
+            this.lblCadFuncSenha.Location = new System.Drawing.Point(765, 310);
             this.lblCadFuncSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadFuncSenha.Name = "lblCadFuncSenha";
-            this.lblCadFuncSenha.Size = new System.Drawing.Size(45, 20);
+            this.lblCadFuncSenha.Size = new System.Drawing.Size(55, 24);
             this.lblCadFuncSenha.TabIndex = 17;
             this.lblCadFuncSenha.Text = "Senha";
             // 
@@ -292,14 +220,14 @@
             this.txtCadFuncCPF.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadFuncCPF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncCPF.HoverState.Parent = this.txtCadFuncCPF;
-            this.txtCadFuncCPF.Location = new System.Drawing.Point(671, 284);
+            this.txtCadFuncCPF.Location = new System.Drawing.Point(765, 198);
             this.txtCadFuncCPF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadFuncCPF.Name = "txtCadFuncCPF";
             this.txtCadFuncCPF.PasswordChar = '\0';
             this.txtCadFuncCPF.PlaceholderText = "";
             this.txtCadFuncCPF.SelectedText = "";
             this.txtCadFuncCPF.ShadowDecoration.Parent = this.txtCadFuncCPF;
-            this.txtCadFuncCPF.Size = new System.Drawing.Size(359, 29);
+            this.txtCadFuncCPF.Size = new System.Drawing.Size(404, 36);
             this.txtCadFuncCPF.TabIndex = 16;
             // 
             // lblCadFuncCPF
@@ -307,108 +235,24 @@
             this.lblCadFuncCPF.BackColor = System.Drawing.Color.Transparent;
             this.lblCadFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncCPF.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncCPF.Location = new System.Drawing.Point(671, 262);
+            this.lblCadFuncCPF.Location = new System.Drawing.Point(765, 171);
             this.lblCadFuncCPF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadFuncCPF.Name = "lblCadFuncCPF";
-            this.lblCadFuncCPF.Size = new System.Drawing.Size(33, 20);
+            this.lblCadFuncCPF.Size = new System.Drawing.Size(39, 24);
             this.lblCadFuncCPF.TabIndex = 15;
             this.lblCadFuncCPF.Text = "CPF";
-            // 
-            // txtCadFuncRG
-            // 
-            this.txtCadFuncRG.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadFuncRG.DefaultText = "";
-            this.txtCadFuncRG.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadFuncRG.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadFuncRG.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncRG.DisabledState.Parent = this.txtCadFuncRG;
-            this.txtCadFuncRG.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncRG.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncRG.FocusedState.Parent = this.txtCadFuncRG;
-            this.txtCadFuncRG.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCadFuncRG.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncRG.HoverState.Parent = this.txtCadFuncRG;
-            this.txtCadFuncRG.Location = new System.Drawing.Point(671, 220);
-            this.txtCadFuncRG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadFuncRG.Name = "txtCadFuncRG";
-            this.txtCadFuncRG.PasswordChar = '\0';
-            this.txtCadFuncRG.PlaceholderText = "";
-            this.txtCadFuncRG.SelectedText = "";
-            this.txtCadFuncRG.ShadowDecoration.Parent = this.txtCadFuncRG;
-            this.txtCadFuncRG.Size = new System.Drawing.Size(359, 29);
-            this.txtCadFuncRG.TabIndex = 14;
-            // 
-            // lblCadFuncRG
-            // 
-            this.lblCadFuncRG.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncRG.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadFuncRG.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncRG.Location = new System.Drawing.Point(671, 198);
-            this.lblCadFuncRG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblCadFuncRG.Name = "lblCadFuncRG";
-            this.lblCadFuncRG.Size = new System.Drawing.Size(26, 20);
-            this.lblCadFuncRG.TabIndex = 13;
-            this.lblCadFuncRG.Text = "RG";
-            // 
-            // txtCadFuncID
-            // 
-            this.txtCadFuncID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadFuncID.DefaultText = "";
-            this.txtCadFuncID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadFuncID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadFuncID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncID.DisabledState.Parent = this.txtCadFuncID;
-            this.txtCadFuncID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncID.FocusedState.Parent = this.txtCadFuncID;
-            this.txtCadFuncID.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCadFuncID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncID.HoverState.Parent = this.txtCadFuncID;
-            this.txtCadFuncID.Location = new System.Drawing.Point(671, 158);
-            this.txtCadFuncID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadFuncID.Name = "txtCadFuncID";
-            this.txtCadFuncID.PasswordChar = '\0';
-            this.txtCadFuncID.PlaceholderText = "";
-            this.txtCadFuncID.SelectedText = "";
-            this.txtCadFuncID.ShadowDecoration.Parent = this.txtCadFuncID;
-            this.txtCadFuncID.Size = new System.Drawing.Size(359, 29);
-            this.txtCadFuncID.TabIndex = 12;
-            // 
-            // lblCadFuncID
-            // 
-            this.lblCadFuncID.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadFuncID.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncID.Location = new System.Drawing.Point(671, 137);
-            this.lblCadFuncID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblCadFuncID.Name = "lblCadFuncID";
-            this.lblCadFuncID.Size = new System.Drawing.Size(17, 20);
-            this.lblCadFuncID.TabIndex = 11;
-            this.lblCadFuncID.Text = "ID";
             // 
             // lblCadFuncCargo
             // 
             this.lblCadFuncCargo.BackColor = System.Drawing.Color.Transparent;
             this.lblCadFuncCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncCargo.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncCargo.Location = new System.Drawing.Point(207, 392);
+            this.lblCadFuncCargo.Location = new System.Drawing.Point(765, 456);
             this.lblCadFuncCargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadFuncCargo.Name = "lblCadFuncCargo";
-            this.lblCadFuncCargo.Size = new System.Drawing.Size(44, 20);
+            this.lblCadFuncCargo.Size = new System.Drawing.Size(52, 24);
             this.lblCadFuncCargo.TabIndex = 9;
             this.lblCadFuncCargo.Text = "Cargo";
-            // 
-            // lblCadFuncSexo
-            // 
-            this.lblCadFuncSexo.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadFuncSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadFuncSexo.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncSexo.Location = new System.Drawing.Point(207, 326);
-            this.lblCadFuncSexo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblCadFuncSexo.Name = "lblCadFuncSexo";
-            this.lblCadFuncSexo.Size = new System.Drawing.Size(37, 20);
-            this.lblCadFuncSexo.TabIndex = 7;
-            this.lblCadFuncSexo.Text = "Sexo";
             // 
             // txtCadFuncEmail
             // 
@@ -424,14 +268,14 @@
             this.txtCadFuncEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadFuncEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncEmail.HoverState.Parent = this.txtCadFuncEmail;
-            this.txtCadFuncEmail.Location = new System.Drawing.Point(207, 284);
+            this.txtCadFuncEmail.Location = new System.Drawing.Point(233, 484);
             this.txtCadFuncEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadFuncEmail.Name = "txtCadFuncEmail";
             this.txtCadFuncEmail.PasswordChar = '\0';
             this.txtCadFuncEmail.PlaceholderText = "";
             this.txtCadFuncEmail.SelectedText = "";
             this.txtCadFuncEmail.ShadowDecoration.Parent = this.txtCadFuncEmail;
-            this.txtCadFuncEmail.Size = new System.Drawing.Size(359, 29);
+            this.txtCadFuncEmail.Size = new System.Drawing.Size(404, 36);
             this.txtCadFuncEmail.TabIndex = 6;
             // 
             // lblCadFuncEmail
@@ -439,10 +283,10 @@
             this.lblCadFuncEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblCadFuncEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncEmail.Location = new System.Drawing.Point(207, 262);
+            this.lblCadFuncEmail.Location = new System.Drawing.Point(233, 457);
             this.lblCadFuncEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadFuncEmail.Name = "lblCadFuncEmail";
-            this.lblCadFuncEmail.Size = new System.Drawing.Size(40, 20);
+            this.lblCadFuncEmail.Size = new System.Drawing.Size(47, 24);
             this.lblCadFuncEmail.TabIndex = 5;
             this.lblCadFuncEmail.Text = "Email";
             // 
@@ -460,14 +304,14 @@
             this.txtCadFuncTel.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadFuncTel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncTel.HoverState.Parent = this.txtCadFuncTel;
-            this.txtCadFuncTel.Location = new System.Drawing.Point(207, 220);
+            this.txtCadFuncTel.Location = new System.Drawing.Point(233, 334);
             this.txtCadFuncTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadFuncTel.Name = "txtCadFuncTel";
             this.txtCadFuncTel.PasswordChar = '\0';
             this.txtCadFuncTel.PlaceholderText = "";
             this.txtCadFuncTel.SelectedText = "";
             this.txtCadFuncTel.ShadowDecoration.Parent = this.txtCadFuncTel;
-            this.txtCadFuncTel.Size = new System.Drawing.Size(359, 29);
+            this.txtCadFuncTel.Size = new System.Drawing.Size(404, 36);
             this.txtCadFuncTel.TabIndex = 4;
             // 
             // lblCadFuncTel
@@ -475,10 +319,10 @@
             this.lblCadFuncTel.BackColor = System.Drawing.Color.Transparent;
             this.lblCadFuncTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncTel.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncTel.Location = new System.Drawing.Point(207, 198);
+            this.lblCadFuncTel.Location = new System.Drawing.Point(233, 307);
             this.lblCadFuncTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadFuncTel.Name = "lblCadFuncTel";
-            this.lblCadFuncTel.Size = new System.Drawing.Size(60, 20);
+            this.lblCadFuncTel.Size = new System.Drawing.Size(74, 24);
             this.lblCadFuncTel.TabIndex = 3;
             this.lblCadFuncTel.Text = "Telefone";
             // 
@@ -496,14 +340,14 @@
             this.txtCadFuncNome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadFuncNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncNome.HoverState.Parent = this.txtCadFuncNome;
-            this.txtCadFuncNome.Location = new System.Drawing.Point(207, 158);
+            this.txtCadFuncNome.Location = new System.Drawing.Point(233, 198);
             this.txtCadFuncNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadFuncNome.Name = "txtCadFuncNome";
             this.txtCadFuncNome.PasswordChar = '\0';
             this.txtCadFuncNome.PlaceholderText = "";
             this.txtCadFuncNome.SelectedText = "";
             this.txtCadFuncNome.ShadowDecoration.Parent = this.txtCadFuncNome;
-            this.txtCadFuncNome.Size = new System.Drawing.Size(359, 29);
+            this.txtCadFuncNome.Size = new System.Drawing.Size(404, 36);
             this.txtCadFuncNome.TabIndex = 2;
             // 
             // lblCadFuncNome
@@ -511,10 +355,10 @@
             this.lblCadFuncNome.BackColor = System.Drawing.Color.Transparent;
             this.lblCadFuncNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncNome.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncNome.Location = new System.Drawing.Point(207, 137);
+            this.lblCadFuncNome.Location = new System.Drawing.Point(233, 171);
             this.lblCadFuncNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadFuncNome.Name = "lblCadFuncNome";
-            this.lblCadFuncNome.Size = new System.Drawing.Size(44, 20);
+            this.lblCadFuncNome.Size = new System.Drawing.Size(50, 24);
             this.lblCadFuncNome.TabIndex = 1;
             this.lblCadFuncNome.Text = "Nome";
             // 
@@ -523,10 +367,10 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(48, 22);
+            this.lblTitle.Location = new System.Drawing.Point(54, 28);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(284, 33);
+            this.lblTitle.Size = new System.Drawing.Size(333, 39);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Cadastrar funcionário";
             // 
@@ -535,10 +379,10 @@
             this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(1114, 12);
+            this.lblData.Location = new System.Drawing.Point(1253, 15);
             this.lblData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(221, 20);
+            this.lblData.Size = new System.Drawing.Size(265, 24);
             this.lblData.TabIndex = 2;
             this.lblData.Text = "Quarta, 2 de Janeiro de 2021";
             // 
@@ -547,10 +391,10 @@
             this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(1264, 34);
+            this.lblHora.Location = new System.Drawing.Point(1422, 42);
             this.lblHora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(64, 20);
+            this.lblHora.Size = new System.Drawing.Size(76, 24);
             this.lblHora.TabIndex = 3;
             this.lblHora.Text = "2:00 AM";
             // 
@@ -559,10 +403,10 @@
             this.lblNomeFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblNomeFunc.Location = new System.Drawing.Point(228, 11);
+            this.lblNomeFunc.Location = new System.Drawing.Point(256, 14);
             this.lblNomeFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(99, 22);
+            this.lblNomeFunc.Size = new System.Drawing.Size(113, 27);
             this.lblNomeFunc.TabIndex = 4;
             this.lblNomeFunc.Text = "Edson Koiti";
             // 
@@ -571,10 +415,10 @@
             this.lblEmailFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblEmailFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblEmailFunc.Location = new System.Drawing.Point(227, 34);
+            this.lblEmailFunc.Location = new System.Drawing.Point(255, 42);
             this.lblEmailFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblEmailFunc.Name = "lblEmailFunc";
-            this.lblEmailFunc.Size = new System.Drawing.Size(142, 18);
+            this.lblEmailFunc.Size = new System.Drawing.Size(164, 22);
             this.lblEmailFunc.TabIndex = 5;
             this.lblEmailFunc.Text = "RolaDura@yahoo.com";
             // 
@@ -582,12 +426,12 @@
             // 
             this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
             this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(159, 8);
+            this.PictureBoxPerfil.Location = new System.Drawing.Point(179, 10);
             this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PictureBoxPerfil.Name = "PictureBoxPerfil";
             this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(58, 52);
+            this.PictureBoxPerfil.Size = new System.Drawing.Size(65, 65);
             this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxPerfil.TabIndex = 0;
             this.PictureBoxPerfil.TabStop = false;
@@ -608,9 +452,10 @@
             this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
+            this.PanelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
-            this.PanelMenu.Size = new System.Drawing.Size(128, 721);
+            this.PanelMenu.Size = new System.Drawing.Size(144, 901);
             this.PanelMenu.TabIndex = 12;
             // 
             // PanelReceita
@@ -618,10 +463,11 @@
             this.PanelReceita.Controls.Add(this.guna2Button8);
             this.PanelReceita.Controls.Add(this.guna2Button4);
             this.PanelReceita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelReceita.Location = new System.Drawing.Point(0, 797);
+            this.PanelReceita.Location = new System.Drawing.Point(0, 996);
+            this.PanelReceita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelReceita.Name = "PanelReceita";
             this.PanelReceita.ShadowDecoration.Parent = this.PanelReceita;
-            this.PanelReceita.Size = new System.Drawing.Size(128, 110);
+            this.PanelReceita.Size = new System.Drawing.Size(144, 138);
             this.PanelReceita.TabIndex = 9;
             // 
             // guna2Button8
@@ -638,10 +484,11 @@
             this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
             this.guna2Button8.HoverState.Parent = this.guna2Button8;
-            this.guna2Button8.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button8.Location = new System.Drawing.Point(0, 70);
+            this.guna2Button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button8.Size = new System.Drawing.Size(144, 70);
             this.guna2Button8.TabIndex = 3;
             this.guna2Button8.Text = "Gerenciar Receita";
             // 
@@ -660,9 +507,10 @@
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
             this.guna2Button4.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button4.Size = new System.Drawing.Size(144, 70);
             this.guna2Button4.TabIndex = 1;
             this.guna2Button4.Text = "Cadastrar Receita";
             // 
@@ -677,12 +525,13 @@
             this.BtnReceita.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnReceita.ImageRotate = 0F;
             this.BtnReceita.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnReceita.Location = new System.Drawing.Point(0, 707);
+            this.BtnReceita.Location = new System.Drawing.Point(0, 884);
+            this.BtnReceita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnReceita.Name = "BtnReceita";
             this.BtnReceita.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnReceita.PressedState.Parent = this.BtnReceita;
             this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
-            this.BtnReceita.Size = new System.Drawing.Size(128, 90);
+            this.BtnReceita.Size = new System.Drawing.Size(144, 112);
             this.BtnReceita.TabIndex = 8;
             this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
             // 
@@ -691,10 +540,11 @@
             this.PanelInsumo.Controls.Add(this.guna2Button7);
             this.PanelInsumo.Controls.Add(this.guna2Button2);
             this.PanelInsumo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelInsumo.Location = new System.Drawing.Point(0, 597);
+            this.PanelInsumo.Location = new System.Drawing.Point(0, 746);
+            this.PanelInsumo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelInsumo.Name = "PanelInsumo";
             this.PanelInsumo.ShadowDecoration.Parent = this.PanelInsumo;
-            this.PanelInsumo.Size = new System.Drawing.Size(128, 110);
+            this.PanelInsumo.Size = new System.Drawing.Size(144, 138);
             this.PanelInsumo.TabIndex = 7;
             // 
             // guna2Button7
@@ -711,10 +561,11 @@
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button7.Location = new System.Drawing.Point(0, 70);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button7.Size = new System.Drawing.Size(144, 70);
             this.guna2Button7.TabIndex = 3;
             this.guna2Button7.Text = "Gerenciar Insumo";
             // 
@@ -733,9 +584,10 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button2.Size = new System.Drawing.Size(144, 70);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Cadastrar Insumo";
             // 
@@ -750,67 +602,71 @@
             this.BtnInsumo.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnInsumo.ImageRotate = 0F;
             this.BtnInsumo.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnInsumo.Location = new System.Drawing.Point(0, 507);
+            this.BtnInsumo.Location = new System.Drawing.Point(0, 634);
+            this.BtnInsumo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnInsumo.Name = "BtnInsumo";
             this.BtnInsumo.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnInsumo.PressedState.Parent = this.BtnInsumo;
             this.BtnInsumo.ShadowDecoration.Parent = this.BtnInsumo;
-            this.BtnInsumo.Size = new System.Drawing.Size(128, 90);
+            this.BtnInsumo.Size = new System.Drawing.Size(144, 112);
             this.BtnInsumo.TabIndex = 6;
             this.BtnInsumo.Click += new System.EventHandler(this.BtnInsumo_Click);
             // 
             // PanelProduto
             // 
-            this.PanelProduto.Controls.Add(this.guna2Button6);
-            this.PanelProduto.Controls.Add(this.guna2Button3);
+            this.PanelProduto.Controls.Add(this.BtnGerProd);
+            this.PanelProduto.Controls.Add(this.BtnCadProd);
             this.PanelProduto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelProduto.Location = new System.Drawing.Point(0, 397);
+            this.PanelProduto.Location = new System.Drawing.Point(0, 496);
+            this.PanelProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelProduto.Name = "PanelProduto";
             this.PanelProduto.ShadowDecoration.Parent = this.PanelProduto;
-            this.PanelProduto.Size = new System.Drawing.Size(128, 110);
+            this.PanelProduto.Size = new System.Drawing.Size(144, 138);
             this.PanelProduto.TabIndex = 5;
             // 
-            // guna2Button6
+            // BtnGerProd
             // 
-            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
-            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.DisabledState.Parent = this.guna2Button6;
-            this.guna2Button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Location = new System.Drawing.Point(0, 56);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(128, 56);
-            this.guna2Button6.TabIndex = 2;
-            this.guna2Button6.Text = "Gerenciar Produto";
+            this.BtnGerProd.CheckedState.Parent = this.BtnGerProd;
+            this.BtnGerProd.CustomImages.Parent = this.BtnGerProd;
+            this.BtnGerProd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnGerProd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnGerProd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnGerProd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnGerProd.DisabledState.Parent = this.BtnGerProd;
+            this.BtnGerProd.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnGerProd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.BtnGerProd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnGerProd.ForeColor = System.Drawing.Color.White;
+            this.BtnGerProd.HoverState.Parent = this.BtnGerProd;
+            this.BtnGerProd.Location = new System.Drawing.Point(0, 70);
+            this.BtnGerProd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnGerProd.Name = "BtnGerProd";
+            this.BtnGerProd.ShadowDecoration.Parent = this.BtnGerProd;
+            this.BtnGerProd.Size = new System.Drawing.Size(144, 70);
+            this.BtnGerProd.TabIndex = 2;
+            this.BtnGerProd.Text = "Gerenciar Produto";
             // 
-            // guna2Button3
+            // BtnCadProd
             // 
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.DisabledState.Parent = this.guna2Button3;
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(128, 56);
-            this.guna2Button3.TabIndex = 0;
-            this.guna2Button3.Text = "Cadastrar Produto";
+            this.BtnCadProd.CheckedState.Parent = this.BtnCadProd;
+            this.BtnCadProd.CustomImages.Parent = this.BtnCadProd;
+            this.BtnCadProd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnCadProd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnCadProd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnCadProd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnCadProd.DisabledState.Parent = this.BtnCadProd;
+            this.BtnCadProd.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCadProd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.BtnCadProd.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnCadProd.ForeColor = System.Drawing.Color.White;
+            this.BtnCadProd.HoverState.Parent = this.BtnCadProd;
+            this.BtnCadProd.Location = new System.Drawing.Point(0, 0);
+            this.BtnCadProd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnCadProd.Name = "BtnCadProd";
+            this.BtnCadProd.ShadowDecoration.Parent = this.BtnCadProd;
+            this.BtnCadProd.Size = new System.Drawing.Size(144, 70);
+            this.BtnCadProd.TabIndex = 0;
+            this.BtnCadProd.Text = "Cadastrar Produto";
             // 
             // BtnProduto
             // 
@@ -823,67 +679,73 @@
             this.BtnProduto.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnProduto.ImageRotate = 0F;
             this.BtnProduto.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnProduto.Location = new System.Drawing.Point(0, 307);
+            this.BtnProduto.Location = new System.Drawing.Point(0, 384);
+            this.BtnProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnProduto.Name = "BtnProduto";
             this.BtnProduto.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnProduto.PressedState.Parent = this.BtnProduto;
             this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
-            this.BtnProduto.Size = new System.Drawing.Size(128, 90);
+            this.BtnProduto.Size = new System.Drawing.Size(144, 112);
             this.BtnProduto.TabIndex = 4;
             this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
             // 
             // PanelFuncionario
             // 
-            this.PanelFuncionario.Controls.Add(this.guna2Button5);
-            this.PanelFuncionario.Controls.Add(this.guna2Button1);
+            this.PanelFuncionario.Controls.Add(this.BtnGerFunc);
+            this.PanelFuncionario.Controls.Add(this.BtnCadFunc);
             this.PanelFuncionario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelFuncionario.Location = new System.Drawing.Point(0, 197);
+            this.PanelFuncionario.Location = new System.Drawing.Point(0, 246);
+            this.PanelFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelFuncionario.Name = "PanelFuncionario";
             this.PanelFuncionario.ShadowDecoration.Parent = this.PanelFuncionario;
-            this.PanelFuncionario.Size = new System.Drawing.Size(128, 110);
+            this.PanelFuncionario.Size = new System.Drawing.Size(144, 138);
             this.PanelFuncionario.TabIndex = 3;
             // 
-            // guna2Button5
+            // BtnGerFunc
             // 
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.DisabledState.Parent = this.guna2Button5;
-            this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 55);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(128, 55);
-            this.guna2Button5.TabIndex = 3;
-            this.guna2Button5.Text = "Gerenciar Funcionário";
+            this.BtnGerFunc.CheckedState.Parent = this.BtnGerFunc;
+            this.BtnGerFunc.CustomImages.Parent = this.BtnGerFunc;
+            this.BtnGerFunc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnGerFunc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnGerFunc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnGerFunc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnGerFunc.DisabledState.Parent = this.BtnGerFunc;
+            this.BtnGerFunc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnGerFunc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.BtnGerFunc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnGerFunc.ForeColor = System.Drawing.Color.White;
+            this.BtnGerFunc.HoverState.Parent = this.BtnGerFunc;
+            this.BtnGerFunc.Location = new System.Drawing.Point(0, 69);
+            this.BtnGerFunc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnGerFunc.Name = "BtnGerFunc";
+            this.BtnGerFunc.ShadowDecoration.Parent = this.BtnGerFunc;
+            this.BtnGerFunc.Size = new System.Drawing.Size(144, 69);
+            this.BtnGerFunc.TabIndex = 3;
+            this.BtnGerFunc.Text = "Gerenciar Funcionário";
+            this.BtnGerFunc.Click += new System.EventHandler(this.BtnGerFunc_Click);
             // 
-            // guna2Button1
+            // BtnCadFunc
             // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(128, 55);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "Cadastrar Funcionário";
+            this.BtnCadFunc.CheckedState.Parent = this.BtnCadFunc;
+            this.BtnCadFunc.CustomImages.Parent = this.BtnCadFunc;
+            this.BtnCadFunc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnCadFunc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnCadFunc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnCadFunc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnCadFunc.DisabledState.Parent = this.BtnCadFunc;
+            this.BtnCadFunc.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnCadFunc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.BtnCadFunc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnCadFunc.ForeColor = System.Drawing.Color.White;
+            this.BtnCadFunc.HoverState.Parent = this.BtnCadFunc;
+            this.BtnCadFunc.Location = new System.Drawing.Point(0, 0);
+            this.BtnCadFunc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnCadFunc.Name = "BtnCadFunc";
+            this.BtnCadFunc.ShadowDecoration.Parent = this.BtnCadFunc;
+            this.BtnCadFunc.Size = new System.Drawing.Size(144, 69);
+            this.BtnCadFunc.TabIndex = 0;
+            this.BtnCadFunc.Text = "Cadastrar Funcionário";
+            this.BtnCadFunc.Click += new System.EventHandler(this.BtnCadFunc_Click);
             // 
             // BtnFuncionario
             // 
@@ -897,22 +759,24 @@
             this.BtnFuncionario.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnFuncionario.ImageRotate = 0F;
             this.BtnFuncionario.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnFuncionario.Location = new System.Drawing.Point(0, 107);
+            this.BtnFuncionario.Location = new System.Drawing.Point(0, 134);
+            this.BtnFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnFuncionario.Name = "BtnFuncionario";
             this.BtnFuncionario.PressedState.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
             this.BtnFuncionario.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnFuncionario.PressedState.Parent = this.BtnFuncionario;
             this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.Size = new System.Drawing.Size(128, 90);
+            this.BtnFuncionario.Size = new System.Drawing.Size(144, 112);
             this.BtnFuncionario.TabIndex = 2;
             this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
             // 
             // guna2GradientPanel2
             // 
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(148, 129);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(166, 161);
+            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(208, 100);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(234, 125);
             this.guna2GradientPanel2.TabIndex = 1;
             // 
             // LogoMrCake
@@ -923,19 +787,20 @@
             this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
             this.LogoMrCake.ImageRotate = 0F;
             this.LogoMrCake.Location = new System.Drawing.Point(0, 0);
+            this.LogoMrCake.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LogoMrCake.Name = "LogoMrCake";
             this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
-            this.LogoMrCake.Size = new System.Drawing.Size(128, 107);
+            this.LogoMrCake.Size = new System.Drawing.Size(144, 134);
             this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoMrCake.TabIndex = 0;
             this.LogoMrCake.TabStop = false;
             // 
             // Cad_Func
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.lblEmailFunc);
             this.Controls.Add(this.lblNomeFunc);
@@ -966,18 +831,11 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxPerfil;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblData;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblHora;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblCadFuncSal;
         private Guna.UI2.WinForms.Guna2TextBox txtCadFuncSenha;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCadFuncSenha;
         private Guna.UI2.WinForms.Guna2TextBox txtCadFuncCPF;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCadFuncCPF;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncRG;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblCadFuncRG;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncID;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblCadFuncID;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCadFuncCargo;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblCadFuncSexo;
         private Guna.UI2.WinForms.Guna2TextBox txtCadFuncEmail;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCadFuncEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtCadFuncTel;
@@ -990,7 +848,6 @@
         private Guna.UI2.WinForms.Guna2Button ButtonLimpar;
         private Guna.UI2.WinForms.Guna2Button ButtonCad;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadFuncCargo;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadFuncSexo;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2Panel PanelReceita;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
@@ -1001,12 +858,12 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2ImageButton BtnInsumo;
         private Guna.UI2.WinForms.Guna2Panel PanelProduto;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button BtnGerProd;
+        private Guna.UI2.WinForms.Guna2Button BtnCadProd;
         private Guna.UI2.WinForms.Guna2ImageButton BtnProduto;
         private Guna.UI2.WinForms.Guna2Panel PanelFuncionario;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button BtnGerFunc;
+        private Guna.UI2.WinForms.Guna2Button BtnCadFunc;
         private Guna.UI2.WinForms.Guna2ImageButton BtnFuncionario;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2PictureBox LogoMrCake;

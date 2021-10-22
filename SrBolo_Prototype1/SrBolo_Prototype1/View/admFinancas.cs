@@ -77,5 +77,11 @@ namespace SrBolo_Prototype1
         {
             ShowSubmenu(PanelReceita);
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Cad_Func cad_Func = new Cad_Func();
+            cad_Func.Show();
+        }
     }
 }

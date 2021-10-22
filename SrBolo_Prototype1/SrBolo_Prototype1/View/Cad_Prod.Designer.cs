@@ -35,9 +35,8 @@
             this.lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelCadProd = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.PictureBoxCadProd = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ComboBoxCadProdSubcat = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBoxCadProdTamanho = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ComboBoxCadProdReceita = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ButtonCad = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
             this.txtCadProdID = new Guna.UI2.WinForms.Guna2TextBox();
@@ -47,12 +46,10 @@
             this.lblCadProdID = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCadProdMargem = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCadProdMargem = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtCadProdCustoKg = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCadProdRecheio = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCadProdCustoKg = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCadProdTags = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCadProdTags = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.txtCadProdDesc = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblCadProdDesc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtCadProdNome = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblCadProdNome = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -75,6 +72,9 @@
             this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtCadProdMassa = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCadProdCobertura = new Guna.UI2.WinForms.Guna2TextBox();
             this.PanelCadProd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxCadProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
@@ -91,10 +91,10 @@
             this.lblEmailFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblEmailFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblEmailFunc.Location = new System.Drawing.Point(227, 34);
+            this.lblEmailFunc.Location = new System.Drawing.Point(255, 42);
             this.lblEmailFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblEmailFunc.Name = "lblEmailFunc";
-            this.lblEmailFunc.Size = new System.Drawing.Size(142, 18);
+            this.lblEmailFunc.Size = new System.Drawing.Size(164, 22);
             this.lblEmailFunc.TabIndex = 10;
             this.lblEmailFunc.Text = "RolaDura@yahoo.com";
             // 
@@ -103,10 +103,10 @@
             this.lblNomeFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblNomeFunc.Location = new System.Drawing.Point(228, 11);
+            this.lblNomeFunc.Location = new System.Drawing.Point(256, 14);
             this.lblNomeFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(99, 22);
+            this.lblNomeFunc.Size = new System.Drawing.Size(113, 27);
             this.lblNomeFunc.TabIndex = 9;
             this.lblNomeFunc.Text = "Edson Koiti";
             // 
@@ -115,10 +115,10 @@
             this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(1248, 34);
+            this.lblHora.Location = new System.Drawing.Point(1404, 42);
             this.lblHora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(64, 20);
+            this.lblHora.Size = new System.Drawing.Size(76, 24);
             this.lblHora.TabIndex = 8;
             this.lblHora.Text = "2:00 AM";
             // 
@@ -127,10 +127,10 @@
             this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(1098, 12);
+            this.lblData.Location = new System.Drawing.Point(1235, 15);
             this.lblData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(221, 20);
+            this.lblData.Size = new System.Drawing.Size(265, 24);
             this.lblData.TabIndex = 7;
             this.lblData.Text = "Quarta, 2 de Janeiro de 2021";
             // 
@@ -139,10 +139,10 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(48, 22);
+            this.lblTitle.Location = new System.Drawing.Point(54, 28);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(242, 33);
+            this.lblTitle.Size = new System.Drawing.Size(284, 39);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Cadastrar Produto";
             // 
@@ -152,10 +152,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelCadProd.BorderRadius = 40;
+            this.PanelCadProd.Controls.Add(this.txtCadProdCobertura);
+            this.PanelCadProd.Controls.Add(this.txtCadProdMassa);
+            this.PanelCadProd.Controls.Add(this.guna2HtmlLabel1);
             this.PanelCadProd.Controls.Add(this.PictureBoxCadProd);
-            this.PanelCadProd.Controls.Add(this.ComboBoxCadProdSubcat);
             this.PanelCadProd.Controls.Add(this.ComboBoxCadProdTamanho);
-            this.PanelCadProd.Controls.Add(this.guna2ComboBox1);
+            this.PanelCadProd.Controls.Add(this.ComboBoxCadProdReceita);
             this.PanelCadProd.Controls.Add(this.ButtonCad);
             this.PanelCadProd.Controls.Add(this.ButtonLimpar);
             this.PanelCadProd.Controls.Add(this.txtCadProdID);
@@ -165,20 +167,18 @@
             this.PanelCadProd.Controls.Add(this.lblCadProdID);
             this.PanelCadProd.Controls.Add(this.txtCadProdMargem);
             this.PanelCadProd.Controls.Add(this.lblCadProdMargem);
-            this.PanelCadProd.Controls.Add(this.txtCadProdCustoKg);
+            this.PanelCadProd.Controls.Add(this.txtCadProdRecheio);
             this.PanelCadProd.Controls.Add(this.lblCadProdCustoKg);
             this.PanelCadProd.Controls.Add(this.txtCadProdTags);
             this.PanelCadProd.Controls.Add(this.lblCadProdTags);
-            this.PanelCadProd.Controls.Add(this.txtCadProdDesc);
-            this.PanelCadProd.Controls.Add(this.lblCadProdDesc);
             this.PanelCadProd.Controls.Add(this.txtCadProdNome);
             this.PanelCadProd.Controls.Add(this.lblCadProdNome);
             this.PanelCadProd.Controls.Add(this.lblTitle);
-            this.PanelCadProd.Location = new System.Drawing.Point(129, 66);
+            this.PanelCadProd.Location = new System.Drawing.Point(145, 82);
             this.PanelCadProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelCadProd.Name = "PanelCadProd";
             this.PanelCadProd.ShadowDecoration.Parent = this.PanelCadProd;
-            this.PanelCadProd.Size = new System.Drawing.Size(1219, 700);
+            this.PanelCadProd.Size = new System.Drawing.Size(1371, 875);
             this.PanelCadProd.TabIndex = 11;
             // 
             // PictureBoxCadProd
@@ -188,34 +188,14 @@
             this.PictureBoxCadProd.BorderRadius = 20;
             this.PictureBoxCadProd.Image = global::SrBolo_Prototype1.Properties.Resources.ribas;
             this.PictureBoxCadProd.ImageRotate = 0F;
-            this.PictureBoxCadProd.Location = new System.Drawing.Point(18, 86);
+            this.PictureBoxCadProd.Location = new System.Drawing.Point(20, 108);
             this.PictureBoxCadProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PictureBoxCadProd.Name = "PictureBoxCadProd";
             this.PictureBoxCadProd.ShadowDecoration.Parent = this.PictureBoxCadProd;
-            this.PictureBoxCadProd.Size = new System.Drawing.Size(300, 238);
+            this.PictureBoxCadProd.Size = new System.Drawing.Size(338, 298);
             this.PictureBoxCadProd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxCadProd.TabIndex = 26;
             this.PictureBoxCadProd.TabStop = false;
-            // 
-            // ComboBoxCadProdSubcat
-            // 
-            this.ComboBoxCadProdSubcat.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxCadProdSubcat.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxCadProdSubcat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCadProdSubcat.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadProdSubcat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadProdSubcat.FocusedState.Parent = this.ComboBoxCadProdSubcat;
-            this.ComboBoxCadProdSubcat.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxCadProdSubcat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboBoxCadProdSubcat.HoverState.Parent = this.ComboBoxCadProdSubcat;
-            this.ComboBoxCadProdSubcat.ItemHeight = 30;
-            this.ComboBoxCadProdSubcat.ItemsAppearance.Parent = this.ComboBoxCadProdSubcat;
-            this.ComboBoxCadProdSubcat.Location = new System.Drawing.Point(709, 296);
-            this.ComboBoxCadProdSubcat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxCadProdSubcat.Name = "ComboBoxCadProdSubcat";
-            this.ComboBoxCadProdSubcat.ShadowDecoration.Parent = this.ComboBoxCadProdSubcat;
-            this.ComboBoxCadProdSubcat.Size = new System.Drawing.Size(324, 36);
-            this.ComboBoxCadProdSubcat.TabIndex = 25;
             // 
             // ComboBoxCadProdTamanho
             // 
@@ -230,32 +210,32 @@
             this.ComboBoxCadProdTamanho.HoverState.Parent = this.ComboBoxCadProdTamanho;
             this.ComboBoxCadProdTamanho.ItemHeight = 30;
             this.ComboBoxCadProdTamanho.ItemsAppearance.Parent = this.ComboBoxCadProdTamanho;
-            this.ComboBoxCadProdTamanho.Location = new System.Drawing.Point(709, 202);
+            this.ComboBoxCadProdTamanho.Location = new System.Drawing.Point(798, 370);
             this.ComboBoxCadProdTamanho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxCadProdTamanho.Name = "ComboBoxCadProdTamanho";
             this.ComboBoxCadProdTamanho.ShadowDecoration.Parent = this.ComboBoxCadProdTamanho;
-            this.ComboBoxCadProdTamanho.Size = new System.Drawing.Size(324, 36);
+            this.ComboBoxCadProdTamanho.Size = new System.Drawing.Size(364, 36);
             this.ComboBoxCadProdTamanho.TabIndex = 24;
             // 
-            // guna2ComboBox1
+            // ComboBoxCadProdReceita
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(855, 106);
-            this.guna2ComboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(178, 36);
-            this.guna2ComboBox1.TabIndex = 23;
+            this.ComboBoxCadProdReceita.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxCadProdReceita.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxCadProdReceita.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCadProdReceita.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdReceita.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdReceita.FocusedState.Parent = this.ComboBoxCadProdReceita;
+            this.ComboBoxCadProdReceita.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.ComboBoxCadProdReceita.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBoxCadProdReceita.HoverState.Parent = this.ComboBoxCadProdReceita;
+            this.ComboBoxCadProdReceita.ItemHeight = 30;
+            this.ComboBoxCadProdReceita.ItemsAppearance.Parent = this.ComboBoxCadProdReceita;
+            this.ComboBoxCadProdReceita.Location = new System.Drawing.Point(962, 132);
+            this.ComboBoxCadProdReceita.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ComboBoxCadProdReceita.Name = "ComboBoxCadProdReceita";
+            this.ComboBoxCadProdReceita.ShadowDecoration.Parent = this.ComboBoxCadProdReceita;
+            this.ComboBoxCadProdReceita.Size = new System.Drawing.Size(200, 36);
+            this.ComboBoxCadProdReceita.TabIndex = 23;
             // 
             // ButtonCad
             // 
@@ -271,11 +251,11 @@
             this.ButtonCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.ButtonCad.ForeColor = System.Drawing.Color.White;
             this.ButtonCad.HoverState.Parent = this.ButtonCad;
-            this.ButtonCad.Location = new System.Drawing.Point(892, 417);
+            this.ButtonCad.Location = new System.Drawing.Point(1004, 521);
             this.ButtonCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonCad.Name = "ButtonCad";
             this.ButtonCad.ShadowDecoration.Parent = this.ButtonCad;
-            this.ButtonCad.Size = new System.Drawing.Size(142, 41);
+            this.ButtonCad.Size = new System.Drawing.Size(160, 51);
             this.ButtonCad.TabIndex = 22;
             this.ButtonCad.Text = "Cadastrar";
             // 
@@ -293,11 +273,11 @@
             this.ButtonLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLimpar.ForeColor = System.Drawing.Color.White;
             this.ButtonLimpar.HoverState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Location = new System.Drawing.Point(709, 417);
+            this.ButtonLimpar.Location = new System.Drawing.Point(798, 521);
             this.ButtonLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonLimpar.Name = "ButtonLimpar";
             this.ButtonLimpar.ShadowDecoration.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Size = new System.Drawing.Size(142, 41);
+            this.ButtonLimpar.Size = new System.Drawing.Size(160, 51);
             this.ButtonLimpar.TabIndex = 21;
             this.ButtonLimpar.Text = "Limpar";
             // 
@@ -315,14 +295,14 @@
             this.txtCadProdID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadProdID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdID.HoverState.Parent = this.txtCadProdID;
-            this.txtCadProdID.Location = new System.Drawing.Point(709, 106);
+            this.txtCadProdID.Location = new System.Drawing.Point(798, 132);
             this.txtCadProdID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadProdID.Name = "txtCadProdID";
             this.txtCadProdID.PasswordChar = '\0';
             this.txtCadProdID.PlaceholderText = "";
             this.txtCadProdID.SelectedText = "";
             this.txtCadProdID.ShadowDecoration.Parent = this.txtCadProdID;
-            this.txtCadProdID.Size = new System.Drawing.Size(124, 29);
+            this.txtCadProdID.Size = new System.Drawing.Size(140, 36);
             this.txtCadProdID.TabIndex = 18;
             // 
             // lblCadProdSubcat
@@ -330,22 +310,22 @@
             this.lblCadProdSubcat.BackColor = System.Drawing.Color.Transparent;
             this.lblCadProdSubcat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadProdSubcat.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdSubcat.Location = new System.Drawing.Point(709, 272);
+            this.lblCadProdSubcat.Location = new System.Drawing.Point(798, 222);
             this.lblCadProdSubcat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadProdSubcat.Name = "lblCadProdSubcat";
-            this.lblCadProdSubcat.Size = new System.Drawing.Size(90, 20);
+            this.lblCadProdSubcat.Size = new System.Drawing.Size(83, 24);
             this.lblCadProdSubcat.TabIndex = 17;
-            this.lblCadProdSubcat.Text = "Subcategoria";
+            this.lblCadProdSubcat.Text = "Cobertura";
             // 
             // lblCadProdTamanho
             // 
             this.lblCadProdTamanho.BackColor = System.Drawing.Color.Transparent;
             this.lblCadProdTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadProdTamanho.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdTamanho.Location = new System.Drawing.Point(709, 181);
+            this.lblCadProdTamanho.Location = new System.Drawing.Point(798, 344);
             this.lblCadProdTamanho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadProdTamanho.Name = "lblCadProdTamanho";
-            this.lblCadProdTamanho.Size = new System.Drawing.Size(151, 20);
+            this.lblCadProdTamanho.Size = new System.Drawing.Size(182, 24);
             this.lblCadProdTamanho.TabIndex = 15;
             this.lblCadProdTamanho.Text = "Tamanhos disponíveis";
             // 
@@ -354,10 +334,10 @@
             this.lblCadProdReceita.BackColor = System.Drawing.Color.Transparent;
             this.lblCadProdReceita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadProdReceita.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdReceita.Location = new System.Drawing.Point(858, 82);
+            this.lblCadProdReceita.Location = new System.Drawing.Point(965, 102);
             this.lblCadProdReceita.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadProdReceita.Name = "lblCadProdReceita";
-            this.lblCadProdReceita.Size = new System.Drawing.Size(53, 20);
+            this.lblCadProdReceita.Size = new System.Drawing.Size(64, 24);
             this.lblCadProdReceita.TabIndex = 13;
             this.lblCadProdReceita.Text = "Receita";
             // 
@@ -366,10 +346,10 @@
             this.lblCadProdID.BackColor = System.Drawing.Color.Transparent;
             this.lblCadProdID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadProdID.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdID.Location = new System.Drawing.Point(709, 82);
+            this.lblCadProdID.Location = new System.Drawing.Point(798, 102);
             this.lblCadProdID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadProdID.Name = "lblCadProdID";
-            this.lblCadProdID.Size = new System.Drawing.Size(17, 20);
+            this.lblCadProdID.Size = new System.Drawing.Size(20, 24);
             this.lblCadProdID.TabIndex = 11;
             this.lblCadProdID.Text = "ID";
             // 
@@ -387,14 +367,14 @@
             this.txtCadProdMargem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadProdMargem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdMargem.HoverState.Parent = this.txtCadProdMargem;
-            this.txtCadProdMargem.Location = new System.Drawing.Point(358, 429);
+            this.txtCadProdMargem.Location = new System.Drawing.Point(403, 536);
             this.txtCadProdMargem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadProdMargem.Name = "txtCadProdMargem";
             this.txtCadProdMargem.PasswordChar = '\0';
             this.txtCadProdMargem.PlaceholderText = "";
             this.txtCadProdMargem.SelectedText = "";
             this.txtCadProdMargem.ShadowDecoration.Parent = this.txtCadProdMargem;
-            this.txtCadProdMargem.Size = new System.Drawing.Size(168, 29);
+            this.txtCadProdMargem.Size = new System.Drawing.Size(189, 36);
             this.txtCadProdMargem.TabIndex = 10;
             // 
             // lblCadProdMargem
@@ -402,48 +382,48 @@
             this.lblCadProdMargem.BackColor = System.Drawing.Color.Transparent;
             this.lblCadProdMargem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadProdMargem.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdMargem.Location = new System.Drawing.Point(358, 405);
+            this.lblCadProdMargem.Location = new System.Drawing.Point(403, 506);
             this.lblCadProdMargem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadProdMargem.Name = "lblCadProdMargem";
-            this.lblCadProdMargem.Size = new System.Drawing.Size(115, 20);
+            this.lblCadProdMargem.Size = new System.Drawing.Size(136, 24);
             this.lblCadProdMargem.TabIndex = 9;
             this.lblCadProdMargem.Text = "Margem de lucro";
             // 
-            // txtCadProdCustoKg
+            // txtCadProdRecheio
             // 
-            this.txtCadProdCustoKg.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadProdCustoKg.DefaultText = "";
-            this.txtCadProdCustoKg.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadProdCustoKg.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadProdCustoKg.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdCustoKg.DisabledState.Parent = this.txtCadProdCustoKg;
-            this.txtCadProdCustoKg.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdCustoKg.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdCustoKg.FocusedState.Parent = this.txtCadProdCustoKg;
-            this.txtCadProdCustoKg.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCadProdCustoKg.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdCustoKg.HoverState.Parent = this.txtCadProdCustoKg;
-            this.txtCadProdCustoKg.Location = new System.Drawing.Point(358, 363);
-            this.txtCadProdCustoKg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadProdCustoKg.Name = "txtCadProdCustoKg";
-            this.txtCadProdCustoKg.PasswordChar = '\0';
-            this.txtCadProdCustoKg.PlaceholderText = "";
-            this.txtCadProdCustoKg.SelectedText = "";
-            this.txtCadProdCustoKg.ShadowDecoration.Parent = this.txtCadProdCustoKg;
-            this.txtCadProdCustoKg.Size = new System.Drawing.Size(137, 29);
-            this.txtCadProdCustoKg.TabIndex = 8;
+            this.txtCadProdRecheio.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCadProdRecheio.DefaultText = "";
+            this.txtCadProdRecheio.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCadProdRecheio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCadProdRecheio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadProdRecheio.DisabledState.Parent = this.txtCadProdRecheio;
+            this.txtCadProdRecheio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadProdRecheio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadProdRecheio.FocusedState.Parent = this.txtCadProdRecheio;
+            this.txtCadProdRecheio.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadProdRecheio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadProdRecheio.HoverState.Parent = this.txtCadProdRecheio;
+            this.txtCadProdRecheio.Location = new System.Drawing.Point(403, 370);
+            this.txtCadProdRecheio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCadProdRecheio.Name = "txtCadProdRecheio";
+            this.txtCadProdRecheio.PasswordChar = '\0';
+            this.txtCadProdRecheio.PlaceholderText = "";
+            this.txtCadProdRecheio.SelectedText = "";
+            this.txtCadProdRecheio.ShadowDecoration.Parent = this.txtCadProdRecheio;
+            this.txtCadProdRecheio.Size = new System.Drawing.Size(364, 36);
+            this.txtCadProdRecheio.TabIndex = 8;
             // 
             // lblCadProdCustoKg
             // 
             this.lblCadProdCustoKg.BackColor = System.Drawing.Color.Transparent;
             this.lblCadProdCustoKg.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadProdCustoKg.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdCustoKg.Location = new System.Drawing.Point(358, 339);
+            this.lblCadProdCustoKg.Location = new System.Drawing.Point(403, 340);
             this.lblCadProdCustoKg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadProdCustoKg.Name = "lblCadProdCustoKg";
-            this.lblCadProdCustoKg.Size = new System.Drawing.Size(91, 20);
+            this.lblCadProdCustoKg.Size = new System.Drawing.Size(69, 24);
             this.lblCadProdCustoKg.TabIndex = 7;
-            this.lblCadProdCustoKg.Text = "Custo por Kg";
+            this.lblCadProdCustoKg.Text = "Recheio";
             // 
             // txtCadProdTags
             // 
@@ -459,14 +439,14 @@
             this.txtCadProdTags.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadProdTags.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdTags.HoverState.Parent = this.txtCadProdTags;
-            this.txtCadProdTags.Location = new System.Drawing.Point(18, 363);
+            this.txtCadProdTags.Location = new System.Drawing.Point(20, 454);
             this.txtCadProdTags.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadProdTags.Name = "txtCadProdTags";
             this.txtCadProdTags.PasswordChar = '\0';
             this.txtCadProdTags.PlaceholderText = "";
             this.txtCadProdTags.SelectedText = "";
             this.txtCadProdTags.ShadowDecoration.Parent = this.txtCadProdTags;
-            this.txtCadProdTags.Size = new System.Drawing.Size(307, 94);
+            this.txtCadProdTags.Size = new System.Drawing.Size(345, 118);
             this.txtCadProdTags.TabIndex = 6;
             // 
             // lblCadProdTags
@@ -474,48 +454,12 @@
             this.lblCadProdTags.BackColor = System.Drawing.Color.Transparent;
             this.lblCadProdTags.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadProdTags.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdTags.Location = new System.Drawing.Point(18, 338);
+            this.lblCadProdTags.Location = new System.Drawing.Point(20, 422);
             this.lblCadProdTags.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadProdTags.Name = "lblCadProdTags";
-            this.lblCadProdTags.Size = new System.Drawing.Size(36, 20);
+            this.lblCadProdTags.Size = new System.Drawing.Size(44, 24);
             this.lblCadProdTags.TabIndex = 5;
             this.lblCadProdTags.Text = "Tags";
-            // 
-            // txtCadProdDesc
-            // 
-            this.txtCadProdDesc.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadProdDesc.DefaultText = "";
-            this.txtCadProdDesc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadProdDesc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadProdDesc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdDesc.DisabledState.Parent = this.txtCadProdDesc;
-            this.txtCadProdDesc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdDesc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdDesc.FocusedState.Parent = this.txtCadProdDesc;
-            this.txtCadProdDesc.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCadProdDesc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdDesc.HoverState.Parent = this.txtCadProdDesc;
-            this.txtCadProdDesc.Location = new System.Drawing.Point(358, 202);
-            this.txtCadProdDesc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadProdDesc.Name = "txtCadProdDesc";
-            this.txtCadProdDesc.PasswordChar = '\0';
-            this.txtCadProdDesc.PlaceholderText = "";
-            this.txtCadProdDesc.SelectedText = "";
-            this.txtCadProdDesc.ShadowDecoration.Parent = this.txtCadProdDesc;
-            this.txtCadProdDesc.Size = new System.Drawing.Size(329, 122);
-            this.txtCadProdDesc.TabIndex = 4;
-            // 
-            // lblCadProdDesc
-            // 
-            this.lblCadProdDesc.BackColor = System.Drawing.Color.Transparent;
-            this.lblCadProdDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdDesc.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdDesc.Location = new System.Drawing.Point(358, 181);
-            this.lblCadProdDesc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblCadProdDesc.Name = "lblCadProdDesc";
-            this.lblCadProdDesc.Size = new System.Drawing.Size(71, 20);
-            this.lblCadProdDesc.TabIndex = 3;
-            this.lblCadProdDesc.Text = "Descrição";
             // 
             // txtCadProdNome
             // 
@@ -531,14 +475,14 @@
             this.txtCadProdNome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCadProdNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdNome.HoverState.Parent = this.txtCadProdNome;
-            this.txtCadProdNome.Location = new System.Drawing.Point(358, 106);
+            this.txtCadProdNome.Location = new System.Drawing.Point(403, 132);
             this.txtCadProdNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadProdNome.Name = "txtCadProdNome";
             this.txtCadProdNome.PasswordChar = '\0';
             this.txtCadProdNome.PlaceholderText = "";
             this.txtCadProdNome.SelectedText = "";
             this.txtCadProdNome.ShadowDecoration.Parent = this.txtCadProdNome;
-            this.txtCadProdNome.Size = new System.Drawing.Size(329, 29);
+            this.txtCadProdNome.Size = new System.Drawing.Size(370, 36);
             this.txtCadProdNome.TabIndex = 2;
             // 
             // lblCadProdNome
@@ -546,10 +490,10 @@
             this.lblCadProdNome.BackColor = System.Drawing.Color.Transparent;
             this.lblCadProdNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadProdNome.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdNome.Location = new System.Drawing.Point(358, 82);
+            this.lblCadProdNome.Location = new System.Drawing.Point(403, 102);
             this.lblCadProdNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblCadProdNome.Name = "lblCadProdNome";
-            this.lblCadProdNome.Size = new System.Drawing.Size(44, 20);
+            this.lblCadProdNome.Size = new System.Drawing.Size(50, 24);
             this.lblCadProdNome.TabIndex = 1;
             this.lblCadProdNome.Text = "Nome";
             // 
@@ -557,12 +501,12 @@
             // 
             this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
             this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(159, 8);
+            this.PictureBoxPerfil.Location = new System.Drawing.Point(179, 10);
             this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PictureBoxPerfil.Name = "PictureBoxPerfil";
             this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(58, 52);
+            this.PictureBoxPerfil.Size = new System.Drawing.Size(65, 65);
             this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxPerfil.TabIndex = 6;
             this.PictureBoxPerfil.TabStop = false;
@@ -583,9 +527,10 @@
             this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
+            this.PanelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
-            this.PanelMenu.Size = new System.Drawing.Size(128, 721);
+            this.PanelMenu.Size = new System.Drawing.Size(144, 901);
             this.PanelMenu.TabIndex = 12;
             // 
             // PanelReceita
@@ -593,10 +538,11 @@
             this.PanelReceita.Controls.Add(this.guna2Button8);
             this.PanelReceita.Controls.Add(this.guna2Button4);
             this.PanelReceita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelReceita.Location = new System.Drawing.Point(0, 797);
+            this.PanelReceita.Location = new System.Drawing.Point(0, 996);
+            this.PanelReceita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelReceita.Name = "PanelReceita";
             this.PanelReceita.ShadowDecoration.Parent = this.PanelReceita;
-            this.PanelReceita.Size = new System.Drawing.Size(128, 110);
+            this.PanelReceita.Size = new System.Drawing.Size(144, 138);
             this.PanelReceita.TabIndex = 9;
             // 
             // guna2Button8
@@ -613,10 +559,11 @@
             this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button8.ForeColor = System.Drawing.Color.White;
             this.guna2Button8.HoverState.Parent = this.guna2Button8;
-            this.guna2Button8.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button8.Location = new System.Drawing.Point(0, 70);
+            this.guna2Button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button8.Name = "guna2Button8";
             this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button8.Size = new System.Drawing.Size(144, 70);
             this.guna2Button8.TabIndex = 3;
             this.guna2Button8.Text = "Gerenciar Receita";
             // 
@@ -635,9 +582,10 @@
             this.guna2Button4.ForeColor = System.Drawing.Color.White;
             this.guna2Button4.HoverState.Parent = this.guna2Button4;
             this.guna2Button4.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button4.Name = "guna2Button4";
             this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button4.Size = new System.Drawing.Size(144, 70);
             this.guna2Button4.TabIndex = 1;
             this.guna2Button4.Text = "Cadastrar Receita";
             // 
@@ -652,12 +600,13 @@
             this.BtnReceita.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnReceita.ImageRotate = 0F;
             this.BtnReceita.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnReceita.Location = new System.Drawing.Point(0, 707);
+            this.BtnReceita.Location = new System.Drawing.Point(0, 884);
+            this.BtnReceita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnReceita.Name = "BtnReceita";
             this.BtnReceita.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnReceita.PressedState.Parent = this.BtnReceita;
             this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
-            this.BtnReceita.Size = new System.Drawing.Size(128, 90);
+            this.BtnReceita.Size = new System.Drawing.Size(144, 112);
             this.BtnReceita.TabIndex = 8;
             this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
             // 
@@ -666,10 +615,11 @@
             this.PanelInsumo.Controls.Add(this.guna2Button7);
             this.PanelInsumo.Controls.Add(this.guna2Button2);
             this.PanelInsumo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelInsumo.Location = new System.Drawing.Point(0, 597);
+            this.PanelInsumo.Location = new System.Drawing.Point(0, 746);
+            this.PanelInsumo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelInsumo.Name = "PanelInsumo";
             this.PanelInsumo.ShadowDecoration.Parent = this.PanelInsumo;
-            this.PanelInsumo.Size = new System.Drawing.Size(128, 110);
+            this.PanelInsumo.Size = new System.Drawing.Size(144, 138);
             this.PanelInsumo.TabIndex = 7;
             // 
             // guna2Button7
@@ -686,10 +636,11 @@
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button7.Location = new System.Drawing.Point(0, 70);
+            this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button7.Size = new System.Drawing.Size(144, 70);
             this.guna2Button7.TabIndex = 3;
             this.guna2Button7.Text = "Gerenciar Insumo";
             // 
@@ -708,9 +659,10 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.HoverState.Parent = this.guna2Button2;
             this.guna2Button2.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button2.Size = new System.Drawing.Size(144, 70);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Cadastrar Insumo";
             // 
@@ -725,12 +677,13 @@
             this.BtnInsumo.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnInsumo.ImageRotate = 0F;
             this.BtnInsumo.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnInsumo.Location = new System.Drawing.Point(0, 507);
+            this.BtnInsumo.Location = new System.Drawing.Point(0, 634);
+            this.BtnInsumo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnInsumo.Name = "BtnInsumo";
             this.BtnInsumo.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnInsumo.PressedState.Parent = this.BtnInsumo;
             this.BtnInsumo.ShadowDecoration.Parent = this.BtnInsumo;
-            this.BtnInsumo.Size = new System.Drawing.Size(128, 90);
+            this.BtnInsumo.Size = new System.Drawing.Size(144, 112);
             this.BtnInsumo.TabIndex = 6;
             this.BtnInsumo.Click += new System.EventHandler(this.BtnInsumo_Click);
             // 
@@ -739,10 +692,11 @@
             this.PanelProduto.Controls.Add(this.guna2Button6);
             this.PanelProduto.Controls.Add(this.guna2Button3);
             this.PanelProduto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelProduto.Location = new System.Drawing.Point(0, 397);
+            this.PanelProduto.Location = new System.Drawing.Point(0, 496);
+            this.PanelProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelProduto.Name = "PanelProduto";
             this.PanelProduto.ShadowDecoration.Parent = this.PanelProduto;
-            this.PanelProduto.Size = new System.Drawing.Size(128, 110);
+            this.PanelProduto.Size = new System.Drawing.Size(144, 138);
             this.PanelProduto.TabIndex = 5;
             // 
             // guna2Button6
@@ -759,10 +713,11 @@
             this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
             this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Location = new System.Drawing.Point(0, 56);
+            this.guna2Button6.Location = new System.Drawing.Point(0, 70);
+            this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button6.Size = new System.Drawing.Size(144, 70);
             this.guna2Button6.TabIndex = 2;
             this.guna2Button6.Text = "Gerenciar Produto";
             // 
@@ -781,9 +736,10 @@
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.HoverState.Parent = this.guna2Button3;
             this.guna2Button3.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button3.Name = "guna2Button3";
             this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(128, 56);
+            this.guna2Button3.Size = new System.Drawing.Size(144, 70);
             this.guna2Button3.TabIndex = 0;
             this.guna2Button3.Text = "Cadastrar Produto";
             // 
@@ -798,12 +754,13 @@
             this.BtnProduto.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnProduto.ImageRotate = 0F;
             this.BtnProduto.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnProduto.Location = new System.Drawing.Point(0, 307);
+            this.BtnProduto.Location = new System.Drawing.Point(0, 384);
+            this.BtnProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnProduto.Name = "BtnProduto";
             this.BtnProduto.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnProduto.PressedState.Parent = this.BtnProduto;
             this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
-            this.BtnProduto.Size = new System.Drawing.Size(128, 90);
+            this.BtnProduto.Size = new System.Drawing.Size(144, 112);
             this.BtnProduto.TabIndex = 4;
             this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
             // 
@@ -812,10 +769,11 @@
             this.PanelFuncionario.Controls.Add(this.guna2Button5);
             this.PanelFuncionario.Controls.Add(this.guna2Button1);
             this.PanelFuncionario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelFuncionario.Location = new System.Drawing.Point(0, 197);
+            this.PanelFuncionario.Location = new System.Drawing.Point(0, 246);
+            this.PanelFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelFuncionario.Name = "PanelFuncionario";
             this.PanelFuncionario.ShadowDecoration.Parent = this.PanelFuncionario;
-            this.PanelFuncionario.Size = new System.Drawing.Size(128, 110);
+            this.PanelFuncionario.Size = new System.Drawing.Size(144, 138);
             this.PanelFuncionario.TabIndex = 3;
             // 
             // guna2Button5
@@ -832,10 +790,11 @@
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
             this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 55);
+            this.guna2Button5.Location = new System.Drawing.Point(0, 69);
+            this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(128, 55);
+            this.guna2Button5.Size = new System.Drawing.Size(144, 69);
             this.guna2Button5.TabIndex = 3;
             this.guna2Button5.Text = "Gerenciar Funcionário";
             // 
@@ -854,9 +813,10 @@
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.HoverState.Parent = this.guna2Button1;
             this.guna2Button1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(128, 55);
+            this.guna2Button1.Size = new System.Drawing.Size(144, 69);
             this.guna2Button1.TabIndex = 0;
             this.guna2Button1.Text = "Cadastrar Funcionário";
             // 
@@ -872,22 +832,24 @@
             this.BtnFuncionario.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnFuncionario.ImageRotate = 0F;
             this.BtnFuncionario.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnFuncionario.Location = new System.Drawing.Point(0, 107);
+            this.BtnFuncionario.Location = new System.Drawing.Point(0, 134);
+            this.BtnFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.BtnFuncionario.Name = "BtnFuncionario";
             this.BtnFuncionario.PressedState.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
             this.BtnFuncionario.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnFuncionario.PressedState.Parent = this.BtnFuncionario;
             this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.Size = new System.Drawing.Size(128, 90);
+            this.BtnFuncionario.Size = new System.Drawing.Size(144, 112);
             this.BtnFuncionario.TabIndex = 2;
             this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
             // 
             // guna2GradientPanel2
             // 
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(148, 129);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(166, 161);
+            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(208, 100);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(234, 125);
             this.guna2GradientPanel2.TabIndex = 1;
             // 
             // LogoMrCake
@@ -898,18 +860,79 @@
             this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
             this.LogoMrCake.ImageRotate = 0F;
             this.LogoMrCake.Location = new System.Drawing.Point(0, 0);
+            this.LogoMrCake.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LogoMrCake.Name = "LogoMrCake";
             this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
-            this.LogoMrCake.Size = new System.Drawing.Size(128, 107);
+            this.LogoMrCake.Size = new System.Drawing.Size(144, 134);
             this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoMrCake.TabIndex = 0;
             this.LogoMrCake.TabStop = false;
             // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(403, 226);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(55, 24);
+            this.guna2HtmlLabel1.TabIndex = 27;
+            this.guna2HtmlLabel1.Text = "Massa";
+            // 
+            // txtCadProdMassa
+            // 
+            this.txtCadProdMassa.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCadProdMassa.DefaultText = "";
+            this.txtCadProdMassa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCadProdMassa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCadProdMassa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadProdMassa.DisabledState.Parent = this.txtCadProdMassa;
+            this.txtCadProdMassa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadProdMassa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadProdMassa.FocusedState.Parent = this.txtCadProdMassa;
+            this.txtCadProdMassa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadProdMassa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadProdMassa.HoverState.Parent = this.txtCadProdMassa;
+            this.txtCadProdMassa.Location = new System.Drawing.Point(403, 252);
+            this.txtCadProdMassa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCadProdMassa.Name = "txtCadProdMassa";
+            this.txtCadProdMassa.PasswordChar = '\0';
+            this.txtCadProdMassa.PlaceholderText = "";
+            this.txtCadProdMassa.SelectedText = "";
+            this.txtCadProdMassa.ShadowDecoration.Parent = this.txtCadProdMassa;
+            this.txtCadProdMassa.Size = new System.Drawing.Size(364, 36);
+            this.txtCadProdMassa.TabIndex = 28;
+            // 
+            // txtCadProdCobertura
+            // 
+            this.txtCadProdCobertura.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCadProdCobertura.DefaultText = "";
+            this.txtCadProdCobertura.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCadProdCobertura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCadProdCobertura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadProdCobertura.DisabledState.Parent = this.txtCadProdCobertura;
+            this.txtCadProdCobertura.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadProdCobertura.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadProdCobertura.FocusedState.Parent = this.txtCadProdCobertura;
+            this.txtCadProdCobertura.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadProdCobertura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadProdCobertura.HoverState.Parent = this.txtCadProdCobertura;
+            this.txtCadProdCobertura.Location = new System.Drawing.Point(798, 250);
+            this.txtCadProdCobertura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCadProdCobertura.Name = "txtCadProdCobertura";
+            this.txtCadProdCobertura.PasswordChar = '\0';
+            this.txtCadProdCobertura.PlaceholderText = "";
+            this.txtCadProdCobertura.SelectedText = "";
+            this.txtCadProdCobertura.ShadowDecoration.Parent = this.txtCadProdCobertura;
+            this.txtCadProdCobertura.Size = new System.Drawing.Size(364, 36);
+            this.txtCadProdCobertura.TabIndex = 29;
+            // 
             // Cad_Prod
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1348, 721);
+            this.ClientSize = new System.Drawing.Size(1516, 901);
             this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.PanelCadProd);
             this.Controls.Add(this.lblEmailFunc);
@@ -952,18 +975,15 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCadProdID;
         private Guna.UI2.WinForms.Guna2TextBox txtCadProdMargem;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCadProdMargem;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadProdCustoKg;
+        private Guna.UI2.WinForms.Guna2TextBox txtCadProdRecheio;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCadProdCustoKg;
         private Guna.UI2.WinForms.Guna2TextBox txtCadProdTags;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCadProdTags;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadProdDesc;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblCadProdDesc;
         private Guna.UI2.WinForms.Guna2TextBox txtCadProdNome;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblCadProdNome;
         private Guna.UI2.WinForms.Guna2PictureBox PictureBoxCadProd;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadProdSubcat;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadProdTamanho;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadProdReceita;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2Panel PanelReceita;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
@@ -983,5 +1003,8 @@
         private Guna.UI2.WinForms.Guna2ImageButton BtnFuncionario;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2PictureBox LogoMrCake;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2TextBox txtCadProdMassa;
+        private Guna.UI2.WinForms.Guna2TextBox txtCadProdCobertura;
     }
 }
