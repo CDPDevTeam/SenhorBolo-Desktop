@@ -84,8 +84,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\Fornecedor.cs" />
+    <Compile Include="Model\Produto.cs" />
+    <Compile Include="DAO\LoginDAO.cs" />
+    <Compile Include="Model\Balconista.cs" />
     <Compile Include="Model\Confeiteiro.cs" />
     <Compile Include="Model\Funcionario.cs" />
+    <Compile Include="Model\Gerente.cs" />
+    <Compile Include="Model\Tipo.cs" />
     <Compile Include="View\Adm_Home.cs">
       <SubType>Form</SubType>
     </Compile>

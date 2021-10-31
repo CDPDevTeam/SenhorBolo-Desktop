@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SrBolo_Prototype1.Model;
+using SrBolo_Prototype1.DAO;
 
 namespace SrBolo_Prototype1
 {
@@ -19,29 +21,21 @@ namespace SrBolo_Prototype1
 
         private void btnAcessar_Click(object sender, EventArgs e)
         {
-            //temporário
-            switch (cbUser.SelectedIndex)
-            {
-                case 0:
-                    Balc_Caixa caixa = new Balc_Caixa();
-                    caixa.Show();
-                    this.Close();
-                    break;
-                case 1:
-                    View.Adm_Home admin = new View.Adm_Home();
-                    admin.Show();
-                    this.Close();
-                    break;
-                case 2:
-                    Conf_home confeiteiro = new Conf_home();
-                    confeiteiro.Show();
-                    this.Close();
-                    break;
-                default:
-                    MessageBox.Show("Selecione um usuário", "ATENÇÃO");
-                    break;
-            }
             
+
+            //temporário
+
+            LoginDAO usuario = new LoginDAO();
+            bool check = usuario.Acessar(cbUser.SelectedItem.ToString(), txtLogin.ToString(), txtSenha.ToString());
+
+            
+
+            if (check == true)
+            {
+                if ()
+            }
+                
+            else { MessageBox.Show("Selecione um usuário", "ATENÇÃO"); }
 
         }
 
