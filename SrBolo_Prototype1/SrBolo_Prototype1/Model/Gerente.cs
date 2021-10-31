@@ -8,6 +8,12 @@ namespace SrBolo_Prototype1.Model
 {
     class Gerente : Funcionario
     {
+        
+        public Gerente()
+        {
+
+        }
+        
         public Gerente(string cpf, string nome, string rg, string email, string telefone, string senha)
             : base(cpf, nome, rg, email, telefone, senha)
         {

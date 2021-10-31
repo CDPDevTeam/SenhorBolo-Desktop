@@ -1,7 +1,6 @@
-﻿
-namespace SrBolo_Prototype1
+﻿namespace SrBolo_Prototype1
 {
-    partial class Editar_Rec
+    partial class Gerenciar_PedE
     {
         /// <summary>
         /// Required designer variable.
@@ -31,25 +30,17 @@ namespace SrBolo_Prototype1
         {
             this.lblEmailFunc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNomeFunc = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblHora = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.PanelEditRec = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.ButtonAdc = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ComboBox5 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox6 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.ComboBoxEditRecMed = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.ComboBoxEditRec = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.ComboBoxEditRecRend = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.PanelGerRec = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.txtGerRecSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.ButtonEdit = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEditRecQtd = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEditRecNome = new Guna.UI2.WinForms.Guna2TextBox();
+            this.GridViewRec = new System.Windows.Forms.DataGridView();
+            this.ButtonAdc = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonExc = new Guna.UI2.WinForms.Guna2Button();
             this.lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.PanelReceita = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
@@ -69,8 +60,9 @@ namespace SrBolo_Prototype1
             this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PanelGerRec.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridViewRec)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
-            this.PanelEditRec.SuspendLayout();
             this.PanelMenu.SuspendLayout();
             this.PanelReceita.SuspendLayout();
             this.PanelInsumo.SuspendLayout();
@@ -88,7 +80,7 @@ namespace SrBolo_Prototype1
             this.lblEmailFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblEmailFunc.Name = "lblEmailFunc";
             this.lblEmailFunc.Size = new System.Drawing.Size(142, 18);
-            this.lblEmailFunc.TabIndex = 25;
+            this.lblEmailFunc.TabIndex = 20;
             this.lblEmailFunc.Text = "RolaDura@yahoo.com";
             // 
             // lblNomeFunc
@@ -96,12 +88,191 @@ namespace SrBolo_Prototype1
             this.lblNomeFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblNomeFunc.Location = new System.Drawing.Point(227, 18);
+            this.lblNomeFunc.Location = new System.Drawing.Point(228, 11);
             this.lblNomeFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblNomeFunc.Name = "lblNomeFunc";
             this.lblNomeFunc.Size = new System.Drawing.Size(99, 22);
-            this.lblNomeFunc.TabIndex = 24;
+            this.lblNomeFunc.TabIndex = 19;
             this.lblNomeFunc.Text = "Edson Koiti";
+            // 
+            // lblHora
+            // 
+            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblHora.BackColor = System.Drawing.Color.Transparent;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.Location = new System.Drawing.Point(1272, 32);
+            this.lblHora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(64, 20);
+            this.lblHora.TabIndex = 18;
+            this.lblHora.Text = "2:00 AM";
+            // 
+            // lblData
+            // 
+            this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblData.BackColor = System.Drawing.Color.Transparent;
+            this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblData.Location = new System.Drawing.Point(1122, 10);
+            this.lblData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblData.Name = "lblData";
+            this.lblData.Size = new System.Drawing.Size(221, 20);
+            this.lblData.TabIndex = 17;
+            this.lblData.Text = "Quarta, 2 de Janeiro de 2021";
+            // 
+            // PanelGerRec
+            // 
+            this.PanelGerRec.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PanelGerRec.BorderRadius = 40;
+            this.PanelGerRec.Controls.Add(this.guna2HtmlLabel6);
+            this.PanelGerRec.Controls.Add(this.txtGerRecSearch);
+            this.PanelGerRec.Controls.Add(this.ButtonEdit);
+            this.PanelGerRec.Controls.Add(this.GridViewRec);
+            this.PanelGerRec.Controls.Add(this.ButtonAdc);
+            this.PanelGerRec.Controls.Add(this.ButtonExc);
+            this.PanelGerRec.Controls.Add(this.lblTitle);
+            this.PanelGerRec.Location = new System.Drawing.Point(129, 66);
+            this.PanelGerRec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PanelGerRec.Name = "PanelGerRec";
+            this.PanelGerRec.ShadowDecoration.Parent = this.PanelGerRec;
+            this.PanelGerRec.Size = new System.Drawing.Size(1219, 700);
+            this.PanelGerRec.TabIndex = 21;
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(19, 623);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(341, 18);
+            this.guna2HtmlLabel6.TabIndex = 26;
+            this.guna2HtmlLabel6.Text = "*Para realizar uma operação, clique no campo desejado";
+            // 
+            // txtGerRecSearch
+            // 
+            this.txtGerRecSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtGerRecSearch.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.txtGerRecSearch.BorderRadius = 20;
+            this.txtGerRecSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtGerRecSearch.DefaultText = "";
+            this.txtGerRecSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtGerRecSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtGerRecSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGerRecSearch.DisabledState.Parent = this.txtGerRecSearch;
+            this.txtGerRecSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtGerRecSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(230)))), ((int)(((byte)(230)))));
+            this.txtGerRecSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGerRecSearch.FocusedState.Parent = this.txtGerRecSearch;
+            this.txtGerRecSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGerRecSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGerRecSearch.HoverState.Parent = this.txtGerRecSearch;
+            this.txtGerRecSearch.Location = new System.Drawing.Point(796, 14);
+            this.txtGerRecSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtGerRecSearch.Name = "txtGerRecSearch";
+            this.txtGerRecSearch.PasswordChar = '\0';
+            this.txtGerRecSearch.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtGerRecSearch.PlaceholderText = "Digite ID, Categoria ou Nome";
+            this.txtGerRecSearch.SelectedText = "";
+            this.txtGerRecSearch.ShadowDecoration.Parent = this.txtGerRecSearch;
+            this.txtGerRecSearch.Size = new System.Drawing.Size(404, 37);
+            this.txtGerRecSearch.TabIndex = 25;
+            // 
+            // ButtonEdit
+            // 
+            this.ButtonEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
+            this.ButtonEdit.CheckedState.Parent = this.ButtonEdit;
+            this.ButtonEdit.CustomImages.Parent = this.ButtonEdit;
+            this.ButtonEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ButtonEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ButtonEdit.DisabledState.Parent = this.ButtonEdit;
+            this.ButtonEdit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(133)))), ((int)(((byte)(129)))));
+            this.ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonEdit.ForeColor = System.Drawing.Color.White;
+            this.ButtonEdit.HoverState.Parent = this.ButtonEdit;
+            this.ButtonEdit.Location = new System.Drawing.Point(849, 603);
+            this.ButtonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ButtonEdit.Name = "ButtonEdit";
+            this.ButtonEdit.ShadowDecoration.Parent = this.ButtonEdit;
+            this.ButtonEdit.Size = new System.Drawing.Size(160, 41);
+            this.ButtonEdit.TabIndex = 24;
+            this.ButtonEdit.Text = "Editar";
+            // 
+            // GridViewRec
+            // 
+            this.GridViewRec.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GridViewRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridViewRec.Location = new System.Drawing.Point(22, 55);
+            this.GridViewRec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.GridViewRec.Name = "GridViewRec";
+            this.GridViewRec.RowHeadersWidth = 62;
+            this.GridViewRec.RowTemplate.Height = 28;
+            this.GridViewRec.Size = new System.Drawing.Size(1178, 532);
+            this.GridViewRec.TabIndex = 23;
+            // 
+            // ButtonAdc
+            // 
+            this.ButtonAdc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonAdc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
+            this.ButtonAdc.CheckedState.Parent = this.ButtonAdc;
+            this.ButtonAdc.CustomImages.Parent = this.ButtonAdc;
+            this.ButtonAdc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonAdc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonAdc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ButtonAdc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ButtonAdc.DisabledState.Parent = this.ButtonAdc;
+            this.ButtonAdc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.ButtonAdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.ButtonAdc.ForeColor = System.Drawing.Color.White;
+            this.ButtonAdc.HoverState.Parent = this.ButtonAdc;
+            this.ButtonAdc.Location = new System.Drawing.Point(1040, 603);
+            this.ButtonAdc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ButtonAdc.Name = "ButtonAdc";
+            this.ButtonAdc.ShadowDecoration.Parent = this.ButtonAdc;
+            this.ButtonAdc.Size = new System.Drawing.Size(160, 41);
+            this.ButtonAdc.TabIndex = 22;
+            this.ButtonAdc.Text = "Adicionar";
+            // 
+            // ButtonExc
+            // 
+            this.ButtonExc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonExc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
+            this.ButtonExc.CheckedState.Parent = this.ButtonExc;
+            this.ButtonExc.CustomImages.Parent = this.ButtonExc;
+            this.ButtonExc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonExc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonExc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ButtonExc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ButtonExc.DisabledState.Parent = this.ButtonExc;
+            this.ButtonExc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
+            this.ButtonExc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonExc.ForeColor = System.Drawing.Color.White;
+            this.ButtonExc.HoverState.Parent = this.ButtonExc;
+            this.ButtonExc.Location = new System.Drawing.Point(655, 603);
+            this.ButtonExc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ButtonExc.Name = "ButtonExc";
+            this.ButtonExc.ShadowDecoration.Parent = this.ButtonExc;
+            this.ButtonExc.Size = new System.Drawing.Size(160, 41);
+            this.ButtonExc.TabIndex = 21;
+            this.ButtonExc.Text = "Excluir";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Location = new System.Drawing.Point(30, 14);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(297, 33);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Pedidos da Loja Física";
             // 
             // PictureBoxPerfil
             // 
@@ -114,374 +285,8 @@ namespace SrBolo_Prototype1
             this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
             this.PictureBoxPerfil.Size = new System.Drawing.Size(58, 52);
             this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxPerfil.TabIndex = 21;
+            this.PictureBoxPerfil.TabIndex = 16;
             this.PictureBoxPerfil.TabStop = false;
-            // 
-            // lblHora
-            // 
-            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblHora.BackColor = System.Drawing.Color.Transparent;
-            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(1257, 34);
-            this.lblHora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(64, 20);
-            this.lblHora.TabIndex = 23;
-            this.lblHora.Text = "2:00 AM";
-            // 
-            // lblData
-            // 
-            this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblData.BackColor = System.Drawing.Color.Transparent;
-            this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(1107, 12);
-            this.lblData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(221, 20);
-            this.lblData.TabIndex = 22;
-            this.lblData.Text = "Quarta, 2 de Janeiro de 2021";
-            // 
-            // PanelEditRec
-            // 
-            this.PanelEditRec.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelEditRec.BorderRadius = 40;
-            this.PanelEditRec.Controls.Add(this.ButtonAdc);
-            this.PanelEditRec.Controls.Add(this.guna2ComboBox5);
-            this.PanelEditRec.Controls.Add(this.guna2ComboBox6);
-            this.PanelEditRec.Controls.Add(this.ComboBoxEditRecMed);
-            this.PanelEditRec.Controls.Add(this.guna2ComboBox4);
-            this.PanelEditRec.Controls.Add(this.guna2ComboBox3);
-            this.PanelEditRec.Controls.Add(this.ComboBoxEditRec);
-            this.PanelEditRec.Controls.Add(this.ComboBoxEditRecRend);
-            this.PanelEditRec.Controls.Add(this.ButtonEdit);
-            this.PanelEditRec.Controls.Add(this.ButtonLimpar);
-            this.PanelEditRec.Controls.Add(this.guna2TextBox5);
-            this.PanelEditRec.Controls.Add(this.guna2TextBox3);
-            this.PanelEditRec.Controls.Add(this.txtEditRecQtd);
-            this.PanelEditRec.Controls.Add(this.txtEditRecNome);
-            this.PanelEditRec.Controls.Add(this.lblTitle);
-            this.PanelEditRec.Location = new System.Drawing.Point(129, 66);
-            this.PanelEditRec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PanelEditRec.Name = "PanelEditRec";
-            this.PanelEditRec.ShadowDecoration.Parent = this.PanelEditRec;
-            this.PanelEditRec.Size = new System.Drawing.Size(1219, 700);
-            this.PanelEditRec.TabIndex = 26;
-            // 
-            // ButtonAdc
-            // 
-            this.ButtonAdc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonAdc.CheckedState.Parent = this.ButtonAdc;
-            this.ButtonAdc.CustomImages.Parent = this.ButtonAdc;
-            this.ButtonAdc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonAdc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonAdc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButtonAdc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButtonAdc.DisabledState.Parent = this.ButtonAdc;
-            this.ButtonAdc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(133)))), ((int)(((byte)(129)))));
-            this.ButtonAdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.ButtonAdc.ForeColor = System.Drawing.Color.White;
-            this.ButtonAdc.HoverState.Parent = this.ButtonAdc;
-            this.ButtonAdc.Location = new System.Drawing.Point(712, 433);
-            this.ButtonAdc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtonAdc.Name = "ButtonAdc";
-            this.ButtonAdc.ShadowDecoration.Parent = this.ButtonAdc;
-            this.ButtonAdc.Size = new System.Drawing.Size(142, 35);
-            this.ButtonAdc.TabIndex = 38;
-            this.ButtonAdc.Text = "Adicionar";
-            // 
-            // guna2ComboBox5
-            // 
-            this.guna2ComboBox5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox5.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox5.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox5.FocusedState.Parent = this.guna2ComboBox5;
-            this.guna2ComboBox5.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox5.HoverState.Parent = this.guna2ComboBox5;
-            this.guna2ComboBox5.ItemHeight = 30;
-            this.guna2ComboBox5.ItemsAppearance.Parent = this.guna2ComboBox5;
-            this.guna2ComboBox5.Location = new System.Drawing.Point(616, 295);
-            this.guna2ComboBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ComboBox5.Name = "guna2ComboBox5";
-            this.guna2ComboBox5.ShadowDecoration.Parent = this.guna2ComboBox5;
-            this.guna2ComboBox5.Size = new System.Drawing.Size(224, 36);
-            this.guna2ComboBox5.TabIndex = 31;
-            // 
-            // guna2ComboBox6
-            // 
-            this.guna2ComboBox6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox6.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox6.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox6.FocusedState.Parent = this.guna2ComboBox6;
-            this.guna2ComboBox6.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox6.HoverState.Parent = this.guna2ComboBox6;
-            this.guna2ComboBox6.ItemHeight = 30;
-            this.guna2ComboBox6.ItemsAppearance.Parent = this.guna2ComboBox6;
-            this.guna2ComboBox6.Location = new System.Drawing.Point(616, 226);
-            this.guna2ComboBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ComboBox6.Name = "guna2ComboBox6";
-            this.guna2ComboBox6.ShadowDecoration.Parent = this.guna2ComboBox6;
-            this.guna2ComboBox6.Size = new System.Drawing.Size(224, 36);
-            this.guna2ComboBox6.TabIndex = 30;
-            // 
-            // ComboBoxEditRecMed
-            // 
-            this.ComboBoxEditRecMed.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxEditRecMed.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxEditRecMed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxEditRecMed.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEditRecMed.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEditRecMed.FocusedState.Parent = this.ComboBoxEditRecMed;
-            this.ComboBoxEditRecMed.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxEditRecMed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboBoxEditRecMed.HoverState.Parent = this.ComboBoxEditRecMed;
-            this.ComboBoxEditRecMed.ItemHeight = 30;
-            this.ComboBoxEditRecMed.ItemsAppearance.Parent = this.ComboBoxEditRecMed;
-            this.ComboBoxEditRecMed.Location = new System.Drawing.Point(616, 158);
-            this.ComboBoxEditRecMed.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxEditRecMed.Name = "ComboBoxEditRecMed";
-            this.ComboBoxEditRecMed.ShadowDecoration.Parent = this.ComboBoxEditRecMed;
-            this.ComboBoxEditRecMed.Size = new System.Drawing.Size(224, 36);
-            this.ComboBoxEditRecMed.TabIndex = 29;
-            // 
-            // guna2ComboBox4
-            // 
-            this.guna2ComboBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox4.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox4.FocusedState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox4.HoverState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.ItemHeight = 30;
-            this.guna2ComboBox4.ItemsAppearance.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Location = new System.Drawing.Point(214, 295);
-            this.guna2ComboBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ComboBox4.Name = "guna2ComboBox4";
-            this.guna2ComboBox4.ShadowDecoration.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Size = new System.Drawing.Size(224, 36);
-            this.guna2ComboBox4.TabIndex = 28;
-            // 
-            // guna2ComboBox3
-            // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(214, 226);
-            this.guna2ComboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(224, 36);
-            this.guna2ComboBox3.TabIndex = 27;
-            // 
-            // ComboBoxEditRec
-            // 
-            this.ComboBoxEditRec.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxEditRec.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxEditRec.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxEditRec.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEditRec.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEditRec.FocusedState.Parent = this.ComboBoxEditRec;
-            this.ComboBoxEditRec.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxEditRec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboBoxEditRec.HoverState.Parent = this.ComboBoxEditRec;
-            this.ComboBoxEditRec.ItemHeight = 30;
-            this.ComboBoxEditRec.ItemsAppearance.Parent = this.ComboBoxEditRec;
-            this.ComboBoxEditRec.Location = new System.Drawing.Point(214, 158);
-            this.ComboBoxEditRec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxEditRec.Name = "ComboBoxEditRec";
-            this.ComboBoxEditRec.ShadowDecoration.Parent = this.ComboBoxEditRec;
-            this.ComboBoxEditRec.Size = new System.Drawing.Size(224, 36);
-            this.ComboBoxEditRec.TabIndex = 26;
-            // 
-            // ComboBoxEditRecRend
-            // 
-            this.ComboBoxEditRecRend.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxEditRecRend.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxEditRecRend.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxEditRecRend.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEditRecRend.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEditRecRend.FocusedState.Parent = this.ComboBoxEditRecRend;
-            this.ComboBoxEditRecRend.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxEditRecRend.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboBoxEditRecRend.HoverState.Parent = this.ComboBoxEditRecRend;
-            this.ComboBoxEditRecRend.ItemHeight = 30;
-            this.ComboBoxEditRecRend.ItemsAppearance.Parent = this.ComboBoxEditRecRend;
-            this.ComboBoxEditRecRend.Location = new System.Drawing.Point(579, 106);
-            this.ComboBoxEditRecRend.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxEditRecRend.Name = "ComboBoxEditRecRend";
-            this.ComboBoxEditRecRend.ShadowDecoration.Parent = this.ComboBoxEditRecRend;
-            this.ComboBoxEditRecRend.Size = new System.Drawing.Size(329, 36);
-            this.ComboBoxEditRecRend.TabIndex = 25;
-            // 
-            // ButtonEdit
-            // 
-            this.ButtonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonEdit.CheckedState.Parent = this.ButtonEdit;
-            this.ButtonEdit.CustomImages.Parent = this.ButtonEdit;
-            this.ButtonEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButtonEdit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButtonEdit.DisabledState.Parent = this.ButtonEdit;
-            this.ButtonEdit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.ButtonEdit.ForeColor = System.Drawing.Color.White;
-            this.ButtonEdit.HoverState.Parent = this.ButtonEdit;
-            this.ButtonEdit.Location = new System.Drawing.Point(885, 433);
-            this.ButtonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtonEdit.Name = "ButtonEdit";
-            this.ButtonEdit.ShadowDecoration.Parent = this.ButtonEdit;
-            this.ButtonEdit.Size = new System.Drawing.Size(142, 35);
-            this.ButtonEdit.TabIndex = 22;
-            this.ButtonEdit.Text = "Editar";
-            // 
-            // ButtonLimpar
-            // 
-            this.ButtonLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonLimpar.CheckedState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.CustomImages.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonLimpar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonLimpar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButtonLimpar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButtonLimpar.DisabledState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonLimpar.ForeColor = System.Drawing.Color.White;
-            this.ButtonLimpar.HoverState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Location = new System.Drawing.Point(539, 433);
-            this.ButtonLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtonLimpar.Name = "ButtonLimpar";
-            this.ButtonLimpar.ShadowDecoration.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Size = new System.Drawing.Size(142, 35);
-            this.ButtonLimpar.TabIndex = 21;
-            this.ButtonLimpar.Text = "Limpar";
-            // 
-            // guna2TextBox5
-            // 
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(460, 295);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "Quantidade";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(135, 29);
-            this.guna2TextBox5.TabIndex = 8;
-            // 
-            // guna2TextBox3
-            // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(460, 226);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "Quantidade";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(135, 29);
-            this.guna2TextBox3.TabIndex = 6;
-            // 
-            // txtEditRecQtd
-            // 
-            this.txtEditRecQtd.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEditRecQtd.DefaultText = "";
-            this.txtEditRecQtd.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEditRecQtd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEditRecQtd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditRecQtd.DisabledState.Parent = this.txtEditRecQtd;
-            this.txtEditRecQtd.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditRecQtd.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditRecQtd.FocusedState.Parent = this.txtEditRecQtd;
-            this.txtEditRecQtd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditRecQtd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditRecQtd.HoverState.Parent = this.txtEditRecQtd;
-            this.txtEditRecQtd.Location = new System.Drawing.Point(460, 158);
-            this.txtEditRecQtd.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.txtEditRecQtd.Name = "txtEditRecQtd";
-            this.txtEditRecQtd.PasswordChar = '\0';
-            this.txtEditRecQtd.PlaceholderText = "Quantidade";
-            this.txtEditRecQtd.SelectedText = "";
-            this.txtEditRecQtd.ShadowDecoration.Parent = this.txtEditRecQtd;
-            this.txtEditRecQtd.Size = new System.Drawing.Size(135, 29);
-            this.txtEditRecQtd.TabIndex = 4;
-            // 
-            // txtEditRecNome
-            // 
-            this.txtEditRecNome.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEditRecNome.DefaultText = "";
-            this.txtEditRecNome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEditRecNome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEditRecNome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditRecNome.DisabledState.Parent = this.txtEditRecNome;
-            this.txtEditRecNome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditRecNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditRecNome.FocusedState.Parent = this.txtEditRecNome;
-            this.txtEditRecNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditRecNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditRecNome.HoverState.Parent = this.txtEditRecNome;
-            this.txtEditRecNome.Location = new System.Drawing.Point(145, 106);
-            this.txtEditRecNome.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.txtEditRecNome.Name = "txtEditRecNome";
-            this.txtEditRecNome.PasswordChar = '\0';
-            this.txtEditRecNome.PlaceholderText = "Nome";
-            this.txtEditRecNome.SelectedText = "";
-            this.txtEditRecNome.ShadowDecoration.Parent = this.txtEditRecNome;
-            this.txtEditRecNome.Size = new System.Drawing.Size(329, 29);
-            this.txtEditRecNome.TabIndex = 2;
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(48, 22);
-            this.lblTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(188, 33);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Editar Receita";
             // 
             // PanelMenu
             // 
@@ -502,7 +307,7 @@ namespace SrBolo_Prototype1
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
             this.PanelMenu.Size = new System.Drawing.Size(128, 721);
-            this.PanelMenu.TabIndex = 27;
+            this.PanelMenu.TabIndex = 22;
             // 
             // PanelReceita
             // 
@@ -821,24 +626,25 @@ namespace SrBolo_Prototype1
             this.LogoMrCake.TabIndex = 0;
             this.LogoMrCake.TabStop = false;
             // 
-            // Editar_Rec
+            // Gerenciar_Rec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.PanelMenu);
-            this.Controls.Add(this.PanelEditRec);
+            this.Controls.Add(this.PanelGerRec);
             this.Controls.Add(this.lblEmailFunc);
             this.Controls.Add(this.lblNomeFunc);
             this.Controls.Add(this.PictureBoxPerfil);
             this.Controls.Add(this.lblHora);
             this.Controls.Add(this.lblData);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Editar_Rec";
-            this.Text = "Editar_Receita";
+            this.Name = "Gerenciar_Rec";
+            this.Text = "Editar_Rec";
+            this.PanelGerRec.ResumeLayout(false);
+            this.PanelGerRec.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GridViewRec)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
-            this.PanelEditRec.ResumeLayout(false);
-            this.PanelEditRec.PerformLayout();
             this.PanelMenu.ResumeLayout(false);
             this.PanelReceita.ResumeLayout(false);
             this.PanelInsumo.ResumeLayout(false);
@@ -856,21 +662,13 @@ namespace SrBolo_Prototype1
         private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxPerfil;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblHora;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblData;
-        private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelEditRec;
-        private Guna.UI2.WinForms.Guna2Button ButtonAdc;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox5;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox6;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxEditRecMed;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxEditRec;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxEditRecRend;
+        private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelGerRec;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2TextBox txtGerRecSearch;
         private Guna.UI2.WinForms.Guna2Button ButtonEdit;
-        private Guna.UI2.WinForms.Guna2Button ButtonLimpar;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox txtEditRecQtd;
-        private Guna.UI2.WinForms.Guna2TextBox txtEditRecNome;
+        private System.Windows.Forms.DataGridView GridViewRec;
+        private Guna.UI2.WinForms.Guna2Button ButtonAdc;
+        private Guna.UI2.WinForms.Guna2Button ButtonExc;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblTitle;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2Panel PanelReceita;

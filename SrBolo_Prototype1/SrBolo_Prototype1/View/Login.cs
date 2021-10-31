@@ -26,13 +26,14 @@ namespace SrBolo_Prototype1
             //temporário
 
             LoginDAO usuario = new LoginDAO();
-            bool check = usuario.Acessar(cbUser.SelectedItem.ToString(), txtLogin.ToString(), txtSenha.ToString());
+            Funcionario func  = new Gerente();
+            bool check = usuario.Acessar(func,cbUser.SelectedItem.ToString(), txtLogin.ToString(), txtSenha.ToString());
 
             
 
             if (check == true)
             {
-                if ()
+                if (true) { }
             }
                 
             else { MessageBox.Show("Selecione um usuário", "ATENÇÃO"); }

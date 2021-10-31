@@ -15,6 +15,11 @@ namespace SrBolo_Prototype1.Model
         public string Telefone { get; set; }
         public string Senha { get; set; }
 
+        public Funcionario()
+        {
+
+        }
+
         public Funcionario(string cpf, string nome, string rg, string email, string telefone, string senha)
         {
             Cpf = cpf;

@@ -10,15 +10,13 @@ using System.Windows.Forms;
 
 namespace SrBolo_Prototype1
 {
-    public partial class Cad_Insumo : Form
+    public partial class Gerenciar_PedE : Form
     {
-        public Cad_Insumo()
+        public Gerenciar_PedE()
         {
             InitializeComponent();
             CustumizeDesing();
-            
         }
-
         private void CustumizeDesing()
         {
             PanelInsumo.Visible = false;
@@ -79,7 +77,5 @@ namespace SrBolo_Prototype1
         {
             ShowSubmenu(PanelReceita);
         }
-
-        
     }
 }
