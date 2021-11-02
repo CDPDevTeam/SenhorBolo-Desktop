@@ -19,10 +19,9 @@ namespace SrBolo_Prototype1
         }
         private void CustumizeDesing()
         {
-            PanelInsumo.Visible = false;
             PanelProduto.Visible = false;
             PanelFuncionario.Visible = false;
-            PanelReceita.Visible = false;
+            PanelPedidos.Visible = false;
         }
 
         private void HideMenu()
@@ -35,13 +34,9 @@ namespace SrBolo_Prototype1
             {
                 PanelProduto.Visible = false;
             }
-            if (PanelInsumo.Visible == true)
+            if (PanelPedidos.Visible == true)
             {
-                PanelInsumo.Visible = false;
-            }
-            if (PanelReceita.Visible == true)
-            {
-                PanelReceita.Visible = false;
+                PanelPedidos.Visible = false;
             }
         }
 
@@ -68,14 +63,9 @@ namespace SrBolo_Prototype1
             ShowSubmenu(PanelProduto);
         }
 
-        private void BtnInsumo_Click(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelInsumo);
-        }
-
         private void BtnReceita_Click(object sender, EventArgs e)
         {
-            ShowSubmenu(PanelReceita);
+            ShowSubmenu(PanelPedidos);
         }
     }
 }

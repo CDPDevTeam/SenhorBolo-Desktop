@@ -101,18 +101,12 @@ C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Proto
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cancelar_Compra.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Conf_home.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Login.resources
-C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.admFinancas.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Balc_Caixa.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cad_Func.resources
-C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cad_Insumo.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cad_Prod.resources
-C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cad_Rec.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Editar_Func.resources
-C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Editar_Insumo.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Editar_Prod.resources
-C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Editar_Rec.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Func.resources
-C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Insumo.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Prod.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Rec.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Properties.Resources.resources
@@ -205,3 +199,6 @@ C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Proto
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Adm_Home.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.teste.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.csproj.CopyComplete
+C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Adm_Pedido.resources
+C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Conf_DetalhePed.resources
+C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_PedE.resources

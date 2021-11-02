@@ -29,6 +29,7 @@ namespace SrBolo_Prototype1
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editar_Func));
             this.lblEmailFunc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNomeFunc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblHora = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -45,14 +46,6 @@ namespace SrBolo_Prototype1
             this.PanelEditFunc = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.PanelReceita = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnReceita = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.PanelInsumo = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnInsumo = new Guna.UI2.WinForms.Guna2ImageButton();
             this.PanelProduto = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
@@ -63,14 +56,17 @@ namespace SrBolo_Prototype1
             this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.PanelPedidos = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnReceita = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
             this.PanelMenu.SuspendLayout();
-            this.PanelReceita.SuspendLayout();
-            this.PanelInsumo.SuspendLayout();
             this.PanelProduto.SuspendLayout();
             this.PanelFuncionario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).BeginInit();
+            this.PanelPedidos.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblEmailFunc
@@ -355,10 +351,8 @@ namespace SrBolo_Prototype1
             // 
             // PanelMenu
             // 
-            this.PanelMenu.Controls.Add(this.PanelReceita);
+            this.PanelMenu.Controls.Add(this.PanelPedidos);
             this.PanelMenu.Controls.Add(this.BtnReceita);
-            this.PanelMenu.Controls.Add(this.PanelInsumo);
-            this.PanelMenu.Controls.Add(this.BtnInsumo);
             this.PanelMenu.Controls.Add(this.PanelProduto);
             this.PanelMenu.Controls.Add(this.BtnProduto);
             this.PanelMenu.Controls.Add(this.PanelFuncionario);
@@ -374,160 +368,6 @@ namespace SrBolo_Prototype1
             this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
             this.PanelMenu.Size = new System.Drawing.Size(144, 901);
             this.PanelMenu.TabIndex = 12;
-            // 
-            // PanelReceita
-            // 
-            this.PanelReceita.Controls.Add(this.guna2Button8);
-            this.PanelReceita.Controls.Add(this.guna2Button4);
-            this.PanelReceita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelReceita.Location = new System.Drawing.Point(0, 996);
-            this.PanelReceita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PanelReceita.Name = "PanelReceita";
-            this.PanelReceita.ShadowDecoration.Parent = this.PanelReceita;
-            this.PanelReceita.Size = new System.Drawing.Size(144, 138);
-            this.PanelReceita.TabIndex = 9;
-            // 
-            // guna2Button8
-            // 
-            this.guna2Button8.CheckedState.Parent = this.guna2Button8;
-            this.guna2Button8.CustomImages.Parent = this.guna2Button8;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.DisabledState.Parent = this.guna2Button8;
-            this.guna2Button8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.HoverState.Parent = this.guna2Button8;
-            this.guna2Button8.Location = new System.Drawing.Point(0, 70);
-            this.guna2Button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.ShadowDecoration.Parent = this.guna2Button8;
-            this.guna2Button8.Size = new System.Drawing.Size(144, 70);
-            this.guna2Button8.TabIndex = 3;
-            this.guna2Button8.Text = "Gerenciar Receita";
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.DisabledState.Parent = this.guna2Button4;
-            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(144, 70);
-            this.guna2Button4.TabIndex = 1;
-            this.guna2Button4.Text = "Cadastrar Receita";
-            // 
-            // BtnReceita
-            // 
-            this.BtnReceita.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnReceita.CheckedState.Parent = this.BtnReceita;
-            this.BtnReceita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnReceita.HoverState.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnReceita.HoverState.Parent = this.BtnReceita;
-            this.BtnReceita.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnReceita;
-            this.BtnReceita.ImageOffset = new System.Drawing.Point(0, 0);
-            this.BtnReceita.ImageRotate = 0F;
-            this.BtnReceita.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnReceita.Location = new System.Drawing.Point(0, 884);
-            this.BtnReceita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BtnReceita.Name = "BtnReceita";
-            this.BtnReceita.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnReceita.PressedState.Parent = this.BtnReceita;
-            this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
-            this.BtnReceita.Size = new System.Drawing.Size(144, 112);
-            this.BtnReceita.TabIndex = 8;
-            this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
-            // 
-            // PanelInsumo
-            // 
-            this.PanelInsumo.Controls.Add(this.guna2Button7);
-            this.PanelInsumo.Controls.Add(this.guna2Button2);
-            this.PanelInsumo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelInsumo.Location = new System.Drawing.Point(0, 746);
-            this.PanelInsumo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PanelInsumo.Name = "PanelInsumo";
-            this.PanelInsumo.ShadowDecoration.Parent = this.PanelInsumo;
-            this.PanelInsumo.Size = new System.Drawing.Size(144, 138);
-            this.PanelInsumo.TabIndex = 7;
-            // 
-            // guna2Button7
-            // 
-            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
-            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.DisabledState.Parent = this.guna2Button7;
-            this.guna2Button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 70);
-            this.guna2Button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(144, 70);
-            this.guna2Button7.TabIndex = 3;
-            this.guna2Button7.Text = "Gerenciar Insumo";
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.DisabledState.Parent = this.guna2Button2;
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(144, 70);
-            this.guna2Button2.TabIndex = 1;
-            this.guna2Button2.Text = "Cadastrar Insumo";
-            // 
-            // BtnInsumo
-            // 
-            this.BtnInsumo.CheckedState.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnInsumo.CheckedState.Parent = this.BtnInsumo;
-            this.BtnInsumo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnInsumo.HoverState.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnInsumo.HoverState.Parent = this.BtnInsumo;
-            this.BtnInsumo.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnInsumo;
-            this.BtnInsumo.ImageOffset = new System.Drawing.Point(0, 0);
-            this.BtnInsumo.ImageRotate = 0F;
-            this.BtnInsumo.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnInsumo.Location = new System.Drawing.Point(0, 634);
-            this.BtnInsumo.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BtnInsumo.Name = "BtnInsumo";
-            this.BtnInsumo.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnInsumo.PressedState.Parent = this.BtnInsumo;
-            this.BtnInsumo.ShadowDecoration.Parent = this.BtnInsumo;
-            this.BtnInsumo.Size = new System.Drawing.Size(144, 112);
-            this.BtnInsumo.TabIndex = 6;
-            this.BtnInsumo.Click += new System.EventHandler(this.BtnInsumo_Click);
             // 
             // PanelProduto
             // 
@@ -592,7 +432,7 @@ namespace SrBolo_Prototype1
             this.BtnProduto.Dock = System.Windows.Forms.DockStyle.Top;
             this.BtnProduto.HoverState.ImageSize = new System.Drawing.Size(128, 90);
             this.BtnProduto.HoverState.Parent = this.BtnProduto;
-            this.BtnProduto.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnProd;
+            this.BtnProduto.Image = ((System.Drawing.Image)(resources.GetObject("BtnProduto.Image")));
             this.BtnProduto.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnProduto.ImageRotate = 0F;
             this.BtnProduto.ImageSize = new System.Drawing.Size(128, 90);
@@ -710,6 +550,83 @@ namespace SrBolo_Prototype1
             this.LogoMrCake.TabIndex = 0;
             this.LogoMrCake.TabStop = false;
             // 
+            // PanelPedidos
+            // 
+            this.PanelPedidos.Controls.Add(this.guna2Button2);
+            this.PanelPedidos.Controls.Add(this.guna2Button4);
+            this.PanelPedidos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelPedidos.Location = new System.Drawing.Point(0, 746);
+            this.PanelPedidos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PanelPedidos.Name = "PanelPedidos";
+            this.PanelPedidos.ShadowDecoration.Parent = this.PanelPedidos;
+            this.PanelPedidos.Size = new System.Drawing.Size(144, 182);
+            this.PanelPedidos.TabIndex = 12;
+            // 
+            // guna2Button4
+            // 
+            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
+            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.DisabledState.Parent = this.guna2Button4;
+            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button4.ForeColor = System.Drawing.Color.White;
+            this.guna2Button4.HoverState.Parent = this.guna2Button4;
+            this.guna2Button4.Location = new System.Drawing.Point(0, 0);
+            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
+            this.guna2Button4.Size = new System.Drawing.Size(144, 91);
+            this.guna2Button4.TabIndex = 1;
+            this.guna2Button4.Text = "Gerenciar Pedidos Ecommerce";
+            // 
+            // BtnReceita
+            // 
+            this.BtnReceita.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnReceita.CheckedState.Parent = this.BtnReceita;
+            this.BtnReceita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnReceita.HoverState.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnReceita.HoverState.Parent = this.BtnReceita;
+            this.BtnReceita.Image = ((System.Drawing.Image)(resources.GetObject("BtnReceita.Image")));
+            this.BtnReceita.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BtnReceita.ImageRotate = 0F;
+            this.BtnReceita.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnReceita.Location = new System.Drawing.Point(0, 634);
+            this.BtnReceita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnReceita.Name = "BtnReceita";
+            this.BtnReceita.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnReceita.PressedState.Parent = this.BtnReceita;
+            this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
+            this.BtnReceita.Size = new System.Drawing.Size(144, 112);
+            this.BtnReceita.TabIndex = 11;
+            this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
+            // 
+            // guna2Button2
+            // 
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.DisabledState.Parent = this.guna2Button2;
+            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button2.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(0, 91);
+            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(144, 91);
+            this.guna2Button2.TabIndex = 2;
+            this.guna2Button2.Text = "Gerenciar Pedidos Loja Física";
+            // 
             // Editar_Func
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -729,11 +646,10 @@ namespace SrBolo_Prototype1
             this.guna2CustomGradientPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
             this.PanelMenu.ResumeLayout(false);
-            this.PanelReceita.ResumeLayout(false);
-            this.PanelInsumo.ResumeLayout(false);
             this.PanelProduto.ResumeLayout(false);
             this.PanelFuncionario.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).EndInit();
+            this.PanelPedidos.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -756,14 +672,6 @@ namespace SrBolo_Prototype1
         private Guna.UI2.WinForms.Guna2HtmlLabel PanelEditFunc;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxEditFuncCargo;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
-        private Guna.UI2.WinForms.Guna2Panel PanelReceita;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2ImageButton BtnReceita;
-        private Guna.UI2.WinForms.Guna2Panel PanelInsumo;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private Guna.UI2.WinForms.Guna2ImageButton BtnInsumo;
         private Guna.UI2.WinForms.Guna2Panel PanelProduto;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button3;
@@ -774,5 +682,9 @@ namespace SrBolo_Prototype1
         private Guna.UI2.WinForms.Guna2ImageButton BtnFuncionario;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2PictureBox LogoMrCake;
+        private Guna.UI2.WinForms.Guna2Panel PanelPedidos;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2ImageButton BtnReceita;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }
