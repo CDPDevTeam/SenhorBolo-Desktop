@@ -43,28 +43,28 @@
             this.lblHora = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblData = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.PanelPedidos = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnGerenciar_PedF = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGerenciar_PedE = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnReceita = new Guna.UI2.WinForms.Guna2ImageButton();
             this.PanelProduto = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGerenciar_Prod = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCad_Prod = new Guna.UI2.WinForms.Guna2Button();
             this.BtnProduto = new Guna.UI2.WinForms.Guna2ImageButton();
             this.PanelFuncionario = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btnGerenciar_Func = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCad_Func = new Guna.UI2.WinForms.Guna2Button();
             this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.PanelPedidos = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.BtnReceita = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.PanelGerProd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
             this.PanelMenu.SuspendLayout();
+            this.PanelPedidos.SuspendLayout();
             this.PanelProduto.SuspendLayout();
             this.PanelFuncionario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).BeginInit();
-            this.PanelPedidos.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelGerProd
@@ -80,21 +80,21 @@
             this.PanelGerProd.Controls.Add(this.ButtonAdc);
             this.PanelGerProd.Controls.Add(this.ButtonExc);
             this.PanelGerProd.Controls.Add(this.lblTitle);
-            this.PanelGerProd.Location = new System.Drawing.Point(145, 82);
+            this.PanelGerProd.Location = new System.Drawing.Point(129, 66);
             this.PanelGerProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelGerProd.Name = "PanelGerProd";
             this.PanelGerProd.ShadowDecoration.Parent = this.PanelGerProd;
-            this.PanelGerProd.Size = new System.Drawing.Size(1371, 875);
+            this.PanelGerProd.Size = new System.Drawing.Size(1219, 700);
             this.PanelGerProd.TabIndex = 3;
             // 
             // guna2HtmlLabel6
             // 
             this.guna2HtmlLabel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(25, 779);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(22, 623);
             this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(395, 22);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(341, 18);
             this.guna2HtmlLabel6.TabIndex = 26;
             this.guna2HtmlLabel6.Text = "*Para realizar uma operação, clique no campo desejado";
             // 
@@ -116,7 +116,7 @@
             this.txtGerProdSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGerProdSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtGerProdSearch.HoverState.Parent = this.txtGerProdSearch;
-            this.txtGerProdSearch.Location = new System.Drawing.Point(896, 18);
+            this.txtGerProdSearch.Location = new System.Drawing.Point(796, 14);
             this.txtGerProdSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGerProdSearch.Name = "txtGerProdSearch";
             this.txtGerProdSearch.PasswordChar = '\0';
@@ -124,7 +124,7 @@
             this.txtGerProdSearch.PlaceholderText = "Digite ID, Categoria ou Nome";
             this.txtGerProdSearch.SelectedText = "";
             this.txtGerProdSearch.ShadowDecoration.Parent = this.txtGerProdSearch;
-            this.txtGerProdSearch.Size = new System.Drawing.Size(454, 46);
+            this.txtGerProdSearch.Size = new System.Drawing.Size(404, 37);
             this.txtGerProdSearch.TabIndex = 25;
             // 
             // ButtonEdit
@@ -142,11 +142,11 @@
             this.ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonEdit.ForeColor = System.Drawing.Color.White;
             this.ButtonEdit.HoverState.Parent = this.ButtonEdit;
-            this.ButtonEdit.Location = new System.Drawing.Point(955, 750);
+            this.ButtonEdit.Location = new System.Drawing.Point(849, 600);
             this.ButtonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonEdit.Name = "ButtonEdit";
             this.ButtonEdit.ShadowDecoration.Parent = this.ButtonEdit;
-            this.ButtonEdit.Size = new System.Drawing.Size(180, 51);
+            this.ButtonEdit.Size = new System.Drawing.Size(160, 41);
             this.ButtonEdit.TabIndex = 24;
             this.ButtonEdit.Text = "Editar";
             // 
@@ -156,12 +156,12 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.GridViewProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridViewProd.Location = new System.Drawing.Point(25, 69);
+            this.GridViewProd.Location = new System.Drawing.Point(22, 55);
             this.GridViewProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GridViewProd.Name = "GridViewProd";
             this.GridViewProd.RowHeadersWidth = 62;
             this.GridViewProd.RowTemplate.Height = 28;
-            this.GridViewProd.Size = new System.Drawing.Size(1325, 665);
+            this.GridViewProd.Size = new System.Drawing.Size(1178, 532);
             this.GridViewProd.TabIndex = 23;
             // 
             // ButtonAdc
@@ -179,11 +179,11 @@
             this.ButtonAdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.ButtonAdc.ForeColor = System.Drawing.Color.White;
             this.ButtonAdc.HoverState.Parent = this.ButtonAdc;
-            this.ButtonAdc.Location = new System.Drawing.Point(1170, 750);
+            this.ButtonAdc.Location = new System.Drawing.Point(1040, 600);
             this.ButtonAdc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonAdc.Name = "ButtonAdc";
             this.ButtonAdc.ShadowDecoration.Parent = this.ButtonAdc;
-            this.ButtonAdc.Size = new System.Drawing.Size(180, 51);
+            this.ButtonAdc.Size = new System.Drawing.Size(160, 41);
             this.ButtonAdc.TabIndex = 22;
             this.ButtonAdc.Text = "Adicionar";
             // 
@@ -202,11 +202,11 @@
             this.ButtonExc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonExc.ForeColor = System.Drawing.Color.White;
             this.ButtonExc.HoverState.Parent = this.ButtonExc;
-            this.ButtonExc.Location = new System.Drawing.Point(737, 750);
+            this.ButtonExc.Location = new System.Drawing.Point(655, 600);
             this.ButtonExc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonExc.Name = "ButtonExc";
             this.ButtonExc.ShadowDecoration.Parent = this.ButtonExc;
-            this.ButtonExc.Size = new System.Drawing.Size(180, 51);
+            this.ButtonExc.Size = new System.Drawing.Size(160, 41);
             this.ButtonExc.TabIndex = 21;
             this.ButtonExc.Text = "Excluir";
             // 
@@ -215,10 +215,10 @@
             this.lblTitle.BackColor = System.Drawing.Color.Transparent;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(34, 18);
+            this.lblTitle.Location = new System.Drawing.Point(30, 14);
             this.lblTitle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(338, 39);
+            this.lblTitle.Size = new System.Drawing.Size(290, 33);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Estoques de Produtos";
             // 
@@ -227,10 +227,10 @@
             this.lblEmailFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblEmailFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmailFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblEmailFunc.Location = new System.Drawing.Point(255, 42);
+            this.lblEmailFunc.Location = new System.Drawing.Point(227, 34);
             this.lblEmailFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblEmailFunc.Name = "lblEmailFunc";
-            this.lblEmailFunc.Size = new System.Drawing.Size(164, 22);
+            this.lblEmailFunc.Size = new System.Drawing.Size(142, 18);
             this.lblEmailFunc.TabIndex = 15;
             this.lblEmailFunc.Text = "RolaDura@yahoo.com";
             // 
@@ -239,10 +239,10 @@
             this.lblNomeFunc.BackColor = System.Drawing.Color.Transparent;
             this.lblNomeFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNomeFunc.ForeColor = System.Drawing.Color.Black;
-            this.lblNomeFunc.Location = new System.Drawing.Point(256, 14);
+            this.lblNomeFunc.Location = new System.Drawing.Point(228, 11);
             this.lblNomeFunc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblNomeFunc.Name = "lblNomeFunc";
-            this.lblNomeFunc.Size = new System.Drawing.Size(113, 27);
+            this.lblNomeFunc.Size = new System.Drawing.Size(99, 22);
             this.lblNomeFunc.TabIndex = 14;
             this.lblNomeFunc.Text = "Edson Koiti";
             // 
@@ -250,12 +250,12 @@
             // 
             this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
             this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(179, 10);
+            this.PictureBoxPerfil.Location = new System.Drawing.Point(159, 8);
             this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PictureBoxPerfil.Name = "PictureBoxPerfil";
             this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(65, 65);
+            this.PictureBoxPerfil.Size = new System.Drawing.Size(58, 52);
             this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxPerfil.TabIndex = 11;
             this.PictureBoxPerfil.TabStop = false;
@@ -265,10 +265,10 @@
             this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.BackColor = System.Drawing.Color.Transparent;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.Location = new System.Drawing.Point(1423, 44);
+            this.lblHora.Location = new System.Drawing.Point(1265, 35);
             this.lblHora.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(76, 24);
+            this.lblHora.Size = new System.Drawing.Size(64, 20);
             this.lblHora.TabIndex = 13;
             this.lblHora.Text = "2:00 AM";
             // 
@@ -277,10 +277,10 @@
             this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblData.Location = new System.Drawing.Point(1254, 16);
+            this.lblData.Location = new System.Drawing.Point(1115, 13);
             this.lblData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblData.Name = "lblData";
-            this.lblData.Size = new System.Drawing.Size(265, 24);
+            this.lblData.Size = new System.Drawing.Size(221, 20);
             this.lblData.TabIndex = 12;
             this.lblData.Text = "Quarta, 2 de Janeiro de 2021";
             // 
@@ -298,67 +298,139 @@
             this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
-            this.PanelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
-            this.PanelMenu.Size = new System.Drawing.Size(144, 901);
+            this.PanelMenu.Size = new System.Drawing.Size(128, 721);
             this.PanelMenu.TabIndex = 16;
+            // 
+            // PanelPedidos
+            // 
+            this.PanelPedidos.Controls.Add(this.btnGerenciar_PedF);
+            this.PanelPedidos.Controls.Add(this.btnGerenciar_PedE);
+            this.PanelPedidos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelPedidos.Location = new System.Drawing.Point(0, 597);
+            this.PanelPedidos.Name = "PanelPedidos";
+            this.PanelPedidos.ShadowDecoration.Parent = this.PanelPedidos;
+            this.PanelPedidos.Size = new System.Drawing.Size(128, 146);
+            this.PanelPedidos.TabIndex = 12;
+            // 
+            // btnGerenciar_PedF
+            // 
+            this.btnGerenciar_PedF.CheckedState.Parent = this.btnGerenciar_PedF;
+            this.btnGerenciar_PedF.CustomImages.Parent = this.btnGerenciar_PedF;
+            this.btnGerenciar_PedF.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGerenciar_PedF.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGerenciar_PedF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGerenciar_PedF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGerenciar_PedF.DisabledState.Parent = this.btnGerenciar_PedF;
+            this.btnGerenciar_PedF.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGerenciar_PedF.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.btnGerenciar_PedF.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGerenciar_PedF.ForeColor = System.Drawing.Color.White;
+            this.btnGerenciar_PedF.HoverState.Parent = this.btnGerenciar_PedF;
+            this.btnGerenciar_PedF.Location = new System.Drawing.Point(0, 73);
+            this.btnGerenciar_PedF.Name = "btnGerenciar_PedF";
+            this.btnGerenciar_PedF.ShadowDecoration.Parent = this.btnGerenciar_PedF;
+            this.btnGerenciar_PedF.Size = new System.Drawing.Size(128, 73);
+            this.btnGerenciar_PedF.TabIndex = 2;
+            this.btnGerenciar_PedF.Text = "Gerenciar Pedidos Loja Física";
+            this.btnGerenciar_PedF.Click += new System.EventHandler(this.btnGerenciar_PedF_Click);
+            // 
+            // btnGerenciar_PedE
+            // 
+            this.btnGerenciar_PedE.CheckedState.Parent = this.btnGerenciar_PedE;
+            this.btnGerenciar_PedE.CustomImages.Parent = this.btnGerenciar_PedE;
+            this.btnGerenciar_PedE.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGerenciar_PedE.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGerenciar_PedE.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGerenciar_PedE.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGerenciar_PedE.DisabledState.Parent = this.btnGerenciar_PedE;
+            this.btnGerenciar_PedE.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGerenciar_PedE.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.btnGerenciar_PedE.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGerenciar_PedE.ForeColor = System.Drawing.Color.White;
+            this.btnGerenciar_PedE.HoverState.Parent = this.btnGerenciar_PedE;
+            this.btnGerenciar_PedE.Location = new System.Drawing.Point(0, 0);
+            this.btnGerenciar_PedE.Name = "btnGerenciar_PedE";
+            this.btnGerenciar_PedE.ShadowDecoration.Parent = this.btnGerenciar_PedE;
+            this.btnGerenciar_PedE.Size = new System.Drawing.Size(128, 73);
+            this.btnGerenciar_PedE.TabIndex = 1;
+            this.btnGerenciar_PedE.Text = "Gerenciar Pedidos Ecommerce";
+            this.btnGerenciar_PedE.Click += new System.EventHandler(this.btnGerenciar_PedE_Click);
+            // 
+            // BtnReceita
+            // 
+            this.BtnReceita.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnReceita.CheckedState.Parent = this.BtnReceita;
+            this.BtnReceita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnReceita.HoverState.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnReceita.HoverState.Parent = this.BtnReceita;
+            this.BtnReceita.Image = ((System.Drawing.Image)(resources.GetObject("BtnReceita.Image")));
+            this.BtnReceita.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BtnReceita.ImageRotate = 0F;
+            this.BtnReceita.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnReceita.Location = new System.Drawing.Point(0, 507);
+            this.BtnReceita.Name = "BtnReceita";
+            this.BtnReceita.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnReceita.PressedState.Parent = this.BtnReceita;
+            this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
+            this.BtnReceita.Size = new System.Drawing.Size(128, 90);
+            this.BtnReceita.TabIndex = 11;
+            this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
             // 
             // PanelProduto
             // 
-            this.PanelProduto.Controls.Add(this.guna2Button6);
-            this.PanelProduto.Controls.Add(this.guna2Button3);
+            this.PanelProduto.Controls.Add(this.btnGerenciar_Prod);
+            this.PanelProduto.Controls.Add(this.btnCad_Prod);
             this.PanelProduto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelProduto.Location = new System.Drawing.Point(0, 496);
-            this.PanelProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PanelProduto.Location = new System.Drawing.Point(0, 397);
             this.PanelProduto.Name = "PanelProduto";
             this.PanelProduto.ShadowDecoration.Parent = this.PanelProduto;
-            this.PanelProduto.Size = new System.Drawing.Size(144, 138);
+            this.PanelProduto.Size = new System.Drawing.Size(128, 110);
             this.PanelProduto.TabIndex = 5;
             // 
-            // guna2Button6
+            // btnGerenciar_Prod
             // 
-            this.guna2Button6.CheckedState.Parent = this.guna2Button6;
-            this.guna2Button6.CustomImages.Parent = this.guna2Button6;
-            this.guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button6.DisabledState.Parent = this.guna2Button6;
-            this.guna2Button6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button6.ForeColor = System.Drawing.Color.White;
-            this.guna2Button6.HoverState.Parent = this.guna2Button6;
-            this.guna2Button6.Location = new System.Drawing.Point(0, 70);
-            this.guna2Button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button6.Name = "guna2Button6";
-            this.guna2Button6.ShadowDecoration.Parent = this.guna2Button6;
-            this.guna2Button6.Size = new System.Drawing.Size(144, 70);
-            this.guna2Button6.TabIndex = 2;
-            this.guna2Button6.Text = "Gerenciar Produto";
+            this.btnGerenciar_Prod.CheckedState.Parent = this.btnGerenciar_Prod;
+            this.btnGerenciar_Prod.CustomImages.Parent = this.btnGerenciar_Prod;
+            this.btnGerenciar_Prod.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGerenciar_Prod.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGerenciar_Prod.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGerenciar_Prod.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGerenciar_Prod.DisabledState.Parent = this.btnGerenciar_Prod;
+            this.btnGerenciar_Prod.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGerenciar_Prod.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.btnGerenciar_Prod.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGerenciar_Prod.ForeColor = System.Drawing.Color.White;
+            this.btnGerenciar_Prod.HoverState.Parent = this.btnGerenciar_Prod;
+            this.btnGerenciar_Prod.Location = new System.Drawing.Point(0, 56);
+            this.btnGerenciar_Prod.Name = "btnGerenciar_Prod";
+            this.btnGerenciar_Prod.ShadowDecoration.Parent = this.btnGerenciar_Prod;
+            this.btnGerenciar_Prod.Size = new System.Drawing.Size(128, 56);
+            this.btnGerenciar_Prod.TabIndex = 2;
+            this.btnGerenciar_Prod.Text = "Gerenciar Produto";
             // 
-            // guna2Button3
+            // btnCad_Prod
             // 
-            this.guna2Button3.CheckedState.Parent = this.guna2Button3;
-            this.guna2Button3.CustomImages.Parent = this.guna2Button3;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.DisabledState.Parent = this.guna2Button3;
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.HoverState.Parent = this.guna2Button3;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.ShadowDecoration.Parent = this.guna2Button3;
-            this.guna2Button3.Size = new System.Drawing.Size(144, 70);
-            this.guna2Button3.TabIndex = 0;
-            this.guna2Button3.Text = "Cadastrar Produto";
+            this.btnCad_Prod.CheckedState.Parent = this.btnCad_Prod;
+            this.btnCad_Prod.CustomImages.Parent = this.btnCad_Prod;
+            this.btnCad_Prod.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCad_Prod.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCad_Prod.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCad_Prod.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCad_Prod.DisabledState.Parent = this.btnCad_Prod;
+            this.btnCad_Prod.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCad_Prod.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.btnCad_Prod.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCad_Prod.ForeColor = System.Drawing.Color.White;
+            this.btnCad_Prod.HoverState.Parent = this.btnCad_Prod;
+            this.btnCad_Prod.Location = new System.Drawing.Point(0, 0);
+            this.btnCad_Prod.Name = "btnCad_Prod";
+            this.btnCad_Prod.ShadowDecoration.Parent = this.btnCad_Prod;
+            this.btnCad_Prod.Size = new System.Drawing.Size(128, 56);
+            this.btnCad_Prod.TabIndex = 0;
+            this.btnCad_Prod.Text = "Cadastrar Produto";
+            this.btnCad_Prod.Click += new System.EventHandler(this.btnCad_Prod_Click);
             // 
             // BtnProduto
             // 
@@ -371,71 +443,69 @@
             this.BtnProduto.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnProduto.ImageRotate = 0F;
             this.BtnProduto.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnProduto.Location = new System.Drawing.Point(0, 384);
-            this.BtnProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnProduto.Location = new System.Drawing.Point(0, 307);
             this.BtnProduto.Name = "BtnProduto";
             this.BtnProduto.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnProduto.PressedState.Parent = this.BtnProduto;
             this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
-            this.BtnProduto.Size = new System.Drawing.Size(144, 112);
+            this.BtnProduto.Size = new System.Drawing.Size(128, 90);
             this.BtnProduto.TabIndex = 4;
             this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
             // 
             // PanelFuncionario
             // 
-            this.PanelFuncionario.Controls.Add(this.guna2Button5);
-            this.PanelFuncionario.Controls.Add(this.guna2Button1);
+            this.PanelFuncionario.Controls.Add(this.btnGerenciar_Func);
+            this.PanelFuncionario.Controls.Add(this.btnCad_Func);
             this.PanelFuncionario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelFuncionario.Location = new System.Drawing.Point(0, 246);
-            this.PanelFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PanelFuncionario.Location = new System.Drawing.Point(0, 197);
             this.PanelFuncionario.Name = "PanelFuncionario";
             this.PanelFuncionario.ShadowDecoration.Parent = this.PanelFuncionario;
-            this.PanelFuncionario.Size = new System.Drawing.Size(144, 138);
+            this.PanelFuncionario.Size = new System.Drawing.Size(128, 110);
             this.PanelFuncionario.TabIndex = 3;
             // 
-            // guna2Button5
+            // btnGerenciar_Func
             // 
-            this.guna2Button5.CheckedState.Parent = this.guna2Button5;
-            this.guna2Button5.CustomImages.Parent = this.guna2Button5;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.DisabledState.Parent = this.guna2Button5;
-            this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.HoverState.Parent = this.guna2Button5;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 69);
-            this.guna2Button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.ShadowDecoration.Parent = this.guna2Button5;
-            this.guna2Button5.Size = new System.Drawing.Size(144, 69);
-            this.guna2Button5.TabIndex = 3;
-            this.guna2Button5.Text = "Gerenciar Funcionário";
+            this.btnGerenciar_Func.CheckedState.Parent = this.btnGerenciar_Func;
+            this.btnGerenciar_Func.CustomImages.Parent = this.btnGerenciar_Func;
+            this.btnGerenciar_Func.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGerenciar_Func.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGerenciar_Func.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGerenciar_Func.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGerenciar_Func.DisabledState.Parent = this.btnGerenciar_Func;
+            this.btnGerenciar_Func.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGerenciar_Func.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.btnGerenciar_Func.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnGerenciar_Func.ForeColor = System.Drawing.Color.White;
+            this.btnGerenciar_Func.HoverState.Parent = this.btnGerenciar_Func;
+            this.btnGerenciar_Func.Location = new System.Drawing.Point(0, 55);
+            this.btnGerenciar_Func.Name = "btnGerenciar_Func";
+            this.btnGerenciar_Func.ShadowDecoration.Parent = this.btnGerenciar_Func;
+            this.btnGerenciar_Func.Size = new System.Drawing.Size(128, 55);
+            this.btnGerenciar_Func.TabIndex = 3;
+            this.btnGerenciar_Func.Text = "Gerenciar Funcionário";
+            this.btnGerenciar_Func.Click += new System.EventHandler(this.btnGerenciar_Func_Click);
             // 
-            // guna2Button1
+            // btnCad_Func
             // 
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(144, 69);
-            this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "Cadastrar Funcionário";
+            this.btnCad_Func.CheckedState.Parent = this.btnCad_Func;
+            this.btnCad_Func.CustomImages.Parent = this.btnCad_Func;
+            this.btnCad_Func.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCad_Func.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCad_Func.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCad_Func.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCad_Func.DisabledState.Parent = this.btnCad_Func;
+            this.btnCad_Func.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCad_Func.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.btnCad_Func.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnCad_Func.ForeColor = System.Drawing.Color.White;
+            this.btnCad_Func.HoverState.Parent = this.btnCad_Func;
+            this.btnCad_Func.Location = new System.Drawing.Point(0, 0);
+            this.btnCad_Func.Name = "btnCad_Func";
+            this.btnCad_Func.ShadowDecoration.Parent = this.btnCad_Func;
+            this.btnCad_Func.Size = new System.Drawing.Size(128, 55);
+            this.btnCad_Func.TabIndex = 0;
+            this.btnCad_Func.Text = "Cadastrar Funcionário";
+            this.btnCad_Func.Click += new System.EventHandler(this.btnCad_Func_Click);
             // 
             // BtnFuncionario
             // 
@@ -449,124 +519,46 @@
             this.BtnFuncionario.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnFuncionario.ImageRotate = 0F;
             this.BtnFuncionario.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnFuncionario.Location = new System.Drawing.Point(0, 134);
-            this.BtnFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnFuncionario.Location = new System.Drawing.Point(0, 107);
             this.BtnFuncionario.Name = "BtnFuncionario";
             this.BtnFuncionario.PressedState.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
             this.BtnFuncionario.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnFuncionario.PressedState.Parent = this.BtnFuncionario;
             this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.Size = new System.Drawing.Size(144, 112);
+            this.BtnFuncionario.Size = new System.Drawing.Size(128, 90);
             this.BtnFuncionario.TabIndex = 2;
             this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
             // 
             // guna2GradientPanel2
             // 
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(166, 161);
-            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(148, 129);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(234, 125);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(208, 100);
             this.guna2GradientPanel2.TabIndex = 1;
             // 
             // LogoMrCake
             // 
             this.LogoMrCake.BackColor = System.Drawing.Color.Transparent;
+            this.LogoMrCake.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LogoMrCake.Dock = System.Windows.Forms.DockStyle.Top;
             this.LogoMrCake.FillColor = System.Drawing.Color.Transparent;
             this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
             this.LogoMrCake.ImageRotate = 0F;
             this.LogoMrCake.Location = new System.Drawing.Point(0, 0);
-            this.LogoMrCake.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LogoMrCake.Name = "LogoMrCake";
             this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
-            this.LogoMrCake.Size = new System.Drawing.Size(144, 134);
+            this.LogoMrCake.Size = new System.Drawing.Size(128, 107);
             this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoMrCake.TabIndex = 0;
             this.LogoMrCake.TabStop = false;
-            // 
-            // PanelPedidos
-            // 
-            this.PanelPedidos.Controls.Add(this.guna2Button2);
-            this.PanelPedidos.Controls.Add(this.guna2Button4);
-            this.PanelPedidos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelPedidos.Location = new System.Drawing.Point(0, 746);
-            this.PanelPedidos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PanelPedidos.Name = "PanelPedidos";
-            this.PanelPedidos.ShadowDecoration.Parent = this.PanelPedidos;
-            this.PanelPedidos.Size = new System.Drawing.Size(144, 182);
-            this.PanelPedidos.TabIndex = 19;
-            // 
-            // guna2Button4
-            // 
-            this.guna2Button4.CheckedState.Parent = this.guna2Button4;
-            this.guna2Button4.CustomImages.Parent = this.guna2Button4;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.DisabledState.Parent = this.guna2Button4;
-            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.HoverState.Parent = this.guna2Button4;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.ShadowDecoration.Parent = this.guna2Button4;
-            this.guna2Button4.Size = new System.Drawing.Size(144, 91);
-            this.guna2Button4.TabIndex = 1;
-            this.guna2Button4.Text = "Gerenciar Pedidos Ecommerce";
-            // 
-            // BtnReceita
-            // 
-            this.BtnReceita.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnReceita.CheckedState.Parent = this.BtnReceita;
-            this.BtnReceita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnReceita.HoverState.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnReceita.HoverState.Parent = this.BtnReceita;
-            this.BtnReceita.Image = ((System.Drawing.Image)(resources.GetObject("BtnReceita.Image")));
-            this.BtnReceita.ImageOffset = new System.Drawing.Point(0, 0);
-            this.BtnReceita.ImageRotate = 0F;
-            this.BtnReceita.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnReceita.Location = new System.Drawing.Point(0, 634);
-            this.BtnReceita.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BtnReceita.Name = "BtnReceita";
-            this.BtnReceita.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnReceita.PressedState.Parent = this.BtnReceita;
-            this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
-            this.BtnReceita.Size = new System.Drawing.Size(144, 112);
-            this.BtnReceita.TabIndex = 18;
-            this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
-            // 
-            // guna2Button2
-            // 
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.DisabledState.Parent = this.guna2Button2;
-            this.guna2Button2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(0, 91);
-            this.guna2Button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(144, 91);
-            this.guna2Button2.TabIndex = 2;
-            this.guna2Button2.Text = "Gerenciar Pedidos Loja Física";
+            this.LogoMrCake.Click += new System.EventHandler(this.LogoMrCake_Click);
             // 
             // Gerenciar_Prod
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1516, 901);
+            this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.lblEmailFunc);
             this.Controls.Add(this.lblNomeFunc);
@@ -576,16 +568,16 @@
             this.Controls.Add(this.PanelGerProd);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Gerenciar_Prod";
-            this.Text = "Editar_Prod";
+            this.Text = "Gerenciar_Prod";
             this.PanelGerProd.ResumeLayout(false);
             this.PanelGerProd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewProd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
             this.PanelMenu.ResumeLayout(false);
+            this.PanelPedidos.ResumeLayout(false);
             this.PanelProduto.ResumeLayout(false);
             this.PanelFuncionario.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).EndInit();
-            this.PanelPedidos.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -606,19 +598,19 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblHora;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblData;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
+        private Guna.UI2.WinForms.Guna2Panel PanelPedidos;
+        private Guna.UI2.WinForms.Guna2Button btnGerenciar_PedF;
+        private Guna.UI2.WinForms.Guna2Button btnGerenciar_PedE;
+        private Guna.UI2.WinForms.Guna2ImageButton BtnReceita;
         private Guna.UI2.WinForms.Guna2Panel PanelProduto;
-        private Guna.UI2.WinForms.Guna2Button guna2Button6;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button btnGerenciar_Prod;
+        private Guna.UI2.WinForms.Guna2Button btnCad_Prod;
         private Guna.UI2.WinForms.Guna2ImageButton BtnProduto;
         private Guna.UI2.WinForms.Guna2Panel PanelFuncionario;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btnGerenciar_Func;
+        private Guna.UI2.WinForms.Guna2Button btnCad_Func;
         private Guna.UI2.WinForms.Guna2ImageButton BtnFuncionario;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2PictureBox LogoMrCake;
-        private Guna.UI2.WinForms.Guna2Panel PanelPedidos;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
-        private Guna.UI2.WinForms.Guna2ImageButton BtnReceita;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }

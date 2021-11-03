@@ -120,20 +120,13 @@ C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Pr
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cancelar_Compra.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Conf_home.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Login.resources
-C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.admFinancas.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Balc_Caixa.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cad_Func.resources
-C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cad_Insumo.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cad_Prod.resources
-C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Cad_Rec.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Editar_Func.resources
-C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Editar_Insumo.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Editar_Prod.resources
-C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Editar_Rec.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Func.resources
-C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Insumo.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Prod.resources
-C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Rec.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Properties.Resources.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Splash.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Tela_Confirmacao.resources
@@ -202,3 +195,7 @@ C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Proto
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Adm_Pedido.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Conf_DetalhePed.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_PedE.resources
+C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Adm_Pedido.resources
+C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Conf_DetalhePed.resources
+C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_PedE.resources
+C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_PedF.resources

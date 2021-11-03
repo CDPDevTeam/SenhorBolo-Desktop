@@ -35,8 +35,10 @@ namespace SrBolo_Prototype1
                 timer1.Enabled = false;
 
                 Login login = new Login();
-                login.ShowDialog();
-                this.Close();
+                login.Show();
+                this.Hide();
+                
+                
             }
         }
 
