@@ -16,5 +16,8 @@ namespace SrBolo_Prototype1.common
         public string Qtde { get; set; }
         public string ValorUnit { get; set; }
 
+
+
+        
     }
 }

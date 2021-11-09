@@ -84,6 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\ProdutoDAO.cs" />
     <Compile Include="Model\Fornecedor.cs" />
     <Compile Include="Model\Produto.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
