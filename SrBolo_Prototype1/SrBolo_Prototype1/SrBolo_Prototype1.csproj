@@ -84,7 +84,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\ControleProduto.cs" />
     <Compile Include="DAO\ProdutoDAO.cs" />
+    <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="Model\Fornecedor.cs" />
     <Compile Include="Model\Produto.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
@@ -92,6 +94,7 @@
     <Compile Include="Model\Confeiteiro.cs" />
     <Compile Include="Model\Funcionario.cs" />
     <Compile Include="Model\Gerente.cs" />
+    <Compile Include="Model\Usuario.cs" />
     <Compile Include="View\Adm_Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,9 +306,7 @@
   <ItemGroup>
     <None Include="Resources\ribas.PNG" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Control\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\ec5fe50c-3821-4ba4-a71b-5c0160ebbf42.jpg" />
   </ItemGroup>

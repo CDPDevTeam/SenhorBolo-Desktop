@@ -13,20 +13,22 @@ namespace SrBolo_Prototype1.DAO
     class LoginDAO : ClassConexao
     {
         public bool Acesso = false; //Informa se o login é valido
-        public bool Acessar(Funcionario func,string cargo, string login, String senha)
+        public bool Acessar(string cargo, string login, String senha)
         {
             Funcionario user;
             try
             {
                 Conectar();
                 
-                NpgsqlCommand Cmd = new NpgsqlCommand("AcessoSistema", Cn); //Procedure do login
+                NpgsqlCommand Cmd = new NpgsqlCommand("Login", Cn); //Procedure do login
                 Cmd.CommandType = CommandType.StoredProcedure;
                 Cmd.Parameters.AddWithValue("@cargo", cargo);
                 Cmd.Parameters.AddWithValue("@cpf", login);
                 Cmd.Parameters.AddWithValue("@senha", senha);
                 
                 Dr = Cmd.ExecuteReader();
+
+                Funcionario func;
                 if (Dr.HasRows) //Checa se retorna valor
                 {
                     while (Dr.Read())

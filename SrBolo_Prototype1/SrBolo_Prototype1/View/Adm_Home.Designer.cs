@@ -38,15 +38,15 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel13 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel8 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label20 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.lblUsuarios = new System.Windows.Forms.Label();
             this.guna2GradientPanel11 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2GradientPanel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lblVendasMes = new System.Windows.Forms.Label();
             this.lblMesPas = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2GradientPanel12 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblTicketMedio = new System.Windows.Forms.Label();
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.guna2GradientPanel10 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -149,7 +149,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel13.BorderRadius = 15;
             this.guna2GradientPanel13.Controls.Add(this.guna2GradientPanel8);
             this.guna2GradientPanel13.Controls.Add(this.label20);
-            this.guna2GradientPanel13.Controls.Add(this.label19);
+            this.guna2GradientPanel13.Controls.Add(this.lblUsuarios);
             this.guna2GradientPanel13.FillColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel13.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2GradientPanel13.Location = new System.Drawing.Point(814, 4);
@@ -183,17 +183,17 @@ namespace SrBolo_Prototype1.View
             this.label20.TabIndex = 17;
             this.label20.Text = "Usuários cadastrados";
             // 
-            // label19
+            // lblUsuarios
             // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.White;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(76, 31);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(119, 36);
-            this.label19.TabIndex = 18;
-            this.label19.Text = "label19";
+            this.lblUsuarios.AutoSize = true;
+            this.lblUsuarios.BackColor = System.Drawing.Color.White;
+            this.lblUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsuarios.Location = new System.Drawing.Point(76, 31);
+            this.lblUsuarios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblUsuarios.Name = "lblUsuarios";
+            this.lblUsuarios.Size = new System.Drawing.Size(119, 36);
+            this.lblUsuarios.TabIndex = 18;
+            this.lblUsuarios.Text = "label19";
             // 
             // guna2GradientPanel11
             // 
@@ -203,7 +203,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel11.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel11.BorderRadius = 15;
             this.guna2GradientPanel11.Controls.Add(this.guna2GradientPanel5);
-            this.guna2GradientPanel11.Controls.Add(this.label10);
+            this.guna2GradientPanel11.Controls.Add(this.lblVendasMes);
             this.guna2GradientPanel11.Controls.Add(this.lblMesPas);
             this.guna2GradientPanel11.Controls.Add(this.label9);
             this.guna2GradientPanel11.Controls.Add(this.label11);
@@ -228,17 +228,17 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel5.Size = new System.Drawing.Size(61, 61);
             this.guna2GradientPanel5.TabIndex = 7;
             // 
-            // label10
+            // lblVendasMes
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(73, 31);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(119, 36);
-            this.label10.TabIndex = 10;
-            this.label10.Text = "label10";
+            this.lblVendasMes.AutoSize = true;
+            this.lblVendasMes.BackColor = System.Drawing.Color.White;
+            this.lblVendasMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVendasMes.Location = new System.Drawing.Point(73, 31);
+            this.lblVendasMes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVendasMes.Name = "lblVendasMes";
+            this.lblVendasMes.Size = new System.Drawing.Size(119, 36);
+            this.lblVendasMes.TabIndex = 10;
+            this.lblVendasMes.Text = "label10";
             // 
             // lblMesPas
             // 
@@ -283,7 +283,7 @@ namespace SrBolo_Prototype1.View
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2GradientPanel12.BackColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel12.BorderRadius = 15;
-            this.guna2GradientPanel12.Controls.Add(this.label15);
+            this.guna2GradientPanel12.Controls.Add(this.lblTicketMedio);
             this.guna2GradientPanel12.Controls.Add(this.guna2GradientPanel7);
             this.guna2GradientPanel12.Controls.Add(this.label16);
             this.guna2GradientPanel12.FillColor = System.Drawing.Color.Transparent;
@@ -295,17 +295,17 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel12.Size = new System.Drawing.Size(262, 131);
             this.guna2GradientPanel12.TabIndex = 13;
             // 
-            // label15
+            // lblTicketMedio
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(77, 31);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(119, 36);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "label15";
+            this.lblTicketMedio.AutoSize = true;
+            this.lblTicketMedio.BackColor = System.Drawing.Color.White;
+            this.lblTicketMedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTicketMedio.Location = new System.Drawing.Point(77, 31);
+            this.lblTicketMedio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTicketMedio.Name = "lblTicketMedio";
+            this.lblTicketMedio.Size = new System.Drawing.Size(119, 36);
+            this.lblTicketMedio.TabIndex = 14;
+            this.lblTicketMedio.Text = "label15";
             // 
             // guna2GradientPanel7
             // 
@@ -794,15 +794,15 @@ namespace SrBolo_Prototype1.View
 
         #endregion
         private Guna.UI2.WinForms.Guna2GradientPanel PanelRendimentoMensal;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lblUsuarios;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label lblMesPas;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblTicketMedio;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblVendasMes;
         private System.Windows.Forms.Label label20;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel7;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;

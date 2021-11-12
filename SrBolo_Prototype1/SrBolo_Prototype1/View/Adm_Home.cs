@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SrBolo_Prototype1.DAO;
 
 namespace SrBolo_Prototype1.View
 {
@@ -17,6 +18,10 @@ namespace SrBolo_Prototype1.View
             InitializeComponent();
             CustumizeDesing();
         }
+
+        ProdutoDAO produto = new ProdutoDAO();
+        UsuarioDAO usuario = new UsuarioDAO();
+
         private void CustumizeDesing()
         {
             PanelProduto.Visible = false;
@@ -123,7 +128,8 @@ namespace SrBolo_Prototype1.View
 
         private void Adm_Home_Load(object sender, EventArgs e)
         {
-
+            lblVendasMes.Text = produto.ContagemVendasMes().ToString();
+            lblUsuarios.Text = usuario.UsuariosCadastrados().ToString();
         }
     }
 }
