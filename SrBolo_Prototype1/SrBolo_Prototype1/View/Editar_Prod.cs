@@ -116,5 +116,16 @@ namespace SrBolo_Prototype1
             adm_Home.Show();
             this.Hide();
         }
+
+        private void ButtonLimpar_Click(object sender, EventArgs e)
+        {
+            txtEditProdCat.Text = null;
+            txtEditProdCobertura.Text = null;
+            txtEditProdID.Text = null;
+            txtEditProdMassa.Text = null;
+            txtEditProdNome.Text = null;
+            txtEditProdRecheio.Text = null;
+            txtEditProdTags.Text = null;
+        }
     }
 }

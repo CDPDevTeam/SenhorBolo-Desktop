@@ -117,5 +117,14 @@ namespace SrBolo_Prototype1
             adm_Home.Show();
             this.Hide();
         }
+
+        private void ButtonLimpar_Click(object sender, EventArgs e)
+        {
+            txtEditFuncCPF.Text = null;
+            txtEditFuncEmail.Text = null;
+            txtEditFuncNome.Text = null;
+            txtEditFuncSenha.Text = null;
+            txtEditFuncTel.Text = null;
+        }
     }
 }

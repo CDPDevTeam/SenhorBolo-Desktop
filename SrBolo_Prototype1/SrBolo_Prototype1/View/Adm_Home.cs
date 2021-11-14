@@ -128,8 +128,8 @@ namespace SrBolo_Prototype1.View
 
         private void Adm_Home_Load(object sender, EventArgs e)
         {
-            lblVendasMes.Text = produto.ContagemVendasMes().ToString();
-            lblUsuarios.Text = usuario.UsuariosCadastrados().ToString();
+            //lblVendasMes.Text = produto.ContagemVendasMes().ToString();
+            //lblUsuarios.Text = usuario.UsuariosCadastrados().ToString();
         }
     }
 }

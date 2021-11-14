@@ -115,5 +115,12 @@ namespace SrBolo_Prototype1
         {
 
         }
+
+        private void ButtonEdit_Click(object sender, EventArgs e)
+        {
+            Editar_Func editar_func = new Editar_Func();
+            editar_func.Show();
+            this.Hide();
+        }
     }
 }

@@ -110,5 +110,12 @@ namespace SrBolo_Prototype1
             adm_Home.Show();
             this.Hide();
         }
+
+        private void ButtonEdit_Click(object sender, EventArgs e)
+        {
+            Editar_Prod editar_Prod = new Editar_Prod();
+            editar_Prod.Show();
+            this.Hide();
+        }
     }
 }

@@ -17,6 +17,9 @@ namespace SrBolo_Prototype1
         {
             InitializeComponent();
             CustumizeDesing();
+            ComboBoxCadFuncCargo.Items.Add("Administrador");
+            ComboBoxCadFuncCargo.Items.Add("Balconista");
+            ComboBoxCadFuncCargo.Items.Add("Confeiteiro");
         }
         private void CustumizeDesing()
         {
@@ -114,6 +117,15 @@ namespace SrBolo_Prototype1
             Adm_Home adm_Home = new Adm_Home();
             adm_Home.Show();
             this.Hide();
+        }
+
+        private void ButtonLimpar_Click(object sender, EventArgs e)
+        {
+            txtCadFuncCPF.Text = null;
+            txtCadFuncEmail.Text = null;
+            txtCadFuncNome.Text = null;
+            txtCadFuncSenha.Text = null;
+            txtCadFuncTel.Text = null;    
         }
     }
 }

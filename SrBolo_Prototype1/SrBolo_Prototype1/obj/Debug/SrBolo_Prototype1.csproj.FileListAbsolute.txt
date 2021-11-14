@@ -108,7 +108,6 @@ C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Proto
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Editar_Prod.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Func.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Prod.resources
-C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_Rec.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Properties.Resources.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Splash.resources
 C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Tela_Confirmacao.resources
@@ -199,3 +198,4 @@ C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Pr
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.View.Conf_DetalhePed.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_PedE.resources
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_PedF.resources
+C:\Users\User\Documents\GitHub\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\Debug\SrBolo_Prototype1.Gerenciar_PedF.resources
