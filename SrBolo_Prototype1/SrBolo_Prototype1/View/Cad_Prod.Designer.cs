@@ -30,6 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cad_Prod));
             this.PanelCadProd = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.ComboBoxCadProdCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblCadProdTags = new System.Windows.Forms.Label();
+            this.lblCadProdTamanho = new System.Windows.Forms.Label();
+            this.lblCadCategoria = new System.Windows.Forms.Label();
+            this.lblCadProdConfeitos = new System.Windows.Forms.Label();
+            this.lblCadProdRecheio = new System.Windows.Forms.Label();
+            this.lblCadProdCobertura = new System.Windows.Forms.Label();
+            this.lblCadProdMassa = new System.Windows.Forms.Label();
+            this.lblCadProdID = new System.Windows.Forms.Label();
+            this.lblCadProdNome = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.txtCadProdConfeitos = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCadProdCobertura = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCadProdMassa = new Guna.UI2.WinForms.Guna2TextBox();
@@ -61,17 +72,6 @@
             this.lblData = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblCadProdNome = new System.Windows.Forms.Label();
-            this.lblCadProdID = new System.Windows.Forms.Label();
-            this.lblCadProdMassa = new System.Windows.Forms.Label();
-            this.lblCadProdCobertura = new System.Windows.Forms.Label();
-            this.lblCadProdRecheio = new System.Windows.Forms.Label();
-            this.lblCadProdConfeitos = new System.Windows.Forms.Label();
-            this.lblCadCategoria = new System.Windows.Forms.Label();
-            this.lblCadProdTamanho = new System.Windows.Forms.Label();
-            this.lblCadProdTags = new System.Windows.Forms.Label();
-            this.ComboBoxCadProdCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
             this.PanelCadProd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxCadProd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
@@ -117,6 +117,139 @@
             this.PanelCadProd.Size = new System.Drawing.Size(1371, 875);
             this.PanelCadProd.TabIndex = 11;
             // 
+            // ComboBoxCadProdCategoria
+            // 
+            this.ComboBoxCadProdCategoria.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxCadProdCategoria.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxCadProdCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCadProdCategoria.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdCategoria.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdCategoria.FocusedState.Parent = this.ComboBoxCadProdCategoria;
+            this.ComboBoxCadProdCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ComboBoxCadProdCategoria.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxCadProdCategoria.HoverState.Parent = this.ComboBoxCadProdCategoria;
+            this.ComboBoxCadProdCategoria.ItemHeight = 30;
+            this.ComboBoxCadProdCategoria.ItemsAppearance.Parent = this.ComboBoxCadProdCategoria;
+            this.ComboBoxCadProdCategoria.Location = new System.Drawing.Point(403, 484);
+            this.ComboBoxCadProdCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ComboBoxCadProdCategoria.Name = "ComboBoxCadProdCategoria";
+            this.ComboBoxCadProdCategoria.ShadowDecoration.Parent = this.ComboBoxCadProdCategoria;
+            this.ComboBoxCadProdCategoria.Size = new System.Drawing.Size(364, 36);
+            this.ComboBoxCadProdCategoria.TabIndex = 42;
+            // 
+            // lblCadProdTags
+            // 
+            this.lblCadProdTags.AutoSize = true;
+            this.lblCadProdTags.BackColor = System.Drawing.Color.White;
+            this.lblCadProdTags.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadProdTags.Location = new System.Drawing.Point(16, 427);
+            this.lblCadProdTags.Name = "lblCadProdTags";
+            this.lblCadProdTags.Size = new System.Drawing.Size(57, 25);
+            this.lblCadProdTags.TabIndex = 41;
+            this.lblCadProdTags.Text = "Tags";
+            // 
+            // lblCadProdTamanho
+            // 
+            this.lblCadProdTamanho.AutoSize = true;
+            this.lblCadProdTamanho.BackColor = System.Drawing.Color.White;
+            this.lblCadProdTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadProdTamanho.Location = new System.Drawing.Point(793, 457);
+            this.lblCadProdTamanho.Name = "lblCadProdTamanho";
+            this.lblCadProdTamanho.Size = new System.Drawing.Size(208, 25);
+            this.lblCadProdTamanho.TabIndex = 40;
+            this.lblCadProdTamanho.Text = "Tamanhos disponíveis";
+            // 
+            // lblCadCategoria
+            // 
+            this.lblCadCategoria.AutoSize = true;
+            this.lblCadCategoria.BackColor = System.Drawing.Color.White;
+            this.lblCadCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadCategoria.Location = new System.Drawing.Point(398, 457);
+            this.lblCadCategoria.Name = "lblCadCategoria";
+            this.lblCadCategoria.Size = new System.Drawing.Size(97, 25);
+            this.lblCadCategoria.TabIndex = 39;
+            this.lblCadCategoria.Text = "Categoria";
+            // 
+            // lblCadProdConfeitos
+            // 
+            this.lblCadProdConfeitos.AutoSize = true;
+            this.lblCadProdConfeitos.BackColor = System.Drawing.Color.White;
+            this.lblCadProdConfeitos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadProdConfeitos.ForeColor = System.Drawing.Color.Black;
+            this.lblCadProdConfeitos.Location = new System.Drawing.Point(793, 341);
+            this.lblCadProdConfeitos.Name = "lblCadProdConfeitos";
+            this.lblCadProdConfeitos.Size = new System.Drawing.Size(95, 25);
+            this.lblCadProdConfeitos.TabIndex = 38;
+            this.lblCadProdConfeitos.Text = "Confeitos";
+            // 
+            // lblCadProdRecheio
+            // 
+            this.lblCadProdRecheio.AutoSize = true;
+            this.lblCadProdRecheio.BackColor = System.Drawing.Color.White;
+            this.lblCadProdRecheio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadProdRecheio.Location = new System.Drawing.Point(398, 341);
+            this.lblCadProdRecheio.Name = "lblCadProdRecheio";
+            this.lblCadProdRecheio.Size = new System.Drawing.Size(83, 25);
+            this.lblCadProdRecheio.TabIndex = 37;
+            this.lblCadProdRecheio.Text = "Recheio";
+            // 
+            // lblCadProdCobertura
+            // 
+            this.lblCadProdCobertura.AutoSize = true;
+            this.lblCadProdCobertura.BackColor = System.Drawing.Color.White;
+            this.lblCadProdCobertura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadProdCobertura.Location = new System.Drawing.Point(798, 223);
+            this.lblCadProdCobertura.Name = "lblCadProdCobertura";
+            this.lblCadProdCobertura.Size = new System.Drawing.Size(99, 25);
+            this.lblCadProdCobertura.TabIndex = 36;
+            this.lblCadProdCobertura.Text = "Cobertura";
+            // 
+            // lblCadProdMassa
+            // 
+            this.lblCadProdMassa.AutoSize = true;
+            this.lblCadProdMassa.BackColor = System.Drawing.Color.White;
+            this.lblCadProdMassa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadProdMassa.Location = new System.Drawing.Point(398, 223);
+            this.lblCadProdMassa.Name = "lblCadProdMassa";
+            this.lblCadProdMassa.Size = new System.Drawing.Size(71, 25);
+            this.lblCadProdMassa.TabIndex = 35;
+            this.lblCadProdMassa.Text = "Massa";
+            // 
+            // lblCadProdID
+            // 
+            this.lblCadProdID.AutoSize = true;
+            this.lblCadProdID.BackColor = System.Drawing.Color.White;
+            this.lblCadProdID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadProdID.Location = new System.Drawing.Point(798, 107);
+            this.lblCadProdID.Name = "lblCadProdID";
+            this.lblCadProdID.Size = new System.Drawing.Size(31, 25);
+            this.lblCadProdID.TabIndex = 34;
+            this.lblCadProdID.Text = "ID";
+            // 
+            // lblCadProdNome
+            // 
+            this.lblCadProdNome.AutoSize = true;
+            this.lblCadProdNome.BackColor = System.Drawing.Color.White;
+            this.lblCadProdNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadProdNome.ForeColor = System.Drawing.Color.Black;
+            this.lblCadProdNome.Location = new System.Drawing.Point(398, 107);
+            this.lblCadProdNome.Name = "lblCadProdNome";
+            this.lblCadProdNome.Size = new System.Drawing.Size(64, 25);
+            this.lblCadProdNome.TabIndex = 33;
+            this.lblCadProdNome.Text = "Nome";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.White;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Location = new System.Drawing.Point(47, 38);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(347, 37);
+            this.lblTitle.TabIndex = 32;
+            this.lblTitle.Text = "Cadastrar funcionário";
+            // 
             // txtCadProdConfeitos
             // 
             this.txtCadProdConfeitos.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -128,7 +261,8 @@
             this.txtCadProdConfeitos.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadProdConfeitos.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdConfeitos.FocusedState.Parent = this.txtCadProdConfeitos;
-            this.txtCadProdConfeitos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadProdConfeitos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtCadProdConfeitos.ForeColor = System.Drawing.Color.Black;
             this.txtCadProdConfeitos.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdConfeitos.HoverState.Parent = this.txtCadProdConfeitos;
             this.txtCadProdConfeitos.Location = new System.Drawing.Point(798, 370);
@@ -152,7 +286,8 @@
             this.txtCadProdCobertura.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadProdCobertura.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdCobertura.FocusedState.Parent = this.txtCadProdCobertura;
-            this.txtCadProdCobertura.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadProdCobertura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtCadProdCobertura.ForeColor = System.Drawing.Color.Black;
             this.txtCadProdCobertura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdCobertura.HoverState.Parent = this.txtCadProdCobertura;
             this.txtCadProdCobertura.Location = new System.Drawing.Point(798, 250);
@@ -176,10 +311,11 @@
             this.txtCadProdMassa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadProdMassa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdMassa.FocusedState.Parent = this.txtCadProdMassa;
-            this.txtCadProdMassa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadProdMassa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtCadProdMassa.ForeColor = System.Drawing.Color.Black;
             this.txtCadProdMassa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdMassa.HoverState.Parent = this.txtCadProdMassa;
-            this.txtCadProdMassa.Location = new System.Drawing.Point(403, 252);
+            this.txtCadProdMassa.Location = new System.Drawing.Point(403, 250);
             this.txtCadProdMassa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadProdMassa.Name = "txtCadProdMassa";
             this.txtCadProdMassa.PasswordChar = '\0';
@@ -213,8 +349,8 @@
             this.ComboBoxCadProdTamanho.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBoxCadProdTamanho.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBoxCadProdTamanho.FocusedState.Parent = this.ComboBoxCadProdTamanho;
-            this.ComboBoxCadProdTamanho.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxCadProdTamanho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBoxCadProdTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ComboBoxCadProdTamanho.ForeColor = System.Drawing.Color.Black;
             this.ComboBoxCadProdTamanho.HoverState.Parent = this.ComboBoxCadProdTamanho;
             this.ComboBoxCadProdTamanho.ItemHeight = 30;
             this.ComboBoxCadProdTamanho.ItemsAppearance.Parent = this.ComboBoxCadProdTamanho;
@@ -281,7 +417,8 @@
             this.txtCadProdID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadProdID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdID.FocusedState.Parent = this.txtCadProdID;
-            this.txtCadProdID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadProdID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtCadProdID.ForeColor = System.Drawing.Color.Black;
             this.txtCadProdID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdID.HoverState.Parent = this.txtCadProdID;
             this.txtCadProdID.Location = new System.Drawing.Point(798, 132);
@@ -305,7 +442,8 @@
             this.txtCadProdRecheio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadProdRecheio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdRecheio.FocusedState.Parent = this.txtCadProdRecheio;
-            this.txtCadProdRecheio.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadProdRecheio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtCadProdRecheio.ForeColor = System.Drawing.Color.Black;
             this.txtCadProdRecheio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdRecheio.HoverState.Parent = this.txtCadProdRecheio;
             this.txtCadProdRecheio.Location = new System.Drawing.Point(403, 370);
@@ -329,7 +467,8 @@
             this.txtCadProdTags.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadProdTags.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdTags.FocusedState.Parent = this.txtCadProdTags;
-            this.txtCadProdTags.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadProdTags.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.txtCadProdTags.ForeColor = System.Drawing.Color.Black;
             this.txtCadProdTags.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdTags.HoverState.Parent = this.txtCadProdTags;
             this.txtCadProdTags.Location = new System.Drawing.Point(20, 454);
@@ -353,7 +492,8 @@
             this.txtCadProdNome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadProdNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdNome.FocusedState.Parent = this.txtCadProdNome;
-            this.txtCadProdNome.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadProdNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadProdNome.ForeColor = System.Drawing.Color.Black;
             this.txtCadProdNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadProdNome.HoverState.Parent = this.txtCadProdNome;
             this.txtCadProdNome.Location = new System.Drawing.Point(403, 132);
@@ -708,139 +848,6 @@
             this.lblNome.Size = new System.Drawing.Size(82, 25);
             this.lblNome.TabIndex = 17;
             this.lblNome.Text = ":Nome:";
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.White;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(47, 38);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(347, 37);
-            this.lblTitle.TabIndex = 32;
-            this.lblTitle.Text = "Cadastrar funcionário";
-            // 
-            // lblCadProdNome
-            // 
-            this.lblCadProdNome.AutoSize = true;
-            this.lblCadProdNome.BackColor = System.Drawing.Color.White;
-            this.lblCadProdNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdNome.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdNome.Location = new System.Drawing.Point(398, 107);
-            this.lblCadProdNome.Name = "lblCadProdNome";
-            this.lblCadProdNome.Size = new System.Drawing.Size(64, 25);
-            this.lblCadProdNome.TabIndex = 33;
-            this.lblCadProdNome.Text = "Nome";
-            // 
-            // lblCadProdID
-            // 
-            this.lblCadProdID.AutoSize = true;
-            this.lblCadProdID.BackColor = System.Drawing.Color.White;
-            this.lblCadProdID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdID.Location = new System.Drawing.Point(798, 107);
-            this.lblCadProdID.Name = "lblCadProdID";
-            this.lblCadProdID.Size = new System.Drawing.Size(31, 25);
-            this.lblCadProdID.TabIndex = 34;
-            this.lblCadProdID.Text = "ID";
-            // 
-            // lblCadProdMassa
-            // 
-            this.lblCadProdMassa.AutoSize = true;
-            this.lblCadProdMassa.BackColor = System.Drawing.Color.White;
-            this.lblCadProdMassa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdMassa.Location = new System.Drawing.Point(398, 225);
-            this.lblCadProdMassa.Name = "lblCadProdMassa";
-            this.lblCadProdMassa.Size = new System.Drawing.Size(71, 25);
-            this.lblCadProdMassa.TabIndex = 35;
-            this.lblCadProdMassa.Text = "Massa";
-            // 
-            // lblCadProdCobertura
-            // 
-            this.lblCadProdCobertura.AutoSize = true;
-            this.lblCadProdCobertura.BackColor = System.Drawing.Color.White;
-            this.lblCadProdCobertura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdCobertura.Location = new System.Drawing.Point(798, 225);
-            this.lblCadProdCobertura.Name = "lblCadProdCobertura";
-            this.lblCadProdCobertura.Size = new System.Drawing.Size(99, 25);
-            this.lblCadProdCobertura.TabIndex = 36;
-            this.lblCadProdCobertura.Text = "Cobertura";
-            // 
-            // lblCadProdRecheio
-            // 
-            this.lblCadProdRecheio.AutoSize = true;
-            this.lblCadProdRecheio.BackColor = System.Drawing.Color.White;
-            this.lblCadProdRecheio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdRecheio.Location = new System.Drawing.Point(398, 340);
-            this.lblCadProdRecheio.Name = "lblCadProdRecheio";
-            this.lblCadProdRecheio.Size = new System.Drawing.Size(83, 25);
-            this.lblCadProdRecheio.TabIndex = 37;
-            this.lblCadProdRecheio.Text = "Recheio";
-            // 
-            // lblCadProdConfeitos
-            // 
-            this.lblCadProdConfeitos.AutoSize = true;
-            this.lblCadProdConfeitos.BackColor = System.Drawing.Color.White;
-            this.lblCadProdConfeitos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdConfeitos.ForeColor = System.Drawing.Color.Black;
-            this.lblCadProdConfeitos.Location = new System.Drawing.Point(793, 341);
-            this.lblCadProdConfeitos.Name = "lblCadProdConfeitos";
-            this.lblCadProdConfeitos.Size = new System.Drawing.Size(95, 25);
-            this.lblCadProdConfeitos.TabIndex = 38;
-            this.lblCadProdConfeitos.Text = "Confeitos";
-            // 
-            // lblCadCategoria
-            // 
-            this.lblCadCategoria.AutoSize = true;
-            this.lblCadCategoria.BackColor = System.Drawing.Color.White;
-            this.lblCadCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadCategoria.Location = new System.Drawing.Point(398, 457);
-            this.lblCadCategoria.Name = "lblCadCategoria";
-            this.lblCadCategoria.Size = new System.Drawing.Size(97, 25);
-            this.lblCadCategoria.TabIndex = 39;
-            this.lblCadCategoria.Text = "Categoria";
-            // 
-            // lblCadProdTamanho
-            // 
-            this.lblCadProdTamanho.AutoSize = true;
-            this.lblCadProdTamanho.BackColor = System.Drawing.Color.White;
-            this.lblCadProdTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdTamanho.Location = new System.Drawing.Point(793, 457);
-            this.lblCadProdTamanho.Name = "lblCadProdTamanho";
-            this.lblCadProdTamanho.Size = new System.Drawing.Size(208, 25);
-            this.lblCadProdTamanho.TabIndex = 40;
-            this.lblCadProdTamanho.Text = "Tamanhos disponíveis";
-            // 
-            // lblCadProdTags
-            // 
-            this.lblCadProdTags.AutoSize = true;
-            this.lblCadProdTags.BackColor = System.Drawing.Color.White;
-            this.lblCadProdTags.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdTags.Location = new System.Drawing.Point(16, 429);
-            this.lblCadProdTags.Name = "lblCadProdTags";
-            this.lblCadProdTags.Size = new System.Drawing.Size(57, 25);
-            this.lblCadProdTags.TabIndex = 41;
-            this.lblCadProdTags.Text = "Tags";
-            // 
-            // ComboBoxCadProdCategoria
-            // 
-            this.ComboBoxCadProdCategoria.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxCadProdCategoria.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxCadProdCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCadProdCategoria.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadProdCategoria.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadProdCategoria.FocusedState.Parent = this.ComboBoxCadProdCategoria;
-            this.ComboBoxCadProdCategoria.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxCadProdCategoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.ComboBoxCadProdCategoria.HoverState.Parent = this.ComboBoxCadProdCategoria;
-            this.ComboBoxCadProdCategoria.ItemHeight = 30;
-            this.ComboBoxCadProdCategoria.ItemsAppearance.Parent = this.ComboBoxCadProdCategoria;
-            this.ComboBoxCadProdCategoria.Location = new System.Drawing.Point(403, 484);
-            this.ComboBoxCadProdCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxCadProdCategoria.Name = "ComboBoxCadProdCategoria";
-            this.ComboBoxCadProdCategoria.ShadowDecoration.Parent = this.ComboBoxCadProdCategoria;
-            this.ComboBoxCadProdCategoria.Size = new System.Drawing.Size(364, 36);
-            this.ComboBoxCadProdCategoria.TabIndex = 42;
             // 
             // Cad_Prod
             // 

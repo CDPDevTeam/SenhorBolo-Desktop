@@ -31,6 +31,7 @@ namespace SrBolo_Prototype1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editar_Func));
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.ComboBoxEditFuncCargo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ButtonEdit = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
@@ -59,7 +60,6 @@ namespace SrBolo_Prototype1
             this.lblData = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
             this.PanelMenu.SuspendLayout();
@@ -91,6 +91,18 @@ namespace SrBolo_Prototype1
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1371, 875);
             this.guna2CustomGradientPanel2.TabIndex = 11;
             // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.White;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Location = new System.Drawing.Point(54, 28);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(297, 37);
+            this.lblTitle.TabIndex = 33;
+            this.lblTitle.Text = "Editar Funcionário";
+            // 
             // ComboBoxEditFuncCargo
             // 
             this.ComboBoxEditFuncCargo.BackColor = System.Drawing.Color.Transparent;
@@ -99,8 +111,8 @@ namespace SrBolo_Prototype1
             this.ComboBoxEditFuncCargo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBoxEditFuncCargo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBoxEditFuncCargo.FocusedState.Parent = this.ComboBoxEditFuncCargo;
-            this.ComboBoxEditFuncCargo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxEditFuncCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBoxEditFuncCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxEditFuncCargo.ForeColor = System.Drawing.Color.Black;
             this.ComboBoxEditFuncCargo.HoverState.Parent = this.ComboBoxEditFuncCargo;
             this.ComboBoxEditFuncCargo.ItemHeight = 30;
             this.ComboBoxEditFuncCargo.ItemsAppearance.Parent = this.ComboBoxEditFuncCargo;
@@ -168,6 +180,7 @@ namespace SrBolo_Prototype1
             this.txtEditFuncSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncSenha.FocusedState.Parent = this.txtEditFuncSenha;
             this.txtEditFuncSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditFuncSenha.ForeColor = System.Drawing.Color.Black;
             this.txtEditFuncSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncSenha.HoverState.Parent = this.txtEditFuncSenha;
             this.txtEditFuncSenha.Location = new System.Drawing.Point(674, 266);
@@ -192,6 +205,7 @@ namespace SrBolo_Prototype1
             this.txtEditFuncCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncCPF.FocusedState.Parent = this.txtEditFuncCPF;
             this.txtEditFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditFuncCPF.ForeColor = System.Drawing.Color.Black;
             this.txtEditFuncCPF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncCPF.HoverState.Parent = this.txtEditFuncCPF;
             this.txtEditFuncCPF.Location = new System.Drawing.Point(674, 130);
@@ -216,6 +230,7 @@ namespace SrBolo_Prototype1
             this.txtEditFuncEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncEmail.FocusedState.Parent = this.txtEditFuncEmail;
             this.txtEditFuncEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditFuncEmail.ForeColor = System.Drawing.Color.Black;
             this.txtEditFuncEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncEmail.HoverState.Parent = this.txtEditFuncEmail;
             this.txtEditFuncEmail.Location = new System.Drawing.Point(163, 405);
@@ -240,6 +255,7 @@ namespace SrBolo_Prototype1
             this.txtEditFuncTel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncTel.FocusedState.Parent = this.txtEditFuncTel;
             this.txtEditFuncTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditFuncTel.ForeColor = System.Drawing.Color.Black;
             this.txtEditFuncTel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncTel.HoverState.Parent = this.txtEditFuncTel;
             this.txtEditFuncTel.Location = new System.Drawing.Point(163, 266);
@@ -264,6 +280,7 @@ namespace SrBolo_Prototype1
             this.txtEditFuncNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncNome.FocusedState.Parent = this.txtEditFuncNome;
             this.txtEditFuncNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditFuncNome.ForeColor = System.Drawing.Color.Black;
             this.txtEditFuncNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditFuncNome.HoverState.Parent = this.txtEditFuncNome;
             this.txtEditFuncNome.Location = new System.Drawing.Point(163, 132);
@@ -619,18 +636,6 @@ namespace SrBolo_Prototype1
             this.lblNome.Size = new System.Drawing.Size(82, 25);
             this.lblNome.TabIndex = 21;
             this.lblNome.Text = ":Nome:";
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.White;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(54, 28);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(297, 37);
-            this.lblTitle.TabIndex = 33;
-            this.lblTitle.Text = "Editar Funcionário";
             // 
             // Editar_Func
             // 

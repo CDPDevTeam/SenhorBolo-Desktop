@@ -144,7 +144,7 @@
             this.lblCadFuncTel.BackColor = System.Drawing.Color.White;
             this.lblCadFuncTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCadFuncTel.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncTel.Location = new System.Drawing.Point(228, 309);
+            this.lblCadFuncTel.Location = new System.Drawing.Point(228, 311);
             this.lblCadFuncTel.Name = "lblCadFuncTel";
             this.lblCadFuncTel.Size = new System.Drawing.Size(89, 25);
             this.lblCadFuncTel.TabIndex = 28;
@@ -194,8 +194,8 @@
             this.ComboBoxCadFuncCargo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBoxCadFuncCargo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBoxCadFuncCargo.FocusedState.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxCadFuncCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBoxCadFuncCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxCadFuncCargo.ForeColor = System.Drawing.Color.Black;
             this.ComboBoxCadFuncCargo.HoverState.Parent = this.ComboBoxCadFuncCargo;
             this.ComboBoxCadFuncCargo.ItemHeight = 30;
             this.ComboBoxCadFuncCargo.ItemsAppearance.Parent = this.ComboBoxCadFuncCargo;
@@ -262,7 +262,8 @@
             this.txtCadFuncSenha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadFuncSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncSenha.FocusedState.Parent = this.txtCadFuncSenha;
-            this.txtCadFuncSenha.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadFuncSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadFuncSenha.ForeColor = System.Drawing.Color.Black;
             this.txtCadFuncSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncSenha.HoverState.Parent = this.txtCadFuncSenha;
             this.txtCadFuncSenha.Location = new System.Drawing.Point(765, 338);
@@ -286,7 +287,8 @@
             this.txtCadFuncCPF.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadFuncCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncCPF.FocusedState.Parent = this.txtCadFuncCPF;
-            this.txtCadFuncCPF.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadFuncCPF.ForeColor = System.Drawing.Color.Black;
             this.txtCadFuncCPF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncCPF.HoverState.Parent = this.txtCadFuncCPF;
             this.txtCadFuncCPF.Location = new System.Drawing.Point(765, 198);
@@ -310,7 +312,8 @@
             this.txtCadFuncEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadFuncEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncEmail.FocusedState.Parent = this.txtCadFuncEmail;
-            this.txtCadFuncEmail.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadFuncEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadFuncEmail.ForeColor = System.Drawing.Color.Black;
             this.txtCadFuncEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncEmail.HoverState.Parent = this.txtCadFuncEmail;
             this.txtCadFuncEmail.Location = new System.Drawing.Point(233, 484);
@@ -334,10 +337,11 @@
             this.txtCadFuncTel.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadFuncTel.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncTel.FocusedState.Parent = this.txtCadFuncTel;
-            this.txtCadFuncTel.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadFuncTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadFuncTel.ForeColor = System.Drawing.Color.Black;
             this.txtCadFuncTel.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncTel.HoverState.Parent = this.txtCadFuncTel;
-            this.txtCadFuncTel.Location = new System.Drawing.Point(233, 334);
+            this.txtCadFuncTel.Location = new System.Drawing.Point(233, 338);
             this.txtCadFuncTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCadFuncTel.Name = "txtCadFuncTel";
             this.txtCadFuncTel.PasswordChar = '\0';
@@ -358,7 +362,8 @@
             this.txtCadFuncNome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtCadFuncNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncNome.FocusedState.Parent = this.txtCadFuncNome;
-            this.txtCadFuncNome.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCadFuncNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadFuncNome.ForeColor = System.Drawing.Color.Black;
             this.txtCadFuncNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCadFuncNome.HoverState.Parent = this.txtCadFuncNome;
             this.txtCadFuncNome.Location = new System.Drawing.Point(233, 198);
@@ -731,6 +736,8 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Cad_Func";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cad_Func";
             this.PanelCadFunc.ResumeLayout(false);
             this.PanelCadFunc.PerformLayout();

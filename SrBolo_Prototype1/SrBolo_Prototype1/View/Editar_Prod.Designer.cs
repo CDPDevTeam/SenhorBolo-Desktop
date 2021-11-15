@@ -32,6 +32,8 @@ namespace SrBolo_Prototype1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editar_Prod));
             this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelEditProd = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.ComboBoxEditProdCat = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditProdCobertura = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditProdRecheio = new Guna.UI2.WinForms.Guna2TextBox();
@@ -40,7 +42,6 @@ namespace SrBolo_Prototype1
             this.ButtonEdit = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
             this.txtEditProdID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEditProdCat = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditProdMassa = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditProdTags = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditProdNome = new Guna.UI2.WinForms.Guna2TextBox();
@@ -63,7 +64,6 @@ namespace SrBolo_Prototype1
             this.lblData = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
             this.PanelEditProd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEditProd)).BeginInit();
@@ -94,6 +94,7 @@ namespace SrBolo_Prototype1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelEditProd.BorderRadius = 40;
+            this.PanelEditProd.Controls.Add(this.ComboBoxEditProdCat);
             this.PanelEditProd.Controls.Add(this.lblTitle);
             this.PanelEditProd.Controls.Add(this.guna2TextBox1);
             this.PanelEditProd.Controls.Add(this.txtEditProdCobertura);
@@ -103,7 +104,6 @@ namespace SrBolo_Prototype1
             this.PanelEditProd.Controls.Add(this.ButtonEdit);
             this.PanelEditProd.Controls.Add(this.ButtonLimpar);
             this.PanelEditProd.Controls.Add(this.txtEditProdID);
-            this.PanelEditProd.Controls.Add(this.txtEditProdCat);
             this.PanelEditProd.Controls.Add(this.txtEditProdMassa);
             this.PanelEditProd.Controls.Add(this.txtEditProdTags);
             this.PanelEditProd.Controls.Add(this.txtEditProdNome);
@@ -113,6 +113,38 @@ namespace SrBolo_Prototype1
             this.PanelEditProd.ShadowDecoration.Parent = this.PanelEditProd;
             this.PanelEditProd.Size = new System.Drawing.Size(1371, 875);
             this.PanelEditProd.TabIndex = 21;
+            // 
+            // ComboBoxEditProdCat
+            // 
+            this.ComboBoxEditProdCat.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxEditProdCat.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxEditProdCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxEditProdCat.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxEditProdCat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxEditProdCat.FocusedState.Parent = this.ComboBoxEditProdCat;
+            this.ComboBoxEditProdCat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxEditProdCat.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxEditProdCat.HoverState.Parent = this.ComboBoxEditProdCat;
+            this.ComboBoxEditProdCat.ItemHeight = 30;
+            this.ComboBoxEditProdCat.ItemsAppearance.Parent = this.ComboBoxEditProdCat;
+            this.ComboBoxEditProdCat.Location = new System.Drawing.Point(403, 484);
+            this.ComboBoxEditProdCat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ComboBoxEditProdCat.Name = "ComboBoxEditProdCat";
+            this.ComboBoxEditProdCat.ShadowDecoration.Parent = this.ComboBoxEditProdCat;
+            this.ComboBoxEditProdCat.Size = new System.Drawing.Size(370, 36);
+            this.ComboBoxEditProdCat.TabIndex = 35;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.White;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Location = new System.Drawing.Point(54, 28);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(237, 37);
+            this.lblTitle.TabIndex = 34;
+            this.lblTitle.Text = "Editar Produto";
             // 
             // guna2TextBox1
             // 
@@ -125,7 +157,8 @@ namespace SrBolo_Prototype1
             this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
             this.guna2TextBox1.Location = new System.Drawing.Point(798, 370);
@@ -135,7 +168,7 @@ namespace SrBolo_Prototype1
             this.guna2TextBox1.PlaceholderText = "Confeitos";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(364, 36);
+            this.guna2TextBox1.Size = new System.Drawing.Size(370, 36);
             this.guna2TextBox1.TabIndex = 29;
             // 
             // txtEditProdCobertura
@@ -149,7 +182,8 @@ namespace SrBolo_Prototype1
             this.txtEditProdCobertura.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEditProdCobertura.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdCobertura.FocusedState.Parent = this.txtEditProdCobertura;
-            this.txtEditProdCobertura.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEditProdCobertura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.txtEditProdCobertura.ForeColor = System.Drawing.Color.Black;
             this.txtEditProdCobertura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdCobertura.HoverState.Parent = this.txtEditProdCobertura;
             this.txtEditProdCobertura.Location = new System.Drawing.Point(798, 252);
@@ -159,7 +193,7 @@ namespace SrBolo_Prototype1
             this.txtEditProdCobertura.PlaceholderText = "Cobertura";
             this.txtEditProdCobertura.SelectedText = "";
             this.txtEditProdCobertura.ShadowDecoration.Parent = this.txtEditProdCobertura;
-            this.txtEditProdCobertura.Size = new System.Drawing.Size(364, 36);
+            this.txtEditProdCobertura.Size = new System.Drawing.Size(370, 36);
             this.txtEditProdCobertura.TabIndex = 28;
             // 
             // txtEditProdRecheio
@@ -173,7 +207,8 @@ namespace SrBolo_Prototype1
             this.txtEditProdRecheio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEditProdRecheio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdRecheio.FocusedState.Parent = this.txtEditProdRecheio;
-            this.txtEditProdRecheio.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEditProdRecheio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.txtEditProdRecheio.ForeColor = System.Drawing.Color.Black;
             this.txtEditProdRecheio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdRecheio.HoverState.Parent = this.txtEditProdRecheio;
             this.txtEditProdRecheio.Location = new System.Drawing.Point(403, 370);
@@ -210,8 +245,8 @@ namespace SrBolo_Prototype1
             this.ComboBoxEditProdSubcat.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBoxEditProdSubcat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.ComboBoxEditProdSubcat.FocusedState.Parent = this.ComboBoxEditProdSubcat;
-            this.ComboBoxEditProdSubcat.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.ComboBoxEditProdSubcat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.ComboBoxEditProdSubcat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.ComboBoxEditProdSubcat.ForeColor = System.Drawing.Color.Black;
             this.ComboBoxEditProdSubcat.HoverState.Parent = this.ComboBoxEditProdSubcat;
             this.ComboBoxEditProdSubcat.ItemHeight = 30;
             this.ComboBoxEditProdSubcat.ItemsAppearance.Parent = this.ComboBoxEditProdSubcat;
@@ -219,7 +254,7 @@ namespace SrBolo_Prototype1
             this.ComboBoxEditProdSubcat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxEditProdSubcat.Name = "ComboBoxEditProdSubcat";
             this.ComboBoxEditProdSubcat.ShadowDecoration.Parent = this.ComboBoxEditProdSubcat;
-            this.ComboBoxEditProdSubcat.Size = new System.Drawing.Size(364, 36);
+            this.ComboBoxEditProdSubcat.Size = new System.Drawing.Size(370, 36);
             this.ComboBoxEditProdSubcat.TabIndex = 25;
             // 
             // ButtonEdit
@@ -278,7 +313,8 @@ namespace SrBolo_Prototype1
             this.txtEditProdID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEditProdID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdID.FocusedState.Parent = this.txtEditProdID;
-            this.txtEditProdID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEditProdID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.txtEditProdID.ForeColor = System.Drawing.Color.Black;
             this.txtEditProdID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdID.HoverState.Parent = this.txtEditProdID;
             this.txtEditProdID.Location = new System.Drawing.Point(798, 132);
@@ -291,30 +327,6 @@ namespace SrBolo_Prototype1
             this.txtEditProdID.Size = new System.Drawing.Size(140, 36);
             this.txtEditProdID.TabIndex = 18;
             // 
-            // txtEditProdCat
-            // 
-            this.txtEditProdCat.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEditProdCat.DefaultText = "";
-            this.txtEditProdCat.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEditProdCat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEditProdCat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditProdCat.DisabledState.Parent = this.txtEditProdCat;
-            this.txtEditProdCat.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditProdCat.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditProdCat.FocusedState.Parent = this.txtEditProdCat;
-            this.txtEditProdCat.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtEditProdCat.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditProdCat.HoverState.Parent = this.txtEditProdCat;
-            this.txtEditProdCat.Location = new System.Drawing.Point(403, 484);
-            this.txtEditProdCat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtEditProdCat.Name = "txtEditProdCat";
-            this.txtEditProdCat.PasswordChar = '\0';
-            this.txtEditProdCat.PlaceholderText = "Categoria";
-            this.txtEditProdCat.SelectedText = "";
-            this.txtEditProdCat.ShadowDecoration.Parent = this.txtEditProdCat;
-            this.txtEditProdCat.Size = new System.Drawing.Size(370, 36);
-            this.txtEditProdCat.TabIndex = 10;
-            // 
             // txtEditProdMassa
             // 
             this.txtEditProdMassa.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -326,7 +338,8 @@ namespace SrBolo_Prototype1
             this.txtEditProdMassa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEditProdMassa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdMassa.FocusedState.Parent = this.txtEditProdMassa;
-            this.txtEditProdMassa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEditProdMassa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.txtEditProdMassa.ForeColor = System.Drawing.Color.Black;
             this.txtEditProdMassa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdMassa.HoverState.Parent = this.txtEditProdMassa;
             this.txtEditProdMassa.Location = new System.Drawing.Point(403, 252);
@@ -350,7 +363,8 @@ namespace SrBolo_Prototype1
             this.txtEditProdTags.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEditProdTags.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdTags.FocusedState.Parent = this.txtEditProdTags;
-            this.txtEditProdTags.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEditProdTags.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.txtEditProdTags.ForeColor = System.Drawing.Color.Black;
             this.txtEditProdTags.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdTags.HoverState.Parent = this.txtEditProdTags;
             this.txtEditProdTags.Location = new System.Drawing.Point(20, 454);
@@ -374,7 +388,8 @@ namespace SrBolo_Prototype1
             this.txtEditProdNome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtEditProdNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdNome.FocusedState.Parent = this.txtEditProdNome;
-            this.txtEditProdNome.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtEditProdNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEditProdNome.ForeColor = System.Drawing.Color.Black;
             this.txtEditProdNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdNome.HoverState.Parent = this.txtEditProdNome;
             this.txtEditProdNome.Location = new System.Drawing.Point(403, 132);
@@ -714,18 +729,6 @@ namespace SrBolo_Prototype1
             this.lblNome.TabIndex = 25;
             this.lblNome.Text = ":Nome:";
             // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.White;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(54, 28);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(237, 37);
-            this.lblTitle.TabIndex = 34;
-            this.lblTitle.Text = "Editar Produto";
-            // 
             // Editar_Prod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -763,7 +766,6 @@ namespace SrBolo_Prototype1
         private Guna.UI2.WinForms.Guna2Button ButtonEdit;
         private Guna.UI2.WinForms.Guna2Button ButtonLimpar;
         private Guna.UI2.WinForms.Guna2TextBox txtEditProdID;
-        private Guna.UI2.WinForms.Guna2TextBox txtEditProdCat;
         private Guna.UI2.WinForms.Guna2TextBox txtEditProdMassa;
         private Guna.UI2.WinForms.Guna2TextBox txtEditProdTags;
         private Guna.UI2.WinForms.Guna2TextBox txtEditProdNome;
@@ -790,5 +792,6 @@ namespace SrBolo_Prototype1
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblTitle;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxEditProdCat;
     }
 }

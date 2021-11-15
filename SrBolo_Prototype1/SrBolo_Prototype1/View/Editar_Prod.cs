@@ -54,7 +54,7 @@ namespace SrBolo_Prototype1
             }
         }
 
-        private void BtnFuncionario_Click(object sender, EventArgs e)
+       private void BtnFuncionario_Click(object sender, EventArgs e)
         {
             ShowSubmenu(PanelFuncionario);
         }
@@ -119,7 +119,6 @@ namespace SrBolo_Prototype1
 
         private void ButtonLimpar_Click(object sender, EventArgs e)
         {
-            txtEditProdCat.Text = null;
             txtEditProdCobertura.Text = null;
             txtEditProdID.Text = null;
             txtEditProdMassa.Text = null;
