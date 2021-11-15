@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cad_Prod));
             this.PanelCadProd = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.ComboBoxCadProdCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.lblCadProdTags = new System.Windows.Forms.Label();
-            this.lblCadProdTamanho = new System.Windows.Forms.Label();
             this.lblCadCategoria = new System.Windows.Forms.Label();
             this.lblCadProdConfeitos = new System.Windows.Forms.Label();
             this.lblCadProdRecheio = new System.Windows.Forms.Label();
@@ -45,12 +43,10 @@
             this.txtCadProdCobertura = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCadProdMassa = new Guna.UI2.WinForms.Guna2TextBox();
             this.PictureBoxCadProd = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.ComboBoxCadProdTamanho = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ButtonCad = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
             this.txtCadProdID = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCadProdRecheio = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCadProdTags = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCadProdNome = new Guna.UI2.WinForms.Guna2TextBox();
             this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -89,8 +85,6 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelCadProd.BorderRadius = 40;
             this.PanelCadProd.Controls.Add(this.ComboBoxCadProdCategoria);
-            this.PanelCadProd.Controls.Add(this.lblCadProdTags);
-            this.PanelCadProd.Controls.Add(this.lblCadProdTamanho);
             this.PanelCadProd.Controls.Add(this.lblCadCategoria);
             this.PanelCadProd.Controls.Add(this.lblCadProdConfeitos);
             this.PanelCadProd.Controls.Add(this.lblCadProdRecheio);
@@ -103,12 +97,10 @@
             this.PanelCadProd.Controls.Add(this.txtCadProdCobertura);
             this.PanelCadProd.Controls.Add(this.txtCadProdMassa);
             this.PanelCadProd.Controls.Add(this.PictureBoxCadProd);
-            this.PanelCadProd.Controls.Add(this.ComboBoxCadProdTamanho);
             this.PanelCadProd.Controls.Add(this.ButtonCad);
             this.PanelCadProd.Controls.Add(this.ButtonLimpar);
             this.PanelCadProd.Controls.Add(this.txtCadProdID);
             this.PanelCadProd.Controls.Add(this.txtCadProdRecheio);
-            this.PanelCadProd.Controls.Add(this.txtCadProdTags);
             this.PanelCadProd.Controls.Add(this.txtCadProdNome);
             this.PanelCadProd.Location = new System.Drawing.Point(145, 82);
             this.PanelCadProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -130,41 +122,19 @@
             this.ComboBoxCadProdCategoria.HoverState.Parent = this.ComboBoxCadProdCategoria;
             this.ComboBoxCadProdCategoria.ItemHeight = 30;
             this.ComboBoxCadProdCategoria.ItemsAppearance.Parent = this.ComboBoxCadProdCategoria;
-            this.ComboBoxCadProdCategoria.Location = new System.Drawing.Point(403, 484);
+            this.ComboBoxCadProdCategoria.Location = new System.Drawing.Point(403, 475);
             this.ComboBoxCadProdCategoria.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxCadProdCategoria.Name = "ComboBoxCadProdCategoria";
             this.ComboBoxCadProdCategoria.ShadowDecoration.Parent = this.ComboBoxCadProdCategoria;
-            this.ComboBoxCadProdCategoria.Size = new System.Drawing.Size(364, 36);
+            this.ComboBoxCadProdCategoria.Size = new System.Drawing.Size(370, 36);
             this.ComboBoxCadProdCategoria.TabIndex = 42;
-            // 
-            // lblCadProdTags
-            // 
-            this.lblCadProdTags.AutoSize = true;
-            this.lblCadProdTags.BackColor = System.Drawing.Color.White;
-            this.lblCadProdTags.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdTags.Location = new System.Drawing.Point(16, 427);
-            this.lblCadProdTags.Name = "lblCadProdTags";
-            this.lblCadProdTags.Size = new System.Drawing.Size(57, 25);
-            this.lblCadProdTags.TabIndex = 41;
-            this.lblCadProdTags.Text = "Tags";
-            // 
-            // lblCadProdTamanho
-            // 
-            this.lblCadProdTamanho.AutoSize = true;
-            this.lblCadProdTamanho.BackColor = System.Drawing.Color.White;
-            this.lblCadProdTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadProdTamanho.Location = new System.Drawing.Point(793, 457);
-            this.lblCadProdTamanho.Name = "lblCadProdTamanho";
-            this.lblCadProdTamanho.Size = new System.Drawing.Size(208, 25);
-            this.lblCadProdTamanho.TabIndex = 40;
-            this.lblCadProdTamanho.Text = "Tamanhos disponíveis";
             // 
             // lblCadCategoria
             // 
             this.lblCadCategoria.AutoSize = true;
             this.lblCadCategoria.BackColor = System.Drawing.Color.White;
             this.lblCadCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadCategoria.Location = new System.Drawing.Point(398, 457);
+            this.lblCadCategoria.Location = new System.Drawing.Point(398, 448);
             this.lblCadCategoria.Name = "lblCadCategoria";
             this.lblCadCategoria.Size = new System.Drawing.Size(97, 25);
             this.lblCadCategoria.TabIndex = 39;
@@ -341,26 +311,6 @@
             this.PictureBoxCadProd.TabIndex = 26;
             this.PictureBoxCadProd.TabStop = false;
             // 
-            // ComboBoxCadProdTamanho
-            // 
-            this.ComboBoxCadProdTamanho.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxCadProdTamanho.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxCadProdTamanho.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCadProdTamanho.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadProdTamanho.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadProdTamanho.FocusedState.Parent = this.ComboBoxCadProdTamanho;
-            this.ComboBoxCadProdTamanho.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ComboBoxCadProdTamanho.ForeColor = System.Drawing.Color.Black;
-            this.ComboBoxCadProdTamanho.HoverState.Parent = this.ComboBoxCadProdTamanho;
-            this.ComboBoxCadProdTamanho.ItemHeight = 30;
-            this.ComboBoxCadProdTamanho.ItemsAppearance.Parent = this.ComboBoxCadProdTamanho;
-            this.ComboBoxCadProdTamanho.Location = new System.Drawing.Point(798, 484);
-            this.ComboBoxCadProdTamanho.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxCadProdTamanho.Name = "ComboBoxCadProdTamanho";
-            this.ComboBoxCadProdTamanho.ShadowDecoration.Parent = this.ComboBoxCadProdTamanho;
-            this.ComboBoxCadProdTamanho.Size = new System.Drawing.Size(364, 36);
-            this.ComboBoxCadProdTamanho.TabIndex = 24;
-            // 
             // ButtonCad
             // 
             this.ButtonCad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
@@ -375,7 +325,7 @@
             this.ButtonCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.ButtonCad.ForeColor = System.Drawing.Color.White;
             this.ButtonCad.HoverState.Parent = this.ButtonCad;
-            this.ButtonCad.Location = new System.Drawing.Point(811, 552);
+            this.ButtonCad.Location = new System.Drawing.Point(815, 603);
             this.ButtonCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonCad.Name = "ButtonCad";
             this.ButtonCad.ShadowDecoration.Parent = this.ButtonCad;
@@ -397,7 +347,7 @@
             this.ButtonLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLimpar.ForeColor = System.Drawing.Color.White;
             this.ButtonLimpar.HoverState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Location = new System.Drawing.Point(605, 552);
+            this.ButtonLimpar.Location = new System.Drawing.Point(609, 603);
             this.ButtonLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonLimpar.Name = "ButtonLimpar";
             this.ButtonLimpar.ShadowDecoration.Parent = this.ButtonLimpar;
@@ -455,31 +405,6 @@
             this.txtCadProdRecheio.ShadowDecoration.Parent = this.txtCadProdRecheio;
             this.txtCadProdRecheio.Size = new System.Drawing.Size(370, 36);
             this.txtCadProdRecheio.TabIndex = 8;
-            // 
-            // txtCadProdTags
-            // 
-            this.txtCadProdTags.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadProdTags.DefaultText = "";
-            this.txtCadProdTags.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadProdTags.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadProdTags.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdTags.DisabledState.Parent = this.txtCadProdTags;
-            this.txtCadProdTags.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdTags.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdTags.FocusedState.Parent = this.txtCadProdTags;
-            this.txtCadProdTags.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtCadProdTags.ForeColor = System.Drawing.Color.Black;
-            this.txtCadProdTags.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdTags.HoverState.Parent = this.txtCadProdTags;
-            this.txtCadProdTags.Location = new System.Drawing.Point(20, 454);
-            this.txtCadProdTags.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadProdTags.Name = "txtCadProdTags";
-            this.txtCadProdTags.PasswordChar = '\0';
-            this.txtCadProdTags.PlaceholderText = "";
-            this.txtCadProdTags.SelectedText = "";
-            this.txtCadProdTags.ShadowDecoration.Parent = this.txtCadProdTags;
-            this.txtCadProdTags.Size = new System.Drawing.Size(345, 118);
-            this.txtCadProdTags.TabIndex = 6;
             // 
             // txtCadProdNome
             // 
@@ -885,10 +810,8 @@
         private Guna.UI2.WinForms.Guna2Button ButtonLimpar;
         private Guna.UI2.WinForms.Guna2TextBox txtCadProdID;
         private Guna.UI2.WinForms.Guna2TextBox txtCadProdRecheio;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadProdTags;
         private Guna.UI2.WinForms.Guna2TextBox txtCadProdNome;
         private Guna.UI2.WinForms.Guna2PictureBox PictureBoxCadProd;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadProdTamanho;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2Panel PanelProduto;
         private Guna.UI2.WinForms.Guna2Button btnGerenciar_Prod;
@@ -912,8 +835,6 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblCadProdTags;
-        private System.Windows.Forms.Label lblCadProdTamanho;
         private System.Windows.Forms.Label lblCadCategoria;
         private System.Windows.Forms.Label lblCadProdConfeitos;
         private System.Windows.Forms.Label lblCadProdRecheio;

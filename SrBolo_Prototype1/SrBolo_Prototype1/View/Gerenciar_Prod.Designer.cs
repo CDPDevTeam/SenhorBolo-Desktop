@@ -574,6 +574,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Gerenciar_Prod";
             this.Text = "Gerenciar_Prod";
+            this.Load += new System.EventHandler(this.Gerenciar_Prod_Load);
             this.PanelGerProd.ResumeLayout(false);
             this.PanelGerProd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewProd)).EndInit();

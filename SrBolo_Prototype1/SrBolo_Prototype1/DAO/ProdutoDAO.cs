@@ -54,5 +54,24 @@ namespace SrBolo_Prototype1.DAO
             return dt;
          }
 
+        DataTable Dt = new DataTable();
+        public DataTable produtosCadastrados() {
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("ListarProd", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Dr = Cmd.ExecuteReader();
+                Dt.Load(Dr);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("erro ao acessar os produtos" + e.Message);
+            }
+            finally {
+                Desconectar();
+            }
+            return Dt;
+        }
     }
 }

@@ -124,7 +124,6 @@ namespace SrBolo_Prototype1
             txtEditProdMassa.Text = null;
             txtEditProdNome.Text = null;
             txtEditProdRecheio.Text = null;
-            txtEditProdTags.Text = null;
         }
     }
 }

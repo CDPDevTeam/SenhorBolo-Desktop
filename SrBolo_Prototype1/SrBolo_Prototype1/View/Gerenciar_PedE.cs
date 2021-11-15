@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.View;
+using SrBolo_Prototype1.Control;
 
 namespace SrBolo_Prototype1
 {
     public partial class Gerenciar_PedE : Form
     {
+        ControlePedidos pedidose = new ControlePedidos();
+        DataTable pedidosECadastrados = new DataTable();
         public Gerenciar_PedE()
         {
             InitializeComponent();
@@ -109,6 +112,19 @@ namespace SrBolo_Prototype1
             Adm_Home adm_Home = new Adm_Home();
             adm_Home.Show();
             this.Hide();
+        }
+
+        public void listarPedidosE()
+        {
+            pedidosECadastrados = pedidose.pedidosECadastrados();
+            GridViewRec.DataSource = pedidosECadastrados;
+
+        }
+
+        private void Gerenciar_PedE_Load(object sender, EventArgs e)
+        {
+            listarPedidosE();
+
         }
     }
 }

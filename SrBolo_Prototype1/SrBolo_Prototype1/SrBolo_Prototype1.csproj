@@ -85,11 +85,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Control\ControleFuncionario.cs" />
+    <Compile Include="Control\ControlePedidos.cs" />
     <Compile Include="Control\ControleProduto.cs" />
     <Compile Include="DAO\FuncionarioDAO.cs" />
+    <Compile Include="DAO\PedidosDAO.cs" />
     <Compile Include="DAO\ProdutoDAO.cs" />
     <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="Model\Fornecedor.cs" />
+    <Compile Include="Model\PedidoE.cs" />
     <Compile Include="Model\Produto.cs" />
     <Compile Include="DAO\LoginDAO.cs" />
     <Compile Include="Model\Balconista.cs" />

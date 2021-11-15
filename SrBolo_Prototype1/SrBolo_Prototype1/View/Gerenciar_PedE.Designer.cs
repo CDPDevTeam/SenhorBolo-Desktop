@@ -548,6 +548,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Gerenciar_PedE";
             this.Text = "Editar_Rec";
+            this.Load += new System.EventHandler(this.Gerenciar_PedE_Load);
             this.PanelGerRec.ResumeLayout(false);
             this.PanelGerRec.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewRec)).EndInit();

@@ -135,6 +135,7 @@
             // 
             // GridViewRec
             // 
+            this.GridViewRec.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.GridViewRec.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridViewRec.Location = new System.Drawing.Point(25, 69);
             this.GridViewRec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -548,6 +549,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Gerenciar_PedF";
             this.Text = "Gerenciar_PedF";
+            this.Load += new System.EventHandler(this.Gerenciar_PedF_Load);
             this.PanelGerRec.ResumeLayout(false);
             this.PanelGerRec.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewRec)).EndInit();

@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.View;
+using SrBolo_Prototype1.Control;
 
 namespace SrBolo_Prototype1
 {
     public partial class Gerenciar_Prod : Form
     {
+        ControleProduto produtos = new ControleProduto();
+        DataTable produtosCadastrados = new DataTable();
         public Gerenciar_Prod()
         {
             InitializeComponent();
@@ -116,6 +119,16 @@ namespace SrBolo_Prototype1
             Editar_Prod editar_Prod = new Editar_Prod();
             editar_Prod.Show();
             this.Hide();
+        }
+
+        public void listarProduto() {
+            produtosCadastrados = produtos.produtosCadastrados();
+            GridViewProd.DataSource = produtosCadastrados;
+        }
+
+        private void Gerenciar_Prod_Load(object sender, EventArgs e)
+        {
+            listarProduto();
         }
     }
 }

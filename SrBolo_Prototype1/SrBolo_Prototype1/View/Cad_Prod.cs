@@ -118,7 +118,6 @@ namespace SrBolo_Prototype1
             txtCadProdMassa.Text = null;
             txtCadProdNome.Text = null;
             txtCadProdRecheio.Text = null;
-            txtCadProdTags.Text = null;
         }
     }
 }
