@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.View;
+using SrBolo_Prototype1.Control; 
 
 namespace SrBolo_Prototype1
 {
     public partial class Gerenciar_Func : Form
     {
+        ControleFuncionario funcionarios = new ControleFuncionario();
+        DataTable funcionariosCadastrados = new DataTable();
         public Gerenciar_Func()
         {
             InitializeComponent();
@@ -121,6 +124,17 @@ namespace SrBolo_Prototype1
             Editar_Func editar_func = new Editar_Func();
             editar_func.Show();
             this.Hide();
+        }
+
+        public void listarFuncionarios() {
+            funcionariosCadastrados = funcionarios.funcionariosCadastrados();
+            GridViewFunc.DataSource = funcionariosCadastrados;
+
+        }
+
+        private void Gerenciar_Func_Load(object sender, EventArgs e)
+        {
+            listarFuncionarios();
         }
     }
 }

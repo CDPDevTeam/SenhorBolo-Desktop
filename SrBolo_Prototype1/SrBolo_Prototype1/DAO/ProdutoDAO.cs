@@ -40,7 +40,7 @@ namespace SrBolo_Prototype1.DAO
              try
              {
                 Conectar();
-                NpgsqlCommand cmd = new NpgsqlCommand("call maisvendidos", Cn);
+                NpgsqlCommand cmd = new NpgsqlCommand("ListarFunc", Cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 Dr = cmd.ExecuteReader();
                 dt.Load(Dr);

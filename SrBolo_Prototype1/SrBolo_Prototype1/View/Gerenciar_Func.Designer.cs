@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gerenciar_Func));
             this.PanelGerFunc = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.lblAviso = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.txtGerFuncSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.ButtonEdit = new Guna.UI2.WinForms.Guna2Button();
             this.GridViewFunc = new System.Windows.Forms.DataGridView();
@@ -51,8 +53,6 @@
             this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblAviso = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
@@ -83,6 +83,29 @@
             this.PanelGerFunc.ShadowDecoration.Parent = this.PanelGerFunc;
             this.PanelGerFunc.Size = new System.Drawing.Size(1371, 875);
             this.PanelGerFunc.TabIndex = 2;
+            // 
+            // lblAviso
+            // 
+            this.lblAviso.AutoSize = true;
+            this.lblAviso.BackColor = System.Drawing.Color.White;
+            this.lblAviso.ForeColor = System.Drawing.Color.Black;
+            this.lblAviso.Location = new System.Drawing.Point(34, 782);
+            this.lblAviso.Name = "lblAviso";
+            this.lblAviso.Size = new System.Drawing.Size(401, 20);
+            this.lblAviso.TabIndex = 36;
+            this.lblAviso.Text = "*Para realizar uma operação, clique no campo desejado";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.White;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Location = new System.Drawing.Point(34, 18);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(214, 37);
+            this.lblTitle.TabIndex = 35;
+            this.lblTitle.Text = "Funcionários";
             // 
             // txtGerFuncSearch
             // 
@@ -498,29 +521,6 @@
             this.LogoMrCake.TabStop = false;
             this.LogoMrCake.Click += new System.EventHandler(this.LogoMrCake_Click);
             // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.White;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(34, 18);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(214, 37);
-            this.lblTitle.TabIndex = 35;
-            this.lblTitle.Text = "Funcionários";
-            // 
-            // lblAviso
-            // 
-            this.lblAviso.AutoSize = true;
-            this.lblAviso.BackColor = System.Drawing.Color.White;
-            this.lblAviso.ForeColor = System.Drawing.Color.Black;
-            this.lblAviso.Location = new System.Drawing.Point(34, 782);
-            this.lblAviso.Name = "lblAviso";
-            this.lblAviso.Size = new System.Drawing.Size(401, 20);
-            this.lblAviso.TabIndex = 36;
-            this.lblAviso.Text = "*Para realizar uma operação, clique no campo desejado";
-            // 
             // lblHora
             // 
             this.lblHora.AutoSize = true;
@@ -580,6 +580,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Gerenciar_Func";
             this.Text = "Gerenciar_Func";
+            this.Load += new System.EventHandler(this.Gerenciar_Func_Load);
             this.PanelGerFunc.ResumeLayout(false);
             this.PanelGerFunc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewFunc)).EndInit();

@@ -499,6 +499,7 @@ namespace SrBolo_Prototype1
             this.BtnReceita.ShadowDecoration.Parent = this.BtnReceita;
             this.BtnReceita.Size = new System.Drawing.Size(144, 112);
             this.BtnReceita.TabIndex = 11;
+            this.BtnReceita.Click += new System.EventHandler(this.BtnReceita_Click);
             // 
             // PanelProduto
             // 
@@ -577,6 +578,7 @@ namespace SrBolo_Prototype1
             this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
             this.BtnProduto.Size = new System.Drawing.Size(144, 112);
             this.BtnProduto.TabIndex = 4;
+            this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
             // 
             // PanelFuncionario
             // 
@@ -657,6 +659,7 @@ namespace SrBolo_Prototype1
             this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
             this.BtnFuncionario.Size = new System.Drawing.Size(144, 112);
             this.BtnFuncionario.TabIndex = 2;
+            this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
             // 
             // guna2GradientPanel2
             // 
