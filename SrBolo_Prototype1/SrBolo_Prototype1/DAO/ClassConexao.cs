@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using Npgsql;
 using System.Data;
 
@@ -19,7 +20,8 @@ namespace SrBolo_Prototype1.DAO
         protected NpgsqlConnection Cn;
         
         public void Conectar() { 
-            String Sandroval = String.Format("Server ={ 0}; Port ={ 1}; User Id = { 2 }; Password ={ 3}; Database ={ 4}; ", Host, Port, User, Password, DBname);
+            String Sandroval = String.Format("Server ={0}; Port ={1}; User Id = {2}; Password ={3}; Database ={4}; ", Host, Port, User, Password, DBname);
+            
             Cn = new NpgsqlConnection(Sandroval);
             Cn.Open();
         }

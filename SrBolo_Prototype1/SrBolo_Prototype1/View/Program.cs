@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SrBolo_Prototype1.View;
 
 namespace SrBolo_Prototype1
 {
@@ -16,7 +17,7 @@ namespace SrBolo_Prototype1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Cad_Func());
+            Application.Run(new Adm_Home());
         }
     }
 }

@@ -50,7 +50,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel7 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label16 = new System.Windows.Forms.Label();
             this.guna2GradientPanel10 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgrMaisVendidos = new System.Windows.Forms.DataGridView();
             this.label13 = new System.Windows.Forms.Label();
             this.guna2GradientPanel9 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -81,7 +81,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel11.SuspendLayout();
             this.guna2GradientPanel12.SuspendLayout();
             this.guna2GradientPanel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrMaisVendidos)).BeginInit();
             this.guna2GradientPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
@@ -100,11 +100,11 @@ namespace SrBolo_Prototype1.View
             this.PanelRendimentoMensal.Controls.Add(this.tableLayoutPanel1);
             this.PanelRendimentoMensal.FillColor = System.Drawing.Color.White;
             this.PanelRendimentoMensal.FillColor2 = System.Drawing.Color.White;
-            this.PanelRendimentoMensal.Location = new System.Drawing.Point(241, 150);
-            this.PanelRendimentoMensal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.PanelRendimentoMensal.Location = new System.Drawing.Point(214, 120);
+            this.PanelRendimentoMensal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PanelRendimentoMensal.Name = "PanelRendimentoMensal";
             this.PanelRendimentoMensal.ShadowDecoration.Parent = this.PanelRendimentoMensal;
-            this.PanelRendimentoMensal.Size = new System.Drawing.Size(1217, 174);
+            this.PanelRendimentoMensal.Size = new System.Drawing.Size(1082, 139);
             this.PanelRendimentoMensal.TabIndex = 7;
             // 
             // tableLayoutPanel1
@@ -122,11 +122,10 @@ namespace SrBolo_Prototype1.View
             this.tableLayoutPanel1.Controls.Add(this.guna2GradientPanel11, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.guna2GradientPanel12, 2, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 2);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1215, 174);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1080, 139);
             this.tableLayoutPanel1.TabIndex = 23;
             // 
             // label8
@@ -137,7 +136,7 @@ namespace SrBolo_Prototype1.View
             this.label8.Location = new System.Drawing.Point(4, 0);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(242, 116);
+            this.label8.Size = new System.Drawing.Size(203, 96);
             this.label8.TabIndex = 0;
             this.label8.Text = "Overview\r\nda loja";
             // 
@@ -153,11 +152,11 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel13.Controls.Add(this.lblUsuarios);
             this.guna2GradientPanel13.FillColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel13.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel13.Location = new System.Drawing.Point(913, 5);
-            this.guna2GradientPanel13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel13.Location = new System.Drawing.Point(814, 4);
+            this.guna2GradientPanel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel13.Name = "guna2GradientPanel13";
             this.guna2GradientPanel13.ShadowDecoration.Parent = this.guna2GradientPanel13;
-            this.guna2GradientPanel13.Size = new System.Drawing.Size(298, 164);
+            this.guna2GradientPanel13.Size = new System.Drawing.Size(262, 131);
             this.guna2GradientPanel13.TabIndex = 15;
             // 
             // guna2GradientPanel8
@@ -165,11 +164,11 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel8.BorderRadius = 15;
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2GradientPanel8.Location = new System.Drawing.Point(6, 5);
-            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel8.Location = new System.Drawing.Point(5, 4);
+            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel8.Name = "guna2GradientPanel8";
             this.guna2GradientPanel8.ShadowDecoration.Parent = this.guna2GradientPanel8;
-            this.guna2GradientPanel8.Size = new System.Drawing.Size(69, 76);
+            this.guna2GradientPanel8.Size = new System.Drawing.Size(61, 61);
             this.guna2GradientPanel8.TabIndex = 8;
             // 
             // label20
@@ -177,10 +176,10 @@ namespace SrBolo_Prototype1.View
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.White;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(83, 5);
+            this.label20.Location = new System.Drawing.Point(74, 4);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(201, 25);
+            this.label20.Size = new System.Drawing.Size(173, 20);
             this.label20.TabIndex = 17;
             this.label20.Text = "Usuários cadastrados";
             // 
@@ -189,10 +188,10 @@ namespace SrBolo_Prototype1.View
             this.lblUsuarios.AutoSize = true;
             this.lblUsuarios.BackColor = System.Drawing.Color.White;
             this.lblUsuarios.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuarios.Location = new System.Drawing.Point(86, 39);
+            this.lblUsuarios.Location = new System.Drawing.Point(76, 31);
             this.lblUsuarios.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuarios.Name = "lblUsuarios";
-            this.lblUsuarios.Size = new System.Drawing.Size(140, 40);
+            this.lblUsuarios.Size = new System.Drawing.Size(119, 36);
             this.lblUsuarios.TabIndex = 18;
             this.lblUsuarios.Text = "label19";
             // 
@@ -210,11 +209,11 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel11.Controls.Add(this.label11);
             this.guna2GradientPanel11.FillColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel11.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel11.Location = new System.Drawing.Point(307, 5);
-            this.guna2GradientPanel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel11.Location = new System.Drawing.Point(274, 4);
+            this.guna2GradientPanel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel11.Name = "guna2GradientPanel11";
             this.guna2GradientPanel11.ShadowDecoration.Parent = this.guna2GradientPanel11;
-            this.guna2GradientPanel11.Size = new System.Drawing.Size(295, 164);
+            this.guna2GradientPanel11.Size = new System.Drawing.Size(262, 131);
             this.guna2GradientPanel11.TabIndex = 9;
             // 
             // guna2GradientPanel5
@@ -222,11 +221,11 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel5.BorderRadius = 15;
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2GradientPanel5.Location = new System.Drawing.Point(4, 5);
-            this.guna2GradientPanel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel5.Location = new System.Drawing.Point(4, 4);
+            this.guna2GradientPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.ShadowDecoration.Parent = this.guna2GradientPanel5;
-            this.guna2GradientPanel5.Size = new System.Drawing.Size(69, 76);
+            this.guna2GradientPanel5.Size = new System.Drawing.Size(61, 61);
             this.guna2GradientPanel5.TabIndex = 7;
             // 
             // lblVendasMes
@@ -234,10 +233,10 @@ namespace SrBolo_Prototype1.View
             this.lblVendasMes.AutoSize = true;
             this.lblVendasMes.BackColor = System.Drawing.Color.White;
             this.lblVendasMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVendasMes.Location = new System.Drawing.Point(82, 39);
+            this.lblVendasMes.Location = new System.Drawing.Point(73, 31);
             this.lblVendasMes.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVendasMes.Name = "lblVendasMes";
-            this.lblVendasMes.Size = new System.Drawing.Size(140, 40);
+            this.lblVendasMes.Size = new System.Drawing.Size(119, 36);
             this.lblVendasMes.TabIndex = 10;
             this.lblVendasMes.Text = "label10";
             // 
@@ -246,10 +245,10 @@ namespace SrBolo_Prototype1.View
             this.lblMesPas.AutoSize = true;
             this.lblMesPas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(245)))), ((int)(((byte)(114)))));
             this.lblMesPas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(161)))), ((int)(((byte)(70)))));
-            this.lblMesPas.Location = new System.Drawing.Point(202, 89);
+            this.lblMesPas.Location = new System.Drawing.Point(180, 71);
             this.lblMesPas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMesPas.Name = "lblMesPas";
-            this.lblMesPas.Size = new System.Drawing.Size(60, 20);
+            this.lblMesPas.Size = new System.Drawing.Size(54, 17);
             this.lblMesPas.TabIndex = 12;
             this.lblMesPas.Text = "label12";
             // 
@@ -258,10 +257,10 @@ namespace SrBolo_Prototype1.View
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(81, 5);
+            this.label9.Location = new System.Drawing.Point(72, 4);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(149, 25);
+            this.label9.Size = new System.Drawing.Size(125, 20);
             this.label9.TabIndex = 9;
             this.label9.Text = "Vendas do mês";
             // 
@@ -270,10 +269,10 @@ namespace SrBolo_Prototype1.View
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.White;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(81, 89);
+            this.label11.Location = new System.Drawing.Point(72, 71);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(116, 22);
+            this.label11.Size = new System.Drawing.Size(98, 18);
             this.label11.TabIndex = 11;
             this.label11.Text = "Mês passado";
             // 
@@ -289,11 +288,11 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel12.Controls.Add(this.label16);
             this.guna2GradientPanel12.FillColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel12.FillColor2 = System.Drawing.Color.Transparent;
-            this.guna2GradientPanel12.Location = new System.Drawing.Point(610, 5);
-            this.guna2GradientPanel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel12.Location = new System.Drawing.Point(544, 4);
+            this.guna2GradientPanel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel12.Name = "guna2GradientPanel12";
             this.guna2GradientPanel12.ShadowDecoration.Parent = this.guna2GradientPanel12;
-            this.guna2GradientPanel12.Size = new System.Drawing.Size(295, 164);
+            this.guna2GradientPanel12.Size = new System.Drawing.Size(262, 131);
             this.guna2GradientPanel12.TabIndex = 13;
             // 
             // lblTicketMedio
@@ -301,10 +300,10 @@ namespace SrBolo_Prototype1.View
             this.lblTicketMedio.AutoSize = true;
             this.lblTicketMedio.BackColor = System.Drawing.Color.White;
             this.lblTicketMedio.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTicketMedio.Location = new System.Drawing.Point(87, 39);
+            this.lblTicketMedio.Location = new System.Drawing.Point(77, 31);
             this.lblTicketMedio.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTicketMedio.Name = "lblTicketMedio";
-            this.lblTicketMedio.Size = new System.Drawing.Size(140, 40);
+            this.lblTicketMedio.Size = new System.Drawing.Size(119, 36);
             this.lblTicketMedio.TabIndex = 14;
             this.lblTicketMedio.Text = "label15";
             // 
@@ -313,11 +312,11 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel7.BorderRadius = 15;
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2GradientPanel7.Location = new System.Drawing.Point(8, 5);
-            this.guna2GradientPanel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel7.Location = new System.Drawing.Point(7, 4);
+            this.guna2GradientPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
             this.guna2GradientPanel7.ShadowDecoration.Parent = this.guna2GradientPanel7;
-            this.guna2GradientPanel7.Size = new System.Drawing.Size(69, 76);
+            this.guna2GradientPanel7.Size = new System.Drawing.Size(61, 61);
             this.guna2GradientPanel7.TabIndex = 8;
             // 
             // label16
@@ -325,10 +324,10 @@ namespace SrBolo_Prototype1.View
             this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.White;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(86, 5);
+            this.label16.Location = new System.Drawing.Point(76, 4);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(123, 25);
+            this.label16.Size = new System.Drawing.Size(104, 20);
             this.label16.TabIndex = 13;
             this.label16.Text = "Ticket médio";
             // 
@@ -338,39 +337,39 @@ namespace SrBolo_Prototype1.View
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2GradientPanel10.BorderRadius = 15;
-            this.guna2GradientPanel10.Controls.Add(this.dataGridView1);
+            this.guna2GradientPanel10.Controls.Add(this.dgrMaisVendidos);
             this.guna2GradientPanel10.Controls.Add(this.label13);
             this.guna2GradientPanel10.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel10.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientPanel10.Location = new System.Drawing.Point(1032, 361);
-            this.guna2GradientPanel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel10.Location = new System.Drawing.Point(917, 289);
+            this.guna2GradientPanel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel10.Name = "guna2GradientPanel10";
             this.guna2GradientPanel10.ShadowDecoration.Parent = this.guna2GradientPanel10;
-            this.guna2GradientPanel10.Size = new System.Drawing.Size(426, 510);
+            this.guna2GradientPanel10.Size = new System.Drawing.Size(379, 408);
             this.guna2GradientPanel10.TabIndex = 22;
             // 
-            // dataGridView1
+            // dgrMaisVendidos
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgrMaisVendidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 85);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(354, 391);
-            this.dataGridView1.TabIndex = 20;
+            this.dgrMaisVendidos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgrMaisVendidos.Location = new System.Drawing.Point(35, 68);
+            this.dgrMaisVendidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgrMaisVendidos.Name = "dgrMaisVendidos";
+            this.dgrMaisVendidos.RowHeadersWidth = 62;
+            this.dgrMaisVendidos.Size = new System.Drawing.Size(315, 313);
+            this.dgrMaisVendidos.TabIndex = 20;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(32, 26);
+            this.label13.Location = new System.Drawing.Point(28, 21);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(322, 52);
+            this.label13.Size = new System.Drawing.Size(277, 42);
             this.label13.TabIndex = 19;
             this.label13.Text = "Mais Vendidos";
             // 
@@ -383,24 +382,23 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel9.Controls.Add(this.label12);
             this.guna2GradientPanel9.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.White;
-            this.guna2GradientPanel9.Location = new System.Drawing.Point(234, 365);
-            this.guna2GradientPanel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel9.Location = new System.Drawing.Point(208, 292);
+            this.guna2GradientPanel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel9.Name = "guna2GradientPanel9";
             this.guna2GradientPanel9.ShadowDecoration.Parent = this.guna2GradientPanel9;
-            this.guna2GradientPanel9.Size = new System.Drawing.Size(736, 510);
+            this.guna2GradientPanel9.Size = new System.Drawing.Size(654, 408);
             this.guna2GradientPanel9.TabIndex = 21;
             // 
             // chart1
             // 
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
-            this.chart1.Location = new System.Drawing.Point(28, 98);
-            this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.chart1.Location = new System.Drawing.Point(25, 78);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(642, 375);
+            this.chart1.Size = new System.Drawing.Size(571, 300);
             this.chart1.TabIndex = 20;
             this.chart1.Text = "chart1";
             // 
@@ -409,10 +407,10 @@ namespace SrBolo_Prototype1.View
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(32, 26);
+            this.label12.Location = new System.Drawing.Point(28, 21);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(299, 52);
+            this.label12.Size = new System.Drawing.Size(258, 42);
             this.label12.TabIndex = 19;
             this.label12.Text = "Vendas totais";
             // 
@@ -420,12 +418,12 @@ namespace SrBolo_Prototype1.View
             // 
             this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
             this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(178, 18);
+            this.PictureBoxPerfil.Location = new System.Drawing.Point(158, 14);
             this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(2);
             this.PictureBoxPerfil.Name = "PictureBoxPerfil";
             this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(64, 70);
+            this.PictureBoxPerfil.Size = new System.Drawing.Size(57, 56);
             this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBoxPerfil.TabIndex = 23;
             this.PictureBoxPerfil.TabStop = false;
@@ -444,10 +442,9 @@ namespace SrBolo_Prototype1.View
             this.PanelMenu.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.PanelMenu.Location = new System.Drawing.Point(0, 0);
-            this.PanelMenu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
-            this.PanelMenu.Size = new System.Drawing.Size(144, 960);
+            this.PanelMenu.Size = new System.Drawing.Size(128, 768);
             this.PanelMenu.TabIndex = 29;
             // 
             // PanelPedidos
@@ -455,11 +452,10 @@ namespace SrBolo_Prototype1.View
             this.PanelPedidos.Controls.Add(this.btnGerenciarPedF);
             this.PanelPedidos.Controls.Add(this.btnGerenciar_PedE);
             this.PanelPedidos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelPedidos.Location = new System.Drawing.Point(0, 746);
-            this.PanelPedidos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PanelPedidos.Location = new System.Drawing.Point(0, 597);
             this.PanelPedidos.Name = "PanelPedidos";
             this.PanelPedidos.ShadowDecoration.Parent = this.PanelPedidos;
-            this.PanelPedidos.Size = new System.Drawing.Size(144, 182);
+            this.PanelPedidos.Size = new System.Drawing.Size(128, 146);
             this.PanelPedidos.TabIndex = 9;
             // 
             // btnGerenciarPedF
@@ -476,11 +472,10 @@ namespace SrBolo_Prototype1.View
             this.btnGerenciarPedF.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGerenciarPedF.ForeColor = System.Drawing.Color.White;
             this.btnGerenciarPedF.HoverState.Parent = this.btnGerenciarPedF;
-            this.btnGerenciarPedF.Location = new System.Drawing.Point(0, 91);
-            this.btnGerenciarPedF.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnGerenciarPedF.Location = new System.Drawing.Point(0, 73);
             this.btnGerenciarPedF.Name = "btnGerenciarPedF";
             this.btnGerenciarPedF.ShadowDecoration.Parent = this.btnGerenciarPedF;
-            this.btnGerenciarPedF.Size = new System.Drawing.Size(144, 91);
+            this.btnGerenciarPedF.Size = new System.Drawing.Size(128, 73);
             this.btnGerenciarPedF.TabIndex = 2;
             this.btnGerenciarPedF.Text = "Gerenciar Pedidos Loja Física";
             this.btnGerenciarPedF.Click += new System.EventHandler(this.btnGerenciarPedF_Click);
@@ -500,10 +495,9 @@ namespace SrBolo_Prototype1.View
             this.btnGerenciar_PedE.ForeColor = System.Drawing.Color.White;
             this.btnGerenciar_PedE.HoverState.Parent = this.btnGerenciar_PedE;
             this.btnGerenciar_PedE.Location = new System.Drawing.Point(0, 0);
-            this.btnGerenciar_PedE.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnGerenciar_PedE.Name = "btnGerenciar_PedE";
             this.btnGerenciar_PedE.ShadowDecoration.Parent = this.btnGerenciar_PedE;
-            this.btnGerenciar_PedE.Size = new System.Drawing.Size(144, 91);
+            this.btnGerenciar_PedE.Size = new System.Drawing.Size(128, 73);
             this.btnGerenciar_PedE.TabIndex = 1;
             this.btnGerenciar_PedE.Text = "Gerenciar Pedidos Ecommerce";
             this.btnGerenciar_PedE.Click += new System.EventHandler(this.btnGerenciar_PedE_Click);
@@ -519,13 +513,12 @@ namespace SrBolo_Prototype1.View
             this.BtnPedidos.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnPedidos.ImageRotate = 0F;
             this.BtnPedidos.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnPedidos.Location = new System.Drawing.Point(0, 634);
-            this.BtnPedidos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnPedidos.Location = new System.Drawing.Point(0, 507);
             this.BtnPedidos.Name = "BtnPedidos";
             this.BtnPedidos.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnPedidos.PressedState.Parent = this.BtnPedidos;
             this.BtnPedidos.ShadowDecoration.Parent = this.BtnPedidos;
-            this.BtnPedidos.Size = new System.Drawing.Size(144, 112);
+            this.BtnPedidos.Size = new System.Drawing.Size(128, 90);
             this.BtnPedidos.TabIndex = 8;
             this.BtnPedidos.Click += new System.EventHandler(this.BtnPedidos_Click);
             // 
@@ -534,11 +527,10 @@ namespace SrBolo_Prototype1.View
             this.PanelProduto.Controls.Add(this.btnGerenciar_Prod);
             this.PanelProduto.Controls.Add(this.btnCad_Prod);
             this.PanelProduto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelProduto.Location = new System.Drawing.Point(0, 496);
-            this.PanelProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PanelProduto.Location = new System.Drawing.Point(0, 397);
             this.PanelProduto.Name = "PanelProduto";
             this.PanelProduto.ShadowDecoration.Parent = this.PanelProduto;
-            this.PanelProduto.Size = new System.Drawing.Size(144, 138);
+            this.PanelProduto.Size = new System.Drawing.Size(128, 110);
             this.PanelProduto.TabIndex = 5;
             // 
             // btnGerenciar_Prod
@@ -555,11 +547,10 @@ namespace SrBolo_Prototype1.View
             this.btnGerenciar_Prod.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGerenciar_Prod.ForeColor = System.Drawing.Color.White;
             this.btnGerenciar_Prod.HoverState.Parent = this.btnGerenciar_Prod;
-            this.btnGerenciar_Prod.Location = new System.Drawing.Point(0, 70);
-            this.btnGerenciar_Prod.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnGerenciar_Prod.Location = new System.Drawing.Point(0, 56);
             this.btnGerenciar_Prod.Name = "btnGerenciar_Prod";
             this.btnGerenciar_Prod.ShadowDecoration.Parent = this.btnGerenciar_Prod;
-            this.btnGerenciar_Prod.Size = new System.Drawing.Size(144, 70);
+            this.btnGerenciar_Prod.Size = new System.Drawing.Size(128, 56);
             this.btnGerenciar_Prod.TabIndex = 2;
             this.btnGerenciar_Prod.Text = "Gerenciar Produto";
             this.btnGerenciar_Prod.Click += new System.EventHandler(this.btnGerenciar_Prod_Click);
@@ -579,10 +570,9 @@ namespace SrBolo_Prototype1.View
             this.btnCad_Prod.ForeColor = System.Drawing.Color.White;
             this.btnCad_Prod.HoverState.Parent = this.btnCad_Prod;
             this.btnCad_Prod.Location = new System.Drawing.Point(0, 0);
-            this.btnCad_Prod.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCad_Prod.Name = "btnCad_Prod";
             this.btnCad_Prod.ShadowDecoration.Parent = this.btnCad_Prod;
-            this.btnCad_Prod.Size = new System.Drawing.Size(144, 70);
+            this.btnCad_Prod.Size = new System.Drawing.Size(128, 56);
             this.btnCad_Prod.TabIndex = 0;
             this.btnCad_Prod.Text = "Cadastrar Produto";
             this.btnCad_Prod.Click += new System.EventHandler(this.btnCad_Prod_Click);
@@ -598,13 +588,12 @@ namespace SrBolo_Prototype1.View
             this.BtnProduto.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnProduto.ImageRotate = 0F;
             this.BtnProduto.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnProduto.Location = new System.Drawing.Point(0, 384);
-            this.BtnProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnProduto.Location = new System.Drawing.Point(0, 307);
             this.BtnProduto.Name = "BtnProduto";
             this.BtnProduto.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnProduto.PressedState.Parent = this.BtnProduto;
             this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
-            this.BtnProduto.Size = new System.Drawing.Size(144, 112);
+            this.BtnProduto.Size = new System.Drawing.Size(128, 90);
             this.BtnProduto.TabIndex = 4;
             this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
             // 
@@ -613,11 +602,10 @@ namespace SrBolo_Prototype1.View
             this.PanelFuncionario.Controls.Add(this.btnGerenciar_Func);
             this.PanelFuncionario.Controls.Add(this.btnCad_Func);
             this.PanelFuncionario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelFuncionario.Location = new System.Drawing.Point(0, 246);
-            this.PanelFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.PanelFuncionario.Location = new System.Drawing.Point(0, 197);
             this.PanelFuncionario.Name = "PanelFuncionario";
             this.PanelFuncionario.ShadowDecoration.Parent = this.PanelFuncionario;
-            this.PanelFuncionario.Size = new System.Drawing.Size(144, 138);
+            this.PanelFuncionario.Size = new System.Drawing.Size(128, 110);
             this.PanelFuncionario.TabIndex = 3;
             // 
             // btnGerenciar_Func
@@ -634,11 +622,10 @@ namespace SrBolo_Prototype1.View
             this.btnGerenciar_Func.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnGerenciar_Func.ForeColor = System.Drawing.Color.White;
             this.btnGerenciar_Func.HoverState.Parent = this.btnGerenciar_Func;
-            this.btnGerenciar_Func.Location = new System.Drawing.Point(0, 69);
-            this.btnGerenciar_Func.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnGerenciar_Func.Location = new System.Drawing.Point(0, 55);
             this.btnGerenciar_Func.Name = "btnGerenciar_Func";
             this.btnGerenciar_Func.ShadowDecoration.Parent = this.btnGerenciar_Func;
-            this.btnGerenciar_Func.Size = new System.Drawing.Size(144, 69);
+            this.btnGerenciar_Func.Size = new System.Drawing.Size(128, 55);
             this.btnGerenciar_Func.TabIndex = 3;
             this.btnGerenciar_Func.Text = "Gerenciar Funcionário";
             this.btnGerenciar_Func.Click += new System.EventHandler(this.btnGerenciar_Func_Click);
@@ -658,10 +645,9 @@ namespace SrBolo_Prototype1.View
             this.btnCad_Func.ForeColor = System.Drawing.Color.White;
             this.btnCad_Func.HoverState.Parent = this.btnCad_Func;
             this.btnCad_Func.Location = new System.Drawing.Point(0, 0);
-            this.btnCad_Func.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCad_Func.Name = "btnCad_Func";
             this.btnCad_Func.ShadowDecoration.Parent = this.btnCad_Func;
-            this.btnCad_Func.Size = new System.Drawing.Size(144, 69);
+            this.btnCad_Func.Size = new System.Drawing.Size(128, 55);
             this.btnCad_Func.TabIndex = 0;
             this.btnCad_Func.Text = "Cadastrar Funcionário";
             this.btnCad_Func.Click += new System.EventHandler(this.btnCad_Func_Click);
@@ -678,24 +664,22 @@ namespace SrBolo_Prototype1.View
             this.BtnFuncionario.ImageOffset = new System.Drawing.Point(0, 0);
             this.BtnFuncionario.ImageRotate = 0F;
             this.BtnFuncionario.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnFuncionario.Location = new System.Drawing.Point(0, 134);
-            this.BtnFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnFuncionario.Location = new System.Drawing.Point(0, 107);
             this.BtnFuncionario.Name = "BtnFuncionario";
             this.BtnFuncionario.PressedState.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
             this.BtnFuncionario.PressedState.ImageSize = new System.Drawing.Size(64, 64);
             this.BtnFuncionario.PressedState.Parent = this.BtnFuncionario;
             this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.Size = new System.Drawing.Size(144, 112);
+            this.BtnFuncionario.Size = new System.Drawing.Size(128, 90);
             this.BtnFuncionario.TabIndex = 2;
             this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
             // 
             // guna2GradientPanel2
             // 
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(166, 161);
-            this.guna2GradientPanel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(148, 129);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(234, 125);
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(208, 100);
             this.guna2GradientPanel2.TabIndex = 1;
             // 
             // LogoMrCake
@@ -707,10 +691,9 @@ namespace SrBolo_Prototype1.View
             this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
             this.LogoMrCake.ImageRotate = 0F;
             this.LogoMrCake.Location = new System.Drawing.Point(0, 0);
-            this.LogoMrCake.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.LogoMrCake.Name = "LogoMrCake";
             this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
-            this.LogoMrCake.Size = new System.Drawing.Size(144, 134);
+            this.LogoMrCake.Size = new System.Drawing.Size(128, 107);
             this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoMrCake.TabIndex = 0;
             this.LogoMrCake.TabStop = false;
@@ -721,9 +704,9 @@ namespace SrBolo_Prototype1.View
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(1429, 57);
+            this.label3.Location = new System.Drawing.Point(1270, 46);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 22);
+            this.label3.Size = new System.Drawing.Size(55, 18);
             this.label3.TabIndex = 56;
             this.label3.Text = ":Hora:";
             // 
@@ -732,9 +715,9 @@ namespace SrBolo_Prototype1.View
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(1430, 30);
+            this.label4.Location = new System.Drawing.Point(1271, 24);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 22);
+            this.label4.Size = new System.Drawing.Size(53, 18);
             this.label4.TabIndex = 55;
             this.label4.Text = ":Data:";
             // 
@@ -742,9 +725,9 @@ namespace SrBolo_Prototype1.View
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblEmail.Location = new System.Drawing.Point(248, 57);
+            this.lblEmail.Location = new System.Drawing.Point(220, 46);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(56, 20);
+            this.lblEmail.Size = new System.Drawing.Size(50, 17);
             this.lblEmail.TabIndex = 54;
             this.lblEmail.Text = ":Email:";
             // 
@@ -754,17 +737,17 @@ namespace SrBolo_Prototype1.View
             this.lblNome.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Black;
-            this.lblNome.Location = new System.Drawing.Point(247, 29);
+            this.lblNome.Location = new System.Drawing.Point(220, 23);
             this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(82, 25);
+            this.lblNome.Size = new System.Drawing.Size(69, 20);
             this.lblNome.TabIndex = 53;
             this.lblNome.Text = ":Nome:";
             // 
             // Adm_Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1537, 960);
+            this.ClientSize = new System.Drawing.Size(1366, 768);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblEmail);
@@ -774,7 +757,6 @@ namespace SrBolo_Prototype1.View
             this.Controls.Add(this.guna2GradientPanel10);
             this.Controls.Add(this.guna2GradientPanel9);
             this.Controls.Add(this.PanelRendimentoMensal);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Adm_Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adm_Home";
@@ -791,7 +773,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel12.PerformLayout();
             this.guna2GradientPanel10.ResumeLayout(false);
             this.guna2GradientPanel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgrMaisVendidos)).EndInit();
             this.guna2GradientPanel9.ResumeLayout(false);
             this.guna2GradientPanel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
@@ -821,7 +803,7 @@ namespace SrBolo_Prototype1.View
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel7;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel8;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel10;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgrMaisVendidos;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel9;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;

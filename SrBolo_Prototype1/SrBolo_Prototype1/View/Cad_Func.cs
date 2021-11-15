@@ -127,5 +127,10 @@ namespace SrBolo_Prototype1
             txtCadFuncSenha.Text = null;
             txtCadFuncTel.Text = null;    
         }
+
+        private void Cad_Func_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
