@@ -332,6 +332,7 @@
             this.ButtonCad.Size = new System.Drawing.Size(160, 51);
             this.ButtonCad.TabIndex = 22;
             this.ButtonCad.Text = "Cadastrar";
+            this.ButtonCad.Click += new System.EventHandler(this.ButtonCad_Click);
             // 
             // ButtonLimpar
             // 

@@ -8,18 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.View;
+using SrBolo_Prototype1.Control;
 
 namespace SrBolo_Prototype1
 {
     public partial class Cad_Func: Form
     {
+        ControleFuncionario funcionario = new ControleFuncionario();
         public Cad_Func()
         {
             InitializeComponent();
             CustumizeDesing();
-            ComboBoxCadFuncCargo.Items.Add("Administrador");
-            ComboBoxCadFuncCargo.Items.Add("Balconista");
-            ComboBoxCadFuncCargo.Items.Add("Confeiteiro");
+            ComboBoxCadFuncCargo.Items.Add("gerente");
+            ComboBoxCadFuncCargo.Items.Add("confeiteiro");
+            ComboBoxCadFuncCargo.Items.Add("caixa");
         }
         private void CustumizeDesing()
         {
@@ -74,6 +76,7 @@ namespace SrBolo_Prototype1
 
         private void BtnCadFunc_Click(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -128,8 +131,24 @@ namespace SrBolo_Prototype1
             txtCadFuncTel.Text = null;    
         }
 
-        private void Cad_Func_Load(object sender, EventArgs e)
+        private void ButtonCad_Click(object sender, EventArgs e)
         {
+            if (txtCadFuncCPF.Text == "" || txtCadFuncEmail.Text == "" || txtCadFuncNome.Text == "" || txtCadFuncSenha.Text == "" || txtCadFuncTel.Text == "")
+            {
+                MessageBox.Show("Por favor, preencha todos os campos obrigatórios");
+            }
+            else
+            {
+                if (funcionario.CadastroFunc(txtCadFuncCPF.Text, ComboBoxCadFuncCargo.Text, txtCadFuncSenha.Text, txtCadFuncEmail.Text, txtCadFuncTel.Text, txtCadFuncNome.Text))
+                {
+                    MessageBox.Show("Funcionário cadastrado!", "Sucesso");
+                }
+                else
+                {
+                    MessageBox.Show("Erro no cadastro");
+                }
+
+            }
 
         }
     }

@@ -17,6 +17,14 @@ namespace SrBolo_Prototype1.Control
             funcionarios = funcionarioDAO.funcionariosCadastrados();
             return funcionarios;
         }
+        public bool CadastroFunc(string cpf, string cargo, string senha, string email, string tel, string nome)
+        {
+            return funcionarioDAO.CadastroFunc(cpf, cargo, senha, email, tel, nome);
+        }
 
+        public void excluirFuncionario(string cpf)
+        {
+            funcionarioDAO.excluirFuncionario(cpf);
+        }
     }
 }

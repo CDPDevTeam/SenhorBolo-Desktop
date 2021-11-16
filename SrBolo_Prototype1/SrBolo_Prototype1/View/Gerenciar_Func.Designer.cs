@@ -175,7 +175,6 @@
             this.GridViewFunc.RowTemplate.Height = 28;
             this.GridViewFunc.Size = new System.Drawing.Size(1325, 665);
             this.GridViewFunc.TabIndex = 23;
-            this.GridViewFunc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridViewFunc_CellContentClick);
             // 
             // ButtonAdc
             // 
@@ -222,6 +221,7 @@
             this.ButtonExc.Size = new System.Drawing.Size(180, 51);
             this.ButtonExc.TabIndex = 21;
             this.ButtonExc.Text = "Excluir";
+            this.ButtonExc.Click += new System.EventHandler(this.ButtonExc_Click);
             // 
             // PictureBoxPerfil
             // 

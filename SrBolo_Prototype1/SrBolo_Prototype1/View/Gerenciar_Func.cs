@@ -114,11 +114,6 @@ namespace SrBolo_Prototype1
             this.Hide();
         }
 
-        private void GridViewFunc_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
             Editar_Func editar_func = new Editar_Func();
@@ -132,9 +127,22 @@ namespace SrBolo_Prototype1
 
         }
 
+
+
         private void Gerenciar_Func_Load(object sender, EventArgs e)
         {
             listarFuncionarios();
+        }
+
+        private void ButtonExc_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja apagar esse funcionário?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) 
+            {
+                string cpf = GridViewFunc.CurrentRow.Cells[0].Value.ToString();
+                funcionarios.excluirFuncionario(cpf);
+                GridViewFunc.Rows.RemoveAt(GridViewFunc.CurrentRow.Index);
+                MessageBox.Show("Funcionário apagado com sucesso", "Sucesso", MessageBoxButtons.OK);
+            }
         }
     }
 }

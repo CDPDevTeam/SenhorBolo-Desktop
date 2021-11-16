@@ -130,5 +130,16 @@ namespace SrBolo_Prototype1
         {
             listarProduto();
         }
+
+        private void ButtonExc_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja apagar esse produto?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int idProd = int.Parse(GridViewProd.CurrentRow.Cells[0].Value.ToString());
+                produtos.excluirProduto(idProd);
+                GridViewProd.Rows.RemoveAt(GridViewProd.CurrentRow.Index);
+                MessageBox.Show("Produto apagado com sucesso", "Sucesso", MessageBoxButtons.OK);
+            }
+        }
     }
 }

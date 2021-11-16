@@ -11,12 +11,21 @@ namespace SrBolo_Prototype1.Control
     class ControleProduto
     {
         DataTable produtos = new DataTable();
-        ProdutoDAO ProdutoDAO = new ProdutoDAO();
+        ProdutoDAO produtoDAO = new ProdutoDAO();
 
         public DataTable produtosCadastrados()
         {
-            produtos = ProdutoDAO.produtosCadastrados();
+            produtos = produtoDAO.produtosCadastrados();
             return produtos;
+        }
+        public bool CadastroProd(int idProd, string confeito, string massa, string recheio, string cobertura, string categoria, string nome, string foto)
+        {
+            return produtoDAO.CadastroProd(idProd, confeito, massa, recheio, cobertura, categoria, nome, foto);
+        }
+
+        public void excluirProduto(int idProd)
+        {
+            produtoDAO.excluirProduto(idProd);
         }
     }
 }

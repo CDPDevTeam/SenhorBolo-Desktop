@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.View;
+using SrBolo_Prototype1.Control;
 
 namespace SrBolo_Prototype1
 {
     public partial class Cad_Prod : Form
     {
+        ControleProduto produto = new ControleProduto();
         public Cad_Prod()
         {
             InitializeComponent();
@@ -118,6 +120,26 @@ namespace SrBolo_Prototype1
             txtCadProdMassa.Text = null;
             txtCadProdNome.Text = null;
             txtCadProdRecheio.Text = null;
+        }
+
+        private void ButtonCad_Click(object sender, EventArgs e)
+        {
+            if (txtCadProdCobertura.Text == "" || txtCadProdConfeitos.Text == "" || txtCadProdID.Text == "" || txtCadProdMassa.Text == "" || txtCadProdNome.Text == "" || txtCadProdRecheio.Text == "" || ComboBoxCadProdCategoria.Text == "")
+            {
+                MessageBox.Show("Por favor, preencha todos os campos obrigatórios");
+            }
+            else
+            {
+                if (produto.CadastroProd(int.Parse(txtCadProdID.Text), txtCadProdConfeitos.Text, txtCadProdMassa.Text, txtCadProdRecheio.Text, txtCadProdCobertura.Text, ComboBoxCadProdCategoria.Text, txtCadProdNome.Text, PictureBoxCadProd.ImageLocation.ToString()))
+                {
+                    MessageBox.Show("Funcionário cadastrado!", "Sucesso");
+                }
+                else
+                {
+                    MessageBox.Show("Erro no cadastro");
+                }
+
+            }
         }
     }
 }

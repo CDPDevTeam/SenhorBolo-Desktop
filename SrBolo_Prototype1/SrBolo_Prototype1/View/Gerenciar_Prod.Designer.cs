@@ -215,6 +215,7 @@
             this.ButtonExc.Size = new System.Drawing.Size(180, 51);
             this.ButtonExc.TabIndex = 21;
             this.ButtonExc.Text = "Excluir";
+            this.ButtonExc.Click += new System.EventHandler(this.ButtonExc_Click);
             // 
             // PictureBoxPerfil
             // 

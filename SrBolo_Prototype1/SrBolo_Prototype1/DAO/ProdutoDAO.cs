@@ -7,6 +7,7 @@ using Npgsql;
 using System.Windows.Forms;
 using System.Data;
 
+
 namespace SrBolo_Prototype1.DAO
 {
     class ProdutoDAO : ClassConexao
@@ -72,6 +73,57 @@ namespace SrBolo_Prototype1.DAO
                 Desconectar();
             }
             return Dt;
+        }
+
+        public bool CadastroProd(int idProd, string confeito, string massa, string recheio, string cobertura, string categoria, string nome, string foto)
+        {
+            bool cadastro = false;
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("CadProd", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("idProd", idProd);
+                Cmd.Parameters.AddWithValue("confeito", confeito);
+                Cmd.Parameters.AddWithValue("massa", massa);
+                Cmd.Parameters.AddWithValue("recheio", recheio);
+                Cmd.Parameters.AddWithValue("cobertura", cobertura);
+                Cmd.Parameters.AddWithValue("categoria", categoria);
+                Cmd.Parameters.AddWithValue("nome", nome);
+                Cmd.Parameters.AddWithValue("foto", foto);
+                Cmd.ExecuteNonQuery();
+                cadastro = true;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro ao cadastrar: " + e.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return cadastro;
+        }
+
+        public void excluirProduto(int idProd)
+        {
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("ExcProd", Cn);
+                Cmd.Parameters.AddWithValue("prod", idProd);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "erro");
+                throw new Exception("Erro ao excluir o produto: " + e.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
         }
     }
 }
