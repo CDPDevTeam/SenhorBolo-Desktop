@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cad_Prod));
             this.PanelCadProd = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.ComboBoxCadProdMassa = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ComboBoxCadProdCobertura = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ComboBoxCadProdRecheio = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.ComboBoxCadProdConfeito = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ComboBoxCadProdCategoria = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblCadCategoria = new System.Windows.Forms.Label();
             this.lblCadProdConfeitos = new System.Windows.Forms.Label();
@@ -39,14 +43,10 @@
             this.lblCadProdID = new System.Windows.Forms.Label();
             this.lblCadProdNome = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.txtCadProdConfeitos = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCadProdCobertura = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCadProdMassa = new Guna.UI2.WinForms.Guna2TextBox();
             this.PictureBoxCadProd = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ButtonCad = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
             this.txtCadProdID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCadProdRecheio = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCadProdNome = new Guna.UI2.WinForms.Guna2TextBox();
             this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -84,6 +84,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelCadProd.BorderRadius = 40;
+            this.PanelCadProd.Controls.Add(this.ComboBoxCadProdMassa);
+            this.PanelCadProd.Controls.Add(this.ComboBoxCadProdCobertura);
+            this.PanelCadProd.Controls.Add(this.ComboBoxCadProdRecheio);
+            this.PanelCadProd.Controls.Add(this.ComboBoxCadProdConfeito);
             this.PanelCadProd.Controls.Add(this.ComboBoxCadProdCategoria);
             this.PanelCadProd.Controls.Add(this.lblCadCategoria);
             this.PanelCadProd.Controls.Add(this.lblCadProdConfeitos);
@@ -93,14 +97,10 @@
             this.PanelCadProd.Controls.Add(this.lblCadProdID);
             this.PanelCadProd.Controls.Add(this.lblCadProdNome);
             this.PanelCadProd.Controls.Add(this.lblTitle);
-            this.PanelCadProd.Controls.Add(this.txtCadProdConfeitos);
-            this.PanelCadProd.Controls.Add(this.txtCadProdCobertura);
-            this.PanelCadProd.Controls.Add(this.txtCadProdMassa);
             this.PanelCadProd.Controls.Add(this.PictureBoxCadProd);
             this.PanelCadProd.Controls.Add(this.ButtonCad);
             this.PanelCadProd.Controls.Add(this.ButtonLimpar);
             this.PanelCadProd.Controls.Add(this.txtCadProdID);
-            this.PanelCadProd.Controls.Add(this.txtCadProdRecheio);
             this.PanelCadProd.Controls.Add(this.txtCadProdNome);
             this.PanelCadProd.Location = new System.Drawing.Point(145, 82);
             this.PanelCadProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -108,6 +108,86 @@
             this.PanelCadProd.ShadowDecoration.Parent = this.PanelCadProd;
             this.PanelCadProd.Size = new System.Drawing.Size(1371, 875);
             this.PanelCadProd.TabIndex = 11;
+            // 
+            // ComboBoxCadProdMassa
+            // 
+            this.ComboBoxCadProdMassa.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxCadProdMassa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxCadProdMassa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCadProdMassa.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdMassa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdMassa.FocusedState.Parent = this.ComboBoxCadProdMassa;
+            this.ComboBoxCadProdMassa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ComboBoxCadProdMassa.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxCadProdMassa.HoverState.Parent = this.ComboBoxCadProdMassa;
+            this.ComboBoxCadProdMassa.ItemHeight = 30;
+            this.ComboBoxCadProdMassa.ItemsAppearance.Parent = this.ComboBoxCadProdMassa;
+            this.ComboBoxCadProdMassa.Location = new System.Drawing.Point(403, 250);
+            this.ComboBoxCadProdMassa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ComboBoxCadProdMassa.Name = "ComboBoxCadProdMassa";
+            this.ComboBoxCadProdMassa.ShadowDecoration.Parent = this.ComboBoxCadProdMassa;
+            this.ComboBoxCadProdMassa.Size = new System.Drawing.Size(370, 36);
+            this.ComboBoxCadProdMassa.TabIndex = 46;
+            // 
+            // ComboBoxCadProdCobertura
+            // 
+            this.ComboBoxCadProdCobertura.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxCadProdCobertura.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxCadProdCobertura.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCadProdCobertura.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdCobertura.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdCobertura.FocusedState.Parent = this.ComboBoxCadProdCobertura;
+            this.ComboBoxCadProdCobertura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ComboBoxCadProdCobertura.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxCadProdCobertura.HoverState.Parent = this.ComboBoxCadProdCobertura;
+            this.ComboBoxCadProdCobertura.ItemHeight = 30;
+            this.ComboBoxCadProdCobertura.ItemsAppearance.Parent = this.ComboBoxCadProdCobertura;
+            this.ComboBoxCadProdCobertura.Location = new System.Drawing.Point(798, 250);
+            this.ComboBoxCadProdCobertura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ComboBoxCadProdCobertura.Name = "ComboBoxCadProdCobertura";
+            this.ComboBoxCadProdCobertura.ShadowDecoration.Parent = this.ComboBoxCadProdCobertura;
+            this.ComboBoxCadProdCobertura.Size = new System.Drawing.Size(370, 36);
+            this.ComboBoxCadProdCobertura.TabIndex = 45;
+            // 
+            // ComboBoxCadProdRecheio
+            // 
+            this.ComboBoxCadProdRecheio.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxCadProdRecheio.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxCadProdRecheio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCadProdRecheio.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdRecheio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdRecheio.FocusedState.Parent = this.ComboBoxCadProdRecheio;
+            this.ComboBoxCadProdRecheio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ComboBoxCadProdRecheio.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxCadProdRecheio.HoverState.Parent = this.ComboBoxCadProdRecheio;
+            this.ComboBoxCadProdRecheio.ItemHeight = 30;
+            this.ComboBoxCadProdRecheio.ItemsAppearance.Parent = this.ComboBoxCadProdRecheio;
+            this.ComboBoxCadProdRecheio.Location = new System.Drawing.Point(403, 370);
+            this.ComboBoxCadProdRecheio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ComboBoxCadProdRecheio.Name = "ComboBoxCadProdRecheio";
+            this.ComboBoxCadProdRecheio.ShadowDecoration.Parent = this.ComboBoxCadProdRecheio;
+            this.ComboBoxCadProdRecheio.Size = new System.Drawing.Size(370, 36);
+            this.ComboBoxCadProdRecheio.TabIndex = 44;
+            // 
+            // ComboBoxCadProdConfeito
+            // 
+            this.ComboBoxCadProdConfeito.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxCadProdConfeito.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxCadProdConfeito.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCadProdConfeito.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdConfeito.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadProdConfeito.FocusedState.Parent = this.ComboBoxCadProdConfeito;
+            this.ComboBoxCadProdConfeito.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ComboBoxCadProdConfeito.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxCadProdConfeito.HoverState.Parent = this.ComboBoxCadProdConfeito;
+            this.ComboBoxCadProdConfeito.ItemHeight = 30;
+            this.ComboBoxCadProdConfeito.ItemsAppearance.Parent = this.ComboBoxCadProdConfeito;
+            this.ComboBoxCadProdConfeito.Location = new System.Drawing.Point(798, 370);
+            this.ComboBoxCadProdConfeito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ComboBoxCadProdConfeito.Name = "ComboBoxCadProdConfeito";
+            this.ComboBoxCadProdConfeito.ShadowDecoration.Parent = this.ComboBoxCadProdConfeito;
+            this.ComboBoxCadProdConfeito.Size = new System.Drawing.Size(370, 36);
+            this.ComboBoxCadProdConfeito.TabIndex = 43;
             // 
             // ComboBoxCadProdCategoria
             // 
@@ -220,81 +300,6 @@
             this.lblTitle.TabIndex = 32;
             this.lblTitle.Text = "Cadastrar funcionário";
             // 
-            // txtCadProdConfeitos
-            // 
-            this.txtCadProdConfeitos.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadProdConfeitos.DefaultText = "";
-            this.txtCadProdConfeitos.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadProdConfeitos.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadProdConfeitos.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdConfeitos.DisabledState.Parent = this.txtCadProdConfeitos;
-            this.txtCadProdConfeitos.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdConfeitos.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdConfeitos.FocusedState.Parent = this.txtCadProdConfeitos;
-            this.txtCadProdConfeitos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtCadProdConfeitos.ForeColor = System.Drawing.Color.Black;
-            this.txtCadProdConfeitos.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdConfeitos.HoverState.Parent = this.txtCadProdConfeitos;
-            this.txtCadProdConfeitos.Location = new System.Drawing.Point(798, 370);
-            this.txtCadProdConfeitos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadProdConfeitos.Name = "txtCadProdConfeitos";
-            this.txtCadProdConfeitos.PasswordChar = '\0';
-            this.txtCadProdConfeitos.PlaceholderText = "";
-            this.txtCadProdConfeitos.SelectedText = "";
-            this.txtCadProdConfeitos.ShadowDecoration.Parent = this.txtCadProdConfeitos;
-            this.txtCadProdConfeitos.Size = new System.Drawing.Size(364, 36);
-            this.txtCadProdConfeitos.TabIndex = 31;
-            // 
-            // txtCadProdCobertura
-            // 
-            this.txtCadProdCobertura.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadProdCobertura.DefaultText = "";
-            this.txtCadProdCobertura.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadProdCobertura.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadProdCobertura.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdCobertura.DisabledState.Parent = this.txtCadProdCobertura;
-            this.txtCadProdCobertura.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdCobertura.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdCobertura.FocusedState.Parent = this.txtCadProdCobertura;
-            this.txtCadProdCobertura.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtCadProdCobertura.ForeColor = System.Drawing.Color.Black;
-            this.txtCadProdCobertura.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdCobertura.HoverState.Parent = this.txtCadProdCobertura;
-            this.txtCadProdCobertura.Location = new System.Drawing.Point(798, 250);
-            this.txtCadProdCobertura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadProdCobertura.Name = "txtCadProdCobertura";
-            this.txtCadProdCobertura.PasswordChar = '\0';
-            this.txtCadProdCobertura.PlaceholderText = "";
-            this.txtCadProdCobertura.SelectedText = "";
-            this.txtCadProdCobertura.ShadowDecoration.Parent = this.txtCadProdCobertura;
-            this.txtCadProdCobertura.Size = new System.Drawing.Size(364, 36);
-            this.txtCadProdCobertura.TabIndex = 29;
-            // 
-            // txtCadProdMassa
-            // 
-            this.txtCadProdMassa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadProdMassa.DefaultText = "";
-            this.txtCadProdMassa.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadProdMassa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadProdMassa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdMassa.DisabledState.Parent = this.txtCadProdMassa;
-            this.txtCadProdMassa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdMassa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdMassa.FocusedState.Parent = this.txtCadProdMassa;
-            this.txtCadProdMassa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtCadProdMassa.ForeColor = System.Drawing.Color.Black;
-            this.txtCadProdMassa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdMassa.HoverState.Parent = this.txtCadProdMassa;
-            this.txtCadProdMassa.Location = new System.Drawing.Point(403, 250);
-            this.txtCadProdMassa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadProdMassa.Name = "txtCadProdMassa";
-            this.txtCadProdMassa.PasswordChar = '\0';
-            this.txtCadProdMassa.PlaceholderText = "";
-            this.txtCadProdMassa.SelectedText = "";
-            this.txtCadProdMassa.ShadowDecoration.Parent = this.txtCadProdMassa;
-            this.txtCadProdMassa.Size = new System.Drawing.Size(370, 36);
-            this.txtCadProdMassa.TabIndex = 28;
-            // 
             // PictureBoxCadProd
             // 
             this.PictureBoxCadProd.BackColor = System.Drawing.Color.Gray;
@@ -381,31 +386,6 @@
             this.txtCadProdID.ShadowDecoration.Parent = this.txtCadProdID;
             this.txtCadProdID.Size = new System.Drawing.Size(364, 36);
             this.txtCadProdID.TabIndex = 18;
-            // 
-            // txtCadProdRecheio
-            // 
-            this.txtCadProdRecheio.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadProdRecheio.DefaultText = "";
-            this.txtCadProdRecheio.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadProdRecheio.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadProdRecheio.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdRecheio.DisabledState.Parent = this.txtCadProdRecheio;
-            this.txtCadProdRecheio.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadProdRecheio.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdRecheio.FocusedState.Parent = this.txtCadProdRecheio;
-            this.txtCadProdRecheio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.txtCadProdRecheio.ForeColor = System.Drawing.Color.Black;
-            this.txtCadProdRecheio.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadProdRecheio.HoverState.Parent = this.txtCadProdRecheio;
-            this.txtCadProdRecheio.Location = new System.Drawing.Point(403, 370);
-            this.txtCadProdRecheio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadProdRecheio.Name = "txtCadProdRecheio";
-            this.txtCadProdRecheio.PasswordChar = '\0';
-            this.txtCadProdRecheio.PlaceholderText = "";
-            this.txtCadProdRecheio.SelectedText = "";
-            this.txtCadProdRecheio.ShadowDecoration.Parent = this.txtCadProdRecheio;
-            this.txtCadProdRecheio.Size = new System.Drawing.Size(370, 36);
-            this.txtCadProdRecheio.TabIndex = 8;
             // 
             // txtCadProdNome
             // 
@@ -810,7 +790,6 @@
         private Guna.UI2.WinForms.Guna2Button ButtonCad;
         private Guna.UI2.WinForms.Guna2Button ButtonLimpar;
         private Guna.UI2.WinForms.Guna2TextBox txtCadProdID;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadProdRecheio;
         private Guna.UI2.WinForms.Guna2TextBox txtCadProdNome;
         private Guna.UI2.WinForms.Guna2PictureBox PictureBoxCadProd;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
@@ -824,13 +803,10 @@
         private Guna.UI2.WinForms.Guna2ImageButton BtnFuncionario;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
         private Guna.UI2.WinForms.Guna2PictureBox LogoMrCake;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadProdMassa;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadProdCobertura;
         private Guna.UI2.WinForms.Guna2Panel PanelPedidos;
         private Guna.UI2.WinForms.Guna2Button btnGerenciar_PedE;
         private Guna.UI2.WinForms.Guna2ImageButton BtnPedidos;
         private Guna.UI2.WinForms.Guna2Button btnGerenciar_PedF;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadProdConfeitos;
         private System.Windows.Forms.Label lblHora;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Label lblEmail;
@@ -844,5 +820,9 @@
         private System.Windows.Forms.Label lblCadProdID;
         private System.Windows.Forms.Label lblCadProdNome;
         private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadProdCategoria;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadProdMassa;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadProdCobertura;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadProdRecheio;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadProdConfeito;
     }
 }

@@ -16,6 +16,8 @@ namespace SrBolo_Prototype1
     {
         ControleFuncionario funcionarios = new ControleFuncionario();
         DataTable funcionariosCadastrados = new DataTable();
+
+
         public Gerenciar_Func()
         {
             InitializeComponent();
@@ -143,6 +145,13 @@ namespace SrBolo_Prototype1
                 GridViewFunc.Rows.RemoveAt(GridViewFunc.CurrentRow.Index);
                 MessageBox.Show("Funcionário apagado com sucesso", "Sucesso", MessageBoxButtons.OK);
             }
+        }
+
+        private void ButtonAdc_Click(object sender, EventArgs e)
+        {
+            Cad_Func cad_Func = new Cad_Func();
+            cad_Func.Show();
+            this.Hide();
         }
     }
 }

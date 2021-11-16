@@ -144,6 +144,7 @@ namespace SrBolo_Prototype1
             this.ButtonEdit.Size = new System.Drawing.Size(180, 51);
             this.ButtonEdit.TabIndex = 22;
             this.ButtonEdit.Text = "Editar";
+            this.ButtonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
             // ButtonLimpar
             // 
@@ -652,6 +653,7 @@ namespace SrBolo_Prototype1
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Editar_Func";
             this.Text = "Editar_Func";
+            this.Load += new System.EventHandler(this.Editar_Func_Load);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             this.guna2CustomGradientPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();

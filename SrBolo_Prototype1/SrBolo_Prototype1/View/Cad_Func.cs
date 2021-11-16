@@ -74,12 +74,6 @@ namespace SrBolo_Prototype1
             ShowSubmenu(PanelPedidos);
         }
 
-        private void BtnCadFunc_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
         private void BtnGerFunc_Click(object sender, EventArgs e)
         {
             Gerenciar_Func gerenciar_Func = new Gerenciar_Func();
@@ -124,11 +118,17 @@ namespace SrBolo_Prototype1
 
         private void ButtonLimpar_Click(object sender, EventArgs e)
         {
+            limpar();
+        }
+
+        public void limpar() 
+        {
             txtCadFuncCPF.Text = null;
             txtCadFuncEmail.Text = null;
             txtCadFuncNome.Text = null;
             txtCadFuncSenha.Text = null;
-            txtCadFuncTel.Text = null;    
+            txtCadFuncTel.Text = null;
+            ComboBoxCadFuncCargo.Text = null;
         }
 
         private void ButtonCad_Click(object sender, EventArgs e)
@@ -147,9 +147,8 @@ namespace SrBolo_Prototype1
                 {
                     MessageBox.Show("Erro no cadastro");
                 }
-
             }
-
+            limpar();
         }
     }
 }

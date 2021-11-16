@@ -131,7 +131,7 @@
             this.txtGerFuncSearch.Name = "txtGerFuncSearch";
             this.txtGerFuncSearch.PasswordChar = '\0';
             this.txtGerFuncSearch.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtGerFuncSearch.PlaceholderText = "Digite ID, Categoria ou Nome";
+            this.txtGerFuncSearch.PlaceholderText = "Digite CPF ou Nome";
             this.txtGerFuncSearch.SelectedText = "";
             this.txtGerFuncSearch.ShadowDecoration.Parent = this.txtGerFuncSearch;
             this.txtGerFuncSearch.Size = new System.Drawing.Size(454, 46);
@@ -198,6 +198,7 @@
             this.ButtonAdc.Size = new System.Drawing.Size(180, 51);
             this.ButtonAdc.TabIndex = 22;
             this.ButtonAdc.Text = "Adicionar";
+            this.ButtonAdc.Click += new System.EventHandler(this.ButtonAdc_Click);
             // 
             // ButtonExc
             // 

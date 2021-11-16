@@ -141,5 +141,12 @@ namespace SrBolo_Prototype1
                 MessageBox.Show("Produto apagado com sucesso", "Sucesso", MessageBoxButtons.OK);
             }
         }
+
+        private void ButtonAdc_Click(object sender, EventArgs e)
+        {
+            Cad_Prod cad_Prod = new Cad_Prod();
+            cad_Prod.Show();
+            this.Hide();
+        }
     }
 }

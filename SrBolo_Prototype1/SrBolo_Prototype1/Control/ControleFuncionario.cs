@@ -22,6 +22,13 @@ namespace SrBolo_Prototype1.Control
             return funcionarioDAO.CadastroFunc(cpf, cargo, senha, email, tel, nome);
         }
 
+        public bool updateFuncionario() 
+        {
+            bool update;
+            update = funcionarioDAO.updateFuncionario();
+            return update;
+        }
+
         public void excluirFuncionario(string cpf)
         {
             funcionarioDAO.excluirFuncionario(cpf);

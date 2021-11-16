@@ -34,8 +34,7 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.txtGerRecSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.GridViewRec = new System.Windows.Forms.DataGridView();
-            this.ButtonAdc = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonExc = new Guna.UI2.WinForms.Guna2Button();
+            this.ButtonExibir = new Guna.UI2.WinForms.Guna2Button();
             this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.PanelPedidos = new Guna.UI2.WinForms.Guna2Panel();
@@ -73,8 +72,7 @@
             this.PanelGerRec.Controls.Add(this.lblTitle);
             this.PanelGerRec.Controls.Add(this.txtGerRecSearch);
             this.PanelGerRec.Controls.Add(this.GridViewRec);
-            this.PanelGerRec.Controls.Add(this.ButtonAdc);
-            this.PanelGerRec.Controls.Add(this.ButtonExc);
+            this.PanelGerRec.Controls.Add(this.ButtonExibir);
             this.PanelGerRec.Location = new System.Drawing.Point(145, 82);
             this.PanelGerRec.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.PanelGerRec.Name = "PanelGerRec";
@@ -144,51 +142,28 @@
             this.GridViewRec.Size = new System.Drawing.Size(1325, 665);
             this.GridViewRec.TabIndex = 23;
             // 
-            // ButtonAdc
+            // ButtonExibir
             // 
-            this.ButtonAdc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonAdc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonAdc.CheckedState.Parent = this.ButtonAdc;
-            this.ButtonAdc.CustomImages.Parent = this.ButtonAdc;
-            this.ButtonAdc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonAdc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonAdc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButtonAdc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButtonAdc.DisabledState.Parent = this.ButtonAdc;
-            this.ButtonAdc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.ButtonAdc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.ButtonAdc.ForeColor = System.Drawing.Color.White;
-            this.ButtonAdc.HoverState.Parent = this.ButtonAdc;
-            this.ButtonAdc.Location = new System.Drawing.Point(1170, 754);
-            this.ButtonAdc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtonAdc.Name = "ButtonAdc";
-            this.ButtonAdc.ShadowDecoration.Parent = this.ButtonAdc;
-            this.ButtonAdc.Size = new System.Drawing.Size(180, 51);
-            this.ButtonAdc.TabIndex = 22;
-            this.ButtonAdc.Text = "Adicionar";
-            // 
-            // ButtonExc
-            // 
-            this.ButtonExc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonExc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonExc.CheckedState.Parent = this.ButtonExc;
-            this.ButtonExc.CustomImages.Parent = this.ButtonExc;
-            this.ButtonExc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonExc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonExc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButtonExc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButtonExc.DisabledState.Parent = this.ButtonExc;
-            this.ButtonExc.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonExc.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonExc.ForeColor = System.Drawing.Color.White;
-            this.ButtonExc.HoverState.Parent = this.ButtonExc;
-            this.ButtonExc.Location = new System.Drawing.Point(955, 754);
-            this.ButtonExc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtonExc.Name = "ButtonExc";
-            this.ButtonExc.ShadowDecoration.Parent = this.ButtonExc;
-            this.ButtonExc.Size = new System.Drawing.Size(180, 51);
-            this.ButtonExc.TabIndex = 21;
-            this.ButtonExc.Text = "Excluir";
+            this.ButtonExibir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.ButtonExibir.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
+            this.ButtonExibir.CheckedState.Parent = this.ButtonExibir;
+            this.ButtonExibir.CustomImages.Parent = this.ButtonExibir;
+            this.ButtonExibir.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonExibir.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonExibir.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ButtonExibir.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ButtonExibir.DisabledState.Parent = this.ButtonExibir;
+            this.ButtonExibir.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.ButtonExibir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.ButtonExibir.ForeColor = System.Drawing.Color.White;
+            this.ButtonExibir.HoverState.Parent = this.ButtonExibir;
+            this.ButtonExibir.Location = new System.Drawing.Point(1170, 754);
+            this.ButtonExibir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ButtonExibir.Name = "ButtonExibir";
+            this.ButtonExibir.ShadowDecoration.Parent = this.ButtonExibir;
+            this.ButtonExibir.Size = new System.Drawing.Size(180, 51);
+            this.ButtonExibir.TabIndex = 22;
+            this.ButtonExibir.Text = "Exibir";
             // 
             // PictureBoxPerfil
             // 
@@ -568,8 +543,7 @@
         private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelGerRec;
         private Guna.UI2.WinForms.Guna2TextBox txtGerRecSearch;
         private System.Windows.Forms.DataGridView GridViewRec;
-        private Guna.UI2.WinForms.Guna2Button ButtonAdc;
-        private Guna.UI2.WinForms.Guna2Button ButtonExc;
+        private Guna.UI2.WinForms.Guna2Button ButtonExibir;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2Panel PanelPedidos;
         private Guna.UI2.WinForms.Guna2Button btnGerenciar_PedF;

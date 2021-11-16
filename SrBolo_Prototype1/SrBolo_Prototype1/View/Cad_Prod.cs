@@ -15,11 +15,70 @@ namespace SrBolo_Prototype1
     public partial class Cad_Prod : Form
     {
         ControleProduto produto = new ControleProduto();
+        ControleConfeito confeito = new ControleConfeito();
+        ControleCobertura cobertura = new ControleCobertura();
+        ControleMassa massa = new ControleMassa();
+        ControleRecheio recheio = new ControleRecheio();
+        ControleCategoria categoria = new ControleCategoria();
         public Cad_Prod()
         {
             InitializeComponent();
             CustumizeDesing();
+            comboIDConfeito();
+            comboIDCobertura();
+            comboIDMassa();
+            comboIDRecheio();
+            comboIDCategoria();
         }
+
+        public void comboIDCategoria()
+        {
+            DataTable Dt = new DataTable();
+            Dt = categoria.getCategoria();
+            for (int i = 0; i < Dt.Rows.Count; i++)
+            {
+                ComboBoxCadProdCategoria.Items.Add(Dt.Rows[i]["nome_catprod"].ToString());
+            }
+        }
+
+        public void comboIDConfeito()
+        {
+            DataTable Dt = new DataTable();
+            Dt = confeito.getConfeitos();
+            for (int i = 0; i < Dt.Rows.Count; i++) {
+                ComboBoxCadProdConfeito.Items.Add(Dt.Rows[i]["confeito_bolo"].ToString());
+            }
+        }
+        public void comboIDCobertura()
+        {
+            DataTable Dt = new DataTable();
+            Dt = cobertura.getCobertura();
+            for (int i = 0; i < Dt.Rows.Count; i++)
+            {
+                ComboBoxCadProdCobertura.Items.Add(Dt.Rows[i]["cobertura_bolo"].ToString());
+            }
+        }
+
+        public void comboIDRecheio()
+        {
+            DataTable Dt = new DataTable();
+            Dt = recheio.getRecheio();
+            for (int i = 0; i < Dt.Rows.Count; i++)
+            {
+                ComboBoxCadProdRecheio.Items.Add(Dt.Rows[i]["recheio_bolo"].ToString());
+            }
+        }
+
+        public void comboIDMassa()
+        {
+            DataTable Dt = new DataTable();
+            Dt = massa.getMassa();
+            for (int i = 0; i < Dt.Rows.Count; i++)
+            {
+                ComboBoxCadProdMassa.Items.Add(Dt.Rows[i]["massa_bolo"].ToString());
+            }
+        }
+
         private void CustumizeDesing()
         {
             PanelProduto.Visible = false;
@@ -114,23 +173,23 @@ namespace SrBolo_Prototype1
 
         private void ButtonLimpar_Click(object sender, EventArgs e)
         {
-            txtCadProdCobertura.Text = null;
+            ComboBoxCadProdCobertura.Text = null;
             txtCadProdID.Text = null;
-            txtCadProdConfeitos.Text = null;
-            txtCadProdMassa.Text = null;
+            ComboBoxCadProdConfeito.Text = null;
+            ComboBoxCadProdMassa.Text = null;
             txtCadProdNome.Text = null;
-            txtCadProdRecheio.Text = null;
+            ComboBoxCadProdRecheio.Text = null;
         }
 
         private void ButtonCad_Click(object sender, EventArgs e)
         {
-            if (txtCadProdCobertura.Text == "" || txtCadProdConfeitos.Text == "" || txtCadProdID.Text == "" || txtCadProdMassa.Text == "" || txtCadProdNome.Text == "" || txtCadProdRecheio.Text == "" || ComboBoxCadProdCategoria.Text == "")
+            if (ComboBoxCadProdCobertura.Text == "" || ComboBoxCadProdRecheio.Text == "" || txtCadProdID.Text == "" || ComboBoxCadProdMassa.Text == "" || txtCadProdNome.Text == "" || ComboBoxCadProdConfeito.Text == "" || ComboBoxCadProdCategoria.Text == "")
             {
                 MessageBox.Show("Por favor, preencha todos os campos obrigatórios");
             }
             else
             {
-                if (produto.CadastroProd(int.Parse(txtCadProdID.Text), txtCadProdConfeitos.Text, txtCadProdMassa.Text, txtCadProdRecheio.Text, txtCadProdCobertura.Text, ComboBoxCadProdCategoria.Text, txtCadProdNome.Text, PictureBoxCadProd.ImageLocation.ToString()))
+                if (produto.CadastroProd(int.Parse(txtCadProdID.Text), ComboBoxCadProdConfeito.Text, ComboBoxCadProdMassa.Text, ComboBoxCadProdRecheio.Text, ComboBoxCadProdConfeito.Text, ComboBoxCadProdCategoria.Text, txtCadProdNome.Text, PictureBoxCadProd.ImageLocation.ToString()))
                 {
                     MessageBox.Show("Funcionário cadastrado!", "Sucesso");
                 }

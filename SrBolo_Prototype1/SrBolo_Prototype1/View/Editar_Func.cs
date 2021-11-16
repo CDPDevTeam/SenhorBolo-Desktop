@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.View;
+using SrBolo_Prototype1.Model;
+using SrBolo_Prototype1.Control;
 
 namespace SrBolo_Prototype1
 {
     public partial class Editar_Func : Form
     {
+        ControleFuncionario funcionarios = new ControleFuncionario();
         public Editar_Func()
         {
             InitializeComponent();
@@ -125,6 +128,30 @@ namespace SrBolo_Prototype1
             txtEditFuncNome.Text = null;
             txtEditFuncSenha.Text = null;
             txtEditFuncTel.Text = null;
+        }
+
+        private void ButtonEdit_Click(object sender, EventArgs e)
+        {
+            bool update;
+            Funcionario.Cpf = txtEditFuncCPF.Text;
+            Funcionario.Cargo = ComboBoxEditFuncCargo.Text;
+            Funcionario.Senha = txtEditFuncSenha.Text;
+            Funcionario.Email = txtEditFuncEmail.Text;
+            Funcionario.Nome = txtEditFuncNome.Text;
+            Funcionario.Telefone = txtEditFuncTel.Text;
+            update = funcionarios.updateFuncionario();
+            if (update == true) 
+            {
+                MessageBox.Show("Funcionario alterado com sucesso!");
+            }
+
+        }
+
+        private void Editar_Func_Load(object sender, EventArgs e)
+        {
+            ComboBoxEditFuncCargo.Items.Add("gerente");
+            ComboBoxEditFuncCargo.Items.Add("caixa");
+            ComboBoxEditFuncCargo.Items.Add("confeiteiro");
         }
     }
 }

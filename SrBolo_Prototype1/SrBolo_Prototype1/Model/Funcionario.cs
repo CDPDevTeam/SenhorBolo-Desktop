@@ -8,26 +8,25 @@ namespace SrBolo_Prototype1.Model
 {
     public abstract class Funcionario
     {
-        public string Cpf { get; set; }
-        public string Nome { get; set; }
-        public string Rg { get; set; }
-        public string Email { get; set; }
-        public string Telefone { get; set; }
-        public string Senha { get; set; }
-
+        public static string Cpf { get; set; }
+        public static string Nome { get; set; }
+        public static string Email { get; set; }
+        public static string Telefone { get; set; }
+        public static string Senha { get; set; }
+        public static   string Cargo { get; set; }
         public Funcionario()
         {
 
         }
 
-        public Funcionario(string cpf, string nome, string rg, string email, string telefone, string senha)
+        public Funcionario(string cpf, string nome, string email, string telefone, string senha, string cargo)
         {
             Cpf = cpf;
             Nome = nome;
-            Rg = rg;
             Email = email;
             Telefone = telefone;
             Senha = senha;
+            Cargo = cargo;
         }
     }
 

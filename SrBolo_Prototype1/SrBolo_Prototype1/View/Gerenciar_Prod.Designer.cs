@@ -192,6 +192,7 @@
             this.ButtonAdc.Size = new System.Drawing.Size(180, 51);
             this.ButtonAdc.TabIndex = 22;
             this.ButtonAdc.Text = "Adicionar";
+            this.ButtonAdc.Click += new System.EventHandler(this.ButtonAdc_Click);
             // 
             // ButtonExc
             // 

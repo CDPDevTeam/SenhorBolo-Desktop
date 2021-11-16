@@ -84,12 +84,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\ControleCategoria.cs" />
+    <Compile Include="Control\ControleCobertura.cs" />
+    <Compile Include="Control\ControleConfeito.cs" />
     <Compile Include="Control\ControleFuncionario.cs" />
+    <Compile Include="Control\ControleMassa.cs" />
     <Compile Include="Control\ControlePedidos.cs" />
     <Compile Include="Control\ControleProduto.cs" />
+    <Compile Include="Control\ControleRecheio.cs" />
+    <Compile Include="DAO\CategoriaDAO.cs" />
+    <Compile Include="DAO\CoberturaDAO.cs" />
+    <Compile Include="DAO\ConfeitoDAO.cs" />
     <Compile Include="DAO\FuncionarioDAO.cs" />
+    <Compile Include="DAO\MassaDAO.cs" />
     <Compile Include="DAO\PedidosDAO.cs" />
     <Compile Include="DAO\ProdutoDAO.cs" />
+    <Compile Include="DAO\RecheioDAO.cs" />
     <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="Model\Fornecedor.cs" />
     <Compile Include="Model\PedidoE.cs" />

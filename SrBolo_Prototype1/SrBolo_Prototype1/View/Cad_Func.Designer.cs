@@ -625,7 +625,6 @@
             this.BtnCad_Func.Size = new System.Drawing.Size(144, 69);
             this.BtnCad_Func.TabIndex = 0;
             this.BtnCad_Func.Text = "Cadastrar Funcionário";
-            this.BtnCad_Func.Click += new System.EventHandler(this.BtnCadFunc_Click);
             // 
             // BtnFuncionario
             // 

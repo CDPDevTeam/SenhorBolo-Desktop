@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SrBolo_Prototype1.common;
 
 namespace SrBolo_Prototype1.DAO
 {
@@ -61,6 +62,34 @@ namespace SrBolo_Prototype1.DAO
                 Desconectar();
             }
             return cadastro;
+        }
+
+        public bool updateFuncionario()
+        {
+            bool update = false;
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("UpdFunc", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("cpf", Funcionario.Cpf);
+                Cmd.Parameters.AddWithValue("cargo", Funcionario.Cargo);
+                Cmd.Parameters.AddWithValue("senha", Funcionario.Senha);
+                Cmd.Parameters.AddWithValue("email", Funcionario.Email);
+                Cmd.Parameters.AddWithValue("telefone", Funcionario.Telefone);
+                Cmd.Parameters.AddWithValue("nome", Funcionario.Nome);
+                Cmd.ExecuteNonQuery();
+                update = true;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro ao dar update: " + e.Message);
+            }
+            finally 
+            {
+                Desconectar(); 
+            }
+            return update;
         }
 
         public void excluirFuncionario(string cpf)
