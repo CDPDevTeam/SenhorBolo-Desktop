@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 
 namespace SrBolo_Prototype1.Model
 {
-    class Balconista : Funcionario
+    public static class Balconista 
     {
-        public Balconista(string cpf, string nome, string rg, string email, string telefone, string senha)
-            : base(cpf, nome, rg, email, telefone, senha)
-        {
+        public static string Cpf { get; set; }
+        public static string Nome { get; set; }
+        public static string Email { get; set; }
+        public static string Telefone { get; set; }
+        public static string Senha { get; set; }
+        public static string Cargo { get; set; }
 
-        }
+
     }
 }

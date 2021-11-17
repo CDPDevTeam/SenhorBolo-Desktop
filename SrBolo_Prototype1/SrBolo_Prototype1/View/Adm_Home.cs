@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.DAO;
+using SrBolo_Prototype1.Model;
+using SrBolo_Prototype1.View;
+using System.Globalization;
 
 namespace SrBolo_Prototype1.View
 {
@@ -128,9 +131,11 @@ namespace SrBolo_Prototype1.View
 
         private void Adm_Home_Load(object sender, EventArgs e)
         {
-            //lblVendasMes.Text = produto.ContagemVendasMes().ToString();
+            lblVendasMes.Text = "R$"+produto.VendasMes().ToString("F2",CultureInfo.CurrentCulture);
             //lblUsuarios.Text = usuario.UsuariosCadastrados().ToString();
             dgrMaisVendidos.DataSource = produto.MaisVendidos();
+
+            lblNome.Text = Gerente.Nome;
 
         }
     }

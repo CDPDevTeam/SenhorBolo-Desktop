@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SrBolo_Prototype1.Model;
+using SrBolo_Prototype1.DAO;
+using SrBolo_Prototype1.View;
+
 
 namespace SrBolo_Prototype1
 {
@@ -76,6 +80,11 @@ namespace SrBolo_Prototype1
         private void BtnReceita_Click(object sender, EventArgs e)
         {
             ShowSubmenu(PanelReceita);
+        }
+
+        private void Conf_home_Load(object sender, EventArgs e)
+        {
+            lblNome.Text = Confeiteiro.Nome;
         }
     }
 }

@@ -15,37 +15,50 @@ namespace SrBolo_Prototype1.DAO
         public bool Acesso = false; //Informa se o login é valido
         public bool Acessar(string cargo, string login, String senha)
         {
-            Funcionario user;
+            
+            object[] result = new object[2];
             try
             {
+                
                 Conectar();
                 
                 NpgsqlCommand Cmd = new NpgsqlCommand("Login", Cn); //Procedure do login
                 Cmd.CommandType = CommandType.StoredProcedure;
-                Cmd.Parameters.AddWithValue("@cargo", cargo);
-                Cmd.Parameters.AddWithValue("@cpf", login);
-                Cmd.Parameters.AddWithValue("@senha", senha);
+                Cmd.Parameters.AddWithValue("cpfs_func", login);
+                Cmd.Parameters.AddWithValue("senhas_func", senha);
+                Cmd.Parameters.AddWithValue("cargos_func", cargo);
                 
                 Dr = Cmd.ExecuteReader();
 
-                Funcionario func;
+                
                 if (Dr.HasRows) //Checa se retorna valor
                 {
                     while (Dr.Read())
                     {
-                        
+
                         if (cargo == "Gerente")
                         {
-                            func = new Gerente(Dr.GetString(0), Dr.GetString(1), Dr.GetString(2), Dr.GetString(3), Dr.GetString(4), Dr.GetString(5));
-                        }else if (cargo == "Balconista"){
-                            func = new Balconista(Dr.GetString(0), Dr.GetString(1), Dr.GetString(2), Dr.GetString(3), Dr.GetString(4), Dr.GetString(5));
+                            Gerente.Cpf = Dr.GetString(0);
+                            Gerente.Nome = Dr.GetString(1);
+                            Gerente.Email = Dr.GetString(2);
+                            Gerente.Senha = Dr.GetString(3);
+                            Gerente.Cargo = Dr.GetString(4);
                         }
-                        else{
-                            func = new Confeiteiro(Dr.GetString(0), Dr.GetString(1), Dr.GetString(2), Dr.GetString(3), Dr.GetString(4), Dr.GetString(5));
+                        else if (cargo == "Balconista") {
+                            Balconista.Cpf = Dr.GetString(0);
+                            Balconista.Nome = Dr.GetString(1);
+                            Balconista.Email = Dr.GetString(2);
+                            Balconista.Senha = Dr.GetString(3);
+                            Balconista.Cargo = Dr.GetString(4);
                         }
-
+                        else {
+                            Confeiteiro.Cpf = Dr.GetString(0);
+                            Confeiteiro.Nome = Dr.GetString(1);
+                            Confeiteiro.Email = Dr.GetString(2);
+                            Confeiteiro.Senha = Dr.GetString(3);
+                            Confeiteiro.Cargo = Dr.GetString(4);
+                        }
                     }
-
                     Acesso = true;
                 }
             }
@@ -57,12 +70,13 @@ namespace SrBolo_Prototype1.DAO
             {
                 Desconectar();
             }
+            
             return Acesso;
         }
 
         public void instaciar()
         {
-            Funcionario func;
+            
 
         }
     }

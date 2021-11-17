@@ -75,7 +75,7 @@ namespace SrBolo_Prototype1
             this.label1.Location = new System.Drawing.Point(334, 265);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(357, 36);
+            this.label1.Size = new System.Drawing.Size(307, 29);
             this.label1.TabIndex = 29;
             this.label1.Text = "Selecione o seu usuário";
             // 
@@ -84,13 +84,13 @@ namespace SrBolo_Prototype1
             this.cbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUser.FormattingEnabled = true;
             this.cbUser.Items.AddRange(new object[] {
-            "Caixa",
-            "Administrador",
-            "Confeiteiro"});
+            "caixa",
+            "gerente",
+            "confeiteiro"});
             this.cbUser.Location = new System.Drawing.Point(327, 308);
             this.cbUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbUser.Name = "cbUser";
-            this.cbUser.Size = new System.Drawing.Size(365, 39);
+            this.cbUser.Size = new System.Drawing.Size(365, 34);
             this.cbUser.TabIndex = 30;
             // 
             // label2
@@ -100,7 +100,7 @@ namespace SrBolo_Prototype1
             this.label2.Location = new System.Drawing.Point(321, 359);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 36);
+            this.label2.Size = new System.Drawing.Size(75, 29);
             this.label2.TabIndex = 31;
             this.label2.Text = "Login";
             // 
@@ -161,7 +161,7 @@ namespace SrBolo_Prototype1
             this.label3.Location = new System.Drawing.Point(321, 451);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 36);
+            this.label3.Size = new System.Drawing.Size(86, 29);
             this.label3.TabIndex = 33;
             this.label3.Text = "Senha";
             // 
@@ -227,6 +227,7 @@ namespace SrBolo_Prototype1
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Login";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.guna2GradientPanel8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

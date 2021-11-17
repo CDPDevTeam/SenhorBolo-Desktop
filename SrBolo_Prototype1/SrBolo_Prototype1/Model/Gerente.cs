@@ -6,19 +6,18 @@ using System.Threading.Tasks;
 
 namespace SrBolo_Prototype1.Model
 {
-    class Gerente : Funcionario
+    public static class Gerente 
     {
-        
-        public Gerente()
-        {
+        public static string Cpf { get; set; }
+        public static string Nome { get; set; }
+        public static string Email { get; set; }
+        public static string Telefone { get; set; }
+        public static string Senha { get; set; }
+        public static string Cargo { get; set; }
 
-        }
         
-        public Gerente(string cpf, string nome, string rg, string email, string telefone, string senha)
-            : base(cpf, nome, rg, email, telefone, senha)
-        {
 
-        }
+        
 
     }
 }

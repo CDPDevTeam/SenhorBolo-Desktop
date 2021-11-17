@@ -27,24 +27,42 @@ namespace SrBolo_Prototype1
             //temporário
 
             LoginDAO usuario = new LoginDAO();
-            Funcionario func  = new Gerente();
-            //bool check = usuario.Acessar(func,cbUser.SelectedItem.ToString(), txtLogin.ToString(), txtSenha.ToString());
+            bool check = usuario.Acessar(cbUser.SelectedItem.ToString(), txtLogin.Text, txtSenha.Text);
 
             
 
-            /*if (check == true)
+            if (check)
             {
-                
-            } */
-            //else { MessageBox.Show("Selecione um usuário", "ATENÇÃO"); }
-            Adm_Home adm_Home = new Adm_Home();
-            adm_Home.Show();
-            this.Hide();
+                if(cbUser.SelectedItem.ToString() == "gerente"){
+                    Adm_Home adm_Home = new Adm_Home();
+                    adm_Home.Show();
+                    this.Hide();
+                }
+                else if (cbUser.SelectedItem.ToString() == "confeiteiro")
+                {
+                    Conf_home conf_Home = new Conf_home();
+                    conf_Home.Show();
+                    this.Hide();
+                }
+                else if (cbUser.SelectedItem.ToString() == "caixa")
+                {
+                    Balc_Caixa balc_Caixa = new Balc_Caixa();
+                    balc_Caixa.Show();
+                    this.Hide();
+                }
+            } 
+            else { MessageBox.Show("Selecione um usuário", "ATENÇÃO"); }
+            
         }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
