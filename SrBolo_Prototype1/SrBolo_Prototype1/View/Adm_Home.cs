@@ -25,6 +25,9 @@ namespace SrBolo_Prototype1.View
         ProdutoDAO produto = new ProdutoDAO();
         UsuarioDAO usuario = new UsuarioDAO();
 
+        
+        
+
         private void CustumizeDesing()
         {
             PanelProduto.Visible = false;
@@ -46,6 +49,7 @@ namespace SrBolo_Prototype1.View
             {
                 PanelPedidos.Visible = false;
             }
+            
         }
 
         private void ShowSubmenu(Panel subMenu)
@@ -110,8 +114,9 @@ namespace SrBolo_Prototype1.View
             Gerenciar_PedE gerenciar_PedE = new Gerenciar_PedE();
             gerenciar_PedE.Show();
             this.Hide();
+            
         }
-
+        
         private void btnGerenciarPedF_Click(object sender, EventArgs e)
         {
             Gerenciar_PedF gerenciar_PedF = new Gerenciar_PedF();
@@ -131,12 +136,45 @@ namespace SrBolo_Prototype1.View
 
         private void Adm_Home_Load(object sender, EventArgs e)
         {
-            lblVendasMes.Text = "R$"+produto.VendasMes().ToString("F2",CultureInfo.CurrentCulture);
-            //lblUsuarios.Text = usuario.UsuariosCadastrados().ToString();
-            dgrMaisVendidos.DataSource = produto.MaisVendidos();
-
             lblNome.Text = Gerente.Nome;
+            lblEmail.Text = Gerente.Email;
+            lblVendasMes.Text = "R$"+produto.VendasMes().ToString("F2",CultureInfo.CurrentCulture);
+            lblUsuarios.Text = usuario.UsuariosCadastrados().ToString();
+            dgrMaisVendidos.DataSource = produto.MaisVendidos();
+            dgrChangeSize();
+            lblTicketMedio.Text = "R$"+produto.TicketMedio().ToString("F2", CultureInfo.CurrentCulture);
 
+
+            timer.Start();
+            setDataHora();
+        }
+
+        private void setDataHora()
+        {
+            DateTime agora = DateTime.Now;
+            lblData.Text = agora.Date.ToString("dd'/'MM'/'yyyy");
+            lblHora.Text = agora.TimeOfDay.ToString("hh':'mm':'ss");
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            setDataHora();
+        }
+
+        private void dgrMaisVendidos_SizeChanged(object sender, EventArgs e)
+        {
+            dgrChangeSize();
+        }
+        private void dgrChangeSize()
+        {
+            dgrMaisVendidos.Columns[0].FillWeight = 80;
+            dgrMaisVendidos.Columns[1].FillWeight = 20;
+            dgrMaisVendidos.Refresh();
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+            dgrChangeSize();
         }
     }
 }

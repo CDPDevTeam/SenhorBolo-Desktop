@@ -20,10 +20,10 @@ namespace SrBolo_Prototype1.DAO
 
                 Conectar();
 
-                NpgsqlCommand Cmd = new NpgsqlCommand("call qtdeUsuarios", Cn); //Procedure do login
+                NpgsqlCommand Cmd = new NpgsqlCommand("qtdeUsuarios", Cn); //Procedure do login
                 Cmd.CommandType = CommandType.StoredProcedure;
 
-                qtdeUsuarios = (int)Cmd.ExecuteScalar();
+                qtdeUsuarios = Int32.Parse(Cmd.ExecuteScalar().ToString());
 
                 
             }

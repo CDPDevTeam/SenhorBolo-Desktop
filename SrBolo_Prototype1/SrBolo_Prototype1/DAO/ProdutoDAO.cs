@@ -35,13 +35,39 @@ namespace SrBolo_Prototype1.DAO
             return total;
         }
 
+
+        public double TicketMedio()
+        {
+            double media = 0;
+            try
+            {
+                DateTime dataAtual = DateTime.Now;
+                DateTime inicioMes = new DateTime(dataAtual.Year, dataAtual.Month, 1, 0, 0, 0);
+                Conectar();
+
+                NpgsqlCommand Cmd = new NpgsqlCommand("TicketMedio", Cn); //Procedure do login
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("dataatual", dataAtual.ToString("yyyy-MM-dd"));
+                Cmd.Parameters.AddWithValue("iniciomes", inicioMes.ToString("yyyy-MM-dd"));
+
+                media = Double.Parse(Cmd.ExecuteScalar().ToString());
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message, "ERRO");
+            }
+            finally { Desconectar(); }
+            return media;
+        }
+
+
         DataTable dt = new DataTable();
          public DataTable MaisVendidos()
          {
              try
              {
                 Conectar();
-                NpgsqlCommand cmd = new NpgsqlCommand("ListarFunc", Cn);
+                NpgsqlCommand cmd = new NpgsqlCommand("maisvendidos", Cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 Dr = cmd.ExecuteReader();
                 dt.Load(Dr);
