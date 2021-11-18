@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace SrBolo_Prototype1.common
 {
-    class Produto
+    public static class Produto
     {
-        public string Tamanho { get; set; }
-        public string Confeito { get; set; }
-        public string Cobertura { get; set; }
-        public string Massa { get; set; }
-        public string Recheio { get; set; }
-        public string Qtde { get; set; }
-        public string ValorUnit { get; set; }
+        public static int Tamanho { get; set; }
+        public static string Confeito { get; set; }
+        public static string Cobertura { get; set; }
+        public static string Massa { get; set; }
+        public static string Recheio { get; set; }
+        public static string Categoria { get; set; }
+        public static double ValorUnit { get; set; }
+        public static string Foto { get; set; }
+        public static int Id { get; set; }
+        public static string Nome { get; set; }
 
 
 
-        
     }
 }

@@ -92,6 +92,7 @@
     <Compile Include="Control\ControlePedidos.cs" />
     <Compile Include="Control\ControleProduto.cs" />
     <Compile Include="Control\ControleRecheio.cs" />
+    <Compile Include="DAO\CaixaDAO.cs" />
     <Compile Include="DAO\CategoriaDAO.cs" />
     <Compile Include="DAO\CoberturaDAO.cs" />
     <Compile Include="DAO\ConfeitoDAO.cs" />

@@ -64,5 +64,19 @@ namespace SrBolo_Prototype1
         {
 
         }
+
+        private void txtLogin_TextChanged(object sender, EventArgs e)
+        {
+            if (txtLogin.Text.Length == 3 || txtLogin.Text.Length == 7)
+            {
+                txtLogin.Text += ".";
+            }
+            else if (txtLogin.Text.Length == 11)
+            {
+                txtLogin.Text += "-";
+            }
+            txtLogin.SelectionStart = txtLogin.Text.Length;
+            txtLogin.SelectionLength = 0;
+        }
     }
 }

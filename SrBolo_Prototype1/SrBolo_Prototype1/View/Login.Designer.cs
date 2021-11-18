@@ -50,20 +50,20 @@ namespace SrBolo_Prototype1
             this.guna2GradientPanel8.Controls.Add(this.pictureBox1);
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.guna2GradientPanel8.Location = new System.Drawing.Point(0, -15);
-            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.guna2GradientPanel8.Location = new System.Drawing.Point(0, -12);
+            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2GradientPanel8.Name = "guna2GradientPanel8";
             this.guna2GradientPanel8.ShadowDecoration.Parent = this.guna2GradientPanel8;
-            this.guna2GradientPanel8.Size = new System.Drawing.Size(1020, 241);
+            this.guna2GradientPanel8.Size = new System.Drawing.Size(907, 193);
             this.guna2GradientPanel8.TabIndex = 28;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::SrBolo_Prototype1.Properties.Resources.zap_zap;
-            this.pictureBox1.Location = new System.Drawing.Point(213, -45);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(189, -36);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(615, 320);
+            this.pictureBox1.Size = new System.Drawing.Size(547, 256);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -72,7 +72,7 @@ namespace SrBolo_Prototype1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(334, 265);
+            this.label1.Location = new System.Drawing.Point(297, 212);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(307, 29);
@@ -87,17 +87,17 @@ namespace SrBolo_Prototype1
             "caixa",
             "gerente",
             "confeiteiro"});
-            this.cbUser.Location = new System.Drawing.Point(327, 308);
-            this.cbUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.cbUser.Location = new System.Drawing.Point(291, 246);
+            this.cbUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbUser.Name = "cbUser";
-            this.cbUser.Size = new System.Drawing.Size(365, 34);
+            this.cbUser.Size = new System.Drawing.Size(325, 34);
             this.cbUser.TabIndex = 30;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(321, 359);
+            this.label2.Location = new System.Drawing.Point(285, 287);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 29);
@@ -119,15 +119,17 @@ namespace SrBolo_Prototype1
             this.txtLogin.ForeColor = System.Drawing.Color.Black;
             this.txtLogin.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLogin.HoverState.Parent = this.txtLogin;
-            this.txtLogin.Location = new System.Drawing.Point(327, 400);
-            this.txtLogin.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtLogin.Location = new System.Drawing.Point(291, 320);
+            this.txtLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLogin.MaxLength = 14;
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.PasswordChar = '\0';
             this.txtLogin.PlaceholderText = "";
             this.txtLogin.SelectedText = "";
             this.txtLogin.ShadowDecoration.Parent = this.txtLogin;
-            this.txtLogin.Size = new System.Drawing.Size(368, 46);
+            this.txtLogin.Size = new System.Drawing.Size(327, 37);
             this.txtLogin.TabIndex = 32;
+            this.txtLogin.TextChanged += new System.EventHandler(this.txtLogin_TextChanged);
             // 
             // txtSenha
             // 
@@ -144,21 +146,21 @@ namespace SrBolo_Prototype1
             this.txtSenha.ForeColor = System.Drawing.Color.Black;
             this.txtSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSenha.HoverState.Parent = this.txtSenha;
-            this.txtSenha.Location = new System.Drawing.Point(327, 492);
-            this.txtSenha.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtSenha.Location = new System.Drawing.Point(291, 394);
+            this.txtSenha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '\0';
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.PlaceholderText = "";
             this.txtSenha.SelectedText = "";
             this.txtSenha.ShadowDecoration.Parent = this.txtSenha;
-            this.txtSenha.Size = new System.Drawing.Size(368, 46);
+            this.txtSenha.Size = new System.Drawing.Size(327, 37);
             this.txtSenha.TabIndex = 34;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(321, 451);
+            this.label3.Location = new System.Drawing.Point(285, 361);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 29);
@@ -178,11 +180,11 @@ namespace SrBolo_Prototype1
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.ForeColor = System.Drawing.Color.White;
             this.btnSair.HoverState.Parent = this.btnSair;
-            this.btnSair.Location = new System.Drawing.Point(258, 639);
-            this.btnSair.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnSair.Location = new System.Drawing.Point(229, 511);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSair.Name = "btnSair";
             this.btnSair.ShadowDecoration.Parent = this.btnSair;
-            this.btnSair.Size = new System.Drawing.Size(242, 59);
+            this.btnSair.Size = new System.Drawing.Size(215, 47);
             this.btnSair.TabIndex = 35;
             this.btnSair.Text = "Sair";
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -200,20 +202,20 @@ namespace SrBolo_Prototype1
             this.btnAcessar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAcessar.ForeColor = System.Drawing.Color.White;
             this.btnAcessar.HoverState.Parent = this.btnAcessar;
-            this.btnAcessar.Location = new System.Drawing.Point(522, 639);
-            this.btnAcessar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnAcessar.Location = new System.Drawing.Point(464, 511);
+            this.btnAcessar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAcessar.Name = "btnAcessar";
             this.btnAcessar.ShadowDecoration.Parent = this.btnAcessar;
-            this.btnAcessar.Size = new System.Drawing.Size(242, 59);
+            this.btnAcessar.Size = new System.Drawing.Size(215, 47);
             this.btnAcessar.TabIndex = 36;
             this.btnAcessar.Text = "Acessar";
             this.btnAcessar.Click += new System.EventHandler(this.btnAcessar_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1020, 751);
+            this.ClientSize = new System.Drawing.Size(907, 601);
             this.Controls.Add(this.btnAcessar);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.txtSenha);
@@ -224,8 +226,9 @@ namespace SrBolo_Prototype1
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2GradientPanel8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
             this.guna2GradientPanel8.ResumeLayout(false);
