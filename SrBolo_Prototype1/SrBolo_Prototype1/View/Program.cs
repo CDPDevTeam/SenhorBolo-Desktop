@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.View;
+using System.Globalization;
 
 namespace SrBolo_Prototype1
 {
@@ -17,7 +18,9 @@ namespace SrBolo_Prototype1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Balc_Caixa());
+            CultureInfo.CurrentCulture = new CultureInfo("pt-BR", false);
+            Application.Run(new Splash());
+            
         }
     }
 }

@@ -152,7 +152,7 @@ namespace SrBolo_Prototype1.View
         private void setDataHora()
         {
             DateTime agora = DateTime.Now;
-            lblData.Text = agora.Date.ToString("dd'/'MM'/'yyyy");
+            lblData.Text = agora.Date.ToString("dddd',' dd'/'MM'/'yyyy");
             lblHora.Text = agora.TimeOfDay.ToString("hh':'mm':'ss");
         }
 

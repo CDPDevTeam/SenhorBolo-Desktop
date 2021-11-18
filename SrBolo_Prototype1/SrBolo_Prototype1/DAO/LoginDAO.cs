@@ -36,7 +36,7 @@ namespace SrBolo_Prototype1.DAO
                     while (Dr.Read())
                     {
 
-                        if (cargo == "Gerente")
+                        if (cargo == "gerente")
                         {
                             Gerente.Cpf = Dr.GetString(0);
                             Gerente.Nome = Dr.GetString(1);
@@ -44,7 +44,7 @@ namespace SrBolo_Prototype1.DAO
                             Gerente.Senha = Dr.GetString(3);
                             Gerente.Cargo = Dr.GetString(4);
                         }
-                        else if (cargo == "Balconista") {
+                        else if (cargo == "caixa") {
                             Balconista.Cpf = Dr.GetString(0);
                             Balconista.Nome = Dr.GetString(1);
                             Balconista.Email = Dr.GetString(2);

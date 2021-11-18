@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using Npgsql;
 using SrBolo_Prototype1.common;
+using System.Windows.Forms;
 
 namespace SrBolo_Prototype1.DAO
 {
@@ -38,7 +39,7 @@ namespace SrBolo_Prototype1.DAO
                     }
                 }
             }
-            catch(Exception e) { }
+            catch(Exception e) { MessageBox.Show(e.Message, "ERRO"); }
             finally { Desconectar(); }
             return preco;
         }

@@ -30,8 +30,8 @@ namespace SrBolo_Prototype1.View
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adm_Home));
             this.PanelRendimentoMensal = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -105,7 +105,7 @@ namespace SrBolo_Prototype1.View
             this.PanelRendimentoMensal.FillColor = System.Drawing.Color.White;
             this.PanelRendimentoMensal.FillColor2 = System.Drawing.Color.White;
             this.PanelRendimentoMensal.Location = new System.Drawing.Point(214, 120);
-            this.PanelRendimentoMensal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PanelRendimentoMensal.Margin = new System.Windows.Forms.Padding(4);
             this.PanelRendimentoMensal.Name = "PanelRendimentoMensal";
             this.PanelRendimentoMensal.ShadowDecoration.Parent = this.PanelRendimentoMensal;
             this.PanelRendimentoMensal.Size = new System.Drawing.Size(1082, 139);
@@ -157,7 +157,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel13.FillColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel13.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2GradientPanel13.Location = new System.Drawing.Point(814, 4);
-            this.guna2GradientPanel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel13.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel13.Name = "guna2GradientPanel13";
             this.guna2GradientPanel13.ShadowDecoration.Parent = this.guna2GradientPanel13;
             this.guna2GradientPanel13.Size = new System.Drawing.Size(262, 131);
@@ -169,7 +169,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel8.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel8.Location = new System.Drawing.Point(5, 4);
-            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel8.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel8.Name = "guna2GradientPanel8";
             this.guna2GradientPanel8.ShadowDecoration.Parent = this.guna2GradientPanel8;
             this.guna2GradientPanel8.Size = new System.Drawing.Size(61, 61);
@@ -214,7 +214,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel11.FillColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel11.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2GradientPanel11.Location = new System.Drawing.Point(274, 4);
-            this.guna2GradientPanel11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel11.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel11.Name = "guna2GradientPanel11";
             this.guna2GradientPanel11.ShadowDecoration.Parent = this.guna2GradientPanel11;
             this.guna2GradientPanel11.Size = new System.Drawing.Size(262, 131);
@@ -226,7 +226,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel5.Location = new System.Drawing.Point(4, 4);
-            this.guna2GradientPanel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel5.Name = "guna2GradientPanel5";
             this.guna2GradientPanel5.ShadowDecoration.Parent = this.guna2GradientPanel5;
             this.guna2GradientPanel5.Size = new System.Drawing.Size(61, 61);
@@ -293,7 +293,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel12.FillColor = System.Drawing.Color.Transparent;
             this.guna2GradientPanel12.FillColor2 = System.Drawing.Color.Transparent;
             this.guna2GradientPanel12.Location = new System.Drawing.Point(544, 4);
-            this.guna2GradientPanel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel12.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel12.Name = "guna2GradientPanel12";
             this.guna2GradientPanel12.ShadowDecoration.Parent = this.guna2GradientPanel12;
             this.guna2GradientPanel12.Size = new System.Drawing.Size(262, 131);
@@ -317,7 +317,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel7.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.guna2GradientPanel7.Location = new System.Drawing.Point(7, 4);
-            this.guna2GradientPanel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel7.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel7.Name = "guna2GradientPanel7";
             this.guna2GradientPanel7.ShadowDecoration.Parent = this.guna2GradientPanel7;
             this.guna2GradientPanel7.Size = new System.Drawing.Size(61, 61);
@@ -346,7 +346,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel10.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel10.FillColor2 = System.Drawing.Color.White;
             this.guna2GradientPanel10.Location = new System.Drawing.Point(917, 289);
-            this.guna2GradientPanel10.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel10.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel10.Name = "guna2GradientPanel10";
             this.guna2GradientPanel10.ShadowDecoration.Parent = this.guna2GradientPanel10;
             this.guna2GradientPanel10.Size = new System.Drawing.Size(379, 408);
@@ -372,7 +372,7 @@ namespace SrBolo_Prototype1.View
             this.coluna1,
             this.coluna2});
             this.dgrMaisVendidos.Location = new System.Drawing.Point(4, 68);
-            this.dgrMaisVendidos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgrMaisVendidos.Margin = new System.Windows.Forms.Padding(4);
             this.dgrMaisVendidos.Name = "dgrMaisVendidos";
             this.dgrMaisVendidos.ReadOnly = true;
             this.dgrMaisVendidos.RowHeadersVisible = false;
@@ -420,7 +420,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel9.FillColor = System.Drawing.Color.White;
             this.guna2GradientPanel9.FillColor2 = System.Drawing.Color.White;
             this.guna2GradientPanel9.Location = new System.Drawing.Point(208, 292);
-            this.guna2GradientPanel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2GradientPanel9.Margin = new System.Windows.Forms.Padding(4);
             this.guna2GradientPanel9.Name = "guna2GradientPanel9";
             this.guna2GradientPanel9.ShadowDecoration.Parent = this.guna2GradientPanel9;
             this.guna2GradientPanel9.Size = new System.Drawing.Size(654, 408);
@@ -428,13 +428,13 @@ namespace SrBolo_Prototype1.View
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea10.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea10);
             this.chart1.Location = new System.Drawing.Point(25, 78);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series10.ChartArea = "ChartArea1";
+            series10.Name = "Series1";
+            this.chart1.Series.Add(series10);
             this.chart1.Size = new System.Drawing.Size(571, 300);
             this.chart1.TabIndex = 20;
             this.chart1.Text = "chart1";
@@ -754,11 +754,12 @@ namespace SrBolo_Prototype1.View
             this.lblData.AutoSize = true;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.ForeColor = System.Drawing.Color.Black;
-            this.lblData.Location = new System.Drawing.Point(1252, 24);
+            this.lblData.Location = new System.Drawing.Point(1145, 24);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(53, 18);
             this.lblData.TabIndex = 55;
             this.lblData.Text = ":Data:";
+            this.lblData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblEmail
             // 
