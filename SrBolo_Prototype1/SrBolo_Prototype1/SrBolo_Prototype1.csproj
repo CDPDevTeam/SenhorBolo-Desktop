@@ -84,6 +84,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\ControleCaixa.cs" />
     <Compile Include="Control\ControleCategoria.cs" />
     <Compile Include="Control\ControleCobertura.cs" />
     <Compile Include="Control\ControleConfeito.cs" />
@@ -142,6 +143,12 @@
       <DependentUpon>Conf_Home.cs</DependentUpon>
     </Compile>
     <Compile Include="DAO\ClassConexao.cs" />
+    <Compile Include="View\Consult_Prod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Consult_Prod.Designer.cs">
+      <DependentUpon>Consult_Prod.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Gerenciar_PedF.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -236,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Conf_Home.resx">
       <DependentUpon>Conf_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Consult_Prod.resx">
+      <DependentUpon>Consult_Prod.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Gerenciar_PedF.resx">
       <DependentUpon>Gerenciar_PedF.cs</DependentUpon>

@@ -30,8 +30,8 @@ namespace SrBolo_Prototype1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Balc_Caixa));
             this.label1 = new System.Windows.Forms.Label();
             this.lblCaixaNomeFunc = new System.Windows.Forms.Label();
@@ -55,17 +55,17 @@ namespace SrBolo_Prototype1
             this.label4 = new System.Windows.Forms.Label();
             this.txtCaixaVlrUnit = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTotalRecebido = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtCaixaSubtotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtCaixaTotal = new Guna.UI2.WinForms.Guna2TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTroco = new Guna.UI2.WinForms.Guna2TextBox();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.PictureBoxCaixaProd = new System.Windows.Forms.PictureBox();
             this.PictureBoxLogoCaixa = new System.Windows.Forms.PictureBox();
-            this.timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.GridViewCaixa)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxCaixaProd)).BeginInit();
@@ -127,18 +127,24 @@ namespace SrBolo_Prototype1
             // 
             // GridViewCaixa
             // 
+            this.GridViewCaixa.AllowUserToResizeRows = false;
             this.GridViewCaixa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-            dataGridViewCellStyle11.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridViewCaixa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.GridViewCaixa.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.GridViewCaixa.BackgroundColor = System.Drawing.SystemColors.ControlLight;
+            this.GridViewCaixa.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GridViewCaixa.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GridViewCaixa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridViewCaixa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GridViewCaixa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridViewCaixa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
@@ -146,15 +152,15 @@ namespace SrBolo_Prototype1
             this.Qtde,
             this.ValUnit,
             this.Total});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
-            dataGridViewCellStyle12.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridViewCaixa.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridViewCaixa.DefaultCellStyle = dataGridViewCellStyle2;
             this.GridViewCaixa.Location = new System.Drawing.Point(33, 110);
             this.GridViewCaixa.Margin = new System.Windows.Forms.Padding(4);
             this.GridViewCaixa.Name = "GridViewCaixa";
@@ -289,7 +295,7 @@ namespace SrBolo_Prototype1
             this.txtCodigoBarras.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtCodigoBarras.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCodigoBarras.HoverState.Parent = this.txtCodigoBarras;
-            this.txtCodigoBarras.Location = new System.Drawing.Point(33, 644);
+            this.txtCodigoBarras.Location = new System.Drawing.Point(33, 637);
             this.txtCodigoBarras.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoBarras.Name = "txtCodigoBarras";
             this.txtCodigoBarras.PasswordChar = '\0';
@@ -299,6 +305,7 @@ namespace SrBolo_Prototype1
             this.txtCodigoBarras.Size = new System.Drawing.Size(588, 44);
             this.txtCodigoBarras.TabIndex = 11;
             this.txtCodigoBarras.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCodigoBarras_KeyDown);
+            this.txtCodigoBarras.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigoBarras_KeyPress);
             // 
             // label3
             // 
@@ -338,6 +345,7 @@ namespace SrBolo_Prototype1
             this.txtCaixaQtd.ShadowDecoration.Parent = this.txtCaixaQtd;
             this.txtCaixaQtd.Size = new System.Drawing.Size(216, 44);
             this.txtCaixaQtd.TabIndex = 13;
+            this.txtCaixaQtd.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtCaixaQtd_KeyDown);
             // 
             // label4
             // 
@@ -392,30 +400,30 @@ namespace SrBolo_Prototype1
             this.label5.TabIndex = 16;
             this.label5.Text = "Valor Unitário";
             // 
-            // guna2TextBox4
+            // txtTotalRecebido
             // 
-            this.guna2TextBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(612, 761);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(604, 44);
-            this.guna2TextBox4.TabIndex = 17;
+            this.txtTotalRecebido.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtTotalRecebido.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTotalRecebido.DefaultText = "";
+            this.txtTotalRecebido.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTotalRecebido.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTotalRecebido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotalRecebido.DisabledState.Parent = this.txtTotalRecebido;
+            this.txtTotalRecebido.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTotalRecebido.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotalRecebido.FocusedState.Parent = this.txtTotalRecebido;
+            this.txtTotalRecebido.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTotalRecebido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTotalRecebido.HoverState.Parent = this.txtTotalRecebido;
+            this.txtTotalRecebido.Location = new System.Drawing.Point(612, 761);
+            this.txtTotalRecebido.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotalRecebido.Name = "txtTotalRecebido";
+            this.txtTotalRecebido.PasswordChar = '\0';
+            this.txtTotalRecebido.PlaceholderText = "";
+            this.txtTotalRecebido.SelectedText = "";
+            this.txtTotalRecebido.ShadowDecoration.Parent = this.txtTotalRecebido;
+            this.txtTotalRecebido.Size = new System.Drawing.Size(604, 44);
+            this.txtTotalRecebido.TabIndex = 17;
             // 
             // label6
             // 
@@ -523,30 +531,34 @@ namespace SrBolo_Prototype1
             this.label9.TabIndex = 25;
             this.label9.Text = "Troco";
             // 
-            // guna2TextBox7
+            // txtTroco
             // 
-            this.guna2TextBox7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.FocusedState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Location = new System.Drawing.Point(1263, 761);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.ShadowDecoration.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Size = new System.Drawing.Size(384, 44);
-            this.guna2TextBox7.TabIndex = 24;
+            this.txtTroco.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTroco.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTroco.DefaultText = "";
+            this.txtTroco.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTroco.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTroco.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTroco.DisabledState.Parent = this.txtTroco;
+            this.txtTroco.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTroco.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTroco.FocusedState.Parent = this.txtTroco;
+            this.txtTroco.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTroco.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTroco.HoverState.Parent = this.txtTroco;
+            this.txtTroco.Location = new System.Drawing.Point(1263, 761);
+            this.txtTroco.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTroco.Name = "txtTroco";
+            this.txtTroco.PasswordChar = '\0';
+            this.txtTroco.PlaceholderText = "";
+            this.txtTroco.SelectedText = "";
+            this.txtTroco.ShadowDecoration.Parent = this.txtTroco;
+            this.txtTroco.Size = new System.Drawing.Size(384, 44);
+            this.txtTroco.TabIndex = 24;
+            // 
+            // timer
+            // 
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // PictureBoxCaixaProd
             // 
@@ -571,10 +583,6 @@ namespace SrBolo_Prototype1
             this.PictureBoxLogoCaixa.TabIndex = 0;
             this.PictureBoxLogoCaixa.TabStop = false;
             // 
-            // timer
-            // 
-            this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
             // Balc_Caixa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -582,14 +590,14 @@ namespace SrBolo_Prototype1
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
             this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.guna2TextBox7);
+            this.Controls.Add(this.txtTroco);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtCaixaTotal);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtCaixaSubtotal);
             this.Controls.Add(this.PictureBoxCaixaProd);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.guna2TextBox4);
+            this.Controls.Add(this.txtTotalRecebido);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtCaixaVlrUnit);
             this.Controls.Add(this.label4);
@@ -634,7 +642,7 @@ namespace SrBolo_Prototype1
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2TextBox txtCaixaVlrUnit;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2TextBox txtTotalRecebido;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox PictureBoxCaixaProd;
         private System.Windows.Forms.Label label7;
@@ -642,7 +650,7 @@ namespace SrBolo_Prototype1
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox txtCaixaTotal;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2TextBox txtTroco;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Qtde;
