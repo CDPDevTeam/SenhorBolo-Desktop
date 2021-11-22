@@ -21,9 +21,9 @@ namespace SrBolo_Prototype1
         public Balc_Caixa()
         {
             InitializeComponent();
-            
-            
 
+            txtTotalRecebido.Enabled = false;
+            
             
         }
         ControleCaixa caixa = new ControleCaixa();
@@ -45,8 +45,14 @@ namespace SrBolo_Prototype1
                 Consult_Prod consult_Prod = new Consult_Prod();
                 consult_Prod.Show();
             }
-            
-            
+            if (e.KeyCode == Keys.F)
+            {
+                finalizarCompra();
+                txtTotalRecebido.Enabled = true;
+                txtTotalRecebido.Focus();
+            }
+
+
         }
         private void txtCodigoBarras_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -62,15 +68,17 @@ namespace SrBolo_Prototype1
             {
                 double totalitem = double.Parse(txtCaixaQtd.Text) * double.Parse(txtCaixaVlrUnit.Text);
                 subtotal += totalitem;
+                txtCaixaSubtotal.Text = totalitem.ToString();
                 adicionarProduto();
                 txtCodigoBarras.Focus();
             }
-            if (e.KeyCode == Keys.E)
+            if (e.KeyCode == Keys.F)
             {
-                caixa.getProduto(int.Parse(txtCodigoBarras.Text));
-                Consult_Prod consult_Prod = new Consult_Prod();
-                consult_Prod.Show();
+                finalizarCompra();
+                txtTotalRecebido.Enabled = true;
+                txtTotalRecebido.Focus();
             }
+
         }
 
         public void adicionarProduto()
@@ -84,6 +92,8 @@ namespace SrBolo_Prototype1
             GridViewCaixa[3, linha].Value = Produto.ValorUnit;
             GridViewCaixa[4, linha].Value = subtotal;
             limparTextoProduto();
+
+
         }
 
         public void limparTextoProduto()
@@ -95,6 +105,29 @@ namespace SrBolo_Prototype1
             txtCaixaSubtotal.Text = null;
             txtTroco.Text = null;
             txtTotalRecebido.Text = null;
+        }
+
+        private void finalizarCompra()
+        {
+            if (MessageBox.Show("Deseja finalizar compra?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                int idProduto;
+                int qtde;
+                double valorUnit;
+                caixa.gerarVenda();
+                for (int i = 0; i < GridViewCaixa.Rows.Count - 1; i++)
+                {
+                    idProduto = Convert.ToInt32(GridViewCaixa.Rows[i].Cells[0].Value);
+                    qtde = Convert.ToInt32(GridViewCaixa.Rows[i].Cells[2].Value);
+                    valorUnit = Convert.ToDouble(GridViewCaixa.Rows[i].Cells[3].Value);
+                    caixa.gerarQtdeVenda(idProduto, valorUnit, qtde);
+                }
+                limparTextoProduto();
+                txtCodigoBarras.Enabled = true;
+                txtCaixaQtd.Enabled = true;
+                GridViewCaixa.Rows.Clear();
+                GridViewCaixa.Refresh();
+            }
         }
 
         private void timer_Tick(object sender, EventArgs e)
@@ -115,6 +148,7 @@ namespace SrBolo_Prototype1
 
             timer.Start();
             setDataHora();
+            txtCodigoBarras.Focus();
         }
 
         private void Balc_Caixa_FormClosed(object sender, FormClosedEventArgs e)
@@ -122,6 +156,24 @@ namespace SrBolo_Prototype1
             Environment.Exit(0);
         }
 
-        
+        private void Balc_Caixa_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F)
+            {
+                finalizarCompra();
+                txtTotalRecebido.Enabled = true;
+                txtTotalRecebido.Focus();
+            }
+        }
+
+        private void Balc_Caixa_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 'F')
+            {
+                finalizarCompra();
+                txtTotalRecebido.Enabled = true;
+                txtTotalRecebido.Focus();
+            }
+        }
     }
 }

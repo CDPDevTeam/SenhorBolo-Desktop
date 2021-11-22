@@ -7,6 +7,7 @@ using System.Data;
 using Npgsql;
 using SrBolo_Prototype1.common;
 using System.Windows.Forms;
+using SrBolo_Prototype1.Model;
 
 namespace SrBolo_Prototype1.DAO
 {
@@ -42,6 +43,42 @@ namespace SrBolo_Prototype1.DAO
             catch(Exception e) { MessageBox.Show(e.Message, "ERRO"); }
             finally { Desconectar(); }
             return preco;
+        }
+
+        public void gerarVenda()
+        {
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("criarPedido", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("cpf_func",Balconista.Cpf);
+                Cmd.Parameters.AddWithValue("datas", DateTime.Now.ToString("yyyy-MM-dd"));
+                Cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+
+        public void gerarQtdeVenda(int idProd, double vlrUnit,int qtde)
+        {
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("criarqtdePedido", Cn);
+                
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("id_prod", idProd);
+                Cmd.Parameters.AddWithValue("vlrUnit", vlrUnit);
+                Cmd.Parameters.AddWithValue("qtdePed", qtde);
+                Cmd.ExecuteNonQuery();
+            }
+            finally
+            {
+                Desconectar();
+            }
         }
     }
 

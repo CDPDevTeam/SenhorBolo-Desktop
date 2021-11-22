@@ -15,5 +15,13 @@ namespace SrBolo_Prototype1.Control
         {
             caixa.getProduto(cod);
         }
+        public void gerarVenda()
+        {
+            caixa.gerarVenda();
+        }
+        public void gerarQtdeVenda(int idProd, double vlrUnit, int qtde)
+        {
+            caixa.gerarQtdeVenda(idProd,vlrUnit,qtde);
+        }
     }
 }
