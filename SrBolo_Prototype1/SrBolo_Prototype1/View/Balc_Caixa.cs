@@ -24,7 +24,7 @@ namespace SrBolo_Prototype1
 
             txtTotalRecebido.Enabled = false;
             
-            
+
         }
         ControleCaixa caixa = new ControleCaixa();
         double subtotal = 0;
@@ -66,10 +66,15 @@ namespace SrBolo_Prototype1
         {
             if (e.KeyCode == Keys.Enter)
             {
-                double totalitem = double.Parse(txtCaixaQtd.Text) * double.Parse(txtCaixaVlrUnit.Text);
-                subtotal += totalitem;
-                txtCaixaSubtotal.Text = totalitem.ToString();
+                
                 adicionarProduto();
+                int soma = 0;
+                for (int i = 0; i < GridViewCaixa.Rows.Count; ++i)
+                {
+                    soma += Convert.ToInt32(GridViewCaixa.Rows[i].Cells[4].Value);
+                }
+                txtCaixaSubtotal.Text = soma.ToString();
+                txtCaixaTotal.Text = soma.ToString();
                 txtCodigoBarras.Focus();
             }
             if (e.KeyCode == Keys.F)
@@ -84,13 +89,14 @@ namespace SrBolo_Prototype1
         public void adicionarProduto()
         {
             int linha = 0;
+            double total = Double.Parse(txtCaixaQtd.Text) * Produto.ValorUnit;
             GridViewCaixa.Rows.Add();
             linha = GridViewCaixa.Rows.Count - 2;
             GridViewCaixa[0, linha].Value = Produto.Id;
             GridViewCaixa[1, linha].Value = Produto.Nome;
             GridViewCaixa[2, linha].Value = txtCaixaQtd.Text;
             GridViewCaixa[3, linha].Value = Produto.ValorUnit;
-            GridViewCaixa[4, linha].Value = subtotal;
+            GridViewCaixa[4, linha].Value = total;
             limparTextoProduto();
 
 
@@ -101,8 +107,6 @@ namespace SrBolo_Prototype1
             txtCodigoBarras.Text = null;
             txtCaixaVlrUnit.Text = null;
             txtCaixaQtd.Text = null;
-            txtCaixaTotal.Text = null;
-            txtCaixaSubtotal.Text = null;
             txtTroco.Text = null;
             txtTotalRecebido.Text = null;
         }
@@ -145,6 +149,8 @@ namespace SrBolo_Prototype1
         private void Balc_Caixa_Load(object sender, EventArgs e)
         {
             lblCaixaNomeFunc.Text = Balconista.Nome;
+            txtCaixaSubtotal.Text = "0";
+            txtCaixaTotal.Text = "0";
 
             timer.Start();
             setDataHora();
@@ -173,6 +179,20 @@ namespace SrBolo_Prototype1
                 finalizarCompra();
                 txtTotalRecebido.Enabled = true;
                 txtTotalRecebido.Focus();
+            }
+        }
+
+        private void txtTotalRecebido_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTotalRecebido_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                double troco = Convert.ToDouble(txtCaixaTotal.Text) - Convert.ToDouble(txtTotalRecebido.Text);
+                txtTroco.Text = troco.ToString();
             }
         }
     }

@@ -52,8 +52,8 @@ namespace SrBolo_Prototype1.DAO
                 Conectar();
                 NpgsqlCommand Cmd = new NpgsqlCommand("criarPedido", Cn);
                 Cmd.CommandType = CommandType.StoredProcedure;
-                Cmd.Parameters.AddWithValue("cpf_func",Balconista.Cpf);
-                Cmd.Parameters.AddWithValue("datas", DateTime.Now.ToString("yyyy-MM-dd"));
+                Cmd.Parameters.AddWithValue("cpf",Balconista.Cpf);
+                Cmd.Parameters.AddWithValue("dataa", DateTime.Now.ToString("yyyy-MM-dd"));
                 Cmd.ExecuteNonQuery();
             }
             finally
@@ -67,12 +67,12 @@ namespace SrBolo_Prototype1.DAO
             try
             {
                 Conectar();
-                NpgsqlCommand Cmd = new NpgsqlCommand("criarqtdePedido", Cn);
+                NpgsqlCommand Cmd = new NpgsqlCommand("criarqtdepedido", Cn);
                 
                 Cmd.CommandType = CommandType.StoredProcedure;
                 Cmd.Parameters.AddWithValue("id_prod", idProd);
-                Cmd.Parameters.AddWithValue("vlrUnit", vlrUnit);
-                Cmd.Parameters.AddWithValue("qtdePed", qtde);
+                Cmd.Parameters.AddWithValue("vlrunit", vlrUnit);
+                Cmd.Parameters.AddWithValue("qtdeped", qtde);
                 Cmd.ExecuteNonQuery();
             }
             finally
