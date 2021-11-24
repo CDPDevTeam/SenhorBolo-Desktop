@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Npgsql;
 using System.Windows.Forms;
 using System.Data;
+using SrBolo_Prototype1.Model;
 
 
 namespace SrBolo_Prototype1.DAO
@@ -99,6 +100,40 @@ namespace SrBolo_Prototype1.DAO
                 Desconectar();
             }
             return Dt;
+        }
+
+        public void setProduto(int Id)
+        {
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("ListarProds", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("id_prods", Id);
+                Dr = Cmd.ExecuteReader();
+                if (Dr.HasRows)
+                {
+                    while (Dr.Read())
+                    {
+                        Produto.Id = Dr.GetInt32(0);
+                        Produto.Confeito = Dr.GetString(1);
+                        Produto.Massa = Dr.GetString(2);
+                        Produto.Recheio = Dr.GetString(3);
+                        Produto.Cobertura = Dr.GetString(4);
+                        Produto.Categoria = Dr.GetString(5);
+                        Produto.Nome = Dr.GetString(6);
+                        Produto.Foto = Dr.GetString(7);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("erro ao acessar os produtos" + e.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
         }
 
         public bool CadastroProd(int idProd, string confeito, string massa, string recheio, string cobertura, string categoria, string nome, string foto)

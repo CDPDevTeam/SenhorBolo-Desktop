@@ -150,5 +150,33 @@ namespace SrBolo_Prototype1
             }
             limpar();
         }
+
+        private void txtCadFuncCPF_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCadFuncCPF.Text.Length == 3 || txtCadFuncCPF.Text.Length == 7)
+            {
+                txtCadFuncCPF.Text += ".";
+            }
+            else if (txtCadFuncCPF.Text.Length == 11)
+            {
+                txtCadFuncCPF.Text += "-";
+            }
+            txtCadFuncCPF.SelectionStart = txtCadFuncCPF.Text.Length;
+            txtCadFuncCPF.SelectionLength = 0;
+        }
+
+        private void txtCadFuncTel_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCadFuncTel.Text.Length == 2)
+            {
+                txtCadFuncTel.Text += " ";
+            }
+            else if (txtCadFuncTel.Text.Length == 8)
+            {
+                txtCadFuncTel.Text += "-";
+            }
+            txtCadFuncTel.SelectionStart = txtCadFuncTel.Text.Length;
+            txtCadFuncTel.SelectionLength = 0;
+        }
     }
 }

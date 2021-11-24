@@ -180,5 +180,20 @@ namespace SrBolo_Prototype1
             }
         }
 
+        /*private void txtEditFuncTel_TextChanged(object sender, EventArgs e)
+        {
+            if (txtEditFuncTel.Text == null) { 
+                if (txtEditFuncTel.Text.Length == 2)
+                {
+                    txtEditFuncTel.Text += " ";
+                }
+                else if (txtEditFuncTel.Text.Length == 8)
+                {
+                    txtEditFuncTel.Text += "-";
+                }
+                txtEditFuncTel.SelectionStart = txtEditFuncTel.Text.Length;
+                txtEditFuncTel.SelectionLength = 0;
+            }
+        }*/
     }
 }

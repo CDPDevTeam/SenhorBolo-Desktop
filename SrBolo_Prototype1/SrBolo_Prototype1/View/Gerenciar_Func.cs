@@ -138,7 +138,7 @@ namespace SrBolo_Prototype1
 
         private void ButtonExc_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Deseja apagar esse funcionário?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) 
+            if (MessageBox.Show("Deseja apagar esse funcionário?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 string cpf = GridViewFunc.CurrentRow.Cells[0].Value.ToString();
                 funcionarios.excluirFuncionario(cpf);
@@ -153,5 +153,15 @@ namespace SrBolo_Prototype1
             cad_Func.Show();
             this.Hide();
         }
+
+       /* private void txtGerFuncSearch_TextChanged(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                DataView data = funcionariosCadastrados.DefaultView;
+                data.RowFilter = string.Format("cpf_func like %{0}%", txtGerFuncSearch);
+                GridViewFunc.DataSource = data.ToTable();
+            }
+        }*/
     }
 }

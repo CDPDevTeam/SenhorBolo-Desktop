@@ -31,6 +31,7 @@ namespace SrBolo_Prototype1
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editar_Func));
             this.guna2CustomGradientPanel2 = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
+            this.ComboBoxEditFuncCPF = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.ComboBoxEditFuncCargo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.ButtonEdit = new Guna.UI2.WinForms.Guna2Button();
@@ -59,7 +60,6 @@ namespace SrBolo_Prototype1
             this.lblData = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
-            this.ComboBoxEditFuncCPF = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
             this.PanelMenu.SuspendLayout();
@@ -90,6 +90,27 @@ namespace SrBolo_Prototype1
             this.guna2CustomGradientPanel2.ShadowDecoration.Parent = this.guna2CustomGradientPanel2;
             this.guna2CustomGradientPanel2.Size = new System.Drawing.Size(1371, 875);
             this.guna2CustomGradientPanel2.TabIndex = 11;
+            // 
+            // ComboBoxEditFuncCPF
+            // 
+            this.ComboBoxEditFuncCPF.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxEditFuncCPF.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxEditFuncCPF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxEditFuncCPF.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxEditFuncCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxEditFuncCPF.FocusedState.Parent = this.ComboBoxEditFuncCPF;
+            this.ComboBoxEditFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxEditFuncCPF.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxEditFuncCPF.HoverState.Parent = this.ComboBoxEditFuncCPF;
+            this.ComboBoxEditFuncCPF.ItemHeight = 30;
+            this.ComboBoxEditFuncCPF.ItemsAppearance.Parent = this.ComboBoxEditFuncCPF;
+            this.ComboBoxEditFuncCPF.Location = new System.Drawing.Point(674, 132);
+            this.ComboBoxEditFuncCPF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ComboBoxEditFuncCPF.Name = "ComboBoxEditFuncCPF";
+            this.ComboBoxEditFuncCPF.ShadowDecoration.Parent = this.ComboBoxEditFuncCPF;
+            this.ComboBoxEditFuncCPF.Size = new System.Drawing.Size(404, 36);
+            this.ComboBoxEditFuncCPF.TabIndex = 34;
+            this.ComboBoxEditFuncCPF.SelectedIndexChanged += new System.EventHandler(this.ComboBoxEditFuncCPF_SelectedIndexChanged);
             // 
             // lblTitle
             // 
@@ -236,6 +257,7 @@ namespace SrBolo_Prototype1
             this.txtEditFuncTel.HoverState.Parent = this.txtEditFuncTel;
             this.txtEditFuncTel.Location = new System.Drawing.Point(163, 266);
             this.txtEditFuncTel.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.txtEditFuncTel.MaxLength = 12;
             this.txtEditFuncTel.Name = "txtEditFuncTel";
             this.txtEditFuncTel.PasswordChar = '\0';
             this.txtEditFuncTel.PlaceholderText = "Telefone";
@@ -243,6 +265,7 @@ namespace SrBolo_Prototype1
             this.txtEditFuncTel.ShadowDecoration.Parent = this.txtEditFuncTel;
             this.txtEditFuncTel.Size = new System.Drawing.Size(404, 36);
             this.txtEditFuncTel.TabIndex = 4;
+           // this.txtEditFuncTel.TextChanged += new System.EventHandler(this.txtEditFuncTel_TextChanged);
             // 
             // txtEditFuncNome
             // 
@@ -613,27 +636,6 @@ namespace SrBolo_Prototype1
             this.lblNome.TabIndex = 21;
             this.lblNome.Text = ":Nome:";
             // 
-            // ComboBoxEditFuncCPF
-            // 
-            this.ComboBoxEditFuncCPF.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxEditFuncCPF.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxEditFuncCPF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxEditFuncCPF.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEditFuncCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxEditFuncCPF.FocusedState.Parent = this.ComboBoxEditFuncCPF;
-            this.ComboBoxEditFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxEditFuncCPF.ForeColor = System.Drawing.Color.Black;
-            this.ComboBoxEditFuncCPF.HoverState.Parent = this.ComboBoxEditFuncCPF;
-            this.ComboBoxEditFuncCPF.ItemHeight = 30;
-            this.ComboBoxEditFuncCPF.ItemsAppearance.Parent = this.ComboBoxEditFuncCPF;
-            this.ComboBoxEditFuncCPF.Location = new System.Drawing.Point(674, 132);
-            this.ComboBoxEditFuncCPF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxEditFuncCPF.Name = "ComboBoxEditFuncCPF";
-            this.ComboBoxEditFuncCPF.ShadowDecoration.Parent = this.ComboBoxEditFuncCPF;
-            this.ComboBoxEditFuncCPF.Size = new System.Drawing.Size(404, 36);
-            this.ComboBoxEditFuncCPF.TabIndex = 34;
-            this.ComboBoxEditFuncCPF.SelectedIndexChanged += new System.EventHandler(this.ComboBoxEditFuncCPF_SelectedIndexChanged);
-            // 
             // Editar_Func
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -646,6 +648,7 @@ namespace SrBolo_Prototype1
             this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.guna2CustomGradientPanel2);
             this.Controls.Add(this.PictureBoxPerfil);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Editar_Func";
             this.Text = "Editar_Func";

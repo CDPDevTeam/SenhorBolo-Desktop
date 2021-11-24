@@ -573,6 +573,7 @@
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.PictureBoxPerfil);
             this.Controls.Add(this.PanelGerProd);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Gerenciar_Prod";
             this.Text = "Gerenciar_Prod";

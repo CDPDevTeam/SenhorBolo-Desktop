@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.View;
 using SrBolo_Prototype1.Control;
+using SrBolo_Prototype1.Model;
 
 namespace SrBolo_Prototype1
 {
@@ -19,6 +20,7 @@ namespace SrBolo_Prototype1
         ControleMassa massa = new ControleMassa();
         ControleRecheio recheio = new ControleRecheio();
         ControleCategoria categoria = new ControleCategoria();
+        ControleProduto produtos = new ControleProduto();
         public Editar_Prod()
         {
             InitializeComponent();
@@ -28,6 +30,15 @@ namespace SrBolo_Prototype1
             comboIDMassa();
             comboIDRecheio();
             comboIDCategoria();
+            comboID();
+        }
+
+        public void comboID() {
+            DataTable Dt = new DataTable();
+            Dt = produtos.getProdutos();
+            for (int i = 0; i < Dt.Rows.Count; i++) {
+                ComboBoxEditProdID.Items.Add(Dt.Rows[i]["id_prod"].ToString());
+            } 
         }
 
         public void comboIDCategoria()
@@ -181,7 +192,7 @@ namespace SrBolo_Prototype1
         public void limpar() 
         {
             ComboBoxEditProdCobertura.Text = null;
-            txtEditProdID.Text = null;
+            ComboBoxEditProdID.Text = null;
             ComboBoxEditProdMassa.Text = null;
             txtEditProdNome.Text = null;
             ComboBoxEditProdRecheio.Text = null;
@@ -192,6 +203,17 @@ namespace SrBolo_Prototype1
         private void ButtonLimpar_Click(object sender, EventArgs e)
         {
             limpar();
+        }
+
+        private void ComboBoxEditProdID_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            produtos.setProduto(int.Parse(ComboBoxEditProdID.GetItemText(ComboBoxEditProdID.SelectedItem)));
+            txtEditProdNome.Text = Produto.Nome;
+            ComboBoxEditProdCat.Text = Produto.Categoria;
+            ComboBoxEditProdCobertura.Text = Produto.Cobertura;
+            ComboBoxEditProdConfeito.Text = Produto.Confeito;
+            ComboBoxEditProdMassa.Text = Produto.Massa;
+            ComboBoxEditProdRecheio.Text = Produto.Recheio;
         }
     }
 }

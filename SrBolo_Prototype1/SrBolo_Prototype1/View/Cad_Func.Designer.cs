@@ -294,6 +294,7 @@
             this.txtCadFuncCPF.HoverState.Parent = this.txtCadFuncCPF;
             this.txtCadFuncCPF.Location = new System.Drawing.Point(765, 198);
             this.txtCadFuncCPF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCadFuncCPF.MaxLength = 14;
             this.txtCadFuncCPF.Name = "txtCadFuncCPF";
             this.txtCadFuncCPF.PasswordChar = '\0';
             this.txtCadFuncCPF.PlaceholderText = "";
@@ -301,6 +302,7 @@
             this.txtCadFuncCPF.ShadowDecoration.Parent = this.txtCadFuncCPF;
             this.txtCadFuncCPF.Size = new System.Drawing.Size(404, 36);
             this.txtCadFuncCPF.TabIndex = 16;
+            this.txtCadFuncCPF.TextChanged += new System.EventHandler(this.txtCadFuncCPF_TextChanged);
             // 
             // txtCadFuncEmail
             // 
@@ -344,6 +346,7 @@
             this.txtCadFuncTel.HoverState.Parent = this.txtCadFuncTel;
             this.txtCadFuncTel.Location = new System.Drawing.Point(233, 338);
             this.txtCadFuncTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCadFuncTel.MaxLength = 12;
             this.txtCadFuncTel.Name = "txtCadFuncTel";
             this.txtCadFuncTel.PasswordChar = '\0';
             this.txtCadFuncTel.PlaceholderText = "";
@@ -351,6 +354,7 @@
             this.txtCadFuncTel.ShadowDecoration.Parent = this.txtCadFuncTel;
             this.txtCadFuncTel.Size = new System.Drawing.Size(404, 36);
             this.txtCadFuncTel.TabIndex = 4;
+            this.txtCadFuncTel.TextChanged += new System.EventHandler(this.txtCadFuncTel_TextChanged);
             // 
             // txtCadFuncNome
             // 
@@ -734,6 +738,7 @@
             this.Controls.Add(this.PictureBoxPerfil);
             this.Controls.Add(this.PanelCadFunc);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Cad_Func";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;

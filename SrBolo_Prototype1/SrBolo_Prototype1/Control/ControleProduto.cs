@@ -23,6 +23,17 @@ namespace SrBolo_Prototype1.Control
             return produtoDAO.CadastroProd(idProd, confeito, massa, recheio, cobertura, categoria, nome, foto);
         }
 
+        public DataTable getProdutos()
+        {
+            produtos = produtoDAO.produtosCadastrados();
+            return produtos;
+        }
+
+        public void setProduto(int id)
+        {
+            produtoDAO.setProduto(id);
+        }
+
         public void excluirProduto(int idProd)
         {
             produtoDAO.excluirProduto(idProd);
