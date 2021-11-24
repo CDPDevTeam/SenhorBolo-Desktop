@@ -36,6 +36,36 @@ namespace SrBolo_Prototype1.DAO
             return Dt;
         }
 
+        public void setFuncionario(string cpf)
+        {
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("ListarFuncs", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("cpf", cpf);
+                Dr = Cmd.ExecuteReader();
+                if (Dr.HasRows) {
+                    while (Dr.Read()) {
+                        Funcionario.Cpf = Dr.GetString(0);
+                        Funcionario.Cargo = Dr.GetString(1);
+                        Funcionario.Senha = Dr.GetString(2);
+                        Funcionario.Email = Dr.GetString(3);
+                        Funcionario.Telefone = Dr.GetString(4);
+                        Funcionario.Nome = Dr.GetString(5);
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("erro ao acessar os funcionários" + e.Message);
+            }
+            finally {
+                Desconectar();
+            }
+        }
+
+
         public bool CadastroFunc(string cpf, string cargo, string senha, string email, string tel, string nome) 
         {
             bool cadastro = false;

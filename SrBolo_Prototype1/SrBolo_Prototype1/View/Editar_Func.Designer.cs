@@ -36,7 +36,6 @@ namespace SrBolo_Prototype1
             this.ButtonEdit = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
             this.txtEditFuncSenha = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtEditFuncCPF = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditFuncEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditFuncTel = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditFuncNome = new Guna.UI2.WinForms.Guna2TextBox();
@@ -60,6 +59,7 @@ namespace SrBolo_Prototype1
             this.lblData = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
+            this.ComboBoxEditFuncCPF = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2CustomGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
             this.PanelMenu.SuspendLayout();
@@ -75,12 +75,12 @@ namespace SrBolo_Prototype1
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CustomGradientPanel2.BorderRadius = 40;
+            this.guna2CustomGradientPanel2.Controls.Add(this.ComboBoxEditFuncCPF);
             this.guna2CustomGradientPanel2.Controls.Add(this.lblTitle);
             this.guna2CustomGradientPanel2.Controls.Add(this.ComboBoxEditFuncCargo);
             this.guna2CustomGradientPanel2.Controls.Add(this.ButtonEdit);
             this.guna2CustomGradientPanel2.Controls.Add(this.ButtonLimpar);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncSenha);
-            this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncCPF);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncEmail);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncTel);
             this.guna2CustomGradientPanel2.Controls.Add(this.txtEditFuncNome);
@@ -193,31 +193,6 @@ namespace SrBolo_Prototype1
             this.txtEditFuncSenha.ShadowDecoration.Parent = this.txtEditFuncSenha;
             this.txtEditFuncSenha.Size = new System.Drawing.Size(404, 36);
             this.txtEditFuncSenha.TabIndex = 18;
-            // 
-            // txtEditFuncCPF
-            // 
-            this.txtEditFuncCPF.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtEditFuncCPF.DefaultText = "";
-            this.txtEditFuncCPF.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtEditFuncCPF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtEditFuncCPF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditFuncCPF.DisabledState.Parent = this.txtEditFuncCPF;
-            this.txtEditFuncCPF.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtEditFuncCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditFuncCPF.FocusedState.Parent = this.txtEditFuncCPF;
-            this.txtEditFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEditFuncCPF.ForeColor = System.Drawing.Color.Black;
-            this.txtEditFuncCPF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtEditFuncCPF.HoverState.Parent = this.txtEditFuncCPF;
-            this.txtEditFuncCPF.Location = new System.Drawing.Point(674, 130);
-            this.txtEditFuncCPF.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.txtEditFuncCPF.Name = "txtEditFuncCPF";
-            this.txtEditFuncCPF.PasswordChar = '\0';
-            this.txtEditFuncCPF.PlaceholderText = "CPF";
-            this.txtEditFuncCPF.SelectedText = "";
-            this.txtEditFuncCPF.ShadowDecoration.Parent = this.txtEditFuncCPF;
-            this.txtEditFuncCPF.Size = new System.Drawing.Size(404, 36);
-            this.txtEditFuncCPF.TabIndex = 16;
             // 
             // txtEditFuncEmail
             // 
@@ -638,6 +613,27 @@ namespace SrBolo_Prototype1
             this.lblNome.TabIndex = 21;
             this.lblNome.Text = ":Nome:";
             // 
+            // ComboBoxEditFuncCPF
+            // 
+            this.ComboBoxEditFuncCPF.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxEditFuncCPF.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxEditFuncCPF.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxEditFuncCPF.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxEditFuncCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxEditFuncCPF.FocusedState.Parent = this.ComboBoxEditFuncCPF;
+            this.ComboBoxEditFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxEditFuncCPF.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxEditFuncCPF.HoverState.Parent = this.ComboBoxEditFuncCPF;
+            this.ComboBoxEditFuncCPF.ItemHeight = 30;
+            this.ComboBoxEditFuncCPF.ItemsAppearance.Parent = this.ComboBoxEditFuncCPF;
+            this.ComboBoxEditFuncCPF.Location = new System.Drawing.Point(674, 132);
+            this.ComboBoxEditFuncCPF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ComboBoxEditFuncCPF.Name = "ComboBoxEditFuncCPF";
+            this.ComboBoxEditFuncCPF.ShadowDecoration.Parent = this.ComboBoxEditFuncCPF;
+            this.ComboBoxEditFuncCPF.Size = new System.Drawing.Size(404, 36);
+            this.ComboBoxEditFuncCPF.TabIndex = 34;
+            this.ComboBoxEditFuncCPF.SelectedIndexChanged += new System.EventHandler(this.ComboBoxEditFuncCPF_SelectedIndexChanged);
+            // 
             // Editar_Func
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -673,7 +669,6 @@ namespace SrBolo_Prototype1
         private Guna.UI2.WinForms.Guna2Button ButtonEdit;
         private Guna.UI2.WinForms.Guna2Button ButtonLimpar;
         private Guna.UI2.WinForms.Guna2TextBox txtEditFuncSenha;
-        private Guna.UI2.WinForms.Guna2TextBox txtEditFuncCPF;
         private Guna.UI2.WinForms.Guna2TextBox txtEditFuncEmail;
         private Guna.UI2.WinForms.Guna2TextBox txtEditFuncTel;
         private Guna.UI2.WinForms.Guna2TextBox txtEditFuncNome;
@@ -698,5 +693,6 @@ namespace SrBolo_Prototype1
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblTitle;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxEditFuncCPF;
     }
 }

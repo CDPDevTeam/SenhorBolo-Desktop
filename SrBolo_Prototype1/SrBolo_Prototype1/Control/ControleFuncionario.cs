@@ -33,5 +33,14 @@ namespace SrBolo_Prototype1.Control
         {
             funcionarioDAO.excluirFuncionario(cpf);
         }
+
+        public void setFuncionario(string cfp) {
+            funcionarioDAO.setFuncionario(cfp);
+        }
+
+        public DataTable getFuncionario() {
+            funcionarios = funcionarioDAO.funcionariosCadastrados();
+            return funcionarios;
+        }
     }
 }

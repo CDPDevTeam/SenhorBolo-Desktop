@@ -19,7 +19,7 @@ namespace SrBolo_Prototype1
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             CultureInfo.CurrentCulture = new CultureInfo("pt-BR", false);
-            Application.Run(new Splash());
+            Application.Run(new Editar_Func());
             
         }
     }

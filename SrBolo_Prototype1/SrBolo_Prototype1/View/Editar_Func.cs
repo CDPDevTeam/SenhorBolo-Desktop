@@ -20,6 +20,7 @@ namespace SrBolo_Prototype1
         {
             InitializeComponent();
             CustumizeDesing();
+            comboID();
         }
         private void CustumizeDesing()
         {
@@ -123,17 +124,13 @@ namespace SrBolo_Prototype1
 
         private void ButtonLimpar_Click(object sender, EventArgs e)
         {
-            txtEditFuncCPF.Text = null;
-            txtEditFuncEmail.Text = null;
-            txtEditFuncNome.Text = null;
-            txtEditFuncSenha.Text = null;
-            txtEditFuncTel.Text = null;
+            Limpar();
         }
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
             bool update;
-            Funcionario.Cpf = txtEditFuncCPF.Text;
+            Funcionario.Cpf = ComboBoxEditFuncCPF.Text;
             Funcionario.Cargo = ComboBoxEditFuncCargo.Text;
             Funcionario.Senha = txtEditFuncSenha.Text;
             Funcionario.Email = txtEditFuncEmail.Text;
@@ -153,5 +150,35 @@ namespace SrBolo_Prototype1
             ComboBoxEditFuncCargo.Items.Add("caixa");
             ComboBoxEditFuncCargo.Items.Add("confeiteiro");
         }
+
+        public void Limpar() {
+            ComboBoxEditFuncCPF.Text = null;
+            txtEditFuncEmail.Text = null;
+            txtEditFuncNome.Text = null;
+            txtEditFuncSenha.Text = null;
+            txtEditFuncTel.Text = null;
+            ComboBoxEditFuncCargo.Text = null;
+        }
+
+        private void ComboBoxEditFuncCPF_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            funcionarios.setFuncionario(ComboBoxEditFuncCPF.GetItemText(ComboBoxEditFuncCPF.SelectedItem));
+            txtEditFuncSenha.Text = Funcionario.Senha;
+            txtEditFuncEmail.Text = Funcionario.Email;
+            txtEditFuncNome.Text = Funcionario.Nome;
+            txtEditFuncTel.Text = Funcionario.Telefone;
+            ComboBoxEditFuncCargo.Text = Funcionario.Cargo;
+        }
+
+        public void comboID()
+        {
+            DataTable Dt = new DataTable();
+            Dt = funcionarios.getFuncionario();
+            for (int i = 0; i < Dt.Rows.Count; i++)
+            {
+                ComboBoxEditFuncCPF.Items.Add(Dt.Rows[i]["cpf_func"].ToString());
+            }
+        }
+
     }
 }
