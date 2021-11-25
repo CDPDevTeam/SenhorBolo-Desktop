@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SrBolo_Prototype1.Model;
 using SrBolo_Prototype1.View;
 using SrBolo_Prototype1.Control;
 
@@ -128,6 +129,8 @@ namespace SrBolo_Prototype1
 
         private void Gerenciar_Prod_Load(object sender, EventArgs e)
         {
+            lblNome.Text = Gerente.Nome;
+            lblEmail.Text = Gerente.Email;
             listarProduto();
         }
 

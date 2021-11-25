@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.View;
 using SrBolo_Prototype1.Control;
+using SrBolo_Prototype1.Model;
 
 namespace SrBolo_Prototype1
 {
@@ -177,6 +178,12 @@ namespace SrBolo_Prototype1
             }
             txtCadFuncTel.SelectionStart = txtCadFuncTel.Text.Length;
             txtCadFuncTel.SelectionLength = 0;
+        }
+
+        private void Cad_Func_Load(object sender, EventArgs e)
+        {
+            lblNome.Text = Gerente.Nome;
+            lblEmail.Text = Gerente.Email;
         }
     }
 }

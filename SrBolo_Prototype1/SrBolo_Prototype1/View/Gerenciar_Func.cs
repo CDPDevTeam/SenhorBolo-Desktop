@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using SrBolo_Prototype1.View;
-using SrBolo_Prototype1.Control; 
+using SrBolo_Prototype1.Control;
+using SrBolo_Prototype1.Model;
 
 namespace SrBolo_Prototype1
 {
@@ -133,6 +134,8 @@ namespace SrBolo_Prototype1
 
         private void Gerenciar_Func_Load(object sender, EventArgs e)
         {
+            lblNome.Text = Gerente.Nome;
+            lblEmail.Text = Gerente.Email;
             listarFuncionarios();
         }
 

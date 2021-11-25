@@ -146,6 +146,8 @@ namespace SrBolo_Prototype1
 
         private void Editar_Func_Load(object sender, EventArgs e)
         {
+            lblNome.Text = Gerente.Nome;
+            lblEmail.Text = Gerente.Email;
             ComboBoxEditFuncCargo.Items.Add("gerente");
             ComboBoxEditFuncCargo.Items.Add("caixa");
             ComboBoxEditFuncCargo.Items.Add("confeiteiro");

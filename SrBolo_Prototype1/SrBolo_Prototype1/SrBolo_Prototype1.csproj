@@ -87,6 +87,7 @@
     <Compile Include="Control\ControleCaixa.cs" />
     <Compile Include="Control\ControleCategoria.cs" />
     <Compile Include="Control\ControleCobertura.cs" />
+    <Compile Include="Control\ControleConfeiteiro.cs" />
     <Compile Include="Control\ControleConfeito.cs" />
     <Compile Include="Control\ControleFuncionario.cs" />
     <Compile Include="Control\ControleMassa.cs" />
@@ -96,6 +97,7 @@
     <Compile Include="DAO\CaixaDAO.cs" />
     <Compile Include="DAO\CategoriaDAO.cs" />
     <Compile Include="DAO\CoberturaDAO.cs" />
+    <Compile Include="DAO\ConfeiteiroDAO.cs" />
     <Compile Include="DAO\ConfeitoDAO.cs" />
     <Compile Include="DAO\FuncionarioDAO.cs" />
     <Compile Include="DAO\MassaDAO.cs" />

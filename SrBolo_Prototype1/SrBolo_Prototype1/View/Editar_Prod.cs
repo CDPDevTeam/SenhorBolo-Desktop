@@ -215,5 +215,11 @@ namespace SrBolo_Prototype1
             ComboBoxEditProdMassa.Text = Produto.Massa;
             ComboBoxEditProdRecheio.Text = Produto.Recheio;
         }
+
+        private void Editar_Prod_Load(object sender, EventArgs e)
+        {
+            lblNome.Text = Gerente.Nome;
+            lblEmail.Text = Gerente.Email;
+        }
     }
 }
