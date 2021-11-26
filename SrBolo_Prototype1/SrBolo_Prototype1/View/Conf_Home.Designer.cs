@@ -74,6 +74,7 @@
             this.panelSlide2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelPrinc2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panelBacktemplate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconTemplate)).BeginInit();
             this.panelSlide.SuspendLayout();
@@ -159,7 +160,7 @@
             this.panelBacktemplate.FillColor = System.Drawing.Color.White;
             this.panelBacktemplate.FillColor2 = System.Drawing.Color.White;
             this.panelBacktemplate.Location = new System.Drawing.Point(1588, 812);
-            this.panelBacktemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelBacktemplate.Margin = new System.Windows.Forms.Padding(4);
             this.panelBacktemplate.Name = "panelBacktemplate";
             this.panelBacktemplate.ShadowDecoration.Parent = this.panelBacktemplate;
             this.panelBacktemplate.Size = new System.Drawing.Size(583, 241);
@@ -193,7 +194,7 @@
             this.btnFeitoTemplate.ForeColor = System.Drawing.Color.White;
             this.btnFeitoTemplate.HoverState.Parent = this.btnFeitoTemplate;
             this.btnFeitoTemplate.Location = new System.Drawing.Point(371, 190);
-            this.btnFeitoTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFeitoTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnFeitoTemplate.Name = "btnFeitoTemplate";
             this.btnFeitoTemplate.ShadowDecoration.Parent = this.btnFeitoTemplate;
             this.btnFeitoTemplate.Size = new System.Drawing.Size(152, 39);
@@ -214,7 +215,7 @@
             this.btnCalcTemplate.ForeColor = System.Drawing.Color.White;
             this.btnCalcTemplate.HoverState.Parent = this.btnCalcTemplate;
             this.btnCalcTemplate.Location = new System.Drawing.Point(69, 190);
-            this.btnCalcTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCalcTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalcTemplate.Name = "btnCalcTemplate";
             this.btnCalcTemplate.ShadowDecoration.Parent = this.btnCalcTemplate;
             this.btnCalcTemplate.Size = new System.Drawing.Size(262, 39);
@@ -225,7 +226,7 @@
             // 
             this.iconTemplate.Image = ((System.Drawing.Image)(resources.GetObject("iconTemplate.Image")));
             this.iconTemplate.Location = new System.Drawing.Point(33, 38);
-            this.iconTemplate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.iconTemplate.Margin = new System.Windows.Forms.Padding(4);
             this.iconTemplate.Name = "iconTemplate";
             this.iconTemplate.Size = new System.Drawing.Size(112, 114);
             this.iconTemplate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -782,11 +783,21 @@
             this.label5.TabIndex = 46;
             this.label5.Text = "Prontos para Entrega";
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(148, 474);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(46, 17);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "label9";
+            // 
             // Conf_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1710, 840);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panelSlide2);
             this.Controls.Add(this.guna2GradientPanel1);
@@ -799,7 +810,7 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Conf_home";
             this.Text = "Conf_home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -869,5 +880,6 @@
         private Guna.UI2.WinForms.Guna2Panel panelSlide2;
         private Guna.UI2.WinForms.Guna2Panel panelPrinc2;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label9;
     }
 }

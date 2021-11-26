@@ -29,22 +29,24 @@ namespace SrBolo_Prototype1.View
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Conf_DetalhePed));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblEmailCli = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblDataCompra = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridViewBolosPed = new System.Windows.Forms.DataGridView();
             this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.label9 = new System.Windows.Forms.Label();
+            this.lblIdPed = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblEndObs = new System.Windows.Forms.Label();
             this.lblEnd2 = new System.Windows.Forms.Label();
-            this.lblEnd1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.lblEnder1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewBolosPed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,15 +80,15 @@ namespace SrBolo_Prototype1.View
             this.lblEmailCli.TabIndex = 3;
             this.lblEmailCli.Text = ":email:";
             // 
-            // label4
+            // lblDataCompra
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(428, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = ":data:";
+            this.lblDataCompra.AutoSize = true;
+            this.lblDataCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataCompra.Location = new System.Drawing.Point(428, 130);
+            this.lblDataCompra.Name = "lblDataCompra";
+            this.lblDataCompra.Size = new System.Drawing.Size(62, 25);
+            this.lblDataCompra.TabIndex = 5;
+            this.lblDataCompra.Text = ":data:";
             // 
             // label5
             // 
@@ -108,15 +110,38 @@ namespace SrBolo_Prototype1.View
             this.label8.TabIndex = 8;
             this.label8.Text = "Bolos do Pedido";
             // 
-            // dataGridView1
+            // gridViewBolosPed
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(42, 348);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(600, 202);
-            this.dataGridView1.TabIndex = 9;
+            this.gridViewBolosPed.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridViewBolosPed.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.gridViewBolosPed.BackgroundColor = System.Drawing.Color.White;
+            this.gridViewBolosPed.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridViewBolosPed.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridViewBolosPed.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridViewBolosPed.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridViewBolosPed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridViewBolosPed.DefaultCellStyle = dataGridViewCellStyle2;
+            this.gridViewBolosPed.Location = new System.Drawing.Point(42, 348);
+            this.gridViewBolosPed.Name = "gridViewBolosPed";
+            this.gridViewBolosPed.RowHeadersVisible = false;
+            this.gridViewBolosPed.RowHeadersWidth = 51;
+            this.gridViewBolosPed.RowTemplate.Height = 24;
+            this.gridViewBolosPed.Size = new System.Drawing.Size(600, 202);
+            this.gridViewBolosPed.TabIndex = 9;
             // 
             // guna2GradientButton1
             // 
@@ -140,15 +165,15 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientButton1.TabIndex = 10;
             this.guna2GradientButton1.Text = "Fechar";
             // 
-            // label9
+            // lblIdPed
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(197, 35);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 36);
-            this.label9.TabIndex = 11;
-            this.label9.Text = ":#id:";
+            this.lblIdPed.AutoSize = true;
+            this.lblIdPed.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdPed.Location = new System.Drawing.Point(205, 35);
+            this.lblIdPed.Name = "lblIdPed";
+            this.lblIdPed.Size = new System.Drawing.Size(77, 36);
+            this.lblIdPed.TabIndex = 11;
+            this.lblIdPed.Text = ":#id:";
             // 
             // pictureBox1
             // 
@@ -165,9 +190,9 @@ namespace SrBolo_Prototype1.View
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(40, 180);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 25);
+            this.label3.Size = new System.Drawing.Size(203, 25);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Email do cliente";
+            this.label3.Text = "Endereço do cliente";
             // 
             // lblEndObs
             // 
@@ -189,15 +214,15 @@ namespace SrBolo_Prototype1.View
             this.lblEnd2.TabIndex = 14;
             this.lblEnd2.Text = ":end2:";
             // 
-            // lblEnd1
+            // lblEnder1
             // 
-            this.lblEnd1.AutoSize = true;
-            this.lblEnd1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEnd1.Location = new System.Drawing.Point(40, 205);
-            this.lblEnd1.Name = "lblEnd1";
-            this.lblEnd1.Size = new System.Drawing.Size(68, 25);
-            this.lblEnd1.TabIndex = 15;
-            this.lblEnd1.Text = ":end1:";
+            this.lblEnder1.AutoSize = true;
+            this.lblEnder1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnder1.Location = new System.Drawing.Point(40, 205);
+            this.lblEnder1.Name = "lblEnder1";
+            this.lblEnder1.Size = new System.Drawing.Size(68, 25);
+            this.lblEnder1.TabIndex = 17;
+            this.lblEnder1.Text = ":end1:";
             // 
             // Conf_DetalhePed
             // 
@@ -205,15 +230,15 @@ namespace SrBolo_Prototype1.View
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(689, 662);
-            this.Controls.Add(this.lblEnd1);
+            this.Controls.Add(this.lblEnder1);
             this.Controls.Add(this.lblEnd2);
             this.Controls.Add(this.lblEndObs);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.lblIdPed);
             this.Controls.Add(this.guna2GradientButton1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.gridViewBolosPed);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.lblDataCompra);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblEmailCli);
             this.Controls.Add(this.label2);
@@ -226,7 +251,8 @@ namespace SrBolo_Prototype1.View
             this.Name = "Conf_DetalhePed";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Conf_DetalhePed";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Conf_DetalhePed_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridViewBolosPed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -239,15 +265,15 @@ namespace SrBolo_Prototype1.View
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblEmailCli;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblDataCompra;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gridViewBolosPed;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label lblIdPed;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblEndObs;
         private System.Windows.Forms.Label lblEnd2;
-        private System.Windows.Forms.Label lblEnd1;
+        private System.Windows.Forms.Label lblEnder1;
     }
 }

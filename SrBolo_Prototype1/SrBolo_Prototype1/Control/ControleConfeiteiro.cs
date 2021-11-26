@@ -38,5 +38,10 @@ namespace SrBolo_Prototype1.Control
             int contagem = sus.getNumPedidosaCaminho();
             return contagem;
         }
+        public DataTable getEndCli(int idPed)
+        {
+            Dt = sus.getEndCli(idPed);
+            return Dt;
+        }
     }
 }

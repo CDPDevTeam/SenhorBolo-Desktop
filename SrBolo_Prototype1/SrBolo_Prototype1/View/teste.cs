@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SrBolo_Prototype1.Model;
+using SrBolo_Prototype1.Control;
 
 namespace SrBolo_Prototype1.View
 {
@@ -16,10 +18,16 @@ namespace SrBolo_Prototype1.View
         {
             InitializeComponent();
         }
+        ControleConfeiteiro conf = new ControleConfeiteiro();
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void teste_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = conf.getPedidosaCaminho();
         }
     }
 }

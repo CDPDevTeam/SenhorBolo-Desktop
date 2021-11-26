@@ -88,5 +88,27 @@ namespace SrBolo_Prototype1.DAO
             finally { Desconectar(); }
             return countPeds;
         }
+
+        public DataTable getEndCli(int idPed)
+        {
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("getenderecocliente", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("idpedido", idPed);
+                Dr = Cmd.ExecuteReader();
+                Dt.Load(Dr);
+            }
+            catch (Exception e)
+            {
+                throw new Exception("erro ao acessar os produtos" + e.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return Dt;
+        }
     }
 }
