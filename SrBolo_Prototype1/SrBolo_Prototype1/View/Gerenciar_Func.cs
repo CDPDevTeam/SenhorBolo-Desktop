@@ -157,14 +157,19 @@ namespace SrBolo_Prototype1
             this.Hide();
         }
 
-       /* private void txtGerFuncSearch_TextChanged(object sender, KeyEventArgs e)
+        private void txtGerFuncSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtGerFuncSearch_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
             {
                 DataView data = funcionariosCadastrados.DefaultView;
-                data.RowFilter = string.Format("cpf_func like %{0}%", txtGerFuncSearch);
+                data.RowFilter = string.Format("cpf_func like '%{0}%' or nome_func like '%{0}%'", txtGerFuncSearch.Text);
                 GridViewFunc.DataSource = data.ToTable();
             }
-        }*/
+        }
     }
 }

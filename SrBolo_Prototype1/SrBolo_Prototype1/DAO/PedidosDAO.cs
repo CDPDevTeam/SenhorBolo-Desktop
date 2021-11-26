@@ -35,27 +35,6 @@ namespace SrBolo_Prototype1.DAO
             return Dt;
         }
 
-        public DataTable bolosCadastrados(int id) 
-        {
-            try
-            {
-                Conectar();
-                NpgsqlCommand Cmd = new NpgsqlCommand("ListarBolos", Cn);
-                Cmd.CommandType = CommandType.StoredProcedure;
-                Cmd.Parameters.AddWithValue("idpedido", id);
-                Dr = Cmd.ExecuteReader();
-                Dt.Load(Dr);
-            }
-            catch (Exception e)
-            {
-                throw new Exception("erro ao acessar os Bolos" + e.Message);
-            }
-            finally
-            {
-                Desconectar();
-            }
-            return Dt;
-        }
 
         public void getPedido(int idPedido) {
             try

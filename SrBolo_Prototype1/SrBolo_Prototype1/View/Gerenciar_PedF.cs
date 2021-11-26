@@ -10,12 +10,14 @@ using System.Windows.Forms;
 using SrBolo_Prototype1.View;
 using SrBolo_Prototype1.Model;
 using SrBolo_Prototype1.Control;
+using SrBolo_Prototype1.DAO;
 
 namespace SrBolo_Prototype1
 {
     public partial class Gerenciar_PedF : Form
     { 
-         ControlePedidos pedidos = new ControlePedidos();
+        ControlePedidos pedidos = new ControlePedidos();
+        PedidosDAO teste = new PedidosDAO();
         DataTable pedidosCadastrados = new DataTable();
     
         public Gerenciar_PedF()
@@ -118,7 +120,7 @@ namespace SrBolo_Prototype1
 
         public void listarPedidos()
         {
-            pedidosCadastrados = pedidos.pedidosCadastrados();
+            pedidosCadastrados = teste.pedidosCadastrados();
             GridViewRec.DataSource = pedidosCadastrados;
 
         }
@@ -128,6 +130,26 @@ namespace SrBolo_Prototype1
             lblNome.Text = Gerente.Nome;
             lblEmail.Text = Gerente.Email;
             listarPedidos();
+            DataTable edson = new DataTable();
+            edson = teste.pedidosCadastrados();
+        }
+
+        private void txtGerRecSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                DataView data = pedidosCadastrados.DefaultView;
+                data.RowFilter = string.Format("CONVERT(id_pedido, 'System.String') like '%{0}%' or cpf_func_fk like '%{0}%' or CONVERT(data_compra, 'System.String') like '%{0}%' or CONVERT(data_entrega, 'System.String') like '%{0}%'", txtGerRecSearch.Text);
+                GridViewRec.DataSource = data.ToTable();
+            }
+        }
+
+        private void ButtonExibir_Click(object sender, EventArgs e)
+        {
+            int indice = GridViewRec.SelectedRows[0].Index;
+            pedidos.getPedidos(int.Parse(GridViewRec.Rows[indice].Cells[0].Value.ToString()));
+            Adm_Pedido adm_Pedido = new Adm_Pedido();
+            adm_Pedido.Show();
         }
     }
 }

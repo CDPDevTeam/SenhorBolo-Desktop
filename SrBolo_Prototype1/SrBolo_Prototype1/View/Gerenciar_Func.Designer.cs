@@ -136,6 +136,8 @@
             this.txtGerFuncSearch.ShadowDecoration.Parent = this.txtGerFuncSearch;
             this.txtGerFuncSearch.Size = new System.Drawing.Size(454, 46);
             this.txtGerFuncSearch.TabIndex = 25;
+            this.txtGerFuncSearch.TextChanged += new System.EventHandler(this.txtGerFuncSearch_TextChanged);
+            this.txtGerFuncSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtGerFuncSearch_KeyDown);
             // 
             // ButtonEdit
             // 
@@ -584,6 +586,7 @@
             this.Name = "Gerenciar_Func";
             this.Text = "Gerenciar_Func";
             this.Load += new System.EventHandler(this.Gerenciar_Func_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtGerFuncSearch_KeyDown);
             this.PanelGerFunc.ResumeLayout(false);
             this.PanelGerFunc.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewFunc)).EndInit();

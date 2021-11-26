@@ -11,17 +11,18 @@ namespace SrBolo_Prototype1.DAO
 {
     class ClassConexao
     {
-        private static String Host = "motty.db.elephantsql.com";
-        private static String User= "vmnrcpwz";
-        private static String DBname = "vmnrcpwz";
-        private static String Password = "uN9-oJ2RFBzZF9sEFeHEdQcMNb0EJA2L";
+        private static String Host = "ec2-34-203-114-67.compute-1.amazonaws.com";
+        private static String User = "ywqpycucbiguqa";
+        private static String DBname = "d20gs8fi9etl55";
+        private static String Password = "c0e978116cdbbb710871d3605b9591e25d69bcd53eec83591eb359b81c99e177";
         private static String Port = "5432";
         protected NpgsqlDataReader Dr;
         protected NpgsqlConnection Cn;
-        
-        public void Conectar() { 
-            String Sandroval = String.Format("Server ={0}; Port ={1}; User Id = {2}; Password ={3}; Database ={4}; ", Host, Port, User, Password, DBname);
-            
+
+        public void Conectar()
+        {
+            String Sandroval = String.Format("Server ={0}; Port ={1}; User Id = {2}; Password ={3}; Database ={4}; SSL Mode=Require;Trust Server Certificate=true", Host, Port, User, Password, DBname);
+
             Cn = new NpgsqlConnection(Sandroval);
             Cn.Open();
         }

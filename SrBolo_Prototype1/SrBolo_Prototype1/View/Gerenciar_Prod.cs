@@ -151,5 +151,15 @@ namespace SrBolo_Prototype1
             cad_Prod.Show();
             this.Hide();
         }
+
+        private void txtGerProdSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                DataView data = produtosCadastrados.DefaultView;
+                data.RowFilter = string.Format("CONVERT(id_prod, 'System.String') like '%{0}%' or nome_prod like '%{0}%'", txtGerProdSearch.Text);
+                GridViewProd.DataSource = data.ToTable();
+            }
+        }
     }
 }

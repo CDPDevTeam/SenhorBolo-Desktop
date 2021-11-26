@@ -129,11 +129,12 @@
             this.txtGerProdSearch.Name = "txtGerProdSearch";
             this.txtGerProdSearch.PasswordChar = '\0';
             this.txtGerProdSearch.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtGerProdSearch.PlaceholderText = "Digite ID, Categoria ou Nome";
+            this.txtGerProdSearch.PlaceholderText = "Digite ID ou Nome";
             this.txtGerProdSearch.SelectedText = "";
             this.txtGerProdSearch.ShadowDecoration.Parent = this.txtGerProdSearch;
             this.txtGerProdSearch.Size = new System.Drawing.Size(454, 46);
             this.txtGerProdSearch.TabIndex = 25;
+            this.txtGerProdSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtGerProdSearch_KeyDown);
             // 
             // ButtonEdit
             // 

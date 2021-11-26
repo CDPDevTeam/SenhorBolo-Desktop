@@ -10,11 +10,13 @@ using System.Windows.Forms;
 using SrBolo_Prototype1.View;
 using SrBolo_Prototype1.Control;
 using SrBolo_Prototype1.Model;
+using SrBolo_Prototype1.DAO;
 
 namespace SrBolo_Prototype1
 {
     public partial class Gerenciar_PedE : Form
     {
+        PedidosDAO pedidosDAO = new PedidosDAO();
         ControlePedidos pedidose = new ControlePedidos();
         DataTable pedidosECadastrados = new DataTable();
         public Gerenciar_PedE()
@@ -117,8 +119,9 @@ namespace SrBolo_Prototype1
 
         public void listarPedidosE()
         {
-            pedidosECadastrados = pedidose.pedidosECadastrados();
+            pedidosECadastrados = pedidosDAO.pedidosECadastrados();
             GridViewRec.DataSource = pedidosECadastrados;
+
 
         }
 
@@ -127,13 +130,17 @@ namespace SrBolo_Prototype1
             lblNome.Text = Gerente.Nome;
             lblEmail.Text = Gerente.Email;
             listarPedidosE();
+            DataTable edson = new DataTable();
+            edson = pedidosDAO.pedidosCadastrados();
+
+
 
         }
 
         private void ButtonExibir_Click(object sender, EventArgs e)
         {
             int indice = GridViewRec.SelectedRows[0].Index;
-            pedidose.getPedidos(int.Parse(GridViewRec.Rows[indice].Cells[0].Value.ToString()));
+            pedidosDAO.getPedido(int.Parse(GridViewRec.Rows[indice].Cells[0].Value.ToString()));
             Adm_Pedido adm_Pedido = new Adm_Pedido();
             adm_Pedido.Show();
             
@@ -142,6 +149,16 @@ namespace SrBolo_Prototype1
         private void GridViewRec_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
            
+        }
+
+        private void txtGerRecSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                DataView data = pedidosECadastrados.DefaultView;
+                data.RowFilter = string.Format("email_cli_fk like '%{0}%' or CONVERT(id_pedido, 'System.String') like '%{0}%' or CONVERT(data_compra, 'System.String') like '%{0}%' or CONVERT(data_entrega, 'System.String') like '%{0}%'", txtGerRecSearch.Text);
+                GridViewRec.DataSource = data.ToTable();
+            }
         }
     }
 }

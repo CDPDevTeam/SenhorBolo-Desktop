@@ -125,11 +125,12 @@
             this.txtGerRecSearch.Name = "txtGerRecSearch";
             this.txtGerRecSearch.PasswordChar = '\0';
             this.txtGerRecSearch.PlaceholderForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.txtGerRecSearch.PlaceholderText = "Digite ID, Categoria ou Nome";
+            this.txtGerRecSearch.PlaceholderText = "Digite ID, Data ou Email";
             this.txtGerRecSearch.SelectedText = "";
             this.txtGerRecSearch.ShadowDecoration.Parent = this.txtGerRecSearch;
             this.txtGerRecSearch.Size = new System.Drawing.Size(454, 46);
             this.txtGerRecSearch.TabIndex = 25;
+            this.txtGerRecSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtGerRecSearch_KeyDown);
             // 
             // GridViewRec
             // 
