@@ -129,5 +129,19 @@ namespace SrBolo_Prototype1
             listarPedidosE();
 
         }
+
+        private void ButtonExibir_Click(object sender, EventArgs e)
+        {
+            int indice = GridViewRec.SelectedRows[0].Index;
+            pedidose.getPedidos(int.Parse(GridViewRec.Rows[indice].Cells[0].Value.ToString()));
+            Adm_Pedido adm_Pedido = new Adm_Pedido();
+            adm_Pedido.Show();
+            
+        }
+
+        private void GridViewRec_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
     }
 }

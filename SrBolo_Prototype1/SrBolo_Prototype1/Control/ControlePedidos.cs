@@ -13,6 +13,7 @@ namespace SrBolo_Prototype1.Control
         DataTable pedidose = new DataTable();
         PedidosDAO pedidoEDAO = new PedidosDAO();
 
+
         public DataTable pedidosECadastrados()
         {
             pedidose = pedidoEDAO.pedidosECadastrados();
@@ -27,7 +28,25 @@ namespace SrBolo_Prototype1.Control
             pedidos = pedidoDAO.pedidosCadastrados();
             return pedidos;
         }
+
+        public void setPedidos(int idPed)
+        {
+            pedidoEDAO.setPedidos(idPed);
+        }
+
+        public DataTable getPedido()
+        {
+            pedidose = pedidoEDAO.pedidosCadastrados();
+            return pedidose;
+        }
+
+        public DataTable getPedidosE() {
+            pedidose = pedidoEDAO.pedidosECadastrados();
+            return pedidose;
+        }
+
+        public void getPedidos(int idpedido) {
+            pedidoDAO.getPedido(idpedido);
+        }
     }
-
-
 }

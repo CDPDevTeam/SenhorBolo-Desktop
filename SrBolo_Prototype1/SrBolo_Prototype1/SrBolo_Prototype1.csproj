@@ -106,6 +106,7 @@
     <Compile Include="DAO\RecheioDAO.cs" />
     <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="Model\Fornecedor.cs" />
+    <Compile Include="Model\Pedido.cs" />
     <Compile Include="Model\PedidoE.cs" />
     <Compile Include="Model\Produto.cs" />
     <Compile Include="DAO\LoginDAO.cs" />

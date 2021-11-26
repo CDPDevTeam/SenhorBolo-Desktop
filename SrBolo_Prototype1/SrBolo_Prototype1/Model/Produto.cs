@@ -17,8 +17,5 @@ namespace SrBolo_Prototype1.Model
         public static double ValorUnit { get; set; }
         public static string Foto { get; set; }
         public static string Nome { get; set; }
-
-
-
     }
 }

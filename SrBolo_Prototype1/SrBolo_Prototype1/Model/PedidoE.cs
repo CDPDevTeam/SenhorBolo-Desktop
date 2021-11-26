@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace SrBolo_Prototype1.Model
 {
-    class PedidoE
+    public static class PedidoE
     {
-        public int id { get; set; }
-        public string email { get; set; }
-        public string cpf { get; set; }
-        public int idendereco { get; set; }
-        public int idcupons { get; set; }
-        public string datacompra { get; set; }
-        public string dataentrega { get; set; }
-        public string status { get; set; }
-        public bool ecommerce { get; set; }
+        public static int id { get; set; }
+        public static string email { get; set; }
+        public static string cpf { get; set; }
+        public static int idendereco { get; set; }
+        public static int idcupons { get; set; }
+        public static string datacompra { get; set; }
+        public static string dataentrega { get; set; }
+        public static string status { get; set; }
+        public static bool ecommerce { get; set; }
 
     }
 }

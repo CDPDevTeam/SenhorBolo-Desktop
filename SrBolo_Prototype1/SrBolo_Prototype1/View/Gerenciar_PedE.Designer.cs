@@ -139,8 +139,10 @@
             this.GridViewRec.Name = "GridViewRec";
             this.GridViewRec.RowHeadersWidth = 62;
             this.GridViewRec.RowTemplate.Height = 28;
+            this.GridViewRec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridViewRec.Size = new System.Drawing.Size(1325, 665);
             this.GridViewRec.TabIndex = 23;
+            this.GridViewRec.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridViewRec_CellContentClick);
             // 
             // ButtonExibir
             // 
@@ -164,6 +166,7 @@
             this.ButtonExibir.Size = new System.Drawing.Size(180, 51);
             this.ButtonExibir.TabIndex = 22;
             this.ButtonExibir.Text = "Exibir";
+            this.ButtonExibir.Click += new System.EventHandler(this.ButtonExibir_Click);
             // 
             // PictureBoxPerfil
             // 
