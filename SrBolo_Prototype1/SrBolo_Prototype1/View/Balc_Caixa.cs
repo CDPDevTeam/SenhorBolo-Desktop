@@ -276,5 +276,13 @@ namespace SrBolo_Prototype1
                 e.Handled = true;
             }
         }
+
+        private void lblDesconectar_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja mesmo sair do sistema?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+        }
     }
 }

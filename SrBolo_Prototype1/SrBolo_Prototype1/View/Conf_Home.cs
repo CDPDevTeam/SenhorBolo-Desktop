@@ -21,7 +21,6 @@ namespace SrBolo_Prototype1
         public Conf_home()
         {
             InitializeComponent();
-            CustumizeDesing();
             
         }
         DataTable Dt = new DataTable();
@@ -29,67 +28,6 @@ namespace SrBolo_Prototype1
         ControleConfeiteiro confeiteirou = new ControleConfeiteiro();
         ConfeiteiroDAO cDAO = new ConfeiteiroDAO();
         ControlePedidos pedido = new ControlePedidos();
-
-        private void CustumizeDesing()
-        {
-            PanelInsumo.Visible = false;
-            PanelProduto.Visible = false;
-            PanelFuncionario.Visible = false;
-            PanelReceita.Visible = false;
-        }
-
-        private void HideMenu()
-        {
-            if (PanelFuncionario.Visible == true)
-            {
-                PanelFuncionario.Visible = false;
-            }
-            if (PanelProduto.Visible == true)
-            {
-                PanelProduto.Visible = false;
-            }
-            if (PanelInsumo.Visible == true)
-            {
-                PanelInsumo.Visible = false;
-            }
-            if (PanelReceita.Visible == true)
-            {
-                PanelReceita.Visible = false;
-            }
-        }
-
-        private void ShowSubmenu(Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                HideMenu();
-                subMenu.Visible = true;
-            }
-            else
-            {
-                subMenu.Visible = false;
-            }
-        }
-
-        private void BtnFuncionario_Click(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelFuncionario);
-        }
-
-        private void BtnProduto_Click(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelProduto);
-        }
-
-        private void BtnInsumo_Click(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelInsumo);
-        }
-
-        private void BtnReceita_Click(object sender, EventArgs e)
-        {
-            ShowSubmenu(PanelReceita);
-        }
 
         private void Conf_home_Load(object sender, EventArgs e)
         {
@@ -146,7 +84,7 @@ namespace SrBolo_Prototype1
                 btnCalcIng.Text = btnCalcTemplate.Text;
                 btnCalcIng.Font = btnCalcTemplate.Font;
                 btnCalcIng.Click += (s, e) => {
-                    pedido.getPedidos(int.Parse(lblIdPedido.Text));
+                    pedido.getExibirPedidos(int.Parse(lblIdPedido.Text));
                     Conf_DetalhePed conf_DetalhePed = new Conf_DetalhePed();
                     conf_DetalhePed.Show();
                 };
@@ -246,7 +184,7 @@ namespace SrBolo_Prototype1
                 btnCalcIng2.Text = btnCalcTemplate.Text;
                 btnCalcIng2.Font = btnCalcTemplate.Font;
                 btnCalcIng2.Click += (s, e) => {
-                    pedido.getPedidos(int.Parse(lblIdPedido2.Text));
+                    pedido.getExibirPedidos(int.Parse(lblIdPedido2.Text));
                     Conf_DetalhePed conf_DetalhePed = new Conf_DetalhePed();
                     conf_DetalhePed.Show();
                 };
@@ -304,6 +242,14 @@ namespace SrBolo_Prototype1
             /*pedido.getPedido(int.Parse()
             Conf_DetalhePed conf_DetalhePed = new Conf_DetalhePed();
             conf_DetalhePed.Show();*/
+        }
+
+        private void BtnDesc_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja mesmo sair do sistema?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
         }
     }
 }

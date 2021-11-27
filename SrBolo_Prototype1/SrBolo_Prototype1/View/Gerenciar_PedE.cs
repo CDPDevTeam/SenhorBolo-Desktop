@@ -16,7 +16,7 @@ namespace SrBolo_Prototype1
 {
     public partial class Gerenciar_PedE : Form
     {
-        PedidosDAO pedidosDAO = new PedidosDAO();
+       // PedidosDAO pedidosDAO = new PedidosDAO();
         ControlePedidos pedidose = new ControlePedidos();
         DataTable pedidosECadastrados = new DataTable();
         public Gerenciar_PedE()
@@ -119,7 +119,7 @@ namespace SrBolo_Prototype1
 
         public void listarPedidosE()
         {
-            pedidosECadastrados = pedidosDAO.pedidosECadastrados();
+            pedidosECadastrados = pedidose.pedidosECadastrados();
             GridViewRec.DataSource = pedidosECadastrados;
 
 
@@ -131,7 +131,7 @@ namespace SrBolo_Prototype1
             lblEmail.Text = Gerente.Email;
             listarPedidosE();
             DataTable edson = new DataTable();
-            edson = pedidosDAO.pedidosCadastrados();
+            //edson = pedidosDAO.pedidosCadastrados();
 
 
 
@@ -139,10 +139,10 @@ namespace SrBolo_Prototype1
 
         private void ButtonExibir_Click(object sender, EventArgs e)
         {
-            int indice = GridViewRec.SelectedRows[0].Index;
-            pedidosDAO.getPedido(int.Parse(GridViewRec.Rows[indice].Cells[0].Value.ToString()));
+           /* int indice = GridViewRec.SelectedRows[0].Index;
+            pedidosDAO.getExibirPedido(int.Parse(GridViewRec.Rows[indice].Cells[0].Value.ToString()));
             Adm_Pedido adm_Pedido = new Adm_Pedido();
-            adm_Pedido.Show();
+            adm_Pedido.Show();*/
             
         }
 

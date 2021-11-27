@@ -40,7 +40,6 @@ namespace SrBolo_Prototype1
             this.txtEditFuncEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditFuncTel = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtEditFuncNome = new Guna.UI2.WinForms.Guna2TextBox();
-            this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.PanelPedidos = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGerenciar_PedF = new Guna.UI2.WinForms.Guna2Button();
@@ -61,7 +60,6 @@ namespace SrBolo_Prototype1
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.guna2CustomGradientPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
             this.PanelMenu.SuspendLayout();
             this.PanelPedidos.SuspendLayout();
             this.PanelProduto.SuspendLayout();
@@ -265,7 +263,6 @@ namespace SrBolo_Prototype1
             this.txtEditFuncTel.ShadowDecoration.Parent = this.txtEditFuncTel;
             this.txtEditFuncTel.Size = new System.Drawing.Size(404, 36);
             this.txtEditFuncTel.TabIndex = 4;
-           // this.txtEditFuncTel.TextChanged += new System.EventHandler(this.txtEditFuncTel_TextChanged);
             // 
             // txtEditFuncNome
             // 
@@ -291,20 +288,6 @@ namespace SrBolo_Prototype1
             this.txtEditFuncNome.ShadowDecoration.Parent = this.txtEditFuncNome;
             this.txtEditFuncNome.Size = new System.Drawing.Size(404, 36);
             this.txtEditFuncNome.TabIndex = 2;
-            // 
-            // PictureBoxPerfil
-            // 
-            this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
-            this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(179, 10);
-            this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PictureBoxPerfil.Name = "PictureBoxPerfil";
-            this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(65, 65);
-            this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxPerfil.TabIndex = 6;
-            this.PictureBoxPerfil.TabStop = false;
             // 
             // PanelMenu
             // 
@@ -618,7 +601,7 @@ namespace SrBolo_Prototype1
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblEmail.Location = new System.Drawing.Point(252, 44);
+            this.lblEmail.Location = new System.Drawing.Point(184, 46);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(56, 20);
             this.lblEmail.TabIndex = 22;
@@ -630,7 +613,7 @@ namespace SrBolo_Prototype1
             this.lblNome.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Black;
-            this.lblNome.Location = new System.Drawing.Point(251, 16);
+            this.lblNome.Location = new System.Drawing.Point(184, 20);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(82, 25);
             this.lblNome.TabIndex = 21;
@@ -647,7 +630,6 @@ namespace SrBolo_Prototype1
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.PanelMenu);
             this.Controls.Add(this.guna2CustomGradientPanel2);
-            this.Controls.Add(this.PictureBoxPerfil);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Editar_Func";
@@ -655,7 +637,6 @@ namespace SrBolo_Prototype1
             this.Load += new System.EventHandler(this.Editar_Func_Load);
             this.guna2CustomGradientPanel2.ResumeLayout(false);
             this.guna2CustomGradientPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
             this.PanelMenu.ResumeLayout(false);
             this.PanelPedidos.ResumeLayout(false);
             this.PanelProduto.ResumeLayout(false);
@@ -667,7 +648,6 @@ namespace SrBolo_Prototype1
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxPerfil;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel guna2CustomGradientPanel2;
         private Guna.UI2.WinForms.Guna2Button ButtonEdit;
         private Guna.UI2.WinForms.Guna2Button ButtonLimpar;

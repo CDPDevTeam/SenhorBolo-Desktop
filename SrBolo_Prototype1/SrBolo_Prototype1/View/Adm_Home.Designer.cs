@@ -30,8 +30,8 @@ namespace SrBolo_Prototype1.View
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adm_Home));
             this.PanelRendimentoMensal = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -59,26 +59,26 @@ namespace SrBolo_Prototype1.View
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label12 = new System.Windows.Forms.Label();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.BtnDesc = new Guna.UI2.WinForms.Guna2Button();
             this.PanelPedidos = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGerenciarPedF = new Guna.UI2.WinForms.Guna2Button();
             this.btnGerenciar_PedE = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnPedidos = new Guna.UI2.WinForms.Guna2ImageButton();
             this.PanelProduto = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGerenciar_Prod = new Guna.UI2.WinForms.Guna2Button();
             this.btnCad_Prod = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnProduto = new Guna.UI2.WinForms.Guna2ImageButton();
             this.PanelFuncionario = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGerenciar_Func = new Guna.UI2.WinForms.Guna2Button();
             this.btnCad_Func = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
             this.lblHora = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.BtnPedidos = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.BtnProduto = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.BtnFuncionario = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.LogoMrCake = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelRendimentoMensal.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.guna2GradientPanel13.SuspendLayout();
@@ -93,7 +93,6 @@ namespace SrBolo_Prototype1.View
             this.PanelProduto.SuspendLayout();
             this.PanelFuncionario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelRendimentoMensal
@@ -429,14 +428,14 @@ namespace SrBolo_Prototype1.View
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Location = new System.Drawing.Point(28, 98);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(642, 375);
             this.chart1.TabIndex = 20;
             this.chart1.Text = "chart1";
@@ -455,6 +454,7 @@ namespace SrBolo_Prototype1.View
             // 
             // PanelMenu
             // 
+            this.PanelMenu.Controls.Add(this.BtnDesc);
             this.PanelMenu.Controls.Add(this.PanelPedidos);
             this.PanelMenu.Controls.Add(this.BtnPedidos);
             this.PanelMenu.Controls.Add(this.PanelProduto);
@@ -472,6 +472,28 @@ namespace SrBolo_Prototype1.View
             this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
             this.PanelMenu.Size = new System.Drawing.Size(144, 960);
             this.PanelMenu.TabIndex = 29;
+            // 
+            // BtnDesc
+            // 
+            this.BtnDesc.CheckedState.Parent = this.BtnDesc;
+            this.BtnDesc.CustomImages.Parent = this.BtnDesc;
+            this.BtnDesc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnDesc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnDesc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnDesc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnDesc.DisabledState.Parent = this.BtnDesc;
+            this.BtnDesc.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnDesc.FillColor = System.Drawing.Color.Salmon;
+            this.BtnDesc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnDesc.ForeColor = System.Drawing.Color.White;
+            this.BtnDesc.HoverState.Parent = this.BtnDesc;
+            this.BtnDesc.Location = new System.Drawing.Point(0, 915);
+            this.BtnDesc.Name = "BtnDesc";
+            this.BtnDesc.ShadowDecoration.Parent = this.BtnDesc;
+            this.BtnDesc.Size = new System.Drawing.Size(144, 45);
+            this.BtnDesc.TabIndex = 57;
+            this.BtnDesc.Text = "Desconectar";
+            this.BtnDesc.Click += new System.EventHandler(this.BtnDesc_Click);
             // 
             // PanelPedidos
             // 
@@ -531,6 +553,27 @@ namespace SrBolo_Prototype1.View
             this.btnGerenciar_PedE.Text = "Gerenciar Pedidos Ecommerce";
             this.btnGerenciar_PedE.Click += new System.EventHandler(this.btnGerenciar_PedE_Click);
             // 
+            // BtnPedidos
+            // 
+            this.BtnPedidos.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnPedidos.CheckedState.Parent = this.BtnPedidos;
+            this.BtnPedidos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnPedidos.HoverState.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnPedidos.HoverState.Parent = this.BtnPedidos;
+            this.BtnPedidos.Image = ((System.Drawing.Image)(resources.GetObject("BtnPedidos.Image")));
+            this.BtnPedidos.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BtnPedidos.ImageRotate = 0F;
+            this.BtnPedidos.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnPedidos.Location = new System.Drawing.Point(0, 634);
+            this.BtnPedidos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnPedidos.Name = "BtnPedidos";
+            this.BtnPedidos.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnPedidos.PressedState.Parent = this.BtnPedidos;
+            this.BtnPedidos.ShadowDecoration.Parent = this.BtnPedidos;
+            this.BtnPedidos.Size = new System.Drawing.Size(144, 112);
+            this.BtnPedidos.TabIndex = 8;
+            this.BtnPedidos.Click += new System.EventHandler(this.BtnPedidos_Click);
+            // 
             // PanelProduto
             // 
             this.PanelProduto.Controls.Add(this.btnGerenciar_Prod);
@@ -588,6 +631,27 @@ namespace SrBolo_Prototype1.View
             this.btnCad_Prod.TabIndex = 0;
             this.btnCad_Prod.Text = "Cadastrar Produto";
             this.btnCad_Prod.Click += new System.EventHandler(this.btnCad_Prod_Click);
+            // 
+            // BtnProduto
+            // 
+            this.BtnProduto.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnProduto.CheckedState.Parent = this.BtnProduto;
+            this.BtnProduto.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnProduto.HoverState.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnProduto.HoverState.Parent = this.BtnProduto;
+            this.BtnProduto.Image = ((System.Drawing.Image)(resources.GetObject("BtnProduto.Image")));
+            this.BtnProduto.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BtnProduto.ImageRotate = 0F;
+            this.BtnProduto.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnProduto.Location = new System.Drawing.Point(0, 384);
+            this.BtnProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnProduto.Name = "BtnProduto";
+            this.BtnProduto.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnProduto.PressedState.Parent = this.BtnProduto;
+            this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
+            this.BtnProduto.Size = new System.Drawing.Size(144, 112);
+            this.BtnProduto.TabIndex = 4;
+            this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
             // 
             // PanelFuncionario
             // 
@@ -647,6 +711,29 @@ namespace SrBolo_Prototype1.View
             this.btnCad_Func.Text = "Cadastrar Funcionário";
             this.btnCad_Func.Click += new System.EventHandler(this.btnCad_Func_Click);
             // 
+            // BtnFuncionario
+            // 
+            this.BtnFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnFuncionario.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnFuncionario.CheckedState.Parent = this.BtnFuncionario;
+            this.BtnFuncionario.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnFuncionario.HoverState.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnFuncionario.HoverState.Parent = this.BtnFuncionario;
+            this.BtnFuncionario.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
+            this.BtnFuncionario.ImageOffset = new System.Drawing.Point(0, 0);
+            this.BtnFuncionario.ImageRotate = 0F;
+            this.BtnFuncionario.ImageSize = new System.Drawing.Size(128, 90);
+            this.BtnFuncionario.Location = new System.Drawing.Point(0, 134);
+            this.BtnFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnFuncionario.Name = "BtnFuncionario";
+            this.BtnFuncionario.PressedState.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
+            this.BtnFuncionario.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.BtnFuncionario.PressedState.Parent = this.BtnFuncionario;
+            this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
+            this.BtnFuncionario.Size = new System.Drawing.Size(144, 112);
+            this.BtnFuncionario.TabIndex = 2;
+            this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
+            // 
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.Location = new System.Drawing.Point(166, 161);
@@ -655,6 +742,24 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientPanel2.ShadowDecoration.Parent = this.guna2GradientPanel2;
             this.guna2GradientPanel2.Size = new System.Drawing.Size(234, 125);
             this.guna2GradientPanel2.TabIndex = 1;
+            // 
+            // LogoMrCake
+            // 
+            this.LogoMrCake.BackColor = System.Drawing.Color.Transparent;
+            this.LogoMrCake.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.LogoMrCake.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LogoMrCake.FillColor = System.Drawing.Color.Transparent;
+            this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
+            this.LogoMrCake.ImageRotate = 0F;
+            this.LogoMrCake.Location = new System.Drawing.Point(0, 0);
+            this.LogoMrCake.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.LogoMrCake.Name = "LogoMrCake";
+            this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
+            this.LogoMrCake.Size = new System.Drawing.Size(144, 134);
+            this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoMrCake.TabIndex = 0;
+            this.LogoMrCake.TabStop = false;
+            this.LogoMrCake.Click += new System.EventHandler(this.LogoMrCake_Click);
             // 
             // lblHora
             // 
@@ -685,7 +790,7 @@ namespace SrBolo_Prototype1.View
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblEmail.Location = new System.Drawing.Point(248, 58);
+            this.lblEmail.Location = new System.Drawing.Point(177, 58);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(56, 20);
             this.lblEmail.TabIndex = 54;
@@ -697,7 +802,7 @@ namespace SrBolo_Prototype1.View
             this.lblNome.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Black;
-            this.lblNome.Location = new System.Drawing.Point(248, 29);
+            this.lblNome.Location = new System.Drawing.Point(177, 29);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(82, 25);
             this.lblNome.TabIndex = 53;
@@ -707,103 +812,6 @@ namespace SrBolo_Prototype1.View
             // 
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // BtnPedidos
-            // 
-            this.BtnPedidos.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnPedidos.CheckedState.Parent = this.BtnPedidos;
-            this.BtnPedidos.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnPedidos.HoverState.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnPedidos.HoverState.Parent = this.BtnPedidos;
-            this.BtnPedidos.Image = ((System.Drawing.Image)(resources.GetObject("BtnPedidos.Image")));
-            this.BtnPedidos.ImageOffset = new System.Drawing.Point(0, 0);
-            this.BtnPedidos.ImageRotate = 0F;
-            this.BtnPedidos.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnPedidos.Location = new System.Drawing.Point(0, 634);
-            this.BtnPedidos.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BtnPedidos.Name = "BtnPedidos";
-            this.BtnPedidos.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnPedidos.PressedState.Parent = this.BtnPedidos;
-            this.BtnPedidos.ShadowDecoration.Parent = this.BtnPedidos;
-            this.BtnPedidos.Size = new System.Drawing.Size(144, 112);
-            this.BtnPedidos.TabIndex = 8;
-            this.BtnPedidos.Click += new System.EventHandler(this.BtnPedidos_Click);
-            // 
-            // BtnProduto
-            // 
-            this.BtnProduto.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnProduto.CheckedState.Parent = this.BtnProduto;
-            this.BtnProduto.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnProduto.HoverState.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnProduto.HoverState.Parent = this.BtnProduto;
-            this.BtnProduto.Image = ((System.Drawing.Image)(resources.GetObject("BtnProduto.Image")));
-            this.BtnProduto.ImageOffset = new System.Drawing.Point(0, 0);
-            this.BtnProduto.ImageRotate = 0F;
-            this.BtnProduto.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnProduto.Location = new System.Drawing.Point(0, 384);
-            this.BtnProduto.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BtnProduto.Name = "BtnProduto";
-            this.BtnProduto.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnProduto.PressedState.Parent = this.BtnProduto;
-            this.BtnProduto.ShadowDecoration.Parent = this.BtnProduto;
-            this.BtnProduto.Size = new System.Drawing.Size(144, 112);
-            this.BtnProduto.TabIndex = 4;
-            this.BtnProduto.Click += new System.EventHandler(this.BtnProduto_Click);
-            // 
-            // BtnFuncionario
-            // 
-            this.BtnFuncionario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnFuncionario.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnFuncionario.CheckedState.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnFuncionario.HoverState.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnFuncionario.HoverState.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
-            this.BtnFuncionario.ImageOffset = new System.Drawing.Point(0, 0);
-            this.BtnFuncionario.ImageRotate = 0F;
-            this.BtnFuncionario.ImageSize = new System.Drawing.Size(128, 90);
-            this.BtnFuncionario.Location = new System.Drawing.Point(0, 134);
-            this.BtnFuncionario.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.BtnFuncionario.Name = "BtnFuncionario";
-            this.BtnFuncionario.PressedState.Image = global::SrBolo_Prototype1.Properties.Resources.IMGBtnFunc;
-            this.BtnFuncionario.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.BtnFuncionario.PressedState.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.ShadowDecoration.Parent = this.BtnFuncionario;
-            this.BtnFuncionario.Size = new System.Drawing.Size(144, 112);
-            this.BtnFuncionario.TabIndex = 2;
-            this.BtnFuncionario.Click += new System.EventHandler(this.BtnFuncionario_Click);
-            // 
-            // LogoMrCake
-            // 
-            this.LogoMrCake.BackColor = System.Drawing.Color.Transparent;
-            this.LogoMrCake.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.LogoMrCake.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LogoMrCake.FillColor = System.Drawing.Color.Transparent;
-            this.LogoMrCake.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
-            this.LogoMrCake.ImageRotate = 0F;
-            this.LogoMrCake.Location = new System.Drawing.Point(0, 0);
-            this.LogoMrCake.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.LogoMrCake.Name = "LogoMrCake";
-            this.LogoMrCake.ShadowDecoration.Parent = this.LogoMrCake;
-            this.LogoMrCake.Size = new System.Drawing.Size(144, 134);
-            this.LogoMrCake.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoMrCake.TabIndex = 0;
-            this.LogoMrCake.TabStop = false;
-            this.LogoMrCake.Click += new System.EventHandler(this.LogoMrCake_Click);
-            // 
-            // PictureBoxPerfil
-            // 
-            this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
-            this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(178, 18);
-            this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(2);
-            this.PictureBoxPerfil.Name = "PictureBoxPerfil";
-            this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(64, 70);
-            this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxPerfil.TabIndex = 23;
-            this.PictureBoxPerfil.TabStop = false;
             // 
             // Adm_Home
             // 
@@ -815,7 +823,6 @@ namespace SrBolo_Prototype1.View
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.PanelMenu);
-            this.Controls.Add(this.PictureBoxPerfil);
             this.Controls.Add(this.guna2GradientPanel10);
             this.Controls.Add(this.guna2GradientPanel9);
             this.Controls.Add(this.PanelRendimentoMensal);
@@ -847,7 +854,6 @@ namespace SrBolo_Prototype1.View
             this.PanelProduto.ResumeLayout(false);
             this.PanelFuncionario.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -877,7 +883,6 @@ namespace SrBolo_Prototype1.View
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel12;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel11;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxPerfil;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2Panel PanelPedidos;
         private Guna.UI2.WinForms.Guna2Button btnGerenciar_PedE;
@@ -900,5 +905,6 @@ namespace SrBolo_Prototype1.View
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.DataGridViewTextBoxColumn coluna1;
         private System.Windows.Forms.DataGridViewTextBoxColumn coluna2;
+        private Guna.UI2.WinForms.Guna2Button BtnDesc;
     }
 }

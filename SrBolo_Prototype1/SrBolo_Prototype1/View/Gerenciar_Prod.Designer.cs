@@ -37,7 +37,6 @@
             this.GridViewProd = new System.Windows.Forms.DataGridView();
             this.ButtonAdc = new Guna.UI2.WinForms.Guna2Button();
             this.ButtonExc = new Guna.UI2.WinForms.Guna2Button();
-            this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.PanelPedidos = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGerenciar_PedF = new Guna.UI2.WinForms.Guna2Button();
@@ -59,7 +58,6 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.PanelGerProd.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewProd)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
             this.PanelMenu.SuspendLayout();
             this.PanelPedidos.SuspendLayout();
             this.PanelProduto.SuspendLayout();
@@ -218,20 +216,6 @@
             this.ButtonExc.TabIndex = 21;
             this.ButtonExc.Text = "Excluir";
             this.ButtonExc.Click += new System.EventHandler(this.ButtonExc_Click);
-            // 
-            // PictureBoxPerfil
-            // 
-            this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
-            this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(179, 10);
-            this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PictureBoxPerfil.Name = "PictureBoxPerfil";
-            this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(65, 65);
-            this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxPerfil.TabIndex = 11;
-            this.PictureBoxPerfil.TabStop = false;
             // 
             // PanelMenu
             // 
@@ -544,7 +528,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblEmail.Location = new System.Drawing.Point(252, 42);
+            this.lblEmail.Location = new System.Drawing.Point(184, 46);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(56, 20);
             this.lblEmail.TabIndex = 50;
@@ -556,7 +540,7 @@
             this.lblNome.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Black;
-            this.lblNome.Location = new System.Drawing.Point(251, 14);
+            this.lblNome.Location = new System.Drawing.Point(184, 20);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(82, 25);
             this.lblNome.TabIndex = 49;
@@ -572,7 +556,6 @@
             this.Controls.Add(this.lblData);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.PictureBoxPerfil);
             this.Controls.Add(this.PanelGerProd);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -582,7 +565,6 @@
             this.PanelGerProd.ResumeLayout(false);
             this.PanelGerProd.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewProd)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
             this.PanelMenu.ResumeLayout(false);
             this.PanelPedidos.ResumeLayout(false);
             this.PanelProduto.ResumeLayout(false);
@@ -600,7 +582,6 @@
         private System.Windows.Forms.DataGridView GridViewProd;
         private Guna.UI2.WinForms.Guna2Button ButtonAdc;
         private Guna.UI2.WinForms.Guna2Button ButtonExc;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxPerfil;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2Panel PanelPedidos;
         private Guna.UI2.WinForms.Guna2Button btnGerenciar_PedF;

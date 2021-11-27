@@ -12,6 +12,30 @@ namespace SrBolo_Prototype1.DAO
     class PedidosDAO : ClassConexao
     {
         DataTable Dt = new DataTable();
+
+        public DataTable pedidosCadastrados()
+        {
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("ListarPed", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Dr = Cmd.ExecuteReader();
+                Dt.Load(Dr);
+            }
+
+            catch (Exception e)
+            {
+                throw new Exception("erro ao acessar os pedidos" + e.Message);
+            }
+            finally
+            {
+                Desconectar();
+
+            }
+            return Dt;
+        }
+
         public DataTable pedidosECadastrados()
         {
             try
@@ -36,7 +60,7 @@ namespace SrBolo_Prototype1.DAO
         }
 
 
-        public void getPedido(int idPedido) {
+       public void getExibirPedido(int idPedido) {
             try
             {
                 Conectar();
@@ -78,68 +102,5 @@ namespace SrBolo_Prototype1.DAO
             }
         
         }
-
-        public DataTable pedidosCadastrados()
-        {
-            try
-            {
-                Conectar();
-                NpgsqlCommand Cmd = new NpgsqlCommand("ListarPed", Cn);
-                Cmd.CommandType = CommandType.StoredProcedure;
-                Dr = Cmd.ExecuteReader();
-                Dt.Load(Dr);
-            }
-
-            catch (Exception e)
-            {
-                throw new Exception("erro ao acessar os pedidos" + e.Message);
-            }
-            finally
-            {
-                Desconectar();
-
-            }
-            return Dt;
-        }
-
-        public void setPedidos(int IdPedido)
-        {
-            try
-            {
-                Conectar();
-                NpgsqlCommand Cmd = new NpgsqlCommand("ListarPeds", Cn);
-                Cmd.CommandType = CommandType.StoredProcedure;
-                Cmd.Parameters.AddWithValue("id_peds", IdPedido);
-                Dr = Cmd.ExecuteReader();
-                if (Dr.HasRows)
-                {
-                    while (Dr.Read())
-                    {
-                        PedidoE.id = Dr.GetInt32(0);
-                        PedidoE.email = Dr.GetString(1);
-                        PedidoE.cpf = Dr.GetString(2);
-                        PedidoE.idendereco = Dr.GetInt32(3);
-                        PedidoE.idcupons = Dr.GetInt32(4);
-                        PedidoE.datacompra = Dr.GetString(5);
-                        PedidoE.dataentrega = Dr.GetString(6);
-                        PedidoE.status = Dr.GetString(7);
-                        PedidoE.ecommerce = Dr.GetBoolean(8);
-
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                throw new Exception("erro ao acessar os pedidos" + e.Message);
-            }
-            finally
-            {
-                Desconectar();
-            }
-        }
-
-
-
-
     }
 }

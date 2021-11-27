@@ -35,7 +35,6 @@
             this.txtGerRecSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.GridViewRec = new System.Windows.Forms.DataGridView();
             this.ButtonExibir = new Guna.UI2.WinForms.Guna2Button();
-            this.PictureBoxPerfil = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.PanelPedidos = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGerenciar_PedF = new Guna.UI2.WinForms.Guna2Button();
@@ -57,7 +56,6 @@
             this.lblNome = new System.Windows.Forms.Label();
             this.PanelGerRec.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewRec)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).BeginInit();
             this.PanelMenu.SuspendLayout();
             this.PanelPedidos.SuspendLayout();
             this.PanelProduto.SuspendLayout();
@@ -168,20 +166,6 @@
             this.ButtonExibir.TabIndex = 22;
             this.ButtonExibir.Text = "Exibir";
             this.ButtonExibir.Click += new System.EventHandler(this.ButtonExibir_Click);
-            // 
-            // PictureBoxPerfil
-            // 
-            this.PictureBoxPerfil.Image = global::SrBolo_Prototype1.Properties.Resources._4203150;
-            this.PictureBoxPerfil.ImageRotate = 0F;
-            this.PictureBoxPerfil.Location = new System.Drawing.Point(179, 10);
-            this.PictureBoxPerfil.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PictureBoxPerfil.Name = "PictureBoxPerfil";
-            this.PictureBoxPerfil.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.PictureBoxPerfil.ShadowDecoration.Parent = this.PictureBoxPerfil;
-            this.PictureBoxPerfil.Size = new System.Drawing.Size(65, 65);
-            this.PictureBoxPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxPerfil.TabIndex = 16;
-            this.PictureBoxPerfil.TabStop = false;
             // 
             // PanelMenu
             // 
@@ -494,7 +478,7 @@
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblEmail.Location = new System.Drawing.Point(252, 44);
+            this.lblEmail.Location = new System.Drawing.Point(184, 46);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(56, 20);
             this.lblEmail.TabIndex = 42;
@@ -506,7 +490,7 @@
             this.lblNome.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNome.ForeColor = System.Drawing.Color.Black;
-            this.lblNome.Location = new System.Drawing.Point(251, 16);
+            this.lblNome.Location = new System.Drawing.Point(184, 20);
             this.lblNome.Name = "lblNome";
             this.lblNome.Size = new System.Drawing.Size(82, 25);
             this.lblNome.TabIndex = 41;
@@ -523,7 +507,6 @@
             this.Controls.Add(this.PanelGerRec);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.PictureBoxPerfil);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Gerenciar_PedE";
@@ -532,7 +515,6 @@
             this.PanelGerRec.ResumeLayout(false);
             this.PanelGerRec.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridViewRec)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxPerfil)).EndInit();
             this.PanelMenu.ResumeLayout(false);
             this.PanelPedidos.ResumeLayout(false);
             this.PanelProduto.ResumeLayout(false);
@@ -544,7 +526,6 @@
         }
 
         #endregion
-        private Guna.UI2.WinForms.Guna2CirclePictureBox PictureBoxPerfil;
         private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelGerRec;
         private Guna.UI2.WinForms.Guna2TextBox txtGerRecSearch;
         private System.Windows.Forms.DataGridView GridViewRec;

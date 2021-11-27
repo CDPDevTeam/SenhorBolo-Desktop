@@ -17,7 +17,7 @@ namespace SrBolo_Prototype1
     public partial class Gerenciar_PedF : Form
     { 
         ControlePedidos pedidos = new ControlePedidos();
-        PedidosDAO teste = new PedidosDAO();
+        //PedidosDAO teste = new PedidosDAO();
         DataTable pedidosCadastrados = new DataTable();
     
         public Gerenciar_PedF()
@@ -25,6 +25,7 @@ namespace SrBolo_Prototype1
             InitializeComponent();
             CustumizeDesing();
         }
+
         private void CustumizeDesing()
         {
             PanelProduto.Visible = false;
@@ -117,12 +118,20 @@ namespace SrBolo_Prototype1
             adm_Home.Show();
             this.Hide();
         }
-
+    
         public void listarPedidos()
         {
-            pedidosCadastrados = teste.pedidosCadastrados();
+            pedidosCadastrados = pedidos.pedidosCadastrados();
             GridViewRec.DataSource = pedidosCadastrados;
 
+        }
+
+        private void ButtonExibir_Click(object sender, EventArgs e)
+        {
+           int indice = GridViewRec.SelectedRows[0].Index;
+            pedidos.getExibirPedidos(int.Parse(GridViewRec.Rows[indice].Cells[0].Value.ToString()));
+            Adm_Pedido adm_Pedido = new Adm_Pedido();
+            adm_Pedido.Show();
         }
 
         private void Gerenciar_PedF_Load(object sender, EventArgs e)
@@ -131,7 +140,7 @@ namespace SrBolo_Prototype1
             lblEmail.Text = Gerente.Email;
             listarPedidos();
             DataTable edson = new DataTable();
-            edson = teste.pedidosCadastrados();
+           // edson = teste.pedidosCadastrados();
         }
 
         private void txtGerRecSearch_KeyDown(object sender, KeyEventArgs e)
@@ -142,14 +151,6 @@ namespace SrBolo_Prototype1
                 data.RowFilter = string.Format("CONVERT(id_pedido, 'System.String') like '%{0}%' or cpf_func_fk like '%{0}%' or CONVERT(data_compra, 'System.String') like '%{0}%' or CONVERT(data_entrega, 'System.String') like '%{0}%'", txtGerRecSearch.Text);
                 GridViewRec.DataSource = data.ToTable();
             }
-        }
-
-        private void ButtonExibir_Click(object sender, EventArgs e)
-        {
-            int indice = GridViewRec.SelectedRows[0].Index;
-            pedidos.getPedidos(int.Parse(GridViewRec.Rows[indice].Cells[0].Value.ToString()));
-            Adm_Pedido adm_Pedido = new Adm_Pedido();
-            adm_Pedido.Show();
-        }
+        }   
     }
 }
