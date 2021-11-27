@@ -95,7 +95,7 @@ namespace SrBolo_Prototype1
         {
             lblNome.Text = Confeiteiro.Nome;
             int contagempedidos = confeiteirou.getNumPedidos();
-            int contagemprontos = confeiteirou.getNumPedidosaCaminho();
+            int contagemprontos = confeiteirou.getNumPedidosProntos();
             addPedidosECommerce(contagempedidos);
             addProntosEntrega(contagemprontos);
         }
@@ -156,7 +156,16 @@ namespace SrBolo_Prototype1
                 btnFeito.FillColor = btnFeitoTemplate.FillColor;
                 btnFeito.Text = btnFeitoTemplate.Text;
                 btnFeito.Font = btnFeitoTemplate.Font;
-                
+                btnFeito.Click += (s, e) => {
+                    confeiteirou.setPedidoPronto(int.Parse(lblIdPedido.Text));
+                    this.Controls.Clear();
+                    this.InitializeComponent();
+                    int contagempedidos = confeiteirou.getNumPedidos();
+                    int contagemprontos = confeiteirou.getNumPedidosProntos();
+                    addPedidosECommerce(contagempedidos);
+                    addProntosEntrega(contagemprontos);
+                };
+
 
                 icon.BackColor = Color.Transparent;
                 icon.Location = iconTemplate.Location;
@@ -193,7 +202,6 @@ namespace SrBolo_Prototype1
         private void addProntosEntrega(int numPedidos)
         {
             Diff = cDAO.getPedidosaCaminho();
-            label9.Text = Diff.Rows[0][0].ToString();
 
             panelSlide.Width = panelBacktemplate.Width * (numPedidos + 100);
 
@@ -248,6 +256,16 @@ namespace SrBolo_Prototype1
                 btnEntregue2.FillColor = btnFeitoTemplate.FillColor;
                 btnEntregue2.Text = "À caminho!";
                 btnEntregue2.Font = btnFeitoTemplate.Font;
+                btnEntregue2.Click += (s, e) => {
+                    
+                    confeiteirou.setPedidoaCaminho(int.Parse(lblIdPedido2.Text));
+                    this.Controls.Clear();
+                    this.InitializeComponent();
+                    int contagempedidos = confeiteirou.getNumPedidos();
+                    int contagemprontos = confeiteirou.getNumPedidosProntos();
+                    addPedidosECommerce(contagempedidos);
+                    addProntosEntrega(contagemprontos);
+                };
 
                 icon2.BackColor = Color.Transparent;
                 icon2.Location = iconTemplate.Location;

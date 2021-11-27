@@ -40,5 +40,10 @@ namespace SrBolo_Prototype1.View
             lblEnd2.Text = Dt.Rows[0][3].ToString() + " - " + Dt.Rows[0][5].ToString();
             lblEndObs.Text = Dt.Rows[0][7].ToString();
         }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

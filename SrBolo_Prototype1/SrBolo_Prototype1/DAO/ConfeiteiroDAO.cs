@@ -72,14 +72,14 @@ namespace SrBolo_Prototype1.DAO
             }
             return Dt;
         }
-        public int getNumPedidosaCaminho()
+        public int getNumPedidosProntos()
         {
             int countPeds = 0;
             try
             {
                 Conectar();
 
-                NpgsqlCommand Cmd = new NpgsqlCommand("getnumpedidosacaminho", Cn); //Procedure do login
+                NpgsqlCommand Cmd = new NpgsqlCommand("getnumpedidosprontos", Cn); //Procedure do login
                 Cmd.CommandType = CommandType.StoredProcedure;
                 countPeds = Convert.ToInt32(Cmd.ExecuteScalar());
 
@@ -109,6 +109,47 @@ namespace SrBolo_Prototype1.DAO
                 Desconectar();
             }
             return Dt;
+        }
+
+        public void setPedidoPronto(int idpedido)
+        {
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("setPedidoPronto", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("idpedido", idpedido);
+                Cmd.ExecuteNonQuery();
+                
+            }
+            catch (Exception e)
+            {
+                throw new Exception("erro ao acessar os produtos" + e.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+        }
+        public void setPedidoaCaminho(int idpedido)
+        {
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("setPedidoaCaminho", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("idpedido", idpedido);
+                Cmd.ExecuteNonQuery();
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception("erro ao acessar os produtos" + e.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
         }
     }
 }

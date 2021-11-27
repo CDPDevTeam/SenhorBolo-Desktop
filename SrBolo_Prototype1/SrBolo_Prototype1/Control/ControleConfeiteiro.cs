@@ -33,15 +33,24 @@ namespace SrBolo_Prototype1.Control
             return Dt;
         }
 
-        public int getNumPedidosaCaminho()
+        public int getNumPedidosProntos()
         {
-            int contagem = sus.getNumPedidosaCaminho();
+            int contagem = sus.getNumPedidosProntos();
             return contagem;
         }
         public DataTable getEndCli(int idPed)
         {
             Dt = sus.getEndCli(idPed);
             return Dt;
+        }
+
+        public void setPedidoPronto(int idpedido)
+        {
+            sus.setPedidoPronto(idpedido);
+        }
+        public void setPedidoaCaminho(int idpedido)
+        {
+            sus.setPedidoaCaminho(idpedido);
         }
     }
 }

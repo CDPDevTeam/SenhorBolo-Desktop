@@ -164,6 +164,7 @@ namespace SrBolo_Prototype1.View
             this.guna2GradientButton1.Size = new System.Drawing.Size(138, 41);
             this.guna2GradientButton1.TabIndex = 10;
             this.guna2GradientButton1.Text = "Fechar";
+            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // lblIdPed
             // 

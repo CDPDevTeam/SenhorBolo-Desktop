@@ -74,7 +74,6 @@
             this.panelSlide2 = new Guna.UI2.WinForms.Guna2Panel();
             this.panelPrinc2 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.panelBacktemplate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconTemplate)).BeginInit();
             this.panelSlide.SuspendLayout();
@@ -783,21 +782,11 @@
             this.label5.TabIndex = 46;
             this.label5.Text = "Prontos para Entrega";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(148, 474);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 17);
-            this.label9.TabIndex = 47;
-            this.label9.Text = "label9";
-            // 
             // Conf_home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1710, 840);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.panelSlide2);
             this.Controls.Add(this.guna2GradientPanel1);
@@ -880,6 +869,5 @@
         private Guna.UI2.WinForms.Guna2Panel panelSlide2;
         private Guna.UI2.WinForms.Guna2Panel panelPrinc2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label9;
     }
 }

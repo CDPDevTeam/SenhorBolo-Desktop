@@ -47,9 +47,34 @@ namespace SrBolo_Prototype1
             }
             if (e.KeyCode == Keys.F)
             {
-                finalizarCompra();
-                txtTotalRecebido.Enabled = true;
-                txtTotalRecebido.Focus();
+                if (GridViewCaixa.Rows.Count == 1)
+                {
+                    MessageBox.Show("Nenhum produto no pedido.");
+                }
+                else
+                {
+                    finalizarCompra();
+                    txtTotalRecebido.Enabled = true;
+                    txtTotalRecebido.Focus();
+                }
+                
+            }
+            if (e.KeyCode == Keys.N)
+            {
+                if (GridViewCaixa.Rows.Count > 1)
+                {
+                    if (MessageBox.Show("Deseja cancelar a compra atual?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        limparTextoProduto();
+                        txtCodigoBarras.Enabled = true;
+                        txtCaixaQtd.Enabled = true;
+                        GridViewCaixa.Rows.Clear();
+                        GridViewCaixa.Refresh();
+                        txtCodigoBarras.Focus();
+                        txtTotalRecebido.Enabled = false;
+                    }
+                    else { txtCodigoBarras.Focus(); }
+                }
             }
 
 
@@ -79,9 +104,33 @@ namespace SrBolo_Prototype1
             }
             if (e.KeyCode == Keys.F)
             {
-                finalizarCompra();
-                txtTotalRecebido.Enabled = true;
-                txtTotalRecebido.Focus();
+                if (GridViewCaixa.Rows.Count == 1)
+                {
+                    MessageBox.Show("Nenhum produto no pedido.");
+                }
+                else
+                {
+                    finalizarCompra();
+                    txtTotalRecebido.Enabled = true;
+                    txtTotalRecebido.Focus();
+                }
+            }
+            if (e.KeyCode == Keys.N)
+            {
+                if (GridViewCaixa.Rows.Count > 1)
+                {
+                    if (MessageBox.Show("Deseja cancelar a compra atual?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        limparTextoProduto();
+                        txtCodigoBarras.Enabled = true;
+                        txtCaixaQtd.Enabled = true;
+                        GridViewCaixa.Rows.Clear();
+                        GridViewCaixa.Refresh();
+                        txtCodigoBarras.Focus();
+                        txtTotalRecebido.Enabled = false;
+                    }
+                    else { txtCodigoBarras.Focus(); }
+                }
             }
 
         }
@@ -109,28 +158,34 @@ namespace SrBolo_Prototype1
             txtCaixaQtd.Text = null;
             txtTroco.Text = null;
             txtTotalRecebido.Text = null;
+            txtCaixaSubtotal.Text = null;
+            txtCaixaTotal.Text = null;
         }
 
         private void finalizarCompra()
         {
+            
             if (MessageBox.Show("Deseja finalizar compra?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                int idProduto;
-                int qtde;
-                double valorUnit;
-                caixa.gerarVenda();
-                for (int i = 0; i < GridViewCaixa.Rows.Count - 1; i++)
-                {
-                    idProduto = Convert.ToInt32(GridViewCaixa.Rows[i].Cells[0].Value);
-                    qtde = Convert.ToInt32(GridViewCaixa.Rows[i].Cells[2].Value);
-                    valorUnit = Convert.ToDouble(GridViewCaixa.Rows[i].Cells[3].Value);
-                    caixa.gerarQtdeVenda(idProduto, valorUnit, qtde);
-                }
-                limparTextoProduto();
-                txtCodigoBarras.Enabled = true;
-                txtCaixaQtd.Enabled = true;
-                GridViewCaixa.Rows.Clear();
-                GridViewCaixa.Refresh();
+                
+                
+                 int idProduto;
+                 int qtde;
+                 double valorUnit;
+                 caixa.gerarVenda();
+                 for (int i = 0; i < GridViewCaixa.Rows.Count - 1; i++)
+                 {
+                     idProduto = Convert.ToInt32(GridViewCaixa.Rows[i].Cells[0].Value);
+                     qtde = Convert.ToInt32(GridViewCaixa.Rows[i].Cells[2].Value);
+                     valorUnit = Convert.ToDouble(GridViewCaixa.Rows[i].Cells[3].Value);
+                     caixa.gerarQtdeVenda(idProduto, valorUnit, qtde);
+                 }
+                 limparTextoProduto();
+                 txtCodigoBarras.Enabled = true;
+                 txtCaixaQtd.Enabled = true;
+                 GridViewCaixa.Rows.Clear();
+                 GridViewCaixa.Refresh();
+                
             }
         }
 
@@ -166,9 +221,16 @@ namespace SrBolo_Prototype1
         {
             if (e.KeyCode == Keys.F)
             {
-                finalizarCompra();
-                txtTotalRecebido.Enabled = true;
-                txtTotalRecebido.Focus();
+                if (GridViewCaixa.Rows.Count == 1)
+                {
+                    MessageBox.Show("Nenhum produto no pedido.");
+                }
+                else
+                {
+                    finalizarCompra();
+                    txtTotalRecebido.Enabled = true;
+                    txtTotalRecebido.Focus();
+                }
             }
         }
 
@@ -191,8 +253,27 @@ namespace SrBolo_Prototype1
         {
             if (e.KeyCode == Keys.Enter)
             {
-                double troco = Convert.ToDouble(txtCaixaTotal.Text) - Convert.ToDouble(txtTotalRecebido.Text);
+                double troco = Convert.ToDouble(txtTotalRecebido.Text) - Convert.ToDouble(txtCaixaTotal.Text);
                 txtTroco.Text = troco.ToString();
+            }
+            if (e.KeyCode == Keys.N)
+            {
+                limparTextoProduto();
+                txtCodigoBarras.Enabled = true;
+                txtCaixaQtd.Enabled = true;
+                GridViewCaixa.Rows.Clear();
+                GridViewCaixa.Refresh();
+                txtCodigoBarras.Focus();
+                txtTotalRecebido.Enabled = false;
+
+            }
+        }
+
+        private void txtTotalRecebido_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
             }
         }
     }
