@@ -30,8 +30,8 @@ namespace SrBolo_Prototype1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Balc_Caixa));
             this.label1 = new System.Windows.Forms.Label();
             this.lblCaixaNomeFunc = new System.Windows.Forms.Label();
@@ -118,7 +118,7 @@ namespace SrBolo_Prototype1
             this.lblData.BackColor = System.Drawing.Color.Transparent;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.ForeColor = System.Drawing.Color.Transparent;
-            this.lblData.Location = new System.Drawing.Point(1360, 21);
+            this.lblData.Location = new System.Drawing.Point(1427, 21);
             this.lblData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(358, 31);
@@ -139,15 +139,15 @@ namespace SrBolo_Prototype1
             this.GridViewCaixa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GridViewCaixa.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GridViewCaixa.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GridViewCaixa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(129)))), ((int)(((byte)(129)))), ((int)(((byte)(129)))));
+            dataGridViewCellStyle5.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridViewCaixa.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.GridViewCaixa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridViewCaixa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
@@ -155,17 +155,17 @@ namespace SrBolo_Prototype1
             this.Qtde,
             this.ValUnit,
             this.Total});
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
-            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GridViewCaixa.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Gainsboro;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle6.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridViewCaixa.DefaultCellStyle = dataGridViewCellStyle6;
             this.GridViewCaixa.Location = new System.Drawing.Point(33, 110);
-            this.GridViewCaixa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GridViewCaixa.Margin = new System.Windows.Forms.Padding(4);
             this.GridViewCaixa.Name = "GridViewCaixa";
             this.GridViewCaixa.RowHeadersVisible = false;
             this.GridViewCaixa.RowHeadersWidth = 62;
@@ -222,7 +222,7 @@ namespace SrBolo_Prototype1
             this.guna2Panel4.Controls.Add(this.label10);
             this.guna2Panel4.Controls.Add(this.label2);
             this.guna2Panel4.Location = new System.Drawing.Point(33, 725);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(513, 80);
@@ -299,7 +299,7 @@ namespace SrBolo_Prototype1
             this.txtCodigoBarras.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCodigoBarras.HoverState.Parent = this.txtCodigoBarras;
             this.txtCodigoBarras.Location = new System.Drawing.Point(33, 644);
-            this.txtCodigoBarras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCodigoBarras.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoBarras.Name = "txtCodigoBarras";
             this.txtCodigoBarras.PasswordChar = '\0';
             this.txtCodigoBarras.PlaceholderText = "";
@@ -340,7 +340,7 @@ namespace SrBolo_Prototype1
             this.txtCaixaQtd.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCaixaQtd.HoverState.Parent = this.txtCaixaQtd;
             this.txtCaixaQtd.Location = new System.Drawing.Point(654, 644);
-            this.txtCaixaQtd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaixaQtd.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaixaQtd.Name = "txtCaixaQtd";
             this.txtCaixaQtd.PasswordChar = '\0';
             this.txtCaixaQtd.PlaceholderText = "";
@@ -380,7 +380,7 @@ namespace SrBolo_Prototype1
             this.txtCaixaVlrUnit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCaixaVlrUnit.HoverState.Parent = this.txtCaixaVlrUnit;
             this.txtCaixaVlrUnit.Location = new System.Drawing.Point(903, 644);
-            this.txtCaixaVlrUnit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaixaVlrUnit.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaixaVlrUnit.Name = "txtCaixaVlrUnit";
             this.txtCaixaVlrUnit.PasswordChar = '\0';
             this.txtCaixaVlrUnit.PlaceholderText = "";
@@ -419,7 +419,7 @@ namespace SrBolo_Prototype1
             this.txtTotalRecebido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTotalRecebido.HoverState.Parent = this.txtTotalRecebido;
             this.txtTotalRecebido.Location = new System.Drawing.Point(611, 761);
-            this.txtTotalRecebido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTotalRecebido.Margin = new System.Windows.Forms.Padding(4);
             this.txtTotalRecebido.Name = "txtTotalRecebido";
             this.txtTotalRecebido.PasswordChar = '\0';
             this.txtTotalRecebido.PlaceholderText = "";
@@ -475,7 +475,7 @@ namespace SrBolo_Prototype1
             this.txtCaixaSubtotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCaixaSubtotal.HoverState.Parent = this.txtCaixaSubtotal;
             this.txtCaixaSubtotal.Location = new System.Drawing.Point(1263, 535);
-            this.txtCaixaSubtotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaixaSubtotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaixaSubtotal.Name = "txtCaixaSubtotal";
             this.txtCaixaSubtotal.PasswordChar = '\0';
             this.txtCaixaSubtotal.PlaceholderText = "";
@@ -514,7 +514,7 @@ namespace SrBolo_Prototype1
             this.txtCaixaTotal.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCaixaTotal.HoverState.Parent = this.txtCaixaTotal;
             this.txtCaixaTotal.Location = new System.Drawing.Point(1263, 644);
-            this.txtCaixaTotal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCaixaTotal.Margin = new System.Windows.Forms.Padding(4);
             this.txtCaixaTotal.Name = "txtCaixaTotal";
             this.txtCaixaTotal.PasswordChar = '\0';
             this.txtCaixaTotal.PlaceholderText = "";
@@ -553,7 +553,7 @@ namespace SrBolo_Prototype1
             this.txtTroco.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTroco.HoverState.Parent = this.txtTroco;
             this.txtTroco.Location = new System.Drawing.Point(1263, 761);
-            this.txtTroco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTroco.Margin = new System.Windows.Forms.Padding(4);
             this.txtTroco.Name = "txtTroco";
             this.txtTroco.PasswordChar = '\0';
             this.txtTroco.PlaceholderText = "";
@@ -571,7 +571,7 @@ namespace SrBolo_Prototype1
             this.PictureBoxCaixaProd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.PictureBoxCaixaProd.Image = global::SrBolo_Prototype1.Properties.Resources.Senhor_Bolo___Marrom;
             this.PictureBoxCaixaProd.Location = new System.Drawing.Point(1263, 110);
-            this.PictureBoxCaixaProd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureBoxCaixaProd.Margin = new System.Windows.Forms.Padding(4);
             this.PictureBoxCaixaProd.Name = "PictureBoxCaixaProd";
             this.PictureBoxCaixaProd.Size = new System.Drawing.Size(395, 375);
             this.PictureBoxCaixaProd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -582,7 +582,7 @@ namespace SrBolo_Prototype1
             // 
             this.PictureBoxLogoCaixa.Image = ((System.Drawing.Image)(resources.GetObject("PictureBoxLogoCaixa.Image")));
             this.PictureBoxLogoCaixa.Location = new System.Drawing.Point(-15, -76);
-            this.PictureBoxLogoCaixa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PictureBoxLogoCaixa.Margin = new System.Windows.Forms.Padding(4);
             this.PictureBoxLogoCaixa.Name = "PictureBoxLogoCaixa";
             this.PictureBoxLogoCaixa.Size = new System.Drawing.Size(405, 249);
             this.PictureBoxLogoCaixa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -631,7 +631,7 @@ namespace SrBolo_Prototype1
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PictureBoxLogoCaixa);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Balc_Caixa";
             this.Text = "Balc_Caixa";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

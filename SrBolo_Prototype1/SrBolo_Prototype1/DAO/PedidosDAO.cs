@@ -12,16 +12,18 @@ namespace SrBolo_Prototype1.DAO
     class PedidosDAO : ClassConexao
     {
         DataTable Dt = new DataTable();
-
+        
         public DataTable pedidosCadastrados()
         {
+            DataTable dados = new DataTable();
             try
             {
                 Conectar();
                 NpgsqlCommand Cmd = new NpgsqlCommand("ListarPed", Cn);
                 Cmd.CommandType = CommandType.StoredProcedure;
                 Dr = Cmd.ExecuteReader();
-                Dt.Load(Dr);
+                
+                dados.Load(Dr);
             }
 
             catch (Exception e)
@@ -33,18 +35,20 @@ namespace SrBolo_Prototype1.DAO
                 Desconectar();
 
             }
-            return Dt;
+            return dados;
         }
 
         public DataTable pedidosECadastrados()
         {
+            DataTable coisas = new DataTable();
             try
             {
                 Conectar();
                 NpgsqlCommand Cmd = new NpgsqlCommand("ListarPedE", Cn);
                 Cmd.CommandType = CommandType.StoredProcedure;
                 Dr = Cmd.ExecuteReader();
-                Dt.Load(Dr);
+                
+                coisas.Load(Dr);
             }
 
             catch (Exception e)
@@ -56,11 +60,12 @@ namespace SrBolo_Prototype1.DAO
                 Desconectar();
 
             }
-            return Dt;
+            return coisas;
         }
 
 
        public void getExibirPedido(int idPedido) {
+            DataTable bolos = new DataTable();
             try
             {
                 Conectar();
@@ -90,8 +95,9 @@ namespace SrBolo_Prototype1.DAO
                 Cmd.CommandType = CommandType.StoredProcedure;
                 Cmd.Parameters.AddWithValue("idpedido", idPedido);
                 Dr = Cmd.ExecuteReader();
-                Dt.Load(Dr);
-                Pedido.BolosPedido = Dt;
+                
+                bolos.Load(Dr);
+                Pedido.BolosPedido = bolos;
             }
             catch (Exception e)
             {

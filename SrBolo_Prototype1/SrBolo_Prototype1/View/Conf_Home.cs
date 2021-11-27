@@ -32,6 +32,8 @@ namespace SrBolo_Prototype1
         private void Conf_home_Load(object sender, EventArgs e)
         {
             lblNome.Text = Confeiteiro.Nome;
+            timer1.Start();
+            setDataHora();
             int contagempedidos = confeiteirou.getNumPedidos();
             int contagemprontos = confeiteirou.getNumPedidosProntos();
             addPedidosECommerce(contagempedidos);
@@ -250,6 +252,18 @@ namespace SrBolo_Prototype1
             {
                 Environment.Exit(0);
             }
+        }
+
+        private void setDataHora()
+        {
+            DateTime agora = DateTime.Now;
+            lblData.Text = agora.Date.ToString("dddd',' dd'/'MM'/'yyyy");
+            lblHora.Text = agora.TimeOfDay.ToString("hh':'mm':'ss");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            setDataHora();
         }
     }
 }

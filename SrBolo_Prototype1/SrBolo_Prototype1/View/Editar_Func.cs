@@ -148,9 +148,17 @@ namespace SrBolo_Prototype1
         {
             lblNome.Text = Gerente.Nome;
             lblEmail.Text = Gerente.Email;
+            timer1.Start();
+            setDataHora();
             ComboBoxEditFuncCargo.Items.Add("gerente");
             ComboBoxEditFuncCargo.Items.Add("caixa");
             ComboBoxEditFuncCargo.Items.Add("confeiteiro");
+            ComboBoxEditFuncCPF.Text = Funcionario.Cpf;
+            txtEditFuncSenha.Text = Funcionario.Senha;
+            txtEditFuncEmail.Text = Funcionario.Email;
+            txtEditFuncNome.Text = Funcionario.Nome;
+            txtEditFuncTel.Text = Funcionario.Telefone;
+            ComboBoxEditFuncCargo.Text = Funcionario.Cargo;
         }
 
         public void Limpar() {
@@ -180,6 +188,26 @@ namespace SrBolo_Prototype1
             {
                 ComboBoxEditFuncCPF.Items.Add(Dt.Rows[i]["cpf_func"].ToString());
             }
+        }
+
+        private void BtnDesc_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja mesmo sair do sistema?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+        }
+
+        private void setDataHora()
+        {
+            DateTime agora = DateTime.Now;
+            lblData.Text = agora.Date.ToString("dddd',' dd'/'MM'/'yyyy");
+            lblHora.Text = agora.TimeOfDay.ToString("hh':'mm':'ss");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            setDataHora();
         }
 
         /*private void txtEditFuncTel_TextChanged(object sender, EventArgs e)

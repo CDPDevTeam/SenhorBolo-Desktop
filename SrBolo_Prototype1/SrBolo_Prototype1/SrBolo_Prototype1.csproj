@@ -35,6 +35,26 @@
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=1.0.1.7, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.7\lib\net40\Guna.UI2.dll</HintPath>
@@ -123,12 +143,6 @@
     </Compile>
     <Compile Include="View\Adm_Home.Designer.cs">
       <DependentUpon>Adm_Home.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\Cancelar_Compra.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Cancelar_Compra.Designer.cs">
-      <DependentUpon>Cancelar_Compra.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Adm_Pedido.cs">
       <SubType>Form</SubType>
@@ -223,23 +237,8 @@
     <Compile Include="View\Splash.Designer.cs">
       <DependentUpon>Splash.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Tela_Confirmacao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Tela_Confirmacao.Designer.cs">
-      <DependentUpon>Tela_Confirmacao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="View\teste.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\teste.Designer.cs">
-      <DependentUpon>teste.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="View\Adm_Home.resx">
       <DependentUpon>Adm_Home.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Cancelar_Compra.resx">
-      <DependentUpon>Cancelar_Compra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Adm_Pedido.resx">
       <DependentUpon>Adm_Pedido.cs</DependentUpon>
@@ -295,12 +294,6 @@
     </Compile>
     <EmbeddedResource Include="View\Splash.resx">
       <DependentUpon>Splash.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Tela_Confirmacao.resx">
-      <DependentUpon>Tela_Confirmacao.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\teste.resx">
-      <DependentUpon>teste.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.manifest" />
     <None Include="packages.config" />

@@ -31,10 +31,10 @@ namespace SrBolo_Prototype1.View
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adm_Home));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.PanelRendimentoMensal = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.guna2GradientPanel13 = new Guna.UI2.WinForms.Guna2GradientPanel();
@@ -379,7 +379,7 @@ namespace SrBolo_Prototype1.View
             this.dgrMaisVendidos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgrMaisVendidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgrMaisVendidos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgrMaisVendidos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgrMaisVendidos.BackgroundColor = System.Drawing.Color.White;
             this.dgrMaisVendidos.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -389,29 +389,29 @@ namespace SrBolo_Prototype1.View
             this.dgrMaisVendidos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.coluna1,
             this.coluna2});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Raleway SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgrMaisVendidos.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Raleway SemiBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgrMaisVendidos.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgrMaisVendidos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgrMaisVendidos.Location = new System.Drawing.Point(4, 68);
+            this.dgrMaisVendidos.Location = new System.Drawing.Point(22, 68);
             this.dgrMaisVendidos.Margin = new System.Windows.Forms.Padding(4);
             this.dgrMaisVendidos.Name = "dgrMaisVendidos";
             this.dgrMaisVendidos.ReadOnly = true;
             this.dgrMaisVendidos.RowHeadersVisible = false;
             this.dgrMaisVendidos.RowHeadersWidth = 62;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            dataGridViewCellStyle8.Padding = new System.Windows.Forms.Padding(3, 3, 3, 10);
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
-            this.dgrMaisVendidos.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 10);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(63)))), ((int)(((byte)(63)))));
+            this.dgrMaisVendidos.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgrMaisVendidos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgrMaisVendidos.Size = new System.Drawing.Size(372, 313);
+            this.dgrMaisVendidos.Size = new System.Drawing.Size(354, 313);
             this.dgrMaisVendidos.TabIndex = 20;
             this.dgrMaisVendidos.SizeChanged += new System.EventHandler(this.dgrMaisVendidos_SizeChanged);
             // 
@@ -422,6 +422,7 @@ namespace SrBolo_Prototype1.View
             this.coluna1.Name = "coluna1";
             this.coluna1.ReadOnly = true;
             this.coluna1.Visible = false;
+            this.coluna1.Width = 6;
             // 
             // coluna2
             // 
@@ -430,6 +431,7 @@ namespace SrBolo_Prototype1.View
             this.coluna2.Name = "coluna2";
             this.coluna2.ReadOnly = true;
             this.coluna2.Visible = false;
+            this.coluna2.Width = 6;
             // 
             // label13
             // 
@@ -462,13 +464,13 @@ namespace SrBolo_Prototype1.View
             // 
             // graficoVendas
             // 
-            chartArea4.Name = "ChartArea1";
-            this.graficoVendas.ChartAreas.Add(chartArea4);
+            chartArea1.Name = "ChartArea1";
+            this.graficoVendas.ChartAreas.Add(chartArea1);
             this.graficoVendas.Location = new System.Drawing.Point(-14, 78);
             this.graficoVendas.Name = "graficoVendas";
-            series4.ChartArea = "ChartArea1";
-            series4.Name = "Series1";
-            this.graficoVendas.Series.Add(series4);
+            series1.ChartArea = "ChartArea1";
+            series1.Name = "Series1";
+            this.graficoVendas.Series.Add(series1);
             this.graficoVendas.Size = new System.Drawing.Size(654, 300);
             this.graficoVendas.TabIndex = 20;
             this.graficoVendas.Text = "chart1";

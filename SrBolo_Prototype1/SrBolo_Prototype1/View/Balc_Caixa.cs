@@ -190,6 +190,7 @@ namespace SrBolo_Prototype1
             string[] recurso = Produto.Foto.Split('.');
 
             ResourceManager rm = Resources.ResourceManager;
+            
             Bitmap myImage = (Bitmap)rm.GetObject(recurso[0].ToLower());
             PictureBoxCaixaProd.Image = myImage;
             //PictureBoxCaixaProd.Image = Image.FromFile(@"..\SrBolo_Prototype1\Resources\" + Produto.Foto.ToLower());

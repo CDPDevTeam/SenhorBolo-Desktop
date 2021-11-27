@@ -206,6 +206,47 @@ namespace SrBolo_Prototype1
         {
             lblNome.Text = Gerente.Nome;
             lblEmail.Text = Gerente.Email;
+            timer1.Start();
+            setDataHora();
+        }
+
+        private void PictureBoxCadProd_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            // image filters  
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                // display image in picture box  
+                PictureBoxCadProd.Image = new Bitmap(open.FileName);
+                // image file path  
+                PictureBoxCadProd.Text = open.FileName;
+            }
+        }
+
+        private void PictureBoxCadProd_MouseHover(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnDesc_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja mesmo sair do sistema?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+        }
+
+        private void setDataHora()
+        {
+            DateTime agora = DateTime.Now;
+            lblData.Text = agora.Date.ToString("dddd',' dd'/'MM'/'yyyy");
+            lblHora.Text = agora.TimeOfDay.ToString("hh':'mm':'ss");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            setDataHora();
         }
     }
 

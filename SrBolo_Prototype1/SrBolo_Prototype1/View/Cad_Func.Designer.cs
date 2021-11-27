@@ -28,24 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cad_Func));
             this.PanelCadFunc = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
-            this.lblCadFuncCargo = new System.Windows.Forms.Label();
-            this.lblCadFuncEmail = new System.Windows.Forms.Label();
-            this.lblCadFuncSenha = new System.Windows.Forms.Label();
-            this.lblCadFuncTel = new System.Windows.Forms.Label();
-            this.lblCadFuncCPF = new System.Windows.Forms.Label();
-            this.lblCadFuncNome = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.ComboBoxCadFuncCargo = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.ButtonCad = new Guna.UI2.WinForms.Guna2Button();
-            this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
-            this.txtCadFuncSenha = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCadFuncCPF = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCadFuncEmail = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtCadFuncTel = new Guna.UI2.WinForms.Guna2TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.txtCadFuncNome = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCadFuncCargo = new System.Windows.Forms.Label();
+            this.txtCadFuncTel = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCadFuncEmail = new System.Windows.Forms.Label();
+            this.txtCadFuncEmail = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCadFuncSenha = new System.Windows.Forms.Label();
+            this.txtCadFuncCPF = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCadFuncTel = new System.Windows.Forms.Label();
+            this.txtCadFuncSenha = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCadFuncCPF = new System.Windows.Forms.Label();
+            this.ButtonLimpar = new Guna.UI2.WinForms.Guna2Button();
+            this.lblCadFuncNome = new System.Windows.Forms.Label();
+            this.ButtonCad = new Guna.UI2.WinForms.Guna2Button();
+            this.ComboBoxCadFuncCargo = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.PanelMenu = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.BtnDesc = new Guna.UI2.WinForms.Guna2Button();
             this.PanelPedidos = new Guna.UI2.WinForms.Guna2Panel();
             this.btnGerenciar_PedF = new Guna.UI2.WinForms.Guna2Button();
             this.btnGerenciar_PedE = new Guna.UI2.WinForms.Guna2Button();
@@ -64,14 +67,14 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblData = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.PanelCadFunc.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.PanelMenu.SuspendLayout();
             this.PanelPedidos.SuspendLayout();
             this.PanelProduto.SuspendLayout();
             this.PanelFuncionario.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).BeginInit();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelCadFunc
@@ -89,6 +92,56 @@
             this.PanelCadFunc.Size = new System.Drawing.Size(1219, 700);
             this.PanelCadFunc.TabIndex = 1;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.txtCadFuncNome);
+            this.panel1.Controls.Add(this.lblCadFuncCargo);
+            this.panel1.Controls.Add(this.txtCadFuncTel);
+            this.panel1.Controls.Add(this.lblCadFuncEmail);
+            this.panel1.Controls.Add(this.txtCadFuncEmail);
+            this.panel1.Controls.Add(this.lblCadFuncSenha);
+            this.panel1.Controls.Add(this.txtCadFuncCPF);
+            this.panel1.Controls.Add(this.lblCadFuncTel);
+            this.panel1.Controls.Add(this.txtCadFuncSenha);
+            this.panel1.Controls.Add(this.lblCadFuncCPF);
+            this.panel1.Controls.Add(this.ButtonLimpar);
+            this.panel1.Controls.Add(this.lblCadFuncNome);
+            this.panel1.Controls.Add(this.ButtonCad);
+            this.panel1.Controls.Add(this.ComboBoxCadFuncCargo);
+            this.panel1.Location = new System.Drawing.Point(159, 131);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(928, 434);
+            this.panel1.TabIndex = 32;
+            this.panel1.LocationChanged += new System.EventHandler(this.panel1_LocationChanged);
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtCadFuncNome
+            // 
+            this.txtCadFuncNome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCadFuncNome.DefaultText = "";
+            this.txtCadFuncNome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCadFuncNome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCadFuncNome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadFuncNome.DisabledState.Parent = this.txtCadFuncNome;
+            this.txtCadFuncNome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadFuncNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadFuncNome.FocusedState.Parent = this.txtCadFuncNome;
+            this.txtCadFuncNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadFuncNome.ForeColor = System.Drawing.Color.Black;
+            this.txtCadFuncNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadFuncNome.HoverState.Parent = this.txtCadFuncNome;
+            this.txtCadFuncNome.Location = new System.Drawing.Point(29, 35);
+            this.txtCadFuncNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCadFuncNome.Name = "txtCadFuncNome";
+            this.txtCadFuncNome.PasswordChar = '\0';
+            this.txtCadFuncNome.PlaceholderText = "";
+            this.txtCadFuncNome.SelectedText = "";
+            this.txtCadFuncNome.ShadowDecoration.Parent = this.txtCadFuncNome;
+            this.txtCadFuncNome.Size = new System.Drawing.Size(359, 29);
+            this.txtCadFuncNome.TabIndex = 2;
+            // 
             // lblCadFuncCargo
             // 
             this.lblCadFuncCargo.AutoSize = true;
@@ -100,221 +153,6 @@
             this.lblCadFuncCargo.Size = new System.Drawing.Size(54, 20);
             this.lblCadFuncCargo.TabIndex = 31;
             this.lblCadFuncCargo.Text = "Cargo";
-            // 
-            // lblCadFuncEmail
-            // 
-            this.lblCadFuncEmail.AutoSize = true;
-            this.lblCadFuncEmail.BackColor = System.Drawing.Color.White;
-            this.lblCadFuncEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadFuncEmail.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncEmail.Location = new System.Drawing.Point(25, 244);
-            this.lblCadFuncEmail.Name = "lblCadFuncEmail";
-            this.lblCadFuncEmail.Size = new System.Drawing.Size(51, 20);
-            this.lblCadFuncEmail.TabIndex = 30;
-            this.lblCadFuncEmail.Text = "Email";
-            // 
-            // lblCadFuncSenha
-            // 
-            this.lblCadFuncSenha.AutoSize = true;
-            this.lblCadFuncSenha.BackColor = System.Drawing.Color.White;
-            this.lblCadFuncSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadFuncSenha.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncSenha.Location = new System.Drawing.Point(498, 126);
-            this.lblCadFuncSenha.Name = "lblCadFuncSenha";
-            this.lblCadFuncSenha.Size = new System.Drawing.Size(56, 20);
-            this.lblCadFuncSenha.TabIndex = 29;
-            this.lblCadFuncSenha.Text = "Senha";
-            // 
-            // lblCadFuncTel
-            // 
-            this.lblCadFuncTel.AutoSize = true;
-            this.lblCadFuncTel.BackColor = System.Drawing.Color.White;
-            this.lblCadFuncTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadFuncTel.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncTel.Location = new System.Drawing.Point(25, 126);
-            this.lblCadFuncTel.Name = "lblCadFuncTel";
-            this.lblCadFuncTel.Size = new System.Drawing.Size(73, 20);
-            this.lblCadFuncTel.TabIndex = 28;
-            this.lblCadFuncTel.Text = "Telefone";
-            // 
-            // lblCadFuncCPF
-            // 
-            this.lblCadFuncCPF.AutoSize = true;
-            this.lblCadFuncCPF.BackColor = System.Drawing.Color.White;
-            this.lblCadFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadFuncCPF.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncCPF.Location = new System.Drawing.Point(498, 13);
-            this.lblCadFuncCPF.Name = "lblCadFuncCPF";
-            this.lblCadFuncCPF.Size = new System.Drawing.Size(42, 20);
-            this.lblCadFuncCPF.TabIndex = 27;
-            this.lblCadFuncCPF.Text = "CPF";
-            // 
-            // lblCadFuncNome
-            // 
-            this.lblCadFuncNome.AutoSize = true;
-            this.lblCadFuncNome.BackColor = System.Drawing.Color.White;
-            this.lblCadFuncNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCadFuncNome.ForeColor = System.Drawing.Color.Black;
-            this.lblCadFuncNome.Location = new System.Drawing.Point(25, 13);
-            this.lblCadFuncNome.Name = "lblCadFuncNome";
-            this.lblCadFuncNome.Size = new System.Drawing.Size(53, 20);
-            this.lblCadFuncNome.TabIndex = 26;
-            this.lblCadFuncNome.Text = "Nome";
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.BackColor = System.Drawing.Color.White;
-            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.ForeColor = System.Drawing.Color.Black;
-            this.lblTitle.Location = new System.Drawing.Point(42, 30);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(295, 31);
-            this.lblTitle.TabIndex = 25;
-            this.lblTitle.Text = "Cadastrar funcionário";
-            // 
-            // ComboBoxCadFuncCargo
-            // 
-            this.ComboBoxCadFuncCargo.BackColor = System.Drawing.Color.Transparent;
-            this.ComboBoxCadFuncCargo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.ComboBoxCadFuncCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ComboBoxCadFuncCargo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadFuncCargo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.ComboBoxCadFuncCargo.FocusedState.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxCadFuncCargo.ForeColor = System.Drawing.Color.Black;
-            this.ComboBoxCadFuncCargo.HoverState.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.ItemHeight = 30;
-            this.ComboBoxCadFuncCargo.ItemsAppearance.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.Location = new System.Drawing.Point(502, 264);
-            this.ComboBoxCadFuncCargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ComboBoxCadFuncCargo.Name = "ComboBoxCadFuncCargo";
-            this.ComboBoxCadFuncCargo.ShadowDecoration.Parent = this.ComboBoxCadFuncCargo;
-            this.ComboBoxCadFuncCargo.Size = new System.Drawing.Size(360, 36);
-            this.ComboBoxCadFuncCargo.TabIndex = 24;
-            // 
-            // ButtonCad
-            // 
-            this.ButtonCad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonCad.CheckedState.Parent = this.ButtonCad;
-            this.ButtonCad.CustomImages.Parent = this.ButtonCad;
-            this.ButtonCad.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonCad.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonCad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButtonCad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButtonCad.DisabledState.Parent = this.ButtonCad;
-            this.ButtonCad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
-            this.ButtonCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.ButtonCad.ForeColor = System.Drawing.Color.White;
-            this.ButtonCad.HoverState.Parent = this.ButtonCad;
-            this.ButtonCad.Location = new System.Drawing.Point(463, 358);
-            this.ButtonCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtonCad.Name = "ButtonCad";
-            this.ButtonCad.ShadowDecoration.Parent = this.ButtonCad;
-            this.ButtonCad.Size = new System.Drawing.Size(160, 41);
-            this.ButtonCad.TabIndex = 22;
-            this.ButtonCad.Text = "Cadastrar";
-            this.ButtonCad.Click += new System.EventHandler(this.ButtonCad_Click);
-            // 
-            // ButtonLimpar
-            // 
-            this.ButtonLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonLimpar.CheckedState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.CustomImages.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonLimpar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ButtonLimpar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ButtonLimpar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ButtonLimpar.DisabledState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
-            this.ButtonLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonLimpar.ForeColor = System.Drawing.Color.White;
-            this.ButtonLimpar.HoverState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Location = new System.Drawing.Point(280, 358);
-            this.ButtonLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ButtonLimpar.Name = "ButtonLimpar";
-            this.ButtonLimpar.ShadowDecoration.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Size = new System.Drawing.Size(160, 41);
-            this.ButtonLimpar.TabIndex = 21;
-            this.ButtonLimpar.Text = "Limpar";
-            this.ButtonLimpar.Click += new System.EventHandler(this.ButtonLimpar_Click);
-            // 
-            // txtCadFuncSenha
-            // 
-            this.txtCadFuncSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadFuncSenha.DefaultText = "";
-            this.txtCadFuncSenha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadFuncSenha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadFuncSenha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncSenha.DisabledState.Parent = this.txtCadFuncSenha;
-            this.txtCadFuncSenha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncSenha.FocusedState.Parent = this.txtCadFuncSenha;
-            this.txtCadFuncSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadFuncSenha.ForeColor = System.Drawing.Color.Black;
-            this.txtCadFuncSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncSenha.HoverState.Parent = this.txtCadFuncSenha;
-            this.txtCadFuncSenha.Location = new System.Drawing.Point(502, 147);
-            this.txtCadFuncSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadFuncSenha.Name = "txtCadFuncSenha";
-            this.txtCadFuncSenha.PasswordChar = '\0';
-            this.txtCadFuncSenha.PlaceholderText = "";
-            this.txtCadFuncSenha.SelectedText = "";
-            this.txtCadFuncSenha.ShadowDecoration.Parent = this.txtCadFuncSenha;
-            this.txtCadFuncSenha.Size = new System.Drawing.Size(359, 29);
-            this.txtCadFuncSenha.TabIndex = 18;
-            // 
-            // txtCadFuncCPF
-            // 
-            this.txtCadFuncCPF.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadFuncCPF.DefaultText = "";
-            this.txtCadFuncCPF.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadFuncCPF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadFuncCPF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncCPF.DisabledState.Parent = this.txtCadFuncCPF;
-            this.txtCadFuncCPF.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncCPF.FocusedState.Parent = this.txtCadFuncCPF;
-            this.txtCadFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadFuncCPF.ForeColor = System.Drawing.Color.Black;
-            this.txtCadFuncCPF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncCPF.HoverState.Parent = this.txtCadFuncCPF;
-            this.txtCadFuncCPF.Location = new System.Drawing.Point(502, 35);
-            this.txtCadFuncCPF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadFuncCPF.MaxLength = 14;
-            this.txtCadFuncCPF.Name = "txtCadFuncCPF";
-            this.txtCadFuncCPF.PasswordChar = '\0';
-            this.txtCadFuncCPF.PlaceholderText = "";
-            this.txtCadFuncCPF.SelectedText = "";
-            this.txtCadFuncCPF.ShadowDecoration.Parent = this.txtCadFuncCPF;
-            this.txtCadFuncCPF.Size = new System.Drawing.Size(359, 29);
-            this.txtCadFuncCPF.TabIndex = 16;
-            this.txtCadFuncCPF.TextChanged += new System.EventHandler(this.txtCadFuncCPF_TextChanged);
-            // 
-            // txtCadFuncEmail
-            // 
-            this.txtCadFuncEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadFuncEmail.DefaultText = "";
-            this.txtCadFuncEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadFuncEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadFuncEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncEmail.DisabledState.Parent = this.txtCadFuncEmail;
-            this.txtCadFuncEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncEmail.FocusedState.Parent = this.txtCadFuncEmail;
-            this.txtCadFuncEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadFuncEmail.ForeColor = System.Drawing.Color.Black;
-            this.txtCadFuncEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncEmail.HoverState.Parent = this.txtCadFuncEmail;
-            this.txtCadFuncEmail.Location = new System.Drawing.Point(29, 264);
-            this.txtCadFuncEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadFuncEmail.Name = "txtCadFuncEmail";
-            this.txtCadFuncEmail.PasswordChar = '\0';
-            this.txtCadFuncEmail.PlaceholderText = "";
-            this.txtCadFuncEmail.SelectedText = "";
-            this.txtCadFuncEmail.ShadowDecoration.Parent = this.txtCadFuncEmail;
-            this.txtCadFuncEmail.Size = new System.Drawing.Size(359, 29);
-            this.txtCadFuncEmail.TabIndex = 6;
             // 
             // txtCadFuncTel
             // 
@@ -343,33 +181,224 @@
             this.txtCadFuncTel.TabIndex = 4;
             this.txtCadFuncTel.TextChanged += new System.EventHandler(this.txtCadFuncTel_TextChanged);
             // 
-            // txtCadFuncNome
+            // lblCadFuncEmail
             // 
-            this.txtCadFuncNome.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCadFuncNome.DefaultText = "";
-            this.txtCadFuncNome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCadFuncNome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCadFuncNome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncNome.DisabledState.Parent = this.txtCadFuncNome;
-            this.txtCadFuncNome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCadFuncNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncNome.FocusedState.Parent = this.txtCadFuncNome;
-            this.txtCadFuncNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCadFuncNome.ForeColor = System.Drawing.Color.Black;
-            this.txtCadFuncNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCadFuncNome.HoverState.Parent = this.txtCadFuncNome;
-            this.txtCadFuncNome.Location = new System.Drawing.Point(29, 35);
-            this.txtCadFuncNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCadFuncNome.Name = "txtCadFuncNome";
-            this.txtCadFuncNome.PasswordChar = '\0';
-            this.txtCadFuncNome.PlaceholderText = "";
-            this.txtCadFuncNome.SelectedText = "";
-            this.txtCadFuncNome.ShadowDecoration.Parent = this.txtCadFuncNome;
-            this.txtCadFuncNome.Size = new System.Drawing.Size(359, 29);
-            this.txtCadFuncNome.TabIndex = 2;
+            this.lblCadFuncEmail.AutoSize = true;
+            this.lblCadFuncEmail.BackColor = System.Drawing.Color.White;
+            this.lblCadFuncEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncEmail.ForeColor = System.Drawing.Color.Black;
+            this.lblCadFuncEmail.Location = new System.Drawing.Point(25, 244);
+            this.lblCadFuncEmail.Name = "lblCadFuncEmail";
+            this.lblCadFuncEmail.Size = new System.Drawing.Size(51, 20);
+            this.lblCadFuncEmail.TabIndex = 30;
+            this.lblCadFuncEmail.Text = "Email";
+            // 
+            // txtCadFuncEmail
+            // 
+            this.txtCadFuncEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCadFuncEmail.DefaultText = "";
+            this.txtCadFuncEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCadFuncEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCadFuncEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadFuncEmail.DisabledState.Parent = this.txtCadFuncEmail;
+            this.txtCadFuncEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadFuncEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadFuncEmail.FocusedState.Parent = this.txtCadFuncEmail;
+            this.txtCadFuncEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadFuncEmail.ForeColor = System.Drawing.Color.Black;
+            this.txtCadFuncEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadFuncEmail.HoverState.Parent = this.txtCadFuncEmail;
+            this.txtCadFuncEmail.Location = new System.Drawing.Point(29, 264);
+            this.txtCadFuncEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCadFuncEmail.Name = "txtCadFuncEmail";
+            this.txtCadFuncEmail.PasswordChar = '\0';
+            this.txtCadFuncEmail.PlaceholderText = "";
+            this.txtCadFuncEmail.SelectedText = "";
+            this.txtCadFuncEmail.ShadowDecoration.Parent = this.txtCadFuncEmail;
+            this.txtCadFuncEmail.Size = new System.Drawing.Size(359, 29);
+            this.txtCadFuncEmail.TabIndex = 6;
+            // 
+            // lblCadFuncSenha
+            // 
+            this.lblCadFuncSenha.AutoSize = true;
+            this.lblCadFuncSenha.BackColor = System.Drawing.Color.White;
+            this.lblCadFuncSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncSenha.ForeColor = System.Drawing.Color.Black;
+            this.lblCadFuncSenha.Location = new System.Drawing.Point(498, 126);
+            this.lblCadFuncSenha.Name = "lblCadFuncSenha";
+            this.lblCadFuncSenha.Size = new System.Drawing.Size(56, 20);
+            this.lblCadFuncSenha.TabIndex = 29;
+            this.lblCadFuncSenha.Text = "Senha";
+            // 
+            // txtCadFuncCPF
+            // 
+            this.txtCadFuncCPF.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCadFuncCPF.DefaultText = "";
+            this.txtCadFuncCPF.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCadFuncCPF.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCadFuncCPF.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadFuncCPF.DisabledState.Parent = this.txtCadFuncCPF;
+            this.txtCadFuncCPF.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadFuncCPF.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadFuncCPF.FocusedState.Parent = this.txtCadFuncCPF;
+            this.txtCadFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadFuncCPF.ForeColor = System.Drawing.Color.Black;
+            this.txtCadFuncCPF.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadFuncCPF.HoverState.Parent = this.txtCadFuncCPF;
+            this.txtCadFuncCPF.Location = new System.Drawing.Point(502, 35);
+            this.txtCadFuncCPF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCadFuncCPF.MaxLength = 14;
+            this.txtCadFuncCPF.Name = "txtCadFuncCPF";
+            this.txtCadFuncCPF.PasswordChar = '\0';
+            this.txtCadFuncCPF.PlaceholderText = "";
+            this.txtCadFuncCPF.SelectedText = "";
+            this.txtCadFuncCPF.ShadowDecoration.Parent = this.txtCadFuncCPF;
+            this.txtCadFuncCPF.Size = new System.Drawing.Size(359, 29);
+            this.txtCadFuncCPF.TabIndex = 16;
+            this.txtCadFuncCPF.TextChanged += new System.EventHandler(this.txtCadFuncCPF_TextChanged);
+            // 
+            // lblCadFuncTel
+            // 
+            this.lblCadFuncTel.AutoSize = true;
+            this.lblCadFuncTel.BackColor = System.Drawing.Color.White;
+            this.lblCadFuncTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncTel.ForeColor = System.Drawing.Color.Black;
+            this.lblCadFuncTel.Location = new System.Drawing.Point(25, 126);
+            this.lblCadFuncTel.Name = "lblCadFuncTel";
+            this.lblCadFuncTel.Size = new System.Drawing.Size(73, 20);
+            this.lblCadFuncTel.TabIndex = 28;
+            this.lblCadFuncTel.Text = "Telefone";
+            // 
+            // txtCadFuncSenha
+            // 
+            this.txtCadFuncSenha.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCadFuncSenha.DefaultText = "";
+            this.txtCadFuncSenha.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCadFuncSenha.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCadFuncSenha.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadFuncSenha.DisabledState.Parent = this.txtCadFuncSenha;
+            this.txtCadFuncSenha.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCadFuncSenha.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadFuncSenha.FocusedState.Parent = this.txtCadFuncSenha;
+            this.txtCadFuncSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCadFuncSenha.ForeColor = System.Drawing.Color.Black;
+            this.txtCadFuncSenha.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCadFuncSenha.HoverState.Parent = this.txtCadFuncSenha;
+            this.txtCadFuncSenha.Location = new System.Drawing.Point(502, 147);
+            this.txtCadFuncSenha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtCadFuncSenha.Name = "txtCadFuncSenha";
+            this.txtCadFuncSenha.PasswordChar = '\0';
+            this.txtCadFuncSenha.PlaceholderText = "";
+            this.txtCadFuncSenha.SelectedText = "";
+            this.txtCadFuncSenha.ShadowDecoration.Parent = this.txtCadFuncSenha;
+            this.txtCadFuncSenha.Size = new System.Drawing.Size(359, 29);
+            this.txtCadFuncSenha.TabIndex = 18;
+            // 
+            // lblCadFuncCPF
+            // 
+            this.lblCadFuncCPF.AutoSize = true;
+            this.lblCadFuncCPF.BackColor = System.Drawing.Color.White;
+            this.lblCadFuncCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncCPF.ForeColor = System.Drawing.Color.Black;
+            this.lblCadFuncCPF.Location = new System.Drawing.Point(498, 13);
+            this.lblCadFuncCPF.Name = "lblCadFuncCPF";
+            this.lblCadFuncCPF.Size = new System.Drawing.Size(42, 20);
+            this.lblCadFuncCPF.TabIndex = 27;
+            this.lblCadFuncCPF.Text = "CPF";
+            // 
+            // ButtonLimpar
+            // 
+            this.ButtonLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
+            this.ButtonLimpar.CheckedState.Parent = this.ButtonLimpar;
+            this.ButtonLimpar.CustomImages.Parent = this.ButtonLimpar;
+            this.ButtonLimpar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonLimpar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonLimpar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ButtonLimpar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ButtonLimpar.DisabledState.Parent = this.ButtonLimpar;
+            this.ButtonLimpar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
+            this.ButtonLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonLimpar.ForeColor = System.Drawing.Color.White;
+            this.ButtonLimpar.HoverState.Parent = this.ButtonLimpar;
+            this.ButtonLimpar.Location = new System.Drawing.Point(280, 358);
+            this.ButtonLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ButtonLimpar.Name = "ButtonLimpar";
+            this.ButtonLimpar.ShadowDecoration.Parent = this.ButtonLimpar;
+            this.ButtonLimpar.Size = new System.Drawing.Size(160, 41);
+            this.ButtonLimpar.TabIndex = 21;
+            this.ButtonLimpar.Text = "Limpar";
+            this.ButtonLimpar.Click += new System.EventHandler(this.ButtonLimpar_Click);
+            // 
+            // lblCadFuncNome
+            // 
+            this.lblCadFuncNome.AutoSize = true;
+            this.lblCadFuncNome.BackColor = System.Drawing.Color.White;
+            this.lblCadFuncNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCadFuncNome.ForeColor = System.Drawing.Color.Black;
+            this.lblCadFuncNome.Location = new System.Drawing.Point(25, 13);
+            this.lblCadFuncNome.Name = "lblCadFuncNome";
+            this.lblCadFuncNome.Size = new System.Drawing.Size(53, 20);
+            this.lblCadFuncNome.TabIndex = 26;
+            this.lblCadFuncNome.Text = "Nome";
+            // 
+            // ButtonCad
+            // 
+            this.ButtonCad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
+            this.ButtonCad.CheckedState.Parent = this.ButtonCad;
+            this.ButtonCad.CustomImages.Parent = this.ButtonCad;
+            this.ButtonCad.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonCad.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ButtonCad.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ButtonCad.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ButtonCad.DisabledState.Parent = this.ButtonCad;
+            this.ButtonCad.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            this.ButtonCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.ButtonCad.ForeColor = System.Drawing.Color.White;
+            this.ButtonCad.HoverState.Parent = this.ButtonCad;
+            this.ButtonCad.Location = new System.Drawing.Point(463, 358);
+            this.ButtonCad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ButtonCad.Name = "ButtonCad";
+            this.ButtonCad.ShadowDecoration.Parent = this.ButtonCad;
+            this.ButtonCad.Size = new System.Drawing.Size(160, 41);
+            this.ButtonCad.TabIndex = 22;
+            this.ButtonCad.Text = "Cadastrar";
+            this.ButtonCad.Click += new System.EventHandler(this.ButtonCad_Click);
+            // 
+            // ComboBoxCadFuncCargo
+            // 
+            this.ComboBoxCadFuncCargo.BackColor = System.Drawing.Color.Transparent;
+            this.ComboBoxCadFuncCargo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.ComboBoxCadFuncCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ComboBoxCadFuncCargo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadFuncCargo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.ComboBoxCadFuncCargo.FocusedState.Parent = this.ComboBoxCadFuncCargo;
+            this.ComboBoxCadFuncCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxCadFuncCargo.ForeColor = System.Drawing.Color.Black;
+            this.ComboBoxCadFuncCargo.HoverState.Parent = this.ComboBoxCadFuncCargo;
+            this.ComboBoxCadFuncCargo.ItemHeight = 30;
+            this.ComboBoxCadFuncCargo.ItemsAppearance.Parent = this.ComboBoxCadFuncCargo;
+            this.ComboBoxCadFuncCargo.Location = new System.Drawing.Point(502, 264);
+            this.ComboBoxCadFuncCargo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ComboBoxCadFuncCargo.Name = "ComboBoxCadFuncCargo";
+            this.ComboBoxCadFuncCargo.ShadowDecoration.Parent = this.ComboBoxCadFuncCargo;
+            this.ComboBoxCadFuncCargo.Size = new System.Drawing.Size(360, 36);
+            this.ComboBoxCadFuncCargo.TabIndex = 24;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.White;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Black;
+            this.lblTitle.Location = new System.Drawing.Point(42, 30);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(295, 31);
+            this.lblTitle.TabIndex = 25;
+            this.lblTitle.Text = "Cadastrar funcionário";
             // 
             // PanelMenu
             // 
+            this.PanelMenu.Controls.Add(this.BtnDesc);
             this.PanelMenu.Controls.Add(this.PanelPedidos);
             this.PanelMenu.Controls.Add(this.BtnReceita);
             this.PanelMenu.Controls.Add(this.PanelProduto);
@@ -386,6 +415,29 @@
             this.PanelMenu.ShadowDecoration.Parent = this.PanelMenu;
             this.PanelMenu.Size = new System.Drawing.Size(128, 721);
             this.PanelMenu.TabIndex = 12;
+            // 
+            // BtnDesc
+            // 
+            this.BtnDesc.CheckedState.Parent = this.BtnDesc;
+            this.BtnDesc.CustomImages.Parent = this.BtnDesc;
+            this.BtnDesc.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnDesc.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnDesc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnDesc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnDesc.DisabledState.Parent = this.BtnDesc;
+            this.BtnDesc.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.BtnDesc.FillColor = System.Drawing.Color.Salmon;
+            this.BtnDesc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnDesc.ForeColor = System.Drawing.Color.White;
+            this.BtnDesc.HoverState.Parent = this.BtnDesc;
+            this.BtnDesc.Location = new System.Drawing.Point(0, 685);
+            this.BtnDesc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.BtnDesc.Name = "BtnDesc";
+            this.BtnDesc.ShadowDecoration.Parent = this.BtnDesc;
+            this.BtnDesc.Size = new System.Drawing.Size(128, 36);
+            this.BtnDesc.TabIndex = 58;
+            this.BtnDesc.Text = "Desconectar";
+            this.BtnDesc.Click += new System.EventHandler(this.BtnDesc_Click);
             // 
             // PanelPedidos
             // 
@@ -662,10 +714,11 @@
             // 
             // lblData
             // 
+            this.lblData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblData.AutoSize = true;
             this.lblData.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblData.ForeColor = System.Drawing.Color.Black;
-            this.lblData.Location = new System.Drawing.Point(1275, 14);
+            this.lblData.Location = new System.Drawing.Point(1192, 14);
             this.lblData.Name = "lblData";
             this.lblData.Size = new System.Drawing.Size(53, 18);
             this.lblData.TabIndex = 15;
@@ -673,6 +726,7 @@
             // 
             // lblHora
             // 
+            this.lblHora.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.Black;
@@ -682,29 +736,9 @@
             this.lblHora.TabIndex = 16;
             this.lblHora.Text = ":Hora:";
             // 
-            // panel1
+            // timer1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.txtCadFuncNome);
-            this.panel1.Controls.Add(this.lblCadFuncCargo);
-            this.panel1.Controls.Add(this.txtCadFuncTel);
-            this.panel1.Controls.Add(this.lblCadFuncEmail);
-            this.panel1.Controls.Add(this.txtCadFuncEmail);
-            this.panel1.Controls.Add(this.lblCadFuncSenha);
-            this.panel1.Controls.Add(this.txtCadFuncCPF);
-            this.panel1.Controls.Add(this.lblCadFuncTel);
-            this.panel1.Controls.Add(this.txtCadFuncSenha);
-            this.panel1.Controls.Add(this.lblCadFuncCPF);
-            this.panel1.Controls.Add(this.ButtonLimpar);
-            this.panel1.Controls.Add(this.lblCadFuncNome);
-            this.panel1.Controls.Add(this.ButtonCad);
-            this.panel1.Controls.Add(this.ComboBoxCadFuncCargo);
-            this.panel1.Location = new System.Drawing.Point(139, 118);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(928, 434);
-            this.panel1.TabIndex = 32;
-            this.panel1.LocationChanged += new System.EventHandler(this.panel1_LocationChanged);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Cad_Func
             // 
@@ -729,13 +763,13 @@
             this.Load += new System.EventHandler(this.Cad_Func_Load);
             this.PanelCadFunc.ResumeLayout(false);
             this.PanelCadFunc.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.PanelMenu.ResumeLayout(false);
             this.PanelPedidos.ResumeLayout(false);
             this.PanelProduto.ResumeLayout(false);
             this.PanelFuncionario.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.LogoMrCake)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -743,14 +777,6 @@
 
         #endregion
         private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelCadFunc;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncSenha;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncCPF;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncEmail;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncTel;
-        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncNome;
-        private Guna.UI2.WinForms.Guna2Button ButtonLimpar;
-        private Guna.UI2.WinForms.Guna2Button ButtonCad;
-        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadFuncCargo;
         private Guna.UI2.WinForms.Guna2GradientPanel PanelMenu;
         private Guna.UI2.WinForms.Guna2ImageButton BtnReceita;
         private Guna.UI2.WinForms.Guna2Panel PanelProduto;
@@ -766,17 +792,27 @@
         private Guna.UI2.WinForms.Guna2Panel PanelPedidos;
         private Guna.UI2.WinForms.Guna2Button btnGerenciar_PedE;
         private Guna.UI2.WinForms.Guna2Button btnGerenciar_PedF;
-        private System.Windows.Forms.Label lblCadFuncSenha;
-        private System.Windows.Forms.Label lblCadFuncTel;
-        private System.Windows.Forms.Label lblCadFuncCPF;
-        private System.Windows.Forms.Label lblCadFuncNome;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblCadFuncCargo;
-        private System.Windows.Forms.Label lblCadFuncEmail;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblData;
         private System.Windows.Forms.Label lblHora;
+        private Guna.UI2.WinForms.Guna2Button BtnDesc;
+        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncNome;
+        private System.Windows.Forms.Label lblCadFuncCargo;
+        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncTel;
+        private System.Windows.Forms.Label lblCadFuncEmail;
+        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncEmail;
+        private System.Windows.Forms.Label lblCadFuncSenha;
+        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncCPF;
+        private System.Windows.Forms.Label lblCadFuncTel;
+        private Guna.UI2.WinForms.Guna2TextBox txtCadFuncSenha;
+        private System.Windows.Forms.Label lblCadFuncCPF;
+        private Guna.UI2.WinForms.Guna2Button ButtonLimpar;
+        private System.Windows.Forms.Label lblCadFuncNome;
+        private Guna.UI2.WinForms.Guna2Button ButtonCad;
+        private Guna.UI2.WinForms.Guna2ComboBox ComboBoxCadFuncCargo;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

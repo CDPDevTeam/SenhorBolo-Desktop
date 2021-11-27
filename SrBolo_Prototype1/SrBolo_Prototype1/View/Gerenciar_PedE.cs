@@ -16,7 +16,7 @@ namespace SrBolo_Prototype1
 {
     public partial class Gerenciar_PedE : Form
     {
-       // PedidosDAO pedidosDAO = new PedidosDAO();
+        PedidosDAO pedidosDAO = new PedidosDAO();
         ControlePedidos pedidose = new ControlePedidos();
         DataTable pedidosECadastrados = new DataTable();
         public Gerenciar_PedE()
@@ -119,7 +119,7 @@ namespace SrBolo_Prototype1
 
         public void listarPedidosE()
         {
-            pedidosECadastrados = pedidose.pedidosECadastrados();
+            pedidosECadastrados = pedidosDAO.pedidosECadastrados();
             GridViewRec.DataSource = pedidosECadastrados;
 
 
@@ -129,9 +129,11 @@ namespace SrBolo_Prototype1
         {
             lblNome.Text = Gerente.Nome;
             lblEmail.Text = Gerente.Email;
+            timer1.Start();
+            setDataHora();
             listarPedidosE();
             DataTable edson = new DataTable();
-            //edson = pedidosDAO.pedidosCadastrados();
+            edson = pedidosDAO.pedidosECadastrados();
 
 
 
@@ -139,10 +141,10 @@ namespace SrBolo_Prototype1
 
         private void ButtonExibir_Click(object sender, EventArgs e)
         {
-           /* int indice = GridViewRec.SelectedRows[0].Index;
+           int indice = GridViewRec.SelectedRows[0].Index;
             pedidosDAO.getExibirPedido(int.Parse(GridViewRec.Rows[indice].Cells[0].Value.ToString()));
             Adm_Pedido adm_Pedido = new Adm_Pedido();
-            adm_Pedido.Show();*/
+            adm_Pedido.Show();
             
         }
 
@@ -159,6 +161,26 @@ namespace SrBolo_Prototype1
                 data.RowFilter = string.Format("email_cli_fk like '%{0}%' or CONVERT(id_pedido, 'System.String') like '%{0}%' or CONVERT(data_compra, 'System.String') like '%{0}%' or CONVERT(data_entrega, 'System.String') like '%{0}%'", txtGerRecSearch.Text);
                 GridViewRec.DataSource = data.ToTable();
             }
+        }
+
+        private void BtnDesc_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Deseja mesmo sair do sistema?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Environment.Exit(0);
+            }
+        }
+
+        private void setDataHora()
+        {
+            DateTime agora = DateTime.Now;
+            lblData.Text = agora.Date.ToString("dddd',' dd'/'MM'/'yyyy");
+            lblHora.Text = agora.TimeOfDay.ToString("hh':'mm':'ss");
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            setDataHora();
         }
     }
 }

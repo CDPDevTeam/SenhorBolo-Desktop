@@ -23,6 +23,7 @@ namespace SrBolo_Prototype1.View
 
         private void Adm_Pedido_Load(object sender, EventArgs e)
         {
+            GridViewBolosPed.Refresh();
             lblCPFFunc.Text = Pedido.cpfFunc;
             lblDataPed.Text = Pedido.DataCompra.ToString("yyyy'-'MM'-'dd");
             lblIdPed.Text = Pedido.idPedido.ToString();
