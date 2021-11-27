@@ -29,6 +29,8 @@ namespace SrBolo_Prototype1.View
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adm_Pedido));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -106,12 +108,45 @@ namespace SrBolo_Prototype1.View
             // 
             // GridViewBolosPed
             // 
+            this.GridViewBolosPed.AllowUserToAddRows = false;
+            this.GridViewBolosPed.AllowUserToDeleteRows = false;
+            this.GridViewBolosPed.AllowUserToResizeColumns = false;
+            this.GridViewBolosPed.AllowUserToResizeRows = false;
+            this.GridViewBolosPed.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GridViewBolosPed.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GridViewBolosPed.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.GridViewBolosPed.BackgroundColor = System.Drawing.Color.White;
+            this.GridViewBolosPed.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GridViewBolosPed.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GridViewBolosPed.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(170)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Raleway", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridViewBolosPed.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GridViewBolosPed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Raleway", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 10);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridViewBolosPed.DefaultCellStyle = dataGridViewCellStyle2;
+            this.GridViewBolosPed.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.GridViewBolosPed.Location = new System.Drawing.Point(44, 260);
             this.GridViewBolosPed.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.GridViewBolosPed.Name = "GridViewBolosPed";
-            this.GridViewBolosPed.RowHeadersWidth = 51;
+            this.GridViewBolosPed.RowHeadersVisible = false;
+            this.GridViewBolosPed.RowHeadersWidth = 50;
             this.GridViewBolosPed.RowTemplate.Height = 24;
+            this.GridViewBolosPed.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridViewBolosPed.Size = new System.Drawing.Size(675, 252);
             this.GridViewBolosPed.TabIndex = 9;
             this.GridViewBolosPed.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridViewBolosPed_CellContentClick);

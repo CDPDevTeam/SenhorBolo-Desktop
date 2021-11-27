@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gerenciar_Prod));
             this.PanelGerProd = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.lblAviso = new System.Windows.Forms.Label();
@@ -67,6 +69,9 @@
             // 
             // PanelGerProd
             // 
+            this.PanelGerProd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.PanelGerProd.BorderRadius = 40;
             this.PanelGerProd.Controls.Add(this.lblAviso);
             this.PanelGerProd.Controls.Add(this.lblTitle);
@@ -84,10 +89,12 @@
             // 
             // lblAviso
             // 
+            this.lblAviso.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.lblAviso.AutoSize = true;
             this.lblAviso.BackColor = System.Drawing.Color.White;
             this.lblAviso.ForeColor = System.Drawing.Color.Black;
-            this.lblAviso.Location = new System.Drawing.Point(25, 779);
+            this.lblAviso.Location = new System.Drawing.Point(17, 781);
             this.lblAviso.Name = "lblAviso";
             this.lblAviso.Size = new System.Drawing.Size(401, 20);
             this.lblAviso.TabIndex = 39;
@@ -136,7 +143,6 @@
             // 
             // ButtonEdit
             // 
-            this.ButtonEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ButtonEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
             this.ButtonEdit.CheckedState.Parent = this.ButtonEdit;
             this.ButtonEdit.CustomImages.Parent = this.ButtonEdit;
@@ -160,18 +166,50 @@
             // 
             // GridViewProd
             // 
+            this.GridViewProd.AllowUserToAddRows = false;
+            this.GridViewProd.AllowUserToDeleteRows = false;
+            this.GridViewProd.AllowUserToResizeColumns = false;
+            this.GridViewProd.AllowUserToResizeRows = false;
+            this.GridViewProd.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.GridViewProd.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.GridViewProd.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.GridViewProd.BackgroundColor = System.Drawing.Color.White;
+            this.GridViewProd.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.GridViewProd.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.GridViewProd.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(186)))), ((int)(((byte)(179)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Raleway", 11F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GridViewProd.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GridViewProd.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Raleway", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(114)))), ((int)(((byte)(114)))));
+            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 10);
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ControlDarkDark;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GridViewProd.DefaultCellStyle = dataGridViewCellStyle2;
+            this.GridViewProd.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.GridViewProd.Location = new System.Drawing.Point(25, 69);
             this.GridViewProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GridViewProd.Name = "GridViewProd";
+            this.GridViewProd.RowHeadersVisible = false;
             this.GridViewProd.RowHeadersWidth = 62;
             this.GridViewProd.RowTemplate.Height = 28;
+            this.GridViewProd.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GridViewProd.Size = new System.Drawing.Size(1325, 665);
             this.GridViewProd.TabIndex = 23;
             // 
             // ButtonAdc
             // 
-            this.ButtonAdc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ButtonAdc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
             this.ButtonAdc.CheckedState.Parent = this.ButtonAdc;
             this.ButtonAdc.CustomImages.Parent = this.ButtonAdc;
@@ -195,7 +233,6 @@
             // 
             // ButtonExc
             // 
-            this.ButtonExc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ButtonExc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(0)))), ((int)(((byte)(66)))));
             this.ButtonExc.CheckedState.Parent = this.ButtonExc;
             this.ButtonExc.CustomImages.Parent = this.ButtonExc;
