@@ -33,7 +33,6 @@ namespace SrBolo_Prototype1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Editar_Prod));
             this.PanelEditProd = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.PictureBoxEditProd = new Guna.UI2.WinForms.Guna2PictureBox();
             this.ComboBoxEditProdID = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtEditProdNome = new Guna.UI2.WinForms.Guna2TextBox();
             this.ComboBoxEditProdConfeito = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -67,7 +66,6 @@ namespace SrBolo_Prototype1
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.PanelEditProd.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEditProd)).BeginInit();
             this.PanelMenu.SuspendLayout();
             this.PanelPedidos.SuspendLayout();
             this.PanelProduto.SuspendLayout();
@@ -94,7 +92,6 @@ namespace SrBolo_Prototype1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.PictureBoxEditProd);
             this.panel1.Controls.Add(this.ComboBoxEditProdID);
             this.panel1.Controls.Add(this.txtEditProdNome);
             this.panel1.Controls.Add(this.ComboBoxEditProdConfeito);
@@ -109,22 +106,6 @@ namespace SrBolo_Prototype1
             this.panel1.Size = new System.Drawing.Size(1149, 541);
             this.panel1.TabIndex = 41;
             // 
-            // PictureBoxEditProd
-            // 
-            this.PictureBoxEditProd.BackColor = System.Drawing.Color.Gray;
-            this.PictureBoxEditProd.BackgroundImage = global::SrBolo_Prototype1.Properties.Resources.ribas;
-            this.PictureBoxEditProd.BorderRadius = 20;
-            this.PictureBoxEditProd.Image = global::SrBolo_Prototype1.Properties.Resources.ribas;
-            this.PictureBoxEditProd.ImageRotate = 0F;
-            this.PictureBoxEditProd.Location = new System.Drawing.Point(55, 66);
-            this.PictureBoxEditProd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.PictureBoxEditProd.Name = "PictureBoxEditProd";
-            this.PictureBoxEditProd.ShadowDecoration.Parent = this.PictureBoxEditProd;
-            this.PictureBoxEditProd.Size = new System.Drawing.Size(300, 238);
-            this.PictureBoxEditProd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBoxEditProd.TabIndex = 26;
-            this.PictureBoxEditProd.TabStop = false;
-            // 
             // ComboBoxEditProdID
             // 
             this.ComboBoxEditProdID.BackColor = System.Drawing.Color.Transparent;
@@ -138,7 +119,7 @@ namespace SrBolo_Prototype1
             this.ComboBoxEditProdID.HoverState.Parent = this.ComboBoxEditProdID;
             this.ComboBoxEditProdID.ItemHeight = 30;
             this.ComboBoxEditProdID.ItemsAppearance.Parent = this.ComboBoxEditProdID;
-            this.ComboBoxEditProdID.Location = new System.Drawing.Point(746, 86);
+            this.ComboBoxEditProdID.Location = new System.Drawing.Point(561, 82);
             this.ComboBoxEditProdID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxEditProdID.Name = "ComboBoxEditProdID";
             this.ComboBoxEditProdID.ShadowDecoration.Parent = this.ComboBoxEditProdID;
@@ -161,7 +142,7 @@ namespace SrBolo_Prototype1
             this.txtEditProdNome.ForeColor = System.Drawing.Color.Black;
             this.txtEditProdNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtEditProdNome.HoverState.Parent = this.txtEditProdNome;
-            this.txtEditProdNome.Location = new System.Drawing.Point(395, 86);
+            this.txtEditProdNome.Location = new System.Drawing.Point(210, 82);
             this.txtEditProdNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEditProdNome.Name = "txtEditProdNome";
             this.txtEditProdNome.PasswordChar = '\0';
@@ -184,7 +165,7 @@ namespace SrBolo_Prototype1
             this.ComboBoxEditProdConfeito.HoverState.Parent = this.ComboBoxEditProdConfeito;
             this.ComboBoxEditProdConfeito.ItemHeight = 30;
             this.ComboBoxEditProdConfeito.ItemsAppearance.Parent = this.ComboBoxEditProdConfeito;
-            this.ComboBoxEditProdConfeito.Location = new System.Drawing.Point(746, 276);
+            this.ComboBoxEditProdConfeito.Location = new System.Drawing.Point(561, 272);
             this.ComboBoxEditProdConfeito.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxEditProdConfeito.Name = "ComboBoxEditProdConfeito";
             this.ComboBoxEditProdConfeito.ShadowDecoration.Parent = this.ComboBoxEditProdConfeito;
@@ -205,7 +186,7 @@ namespace SrBolo_Prototype1
             this.ButtonLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ButtonLimpar.ForeColor = System.Drawing.Color.White;
             this.ButtonLimpar.HoverState.Parent = this.ButtonLimpar;
-            this.ButtonLimpar.Location = new System.Drawing.Point(764, 367);
+            this.ButtonLimpar.Location = new System.Drawing.Point(397, 443);
             this.ButtonLimpar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonLimpar.Name = "ButtonLimpar";
             this.ButtonLimpar.ShadowDecoration.Parent = this.ButtonLimpar;
@@ -227,7 +208,7 @@ namespace SrBolo_Prototype1
             this.ComboBoxEditProdRecheio.HoverState.Parent = this.ComboBoxEditProdRecheio;
             this.ComboBoxEditProdRecheio.ItemHeight = 30;
             this.ComboBoxEditProdRecheio.ItemsAppearance.Parent = this.ComboBoxEditProdRecheio;
-            this.ComboBoxEditProdRecheio.Location = new System.Drawing.Point(395, 276);
+            this.ComboBoxEditProdRecheio.Location = new System.Drawing.Point(210, 272);
             this.ComboBoxEditProdRecheio.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxEditProdRecheio.Name = "ComboBoxEditProdRecheio";
             this.ComboBoxEditProdRecheio.ShadowDecoration.Parent = this.ComboBoxEditProdRecheio;
@@ -248,13 +229,14 @@ namespace SrBolo_Prototype1
             this.ButtonEdit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.ButtonEdit.ForeColor = System.Drawing.Color.White;
             this.ButtonEdit.HoverState.Parent = this.ButtonEdit;
-            this.ButtonEdit.Location = new System.Drawing.Point(933, 367);
+            this.ButtonEdit.Location = new System.Drawing.Point(566, 443);
             this.ButtonEdit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonEdit.Name = "ButtonEdit";
             this.ButtonEdit.ShadowDecoration.Parent = this.ButtonEdit;
             this.ButtonEdit.Size = new System.Drawing.Size(142, 41);
             this.ButtonEdit.TabIndex = 22;
             this.ButtonEdit.Text = "Editar";
+            this.ButtonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
             // ComboBoxEditProdCobertura
             // 
@@ -269,7 +251,7 @@ namespace SrBolo_Prototype1
             this.ComboBoxEditProdCobertura.HoverState.Parent = this.ComboBoxEditProdCobertura;
             this.ComboBoxEditProdCobertura.ItemHeight = 30;
             this.ComboBoxEditProdCobertura.ItemsAppearance.Parent = this.ComboBoxEditProdCobertura;
-            this.ComboBoxEditProdCobertura.Location = new System.Drawing.Point(746, 182);
+            this.ComboBoxEditProdCobertura.Location = new System.Drawing.Point(561, 178);
             this.ComboBoxEditProdCobertura.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxEditProdCobertura.Name = "ComboBoxEditProdCobertura";
             this.ComboBoxEditProdCobertura.ShadowDecoration.Parent = this.ComboBoxEditProdCobertura;
@@ -289,7 +271,7 @@ namespace SrBolo_Prototype1
             this.ComboBoxEditProdCat.HoverState.Parent = this.ComboBoxEditProdCat;
             this.ComboBoxEditProdCat.ItemHeight = 30;
             this.ComboBoxEditProdCat.ItemsAppearance.Parent = this.ComboBoxEditProdCat;
-            this.ComboBoxEditProdCat.Location = new System.Drawing.Point(395, 367);
+            this.ComboBoxEditProdCat.Location = new System.Drawing.Point(210, 363);
             this.ComboBoxEditProdCat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxEditProdCat.Name = "ComboBoxEditProdCat";
             this.ComboBoxEditProdCat.ShadowDecoration.Parent = this.ComboBoxEditProdCat;
@@ -309,7 +291,7 @@ namespace SrBolo_Prototype1
             this.ComboBoxEditProdMassa.HoverState.Parent = this.ComboBoxEditProdMassa;
             this.ComboBoxEditProdMassa.ItemHeight = 30;
             this.ComboBoxEditProdMassa.ItemsAppearance.Parent = this.ComboBoxEditProdMassa;
-            this.ComboBoxEditProdMassa.Location = new System.Drawing.Point(395, 182);
+            this.ComboBoxEditProdMassa.Location = new System.Drawing.Point(210, 178);
             this.ComboBoxEditProdMassa.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ComboBoxEditProdMassa.Name = "ComboBoxEditProdMassa";
             this.ComboBoxEditProdMassa.ShadowDecoration.Parent = this.ComboBoxEditProdMassa;
@@ -692,7 +674,6 @@ namespace SrBolo_Prototype1
             this.PanelEditProd.ResumeLayout(false);
             this.PanelEditProd.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEditProd)).EndInit();
             this.PanelMenu.ResumeLayout(false);
             this.PanelPedidos.ResumeLayout(false);
             this.PanelProduto.ResumeLayout(false);
@@ -705,7 +686,6 @@ namespace SrBolo_Prototype1
 
         #endregion
         private Guna.UI2.WinForms.Guna2CustomGradientPanel PanelEditProd;
-        private Guna.UI2.WinForms.Guna2PictureBox PictureBoxEditProd;
         private Guna.UI2.WinForms.Guna2Button ButtonEdit;
         private Guna.UI2.WinForms.Guna2Button ButtonLimpar;
         private Guna.UI2.WinForms.Guna2TextBox txtEditProdNome;

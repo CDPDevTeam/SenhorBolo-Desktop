@@ -220,6 +220,15 @@ namespace SrBolo_Prototype1
         {
             lblNome.Text = Gerente.Nome;
             lblEmail.Text = Gerente.Email;
+
+            txtEditProdNome.Text = Produto.Nome;
+            ComboBoxEditProdID.Text = Produto.Id.ToString();
+            ComboBoxEditProdCat.Text = Produto.Categoria;
+            ComboBoxEditProdCobertura.Text = Produto.Cobertura;
+            ComboBoxEditProdConfeito.Text = Produto.Confeito;
+            ComboBoxEditProdMassa.Text = Produto.Massa;
+            ComboBoxEditProdRecheio.Text = Produto.Recheio;
+
             timer1.Start();
             setDataHora();
         }
@@ -242,6 +251,26 @@ namespace SrBolo_Prototype1
         private void timer1_Tick(object sender, EventArgs e)
         {
             setDataHora();
+        }
+
+        private void ButtonEdit_Click(object sender, EventArgs e)
+        {
+            bool update;
+            Produto.Id = int.Parse(ComboBoxEditProdID.Text);
+            Produto.Nome = txtEditProdNome.Text;
+            Produto.Massa = ComboBoxEditProdMassa.Text;
+            Produto.Recheio = ComboBoxEditProdRecheio.Text;
+            Produto.Cobertura = ComboBoxEditProdCobertura.Text;
+            Produto.Confeito = ComboBoxEditProdConfeito.Text;
+            Produto.Foto = "personalizado.png";
+            Produto.Categoria = ComboBoxEditProdCat.Text;
+            
+
+            update = produtos.updateProduto();
+            if (update == true)
+            {
+                MessageBox.Show("Produto alterado com sucesso!");
+            }
         }
     }
 }

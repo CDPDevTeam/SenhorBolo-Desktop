@@ -117,6 +117,7 @@ namespace SrBolo_Prototype1
 
         private void ButtonEdit_Click(object sender, EventArgs e)
         {
+            produtos.setProduto(int.Parse(GridViewProd.CurrentRow.Cells[0].Value.ToString()));
             Editar_Prod editar_Prod = new Editar_Prod();
             editar_Prod.Show();
             this.Hide();

@@ -51,7 +51,7 @@ namespace SrBolo_Prototype1
                     this.Hide();
                 }
             } 
-            else { MessageBox.Show("Selecione um usuário", "ATENÇÃO"); }
+            else { MessageBox.Show("CPF ou senha incorretos.", "ATENÇÃO"); }
             
         }
 

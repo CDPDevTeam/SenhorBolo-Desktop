@@ -190,7 +190,7 @@ namespace SrBolo_Prototype1
             }
             else
             {
-                if (produto.CadastroProd(int.Parse(txtCadProdID.Text), ComboBoxCadProdConfeito.Text, ComboBoxCadProdMassa.Text, ComboBoxCadProdRecheio.Text, ComboBoxCadProdConfeito.Text, ComboBoxCadProdCategoria.Text, txtCadProdNome.Text, PictureBoxCadProd.ImageLocation.ToString()))
+                if (produto.CadastroProd(int.Parse(txtCadProdID.Text), ComboBoxCadProdConfeito.Text, ComboBoxCadProdMassa.Text, ComboBoxCadProdRecheio.Text, ComboBoxCadProdCobertura.Text, ComboBoxCadProdCategoria.Text, txtCadProdNome.Text, "personalizado.png"))
                 {
                     MessageBox.Show("Funcionário cadastrado!", "Sucesso");
                 }
@@ -210,19 +210,7 @@ namespace SrBolo_Prototype1
             setDataHora();
         }
 
-        private void PictureBoxCadProd_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog open = new OpenFileDialog();
-            // image filters  
-            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
-            if (open.ShowDialog() == DialogResult.OK)
-            {
-                // display image in picture box  
-                PictureBoxCadProd.Image = new Bitmap(open.FileName);
-                // image file path  
-                PictureBoxCadProd.Text = open.FileName;
-            }
-        }
+        
 
         private void PictureBoxCadProd_MouseHover(object sender, EventArgs e)
         {

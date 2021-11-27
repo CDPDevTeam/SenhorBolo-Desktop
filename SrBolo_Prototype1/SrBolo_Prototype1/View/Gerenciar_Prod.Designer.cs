@@ -618,6 +618,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Gerenciar_Prod";
             this.Text = "Gerenciar_Prod";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Gerenciar_Prod_Load);
             this.PanelGerProd.ResumeLayout(false);
             this.PanelGerProd.PerformLayout();

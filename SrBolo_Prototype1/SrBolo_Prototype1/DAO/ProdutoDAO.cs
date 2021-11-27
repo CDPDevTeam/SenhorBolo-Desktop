@@ -144,7 +144,7 @@ namespace SrBolo_Prototype1.DAO
                 Conectar();
                 NpgsqlCommand Cmd = new NpgsqlCommand("CadProd", Cn);
                 Cmd.CommandType = CommandType.StoredProcedure;
-                Cmd.Parameters.AddWithValue("idProd", idProd);
+                Cmd.Parameters.AddWithValue("idpord", idProd);
                 Cmd.Parameters.AddWithValue("confeito", confeito);
                 Cmd.Parameters.AddWithValue("massa", massa);
                 Cmd.Parameters.AddWithValue("recheio", recheio);
@@ -220,6 +220,34 @@ namespace SrBolo_Prototype1.DAO
             finally { Desconectar(); }
             return valor;
         }
-
+        public bool updateProduto()
+        {
+            bool update = false;
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("Updprod", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Cmd.Parameters.AddWithValue("prod", Produto.Id);
+                Cmd.Parameters.AddWithValue("confeito", Produto.Confeito);
+                Cmd.Parameters.AddWithValue("massa", Produto.Massa);
+                Cmd.Parameters.AddWithValue("recheio", Produto.Recheio);
+                Cmd.Parameters.AddWithValue("cobertura", Produto.Cobertura);
+                Cmd.Parameters.AddWithValue("categoria", Produto.Categoria);
+                Cmd.Parameters.AddWithValue("nome", Produto.Nome);
+                Cmd.Parameters.AddWithValue("foto", Produto.Foto);
+                Cmd.ExecuteNonQuery();
+                update = true;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro ao dar update: " + e.Message);
+            }
+            finally
+            {
+                Desconectar();
+            }
+            return update;
+        }
     }
 }

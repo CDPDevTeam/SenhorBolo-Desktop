@@ -38,5 +38,11 @@ namespace SrBolo_Prototype1.Control
         {
             produtoDAO.excluirProduto(idProd);
         }
+
+        public bool updateProduto()
+        {
+            bool update = produtoDAO.updateProduto();
+            return update;
+        }
     }
 }

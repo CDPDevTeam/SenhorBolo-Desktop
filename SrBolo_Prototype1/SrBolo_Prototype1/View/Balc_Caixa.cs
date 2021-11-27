@@ -203,8 +203,7 @@ namespace SrBolo_Prototype1
             txtCaixaQtd.Text = null;
             txtTroco.Text = null;
             txtTotalRecebido.Text = null;
-            txtCaixaSubtotal.Text = null;
-            txtCaixaTotal.Text = null;
+            
         }
 
         private void finalizarCompra()
@@ -304,6 +303,8 @@ namespace SrBolo_Prototype1
             if (e.KeyCode == Keys.N)
             {
                 limparTextoProduto();
+                txtCaixaSubtotal.Text = null;
+                txtCaixaTotal.Text = null;
                 txtCodigoBarras.Enabled = true;
                 txtCaixaQtd.Enabled = true;
                 GridViewCaixa.Rows.Clear();
