@@ -187,7 +187,39 @@ namespace SrBolo_Prototype1.DAO
             }
         }
 
+        public object[,] GetMesVendas()
+        {
+            object[,] valor = new object[8,2];
+            try
+            {
+                Conectar();
+                NpgsqlCommand Cmd = new NpgsqlCommand("getmesvendas", Cn);
+                Cmd.CommandType = CommandType.StoredProcedure;
+                Dr = Cmd.ExecuteReader();
+                if (Dr.HasRows)
+                {
+                    int i = 0;
+                    while (Dr.Read())
+                    {
 
+                        for (int j = 0; j < 2; j++)
+                        {
+                            valor[i, j] = Dr.GetValue(j);
+
+                        }
+                        
+                        i++;
+                    }
+                }
+                
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro: " + e.Message);
+            }
+            finally { Desconectar(); }
+            return valor;
+        }
 
     }
 }

@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=1.0.1.7, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.1.7\lib\net40\Guna.UI2.dll</HintPath>
@@ -299,6 +302,7 @@
     <EmbeddedResource Include="View\teste.resx">
       <DependentUpon>teste.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.manifest" />
     <None Include="packages.config" />
     <None Include="View\packages.config" />
     <None Include="Properties\Settings.settings">
@@ -336,6 +340,38 @@
     <None Include="Resources\ribas.PNG" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\abacaxi.png" />
+    <None Include="Resources\abacaxi_com_coco.png" />
+    <None Include="Resources\abacaxi_com_coco_e_recheio_de_beijinho.png" />
+    <None Include="Resources\banana.png" />
+    <None Include="Resources\banana_com_nozes.png" />
+    <None Include="Resources\bem_casado.png" />
+    <None Include="Resources\cenoura_com_chocolate.png" />
+    <None Include="Resources\chocolate.png" />
+    <None Include="Resources\chocolate_com_coco_ralado.png" />
+    <None Include="Resources\chocolate_com_nozes.png" />
+    <None Include="Resources\chocolate_com_recheio_de_beijinho.png" />
+    <None Include="Resources\chocolate_com_recheio_de_brigadeiro.png" />
+    <None Include="Resources\coco.png" />
+    <None Include="Resources\coco_com_chocolate.png" />
+    <None Include="Resources\coco_com_recheio_de_beijinho.png" />
+    <None Include="Resources\doce_de_leite.png" />
+    <None Include="Resources\fuba.png" />
+    <None Include="Resources\gotas_chocolate.png" />
+    <None Include="Resources\granola.png" />
+    <None Include="Resources\laranja.png" />
+    <None Include="Resources\limao.png" />
+    <None Include="Resources\maca.png" />
+    <None Include="Resources\maca_com_granola.png" />
+    <None Include="Resources\maca_com_nozes.png" />
+    <None Include="Resources\maracuja.png" />
+    <None Include="Resources\maracuja_com_coco.png" />
+    <None Include="Resources\mousse_limao.png" />
+    <None Include="Resources\mousse_maracuja.png" />
+    <None Include="Resources\piscina_chocolate_com_beijinho.png" />
+    <None Include="Resources\piscina_de_cenoura_com_chocolate.png" />
+    <None Include="Resources\piscina_de_peçoca_caseira.png" />
+    <None Include="Resources\piscina_mousse_de_limão.png" />
     <Content Include="Resources\SrBolo_LogoOficial.png" />
   </ItemGroup>
   <ItemGroup>

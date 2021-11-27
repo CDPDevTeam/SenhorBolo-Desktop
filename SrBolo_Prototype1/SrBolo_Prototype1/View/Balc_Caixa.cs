@@ -13,6 +13,8 @@ using SrBolo_Prototype1.common;
 using SrBolo_Prototype1.Control;
 using SrBolo_Prototype1.View;
 using System.Globalization;
+using System.Resources;
+using SrBolo_Prototype1.Properties;
 
 namespace SrBolo_Prototype1
 {
@@ -76,7 +78,23 @@ namespace SrBolo_Prototype1
                     else { txtCodigoBarras.Focus(); }
                 }
             }
-
+            if (e.KeyCode == Keys.X)
+            {
+                if (GridViewCaixa.Rows.Count > 1)
+                {
+                    if (MessageBox.Show("Deseja cancelar a compra atual?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        limparTextoProduto();
+                        txtCodigoBarras.Enabled = true;
+                        txtCaixaQtd.Enabled = true;
+                        GridViewCaixa.Rows.Clear();
+                        GridViewCaixa.Refresh();
+                        txtCodigoBarras.Focus();
+                        txtTotalRecebido.Enabled = false;
+                    }
+                    else { txtCodigoBarras.Focus(); }
+                }
+            }
 
         }
         private void txtCodigoBarras_KeyPress(object sender, KeyPressEventArgs e)
@@ -132,23 +150,49 @@ namespace SrBolo_Prototype1
                     else { txtCodigoBarras.Focus(); }
                 }
             }
+            if (e.KeyCode == Keys.X)
+            {
+                if (GridViewCaixa.Rows.Count > 1)
+                {
+                    if (MessageBox.Show("Deseja cancelar a compra atual?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        limparTextoProduto();
+                        txtCodigoBarras.Enabled = true;
+                        txtCaixaQtd.Enabled = true;
+                        GridViewCaixa.Rows.Clear();
+                        GridViewCaixa.Refresh();
+                        txtCodigoBarras.Focus();
+                        txtTotalRecebido.Enabled = false;
+                    }
+                    else { txtCodigoBarras.Focus(); }
+                }
+            }
 
         }
 
         public void adicionarProduto()
         {
-            int linha = 0;
-            double total = Double.Parse(txtCaixaQtd.Text) * Produto.ValorUnit;
-            GridViewCaixa.Rows.Add();
-            linha = GridViewCaixa.Rows.Count - 2;
-            GridViewCaixa[0, linha].Value = Produto.Id;
-            GridViewCaixa[1, linha].Value = Produto.Nome;
-            GridViewCaixa[2, linha].Value = txtCaixaQtd.Text;
-            GridViewCaixa[3, linha].Value = Produto.ValorUnit;
-            GridViewCaixa[4, linha].Value = total;
-            limparTextoProduto();
+            
+                    int linha = 0;
+                    double total = Double.Parse(txtCaixaQtd.Text) * Produto.ValorUnit;
+                    GridViewCaixa.Rows.Add();
+                    linha = GridViewCaixa.Rows.Count - 2;
+                    GridViewCaixa[0, linha].Value = Produto.Id;
+                    GridViewCaixa[1, linha].Value = Produto.Nome;
+                    GridViewCaixa[2, linha].Value = txtCaixaQtd.Text;
+                    GridViewCaixa[3, linha].Value = Produto.ValorUnit;
+                    GridViewCaixa[4, linha].Value = total;
+                    limparTextoProduto();
+            
 
+            
 
+            string[] recurso = Produto.Foto.Split('.');
+
+            ResourceManager rm = Resources.ResourceManager;
+            Bitmap myImage = (Bitmap)rm.GetObject(recurso[0].ToLower());
+            PictureBoxCaixaProd.Image = myImage;
+            //PictureBoxCaixaProd.Image = Image.FromFile(@"..\SrBolo_Prototype1\Resources\" + Produto.Foto.ToLower());
         }
 
         public void limparTextoProduto()

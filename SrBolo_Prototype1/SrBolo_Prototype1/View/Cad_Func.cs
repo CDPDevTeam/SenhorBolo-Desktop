@@ -185,5 +185,10 @@ namespace SrBolo_Prototype1
             lblNome.Text = Gerente.Nome;
             lblEmail.Text = Gerente.Email;
         }
+
+        private void panel1_LocationChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
