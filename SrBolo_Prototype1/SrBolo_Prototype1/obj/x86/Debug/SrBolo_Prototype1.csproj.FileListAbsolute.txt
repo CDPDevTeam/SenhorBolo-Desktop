@@ -47,3 +47,7 @@ C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Pr
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\x86\Debug\SrBolo_Prototype1.csproj.CopyComplete
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\x86\Debug\SrBolo_Prototype1.exe
 C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\x86\Debug\SrBolo_Prototype1.pdb
+C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\bin\x86\Debug\SrBolo_Prototype1.exe.manifest
+C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\bin\x86\Debug\SrBolo_Prototype1.application
+C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\x86\Debug\SrBolo_Prototype1.exe.manifest
+C:\Users\joaov\Documents\mr Cakes\SenhorBolo-Desktop\SrBolo_Prototype1\SrBolo_Prototype1\obj\x86\Debug\SrBolo_Prototype1.application
