@@ -10,6 +10,6 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 
 - [x] Fazer os formulários do programa
 - [x] Conexão com o banco de dados
-- [ ] POO
-- [ ] Testes de qualidade
-- [ ] Lançamento
+- [x] POO
+- [x] Testes de qualidade
+- [x] Lançamento
