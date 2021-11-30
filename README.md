@@ -6,8 +6,6 @@
 
 ### Etapas do desenvolvimento
 
-O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
-
 - [x] Fazer os formulários do programa
 - [x] Conexão com o banco de dados
 - [x] POO
